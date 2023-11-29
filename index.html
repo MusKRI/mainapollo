@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Apollo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .loader-box {
+        display: block;
+        width: 258px;
+        height: 258px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .logo-container {
+        animation: colorChange 5s infinite;
+        -webkit-mask-image: url("./public/logo2.png");
+        mask-image: url("./public/logo2.png");
+        mask-repeat: no-repeat;
+        mask-size: cover; /* Or 'contain' based on your logo's aspect ratio */
+        background-repeat: no-repeat;
+        background-size: cover; /* Or 'contain' based on your logo's aspect ratio */
+      }
+
+      .logo-container img {
+        display: block; /* Ensures the img takes the full space of the container */
+        width: 100%; /* Adjust as needed */
+        height: auto; /* Maintains aspect ratio */
+        background-clip: text; /* Clips the background to the text */
+        color: transparent; /* Makes the text transparent */
+      }
+
+      @keyframes colorChange {
+        0% {
+          background-color: #ef5350;
+        }
+        25% {
+          background-color: #ef5350;
+        }
+        26% {
+          background-color: #4f759b;
+        }
+        50% {
+          background-color: #4f759b;
+        }
+        51% {
+          background-color: #55896f;
+        }
+        75% {
+          background-color: #55896f;
+        }
+        76% {
+          background-color: #fda543;
+        }
+        100% {
+          background-color: #fda543;
+        }
+      }
+      @-webkit-keyframes colorChange {
+        0% {
+          background-color: #ef5350;
+        }
+        25% {
+          background-color: #ef5350;
+        }
+        26% {
+          background-color: #4f759b;
+        }
+        50% {
+          background-color: #4f759b;
+        }
+        51% {
+          background-color: #55896f;
+        }
+        75% {
+          background-color: #55896f;
+        }
+        76% {
+          background-color: #fda543;
+        }
+        100% {
+          background-color: #fda543;
+        }
+      }
+      @-moz-keyframes colorChange {
+        0% {
+          background-color: #ef5350;
+        }
+        25% {
+          background-color: #ef5350;
+        }
+        26% {
+          background-color: #4f759b;
+        }
+        50% {
+          background-color: #4f759b;
+        }
+        51% {
+          background-color: #55896f;
+        }
+        75% {
+          background-color: #55896f;
+        }
+        76% {
+          background-color: #fda543;
+        }
+        100% {
+          background-color: #fda543;
+        }
+      }
+      @-o-keyframes colorChange {
+        0% {
+          background-color: #ef5350;
+        }
+        25% {
+          background-color: #ef5350;
+        }
+        26% {
+          background-color: #4f759b;
+        }
+        50% {
+          background-color: #4f759b;
+        }
+        51% {
+          background-color: #55896f;
+        }
+        75% {
+          background-color: #55896f;
+        }
+        76% {
+          background-color: #fda543;
+        }
+        100% {
+          background-color: #fda543;
+        }
+      }
+      @-ms-keyframes colorChange {
+        0% {
+          background-color: #ef5350;
+        }
+        25% {
+          background-color: #ef5350;
+        }
+        26% {
+          background-color: #4f759b;
+        }
+        50% {
+          background-color: #4f759b;
+        }
+        51% {
+          background-color: #55896f;
+        }
+        75% {
+          background-color: #55896f;
+        }
+        76% {
+          background-color: #fda543;
+        }
+        100% {
+          background-color: #fda543;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Loading Spinner Div -->
+    <div class="loader-box">
+      <div class="logo-container">
+        <img src="/logo2.png" alt="Logo" />
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
