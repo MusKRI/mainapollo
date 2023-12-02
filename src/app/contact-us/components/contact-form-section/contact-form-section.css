@@ -61,3 +61,54 @@
 .form__field:invalid {
   box-shadow: none;
 }
+
+.dropdown {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Style for the dropdown arrow */
+.dropdown::after {
+  content: "\25BC"; /* Unicode character for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #9b9b9b;
+  pointer-events: none;
+  padding-right: 5px;
+}
+
+/* Style for the dropdown when focused */
+.dropdown:focus {
+  outline: none;
+  border-bottom: 3px solid #002840;
+}
+
+/* Style for the dropdown when focused and placeholder is shown */
+.dropdown:placeholder-shown ~ .form__label {
+  font-size: 17px;
+  cursor: text;
+  top: 30px;
+}
+
+/* Style for the dropdown label when focused */
+.dropdown:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #002840;
+  font-weight: 700;
+}
+
+/* Reset dropdown styles */
+.dropdown:required,
+.dropdown:invalid {
+  box-shadow: none;
+}

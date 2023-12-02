@@ -104,14 +104,14 @@ const Career = () => {
       <div className="container-fluid">
         <div className="row">
           <div
-            className="col-12 py-10"
+            className="col-12 py-20"
             style={{ backgroundColor: "#333694", color: "white" }}
           >
-            <div className="row flex flex-col items-center">
+            <div className="row flex flex-row items-center justify-center gap-4">
               <motion.div
                 initial={{
                   opacity: 0,
-                  x: 100,
+                  x: -100,
                 }}
                 whileInView={{
                   opacity: 1,
@@ -120,23 +120,18 @@ const Career = () => {
                     duration: 0.8,
                   },
                 }}
-                className="collage col-12 flex items-center justify-center w-[500px]"
+                className="collage col-12 flex items-center justify-center w-[500px] self-start"
               >
-                <img
-                  src={sq2}
-                  alt=""
-                  className="rounded-md"
-                  // style={{ width: "100%", height: "100px" }}
-                />
+                <img src={sq2} alt="" className="rounded-md" />
               </motion.div>
-              <div className="col-12">
-                <div className="container-fluid mt-5">
+              <div className="col-12 col-lg-6">
+                <div className="container-fluid">
                   <div className="row justify-content-center">
-                    <div className="col-9">
+                    <div className="col-12">
                       <motion.h1
                         initial={{
                           opacity: 0,
-                          x: -100,
+                          x: 100,
                         }}
                         whileInView={{
                           opacity: 1,
@@ -151,13 +146,13 @@ const Career = () => {
                         Future
                       </motion.h1>
                     </div>
-                    <div className="col-9 mt-2 mb-5">
+                    <div className="col-12 mt-2 mb-5">
                       <div className="row">
-                        <div className="col-8">
+                        <div className="col-12">
                           <motion.p
                             initial={{
                               opacity: 0,
-                              x: -100,
+                              x: 100,
                             }}
                             whileInView={{
                               opacity: 1,
@@ -176,7 +171,7 @@ const Career = () => {
                           <motion.p
                             initial={{
                               opacity: 0,
-                              x: -100,
+                              x: 100,
                             }}
                             whileInView={{
                               opacity: 1,
@@ -262,7 +257,7 @@ const Career = () => {
                                 className="col-lg-2"
                                 style={{ fontWeight: "450", FontSize: "30px" }}
                               >
-                                0{index}
+                                0{index + 1}
                               </div>
                               <div
                                 className="col-lg-3"
@@ -289,7 +284,7 @@ const Career = () => {
             <div className="container">
               <div className="row">
                 <div
-                  className="col-12 mt-3"
+                  className="col-12 mt-3 flex items-center gap-2"
                   style={{ fontWeight: "bold", fontSize: "25px" }}
                 >
                   <motion.p
@@ -324,7 +319,7 @@ const Career = () => {
                   </motion.p>
                 </div>
                 <div className="col-12 mb-5  mt-5">
-                  <div className="row">
+                  <div className="row items-start">
                     <motion.div
                       initial={{
                         opacity: 0,
@@ -339,7 +334,12 @@ const Career = () => {
                       }}
                       className="col-lg-4 d-flex justify-content-center"
                     >
-                      <img src={d1} alt="" style={{ maxWidth: "60%" }} />
+                      <img
+                        src={d1}
+                        alt=""
+                        style={{ maxWidth: "60%" }}
+                        className="rounded-md"
+                      />
                     </motion.div>
                     <motion.div
                       initial={{
@@ -353,7 +353,7 @@ const Career = () => {
                           duration: 0.8,
                         },
                       }}
-                      className="col-lg-4 mt-5"
+                      className="col-lg-4"
                     >
                       A strong, consistent, and meritocratic HR framework helps
                       Apollo Green Energy in maintaining a forward-thinking work
@@ -376,7 +376,7 @@ const Career = () => {
                       }}
                       className="col-lg-4 d-flex justify-content-space-around align=items-start"
                     >
-                      <img src={d2} alt="" />
+                      <img src={d2} alt="" className="rounded-md" />
                     </motion.div>
                   </div>
                 </div>
@@ -385,8 +385,8 @@ const Career = () => {
                     <div className="col-4 relative">
                       <motion.img
                         initial={{
-                          x: 26,
-                          y: -16,
+                          x: -26,
+                          y: 16,
                         }}
                         whileInView={{
                           x: 0,
@@ -400,13 +400,13 @@ const Career = () => {
                         style={{ maxWidth: "70%" }}
                         className="rounded-t-full relative z-[2]"
                       />
-                      <div className="absolute border -top-4 left-10 w-full h-full max-w-[65%] rounded-t-full z-0"></div>
+                      <div className="absolute border top-0 left- w-full h-full max-w-[65%] rounded-t-full z-0"></div>
                     </div>
                     <div className="col-4 relative">
                       <motion.img
                         initial={{
-                          x: 26,
-                          y: -16,
+                          x: -26,
+                          y: 16,
                         }}
                         whileInView={{
                           x: 0,
@@ -420,13 +420,13 @@ const Career = () => {
                         style={{ maxWidth: "70%" }}
                         className="rounded-t-full relative z-[2]"
                       />
-                      <div className="absolute border -top-4 left-10 w-full h-full max-w-[65%] rounded-t-full z-0"></div>
+                      <div className="absolute border top-0 left-4 w-full h-full max-w-[65%] rounded-t-full z-0"></div>
                     </div>
                     <div className="col-4 relative">
                       <motion.img
                         initial={{
-                          x: 26,
-                          y: -16,
+                          x: -26,
+                          y: 16,
                         }}
                         whileInView={{
                           x: 0,
@@ -440,7 +440,7 @@ const Career = () => {
                         style={{ maxWidth: "70%" }}
                         className="rounded-t-full relative z-[2]"
                       />
-                      <div className="absolute border -top-4 left-10 w-full h-full max-w-[65%] rounded-t-full z-0"></div>
+                      <div className="absolute border top-0 left-4 w-full h-full max-w-[65%] rounded-t-full z-0"></div>
                     </div>
                   </div>
                 </div>
@@ -574,7 +574,9 @@ const Career = () => {
                 className="col-12 d-flex justify-content-center"
                 style={{ fontSize: "55px" }}
               >
-                <span style={{ color: "blue" }}>Current</span>{" "}
+                <span style={{ fontWeight: "bold", color: "black" }}>
+                  Current
+                </span>{" "}
                 <span style={{ fontWeight: "bold", color: "black" }}>
                   Openings
                 </span>

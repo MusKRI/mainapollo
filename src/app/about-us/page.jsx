@@ -30,7 +30,7 @@ const AboutUs = () => {
     // banner data
     bannerImage: AboutusBanner,
     bannerTag: "About Apolloindia",
-    bannerTitle: "India&apos;s Leading Global Business Conglomerate",
+    bannerTitle: "",
     bannerDescription:
       "Witness our journey of building a cleaner and greener India harnessing the power of sun and the strength of the wind",
 

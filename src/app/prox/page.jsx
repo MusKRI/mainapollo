@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import ProxBanner from "./components/prox-banner/prox-banner";
 
 import ProxBannerImg from "./image/banner2.jpeg";
+import { cn } from "../../lib/utils";
 
 // import ProxAboutImage from "./image/about.png";
 import ProxAboutImage from "./image/real/procurement-aboutus.jpg";
@@ -255,12 +256,14 @@ const ProXPage = () => {
           <h1 className="text-3xl lg:text-5xl font-semibold">
             {proxData?.pbroadTitle}
           </h1>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 justify-center">
             {proxData?.pbroadList?.map((pb, index) => {
               return (
                 <div
                   key={index}
-                  className="bg-white border rounded-md p-3 flex flex-row gap-3 items-center transition hover:shadow-lg"
+                  className={cn(
+                    "bg-white border rounded-md p-3 flex flex-row gap-3 items-center transition hover:shadow-lg"
+                  )}
                 >
                   <div className="rounded-full bg-[#f7931e] p-2 w-10 h-10 flex items-center justify-center text-white shrink-0 self-center">
                     {index + 1}

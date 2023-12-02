@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 // **** Local Imports ****
-import FeatImage from "../../images/identity/supply-chain-img.png";
+import FeatImage from "../../images/identity/sc-featimage.png";
 
 import BadgeSvg from "../../images/identity/badge.svg";
 import FileDocSvg from "../../images/identity/filedoc.svg";

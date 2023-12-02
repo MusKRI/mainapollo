@@ -33,7 +33,7 @@ const RootLayout = ({ children }) => {
       <CustomCursor>
         <Header />
         {/* <div className="h-[72px]"/> */}
-        {children}
+        <div className="overflow-x-hidden">{children}</div>
         <Footer />
       </CustomCursor>
     </>

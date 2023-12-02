@@ -9,13 +9,16 @@ import "swiper/css/navigation";
 import { Counter } from "../../components/CounterMotion";
 
 // import AOEBanner from "./images/aoebanner.png";
+import { cn } from "../../lib/utils";
 import Video from "./video/video.mp4";
 
-import ApproachCard1Img from "./images/arrangement.png";
-import ApproachCard2Img from "./images/leather.png";
-import ApproachCard3Img from "./images/footwear.png";
-import OutwearImg from "./images/outwear.jpeg";
-import ShirtsImg from "./images/shirts.jpeg";
+import ApproachCard1Img from "./images/slide1.jpeg";
+import ApproachCard2Img from "./images/slide2.jpg";
+import ApproachCard3Img from "./images/slide3.jpeg";
+import OutwearImg from "./images/slide4.jpg";
+import ShirtsImg from "./images/slide5.jpg";
+
+import AoeBanner from "./images/shirts.jpeg";
 
 import Rec1 from "./images/rec1.png";
 import Rec2 from "./images/rec2.png";
@@ -26,8 +29,6 @@ import s2 from "./images/snap2.jpeg";
 import s3 from "./images/snap3.jpeg";
 import s4 from "./images/snap44.jpeg";
 import s5 from "./images/snap5.jpeg";
-
-import { cn } from "../../lib/utils";
 
 export const Fashion = () => {
   // const Approach = [
@@ -100,7 +101,7 @@ export const Fashion = () => {
       "Apollo Fashion is a prominent manufacturer for leading international fashion brands. Our focus lies in creating exceptional products across various industry-leading categories. Our comprehensive services include design, manufacturing, market intelligence, and delivery compliance for fashion brands in today's dynamic landscape. Our core mission is to assist our clients in delivering top-quality fashion to their customers, regardless of the platform. Our team has extensive expertise in producing a wide range of products, including outerwear, accessories, footwear, and woven apparels.",
 
     // AOE data
-    aoeTitle: "AREA OF EXPERTISE",
+    aoeTitle: "Area Of Expertise",
     aoeDescription:
       "In the dynamic digital age of fashion, we keep pace with evolving market demands and disruptive technological innovations. Our expertise in garment, accessory, and footwear production is built on cutting-edge technology.",
     aoeTag1Count: 2.8,
@@ -109,7 +110,7 @@ export const Fashion = () => {
     aoeTag2Title: "Product Categories",
     aoeTag3Count: 40,
     aoeTag3Title: "Happy Clients",
-    aoeBannerImage: ShirtsImg,
+    aoeBannerImage: AoeBanner,
 
     // approach data
     approachData: [
@@ -201,20 +202,39 @@ export const Fashion = () => {
       <div className="row">
         {/* HeroSection */}
         <div className="col-12 p-0 h-screen">
-          <div className="img h-full">
+          <div className="img h-full relative">
             <video
               muted
               loop="true"
               autoPlay={true}
               src={Video}
-              className="object-fill"
+              className="object-fill h-screen w-full"
             />
+
+            <div className="absolute inset-0 top-0 left-0 w-full h-full z-[1] backdrop-brightness-[0.5] px-3 md:px-5">
+              <div className="max-w-7xl mx-auto flex flex-col gap-16 py-16 h-full justify-center">
+                {/* <div className="flex flex-col gap-3">
+              <h4 className="text-white text-2xl">{data.tag}</h4>
+              <div className="h-1 w-10 bg-white" />
+            </div> */}
+
+                <div className="flex flex-col gap-5">
+                  <h1 className="text-white text-5xl lg:text-7xl font-semibold">
+                    Fashion Made Responsibly
+                  </h1>
+
+                  {/* <p className="text-white max-w-md text-lg ml-4 lg:ml-20">
+                {data.bannerDescription}
+              </p> */}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         {/* 2nd Section */}
         <div className="col-12 bg-[#e3e3e3] py-20">
           <div className="container">
-            <div className="row ">
+            <div className="row max-w-[1024px] mx-auto">
               <div className="col-md-4 d-flex justify-content-center align-items-center">
                 <div className="row">
                   <div
@@ -267,8 +287,8 @@ export const Fashion = () => {
                           style={{
                             fontWeight: "bold",
                             fontSize: "60px",
-                            textTransform: "uppercase",
                           }}
+                          className="capitalize"
                         >
                           {fashionData?.aoeTitle}
                         </p>
@@ -337,20 +357,19 @@ export const Fashion = () => {
           </div>
         </div>
         {/* OurApproach */}
-        <div className="col-12 mt-4 mb-5">
+        <div className="col-12 mt-4 !py-20">
           <div className="container">
             <div className="row">
               <div
-                className="col-12"
+                className="col-12 mb-4"
                 style={{ fontWeight: "bold", fontSize: "40px" }}
               >
                 A Deep-Dive Into Our Priorities
               </div>
               <Swiper
-                spaceBetween={50}
-                slidesPerView={3}
-                onSlideChange={() => console.log("slide change")}
-                onSwiper={(swiper) => console.log(swiper)}
+                spaceBetween={10}
+                slidesPerView={1}
+                centeredSlides={true}
                 navigation={true}
                 modules={[Navigation, Autoplay]}
                 loop={true}
@@ -358,14 +377,37 @@ export const Fashion = () => {
                   delay: 2500,
                   disableOnInteraction: false,
                 }}
+                breakpoints={{
+                  640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                  },
+                }}
               >
                 {fashionData?.approachData?.map((item) => {
                   console.log(item.img); // Assuming 'img' property exists in each object
                   return (
-                    <SwiperSlide key={item.id}>
-                      {({}) => (
-                        <div className="" key={item.id}>
-                          <img src={item.img} alt="" />
+                    <SwiperSlide key={item.id} className="">
+                      {({ isNext, isPrev }) => (
+                        <div className="relative" key={item.id}>
+                          <div className="relative">
+                            <img
+                              src={item.img}
+                              alt=""
+                              className="h-auto rounded-md"
+                            />
+                            <div
+                              className={cn(
+                                "absolute inset-0 z-[1] rounded-md",
+                                isPrev && "bg-indigo-500/40",
+                                isNext && "bg-red-500/40"
+                              )}
+                            ></div>
+                          </div>
                           <p
                             className="d-flex justify-content-center mt-2"
                             style={{ fontWeight: "bold" }}
@@ -384,7 +426,7 @@ export const Fashion = () => {
         {/* Forge Connection */}
         <div
           className="col-12 !my-10 py-20 space-y-4"
-          style={{ background: "#f8f8f8" }}
+          style={{ background: "#d1d1d1" }}
         >
           <div className="row ml-lg-4">
             <div className="col-lg-9 ">

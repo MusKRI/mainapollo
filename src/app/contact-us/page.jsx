@@ -8,9 +8,8 @@ const ContactUs = () => {
   const contactData = {
     // contact banner data
     contactBannerImage: BgContactUsImage,
-    contactBannerTitle: "Write To us",
-    contactBannerDescription:
-      "Great! We&apos;re excited to hear from you and let&apos;s start something special togerter. call us for any inquery.",
+    contactBannerTitle: "Write To Us",
+    contactBannerDescription: "",
   };
 
   return (

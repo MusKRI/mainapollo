@@ -1,14 +1,26 @@
 // **** Library Imports ****
-import { Splide, SplideTrack, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/react-splide/css";
+import * as ReactDOMServer from "react-dom/server";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+
 import "./index.css";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
 // **** Local Imports ****
+
 import SectionHeading from "../../../components/SectionHeading";
 
 import slide1Img from "../../images/sc-business/slide1.png";
-import slide2Img from "../../images/sc-business/slide2.png";
-import slide3Img from "../../images/sc-business/slide3.png";
+import slide2Img from "../../images/sc-business/slide2.jpeg";
+import slide3Img from "../../images/sc-business/slide3.jpeg";
+import slide4Img from "../../images/sc-business/slide4.jpeg";
+import slide5Img from "../../images/sc-business/slide5.jpeg";
+import slide6Img from "../../images/sc-business/slide6.jpeg";
+import slide7Img from "../../images/sc-business/slide7.jpeg";
+import slide8Img from "../../images/sc-business/slide8.jpeg";
 
 const slideNodes = [
   {
@@ -28,18 +40,28 @@ const slideNodes = [
   },
   {
     id: "4",
-    slideImage: slide3Img,
-    slideTitle: "Surface Transport",
+    slideImage: slide4Img,
+    slideTitle: "Ocean Freight",
   },
   {
     id: "5",
-    slideImage: slide3Img,
-    slideTitle: "Surface Transport",
+    slideImage: slide5Img,
+    slideTitle: "Air Freight",
   },
   {
     id: "6",
-    slideImage: slide3Img,
-    slideTitle: "Surface Transport",
+    slideImage: slide6Img,
+    slideTitle: "CFS (Container Freight Station)",
+  },
+  {
+    id: "7",
+    slideImage: slide7Img,
+    slideTitle: "Network Design & Consulting",
+  },
+  {
+    id: "8",
+    slideImage: slide8Img,
+    slideTitle: "Control Tower & Analytics Center",
   },
 ];
 
@@ -58,53 +80,55 @@ const ExpertiseArea = () => {
           </p>
         </div>
 
-        <div className="min-h-[250px] md:min-h-[450px] flex items-center mb-40 md:mb-0 overflow-x-clip">
-          <Splide
-            hasTrack={false}
-            options={{
-              height: "350px",
-              arrows: false,
-              perPage: 3,
-              perMove: 1,
-              // focus: "center",
-              pagination: true,
-              gap: "10px",
-              breakpoints: {
-                840: {
-                  perPage: 1,
-                  height: "150px",
-                  gap: "10px",
-                },
+        <div className="hash min-h-[250px] md:min-h-[450px] flex items-center mb-40 md:mb-0 overflow-x-clip">
+          <Swiper
+            loop
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            spaceBetween={10}
+            slidesPerView={1}
+            className="py-10"
+            modules={[Pagination, Autoplay]}
+            pagination={{
+              clickable: true,
+              renderCustom: function () {
+                return ReactDOMServer.renderToStaticMarkup(
+                  <div className="border p-2 rounded-sm"></div>
+                );
+              },
+            }}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
               },
             }}
           >
-            <SplideTrack className="overflow-visible overflow-x-clip">
-              {slideNodes.map((slide) => {
-                return (
-                  <SplideSlide key={slide.id} className="">
-                    <div className="flex flex-col gap-3 h-full items-center">
-                      <div className="relative border-2 border-black rounded-lg p-4 flex flex-col gap-4">
-                        <img
-                          src={slide.slideImage}
-                          alt="IMG1"
-                          className="rounded-lg -mt-12"
-                        />
-                        <h4 className="text-xl bg-white text-center">
-                          {slide.slideTitle}
-                        </h4>
-                      </div>
-                      {/* <p
-                        
-                        className="text-lg text-[#525252] text-center overflow-hidden"
-                      >
-                        {imgNode.description}
-                      </p> */}
+            {slideNodes?.map((slide) => {
+              return (
+                <SwiperSlide key={slide.id} className="h-full self-stretch">
+                  <div className="flex flex-col gap-3 h-full items-center justify-stretch group">
+                    <div className="relative border-2 border-[#f7931e] rounded-lg p-4 flex flex-col gap-4 group-hover:bg-[#f7931e] transition">
+                      <img
+                        src={slide.slideImage}
+                        alt="IMG1"
+                        className="rounded-lg -mt-12"
+                      />
+                      <h4 className="text-xl text-center">
+                        {slide.slideTitle}
+                      </h4>
                     </div>
-                  </SplideSlide>
-                );
-              })}
-            </SplideTrack>
-          </Splide>
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
         </div>
       </div>
     </section>

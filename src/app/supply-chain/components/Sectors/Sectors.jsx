@@ -68,7 +68,7 @@ const Sectors = () => {
 
   return (
     <section className="relative px-3 md:px-5 bg-[#f6f6f6]">
-      <div className="max-w-7xl mx-auto flex flex-col gap-5 lg:flex-row lg:justify-between py-16 md:py-32">
+      <div className="max-w-7xl mx-auto flex flex-col gap-5 lg:flex-row lg:justify-between py-16 md:pt-32 md:pb-20">
         <div className="flex flex-col gap-7" style={{ width: "50%" }}>
           <motion.h2
             initial={{
@@ -153,7 +153,7 @@ const Sectors = () => {
                     initial="hidden"
                     whileHover="onHover"
                     key={keySector.id}
-                    className="flex flex-row items-center justify-between p-5 relative first:border-t-2 border-b-2 group"
+                    className="flex flex-row items-center justify-between p-4 relative first:border-t-2 border-b-2 group"
                     onClick={() => handleCurrentImage(index)}
                   >
                     {/* <motion.div
