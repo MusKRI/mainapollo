@@ -8,7 +8,7 @@ import LinkWithoutChildren from "./components/LinkWithoutChildren";
 import LinkWithChildren from "./components/LinkWithChildren";
 
 import Logo from "./images/logo.png";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const navLinks = [
   // {
@@ -127,9 +127,23 @@ const Header = () => {
     idx: null,
   });
 
+  const [isReached, setIsReached] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 110) {
+        setIsReached(true);
+      } else {
+        setIsReached(false);
+      }
+    });
+  }, []);
+
   return (
     <motion.header
-      className={`bg-white h-[72px] px-3 md:px-5 fixed top-0 w-full z-50`}
+      className={`bg-white h-[72px] px-3 md:px-5 fixed top-0 w-full z-50 ${
+        isReached ? "" : "pointer-events-none"
+      }`}
       style={{ opacity }}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center h-full">

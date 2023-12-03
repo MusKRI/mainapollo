@@ -21,159 +21,157 @@
     <style>
       .loader-box {
         display: block;
-        width: 258px;
-        height: 258px;
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-      }
-      .logo-container {
-        animation: colorChange 5s infinite;
-        -webkit-mask-image: url("./public/apollo-logo.png");
-        mask-image: url("./public/apollo-logo.png");
-        mask-repeat: no-repeat;
-        mask-size: cover; /* Or 'contain' based on your logo's aspect ratio */
-        background-repeat: no-repeat;
-        background-size: cover; /* Or 'contain' based on your logo's aspect ratio */
+        background-color: white;
       }
 
-      .logo-container img {
-        display: block; /* Ensures the img takes the full space of the container */
-        width: 100%; /* Adjust as needed */
-        height: auto; /* Maintains aspect ratio */
-        background-clip: text; /* Clips the background to the text */
-        color: transparent; /* Makes the text transparent */
+      .img-contain {
+        animation: colorChange 5s infinite;
+        width: 360px;
+        height: 90px;
+        position: relative;
+        background-clip: content-box;
+
+        & img {
+          position: absolute;
+          top: -4px;
+          left: 0px;
+          width: 100%;
+          height: 100px;
+        }
       }
 
       @keyframes colorChange {
         0% {
-          background-color: #ef5350;
+          background-color: #878787;
         }
         25% {
-          background-color: #ef5350;
+          background-color: #878787;
         }
         26% {
-          background-color: #4f759b;
+          background-color: #1169bf;
         }
         50% {
-          background-color: #4f759b;
+          background-color: #1169bf;
         }
         51% {
-          background-color: #55896f;
+          background-color: #2e3295;
         }
         75% {
-          background-color: #55896f;
+          background-color: #2e3295;
         }
         76% {
-          background-color: #fda543;
+          background-color: #039047;
         }
         100% {
-          background-color: #fda543;
+          background-color: #fd7a07;
         }
       }
       @-webkit-keyframes colorChange {
         0% {
-          background-color: #ef5350;
+          background-color: #878787;
         }
         25% {
-          background-color: #ef5350;
+          background-color: #878787;
         }
         26% {
-          background-color: #4f759b;
+          background-color: #1169bf;
         }
         50% {
-          background-color: #4f759b;
+          background-color: #1169bf;
         }
         51% {
-          background-color: #55896f;
+          background-color: #2e3295;
         }
         75% {
-          background-color: #55896f;
+          background-color: #2e3295;
         }
         76% {
-          background-color: #fda543;
+          background-color: #039047;
         }
         100% {
-          background-color: #fda543;
+          background-color: #fd7a07;
         }
       }
       @-moz-keyframes colorChange {
         0% {
-          background-color: #ef5350;
+          background-color: #878787;
         }
         25% {
-          background-color: #ef5350;
+          background-color: #878787;
         }
         26% {
-          background-color: #4f759b;
+          background-color: #1169bf;
         }
         50% {
-          background-color: #4f759b;
+          background-color: #1169bf;
         }
         51% {
-          background-color: #55896f;
+          background-color: #2e3295;
         }
         75% {
-          background-color: #55896f;
+          background-color: #2e3295;
         }
         76% {
-          background-color: #fda543;
+          background-color: #039047;
         }
         100% {
-          background-color: #fda543;
+          background-color: #fd7a07;
         }
       }
       @-o-keyframes colorChange {
         0% {
-          background-color: #ef5350;
+          background-color: #878787;
         }
         25% {
-          background-color: #ef5350;
+          background-color: #878787;
         }
         26% {
-          background-color: #4f759b;
+          background-color: #1169bf;
         }
         50% {
-          background-color: #4f759b;
+          background-color: #1169bf;
         }
         51% {
-          background-color: #55896f;
+          background-color: #2e3295;
         }
         75% {
-          background-color: #55896f;
+          background-color: #2e3295;
         }
         76% {
-          background-color: #fda543;
+          background-color: #039047;
         }
         100% {
-          background-color: #fda543;
+          background-color: #fd7a07;
         }
       }
       @-ms-keyframes colorChange {
         0% {
-          background-color: #ef5350;
+          background-color: #878787;
         }
         25% {
-          background-color: #ef5350;
+          background-color: #878787;
         }
         26% {
-          background-color: #4f759b;
+          background-color: #1169bf;
         }
         50% {
-          background-color: #4f759b;
+          background-color: #1169bf;
         }
         51% {
-          background-color: #55896f;
+          background-color: #2e3295;
         }
         75% {
-          background-color: #55896f;
+          background-color: #2e3295;
         }
         76% {
-          background-color: #fda543;
+          background-color: #039047;
         }
         100% {
-          background-color: #fda543;
+          background-color: #fd7a07;
         }
       }
     </style>
@@ -182,8 +180,8 @@
     <div id="root"></div>
     <!-- Loading Spinner Div -->
     <div class="loader-box">
-      <div class="logo-container">
-        <img src="/apollo-logo.png" alt="Logo" />
+      <div class="img-contain">
+        <img src="./logo2.png" alt="" />
       </div>
     </div>
     <script type="module" src="/src/main.jsx"></script>
