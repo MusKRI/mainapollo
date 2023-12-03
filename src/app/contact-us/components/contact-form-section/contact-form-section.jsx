@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import * as Select from "@radix-ui/react-select";
-import { ChevronDownIcon, ChevronUpIcon } from "@radix-ui/react-icons";
-import SelectItem from "./select-item";
+// import * as Select from "@radix-ui/react-select";
+// import { ChevronDownIcon, ChevronUpIcon } from "@radix-ui/react-icons";
+// import SelectItem from "./select-item";
 
 import "./contact-form-section.css";
 
@@ -36,15 +36,41 @@ const ContactFormSection = () => {
       <div className="flex flex-col lg:flex-row items-stretch lg:items-center">
         <div className="flex-1 flex flex-col items-center gap-8">
           <div className="flex flex-row items-center gap-8">
-            <div className="relative">
+            <motion.div
+              className="relative"
+              initial={{
+                x: -100,
+                opacity: 0,
+              }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 0.8,
+                },
+              }}
+            >
               <img
                 src={addressImg}
                 alt="Address"
                 className="max-w-full object-cover"
               />
-            </div>
+            </motion.div>
 
-            <div className="flex flex-col">
+            <motion.div
+              className="flex flex-col"
+              initial={{
+                x: 100,
+                opacity: 0,
+              }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 0.8,
+                },
+              }}
+            >
               <p className="text-[#002840] font-semibold">
                 Apollo Green Engery Limited
               </p>
@@ -55,44 +81,98 @@ const ContactFormSection = () => {
                 <br />
                 Haryana, India
               </p>
-            </div>
+            </motion.div>
           </div>
 
           <div className="flex flex-row items-center gap-14">
-            <div className="relative" style={{ marginLeft: "-100px" }}>
+            <motion.div
+              className="relative"
+              style={{ marginLeft: "-100px" }}
+              initial={{
+                x: -100,
+                opacity: 0,
+              }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 0.8,
+                },
+              }}
+            >
               <img
                 src={phoneImg}
                 alt="Phone"
                 className="max-w-full object-cover"
               />
-            </div>
+            </motion.div>
 
-            <div className="flex flex-col">
+            <motion.div
+              className="flex flex-col"
+              initial={{
+                x: 100,
+                opacity: 0,
+              }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 0.8,
+                },
+              }}
+            >
               <p className="text-[#002840] h-10 space-x-3 flex">
                 <span className="self-center">(91-124) 6740100</span>
               </p>
               <p className="text-[#002840] h-10 space-x-3 flex">
                 <span className="self-center">(91-124) 6740200</span>
               </p>
-            </div>
+            </motion.div>
           </div>
 
           <div className="flex flex-row items-center gap-8">
-            <div className="relative" style={{ marginLeft: "-100px" }}>
+            <motion.div
+              className="relative"
+              style={{ marginLeft: "-100px" }}
+              initial={{
+                x: 100,
+                opacity: 0,
+              }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 0.8,
+                },
+              }}
+            >
               <img
                 src={emailImg}
                 alt="Phone"
                 className="max-w-full object-cover"
               />
-            </div>
+            </motion.div>
 
-            <div className="flex flex-col">
+            <motion.div
+              className="flex flex-col"
+              initial={{
+                x: 100,
+                opacity: 0,
+              }}
+              whileInView={{
+                x: 0,
+                opacity: 1,
+                transition: {
+                  duration: 0.8,
+                },
+              }}
+            >
               <p className="text-[#002840]">
                 info@apolloindia.com
                 <br />
                 contact@apolloindia.com
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className="flex-1 flex flex-col items-center">
@@ -113,13 +193,21 @@ const ContactFormSection = () => {
                 I&apos;m interested in*
               </label> */}
               <select className="form__field dropdown" required="">
-                <option value="" disabled selected hidden>
+                <option value="" disabled selected hidden className="p-2">
                   Select an option
                 </option>
-                <option value="option1">Supply Chain</option>
-                <option value="option2">Fashion Page</option>
-                <option value="option3">Market Place</option>
-                <option value="option3">ProX</option>
+                <option value="option1" className="p-2">
+                  Supply Chain
+                </option>
+                <option value="option2" className="p-2">
+                  Fashion Page
+                </option>
+                <option value="option3" className="p-2">
+                  Market Place
+                </option>
+                <option value="option3" className="p-2">
+                  ProX
+                </option>
               </select>
               <label htmlFor="name" className="form__label">
                 I'm interested in*

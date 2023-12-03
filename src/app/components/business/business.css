@@ -1,0 +1,79 @@
+.business-hash .swiper-pagination {
+  bottom: 0px !important;
+  z-index: 20;
+}
+
+.business-hash .swiper-pagination-bullet {
+  border: 1px solid #5759a7;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: relative;
+  background: transparent;
+}
+
+.business-hash .swiper-pagination-bullet::after {
+  content: "";
+  position: absolute;
+  inset: 2.4px;
+  border: 1px solid #5759a7;
+  border-radius: 50%;
+  background: #5759a7;
+  opacity: 0;
+}
+
+.business-hash
+  .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+  opacity: 1;
+}
+
+.apollo-gradient {
+  background: rgb(88, 93, 164);
+  background: linear-gradient(
+    180deg,
+    rgba(88, 93, 164, 0.8) 0%,
+    rgba(76, 146, 102, 0.8) 100%
+  );
+}
+
+.apollo-gradient-prox {
+  background: rgb(17, 109, 198);
+  background: linear-gradient(
+    180deg,
+    rgba(17, 109, 198, 0.8) 0%,
+    rgba(103, 62, 159, 0.8) 100%
+  );
+}
+
+.apollo-gradient-marketplace {
+  background: rgb(46, 50, 149);
+  background: linear-gradient(
+    180deg,
+    rgba(46, 50, 149, 0.8) 0%,
+    rgba(46, 50, 147, 0.8) 100%
+  );
+}
+.apollo-gradient-greenenergy {
+  background: rgb(3, 144, 71);
+  background: linear-gradient(
+    180deg,
+    rgba(3, 144, 71, 0.8) 0%,
+    rgba(3, 144, 71, 0.8) 100%
+  );
+}
+.apollo-gradient-supplychain {
+  background: rgb(253, 122, 7);
+  background: linear-gradient(
+    180deg,
+    rgba(253, 122, 7, 0.8) 0%,
+    rgba(253, 122, 7, 0.8) 100%
+  );
+}
+.apollo-gradient-fashion {
+  background: rgb(135, 135, 135);
+  background: linear-gradient(
+    180deg,
+    rgba(135, 135, 135, 0.8) 0%,
+    rgba(135, 135, 135, 0.8) 100%
+  );
+}

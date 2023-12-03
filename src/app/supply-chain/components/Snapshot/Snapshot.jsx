@@ -2,11 +2,11 @@
 import { motion } from "framer-motion";
 
 // **** Local Imports *****
-import GImg1 from "../../../business/images/grid-img1.png";
-import GImg2 from "../../../business/images/grid-img2.png";
-import GImg3 from "../../../business/images/grid-img3.png";
-import GImg4 from "../../../business/images/grid-img4.png";
-import GImg5 from "../../../business/images/grid-img5.png";
+import GImg1 from "../../images/snapshot/s1.jpeg";
+import GImg2 from "../../images/snapshot/s2.png";
+import GImg3 from "../../images/snapshot/s3.jpg";
+import GImg4 from "../../images/snapshot/s4.jpeg";
+import GImg5 from "../../images/snapshot/s5.jpeg";
 
 // const imageVariants = {
 //   hidden: {
@@ -35,8 +35,54 @@ const Snapshot = () => {
           </h2>
         </div>
 
-        <div className="mt-10 business_snapshot_imgages">
-          <motion.div
+        <div className="mt-10">
+          <div className="flex flex-row gap-2 shrink">
+            <div className="flex flex-col gap-2">
+              <div className="flex flex-row gap-2">
+                <div className="relative">
+                  <img
+                    src={GImg2}
+                    alt="Image 1"
+                    className="w-[450px] h-full rounded-lg"
+                  />
+                </div>
+                <div className="relative">
+                  <img
+                    src={GImg3}
+                    alt="Image 1"
+                    className="w-[400px] h-full rounded-lg"
+                  />
+                </div>
+              </div>
+
+              <div className="relative">
+                <img
+                  src={GImg1}
+                  alt="Image 1"
+                  className="w-[860px] rounded-lg"
+                />
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-3 flex-1">
+              <div className="relative">
+                <img
+                  src={GImg4}
+                  alt="Image 1"
+                  className="w-[400px] h-full rounded-lg"
+                />
+              </div>
+
+              <div className="flex-1">
+                <img
+                  src={GImg5}
+                  alt="Image 1"
+                  className="w-[400px] h-full rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+          {/* <motion.div
             initial="hidden"
             whileHover="onHover"
             className="ga-1 relative"
@@ -70,7 +116,7 @@ const Snapshot = () => {
             className="ga-5 relative"
           >
             <img src={GImg5} alt="Image 1" />
-          </motion.div>
+          </motion.div> */}
         </div>
 
         {/* <div className="mt-10 px-4">

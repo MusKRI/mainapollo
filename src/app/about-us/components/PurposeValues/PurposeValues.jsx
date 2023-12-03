@@ -51,6 +51,7 @@ const pvVariants = {
 const PurposeValues = ({ data }) => {
   const [porv, setPorv] = useState({
     btn: "purpose",
+    title: "Our Purpose: Reason of our Existence",
     desc: "To deliver superior value to our customers, shareholders, employees, and community through a diversified global portfolio of emergent businesses that are driven by limitless innovation, collective wisdom, and ingenious models.",
   });
 
@@ -75,6 +76,8 @@ const PurposeValues = ({ data }) => {
           >
             {data?.title}
           </motion.h1>
+
+          <h2 className="text-xl font-semibold -mb-6">{porv?.title}</h2>
           <motion.p
             initial={{
               x: -100,
@@ -116,6 +119,7 @@ const PurposeValues = ({ data }) => {
               onClick={() =>
                 setPorv({
                   btn: "purpose",
+                  title: "Our Purpose: Reason of our Existence",
                   desc: "To deliver superior value to our customers, shareholders, employees, and community through a diversified global portfolio of emergent businesses that are driven by limitless innovation, collective wisdom, and ingenious models.",
                 })
               }
@@ -132,6 +136,7 @@ const PurposeValues = ({ data }) => {
               onClick={() => {
                 setPorv({
                   btn: "values",
+                  title: "Our Values: Heartbeat Of Our Existence",
                   desc: "Our values continue to direct the growth of businesses under Apollo Green Energy Limited.",
                 });
               }}

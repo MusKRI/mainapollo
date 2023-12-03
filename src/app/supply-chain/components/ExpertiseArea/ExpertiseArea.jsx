@@ -93,6 +93,7 @@ const ExpertiseArea = () => {
             modules={[Pagination, Autoplay]}
             pagination={{
               clickable: true,
+              dynamicBullets: true,
               renderCustom: function () {
                 return ReactDOMServer.renderToStaticMarkup(
                   <div className="border p-2 rounded-sm"></div>
@@ -118,7 +119,7 @@ const ExpertiseArea = () => {
                       <img
                         src={slide.slideImage}
                         alt="IMG1"
-                        className="rounded-lg -mt-12"
+                        className="rounded-lg -mt-12 h-[300px]"
                       />
                       <h4 className="text-xl text-center">
                         {slide.slideTitle}

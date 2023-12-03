@@ -29,7 +29,7 @@ const AboutUsBanner = ({ data }) => {
             <div className="h-1 w-10 bg-white" />
           </motion.div>
 
-          <div className="flex flex-col gap-5">
+          {/* <div className="flex flex-col gap-5">
             <motion.h1
               initial={{
                 y: -20,
@@ -62,7 +62,7 @@ const AboutUsBanner = ({ data }) => {
             >
               {data?.description}
             </motion.p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

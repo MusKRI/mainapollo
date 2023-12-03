@@ -1,4 +1,5 @@
 import { MoveDown } from "lucide-react";
+import { motion } from "framer-motion";
 
 import "./contact-banner.css";
 
@@ -17,9 +18,22 @@ const ContactBanner = ({ data }) => {
 
       <div className="absolute top-0 left-0 z-10 w-full h-full flex items-center p-10 md:p-20">
         <div className="flex flex-col gap-10">
-          <h1 className="text-5xl md:text-8xl font-bold text-white capitalize">
+          <motion.h1
+            initial={{
+              y: 20,
+              opacity: 0,
+            }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 0.8,
+              },
+            }}
+            className="text-5xl md:text-8xl font-bold text-white capitalize"
+          >
             {data?.bannerTitle}
-          </h1>
+          </motion.h1>
 
           <p className="text-white max-w-xl text-lg md:text-xl">
             {data?.bannerDescription}

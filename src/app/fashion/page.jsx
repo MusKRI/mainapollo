@@ -12,9 +12,9 @@ import { Counter } from "../../components/CounterMotion";
 import { cn } from "../../lib/utils";
 import Video from "./video/video.mp4";
 
-import ApproachCard1Img from "./images/slide1.jpeg";
+import ApproachCard1Img from "./images/slide1.jpg";
 import ApproachCard2Img from "./images/slide2.jpg";
-import ApproachCard3Img from "./images/slide3.jpeg";
+import ApproachCard3Img from "./images/slide3.jpg";
 import OutwearImg from "./images/slide4.jpg";
 import ShirtsImg from "./images/slide5.jpg";
 
@@ -398,7 +398,7 @@ export const Fashion = () => {
                             <img
                               src={item.img}
                               alt=""
-                              className="h-auto rounded-md"
+                              className="rounded-md h-[500px] w-full"
                             />
                             <div
                               className={cn(

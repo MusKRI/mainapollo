@@ -1,35 +1,40 @@
 // **** Library Imports *****
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import { useState } from "react";
 
 import TransportImage from "../../images/sectors/transport.png";
-import { useState } from "react";
+import sector1img from "../../images/sectors/sector1.jpeg";
+import sector2img from "../../images/sectors/sector2.jpeg";
+import sector3img from "../../images/sectors/sector3.jpeg";
+import sector4img from "../../images/sectors/sector4.jpeg";
+import sector5img from "../../images/sectors/sector5.jpeg";
 
 const keySectors = [
   {
     id: "1",
     pv: "Consumer Durables & High-Tech Industries",
-    image: TransportImage,
+    image: sector1img,
   },
   {
     id: "2",
     pv: "Automotive & Industrial Sector",
-    image: TransportImage,
+    image: sector2img,
   },
   {
     id: "3",
     pv: "E-Commerce & FMCG",
-    image: TransportImage,
+    image: sector3img,
   },
   {
     id: "4",
     pv: "Healthcare & Pharmaceuticals",
-    image: TransportImage,
+    image: sector4img,
   },
   {
     id: "5",
     pv: "Lifestyle & Retail",
-    image: TransportImage,
+    image: sector5img,
   },
 ];
 
@@ -50,25 +55,25 @@ const keySectors = [
 // };
 
 const Sectors = () => {
-  const images = [
-    "https://apollosupplychain.com/cms/wp-content/uploads/2023/03/hm_sld3.jpg",
-    "https://apollosupplychain.com/cms/wp-content/uploads/2023/03/hm_sld1.jpg",
-    "https://apollosupplychain.com/cms/wp-content/uploads/2023/03/hm_sld2.jpg",
-    "https://apollosupplychain.com/cms/wp-content/uploads/2023/03/hm_sld1.jpg",
-    "https://apollosupplychain.com/cms/wp-content/uploads/2023/03/hm_sld3.jpg",
-    "https://apollosupplychain.com/cms/wp-content/uploads/2023/03/hm_sld3.jpg",
-    "https://apollosupplychain.com/cms/wp-content/uploads/2023/03/hm_sld1.jpg",
-    "https://apollosupplychain.com/cms/wp-content/uploads/2023/03/hm_sld3.jpg",
-  ];
-  const [currentImage, setCurrentImage] = useState(images[0]);
+  // const images = [
+  //   "https://apollosupplychain.com/cms/wp-content/uploads/2023/03/hm_sld3.jpg",
+  //   "https://apollosupplychain.com/cms/wp-content/uploads/2023/03/hm_sld1.jpg",
+  //   "https://apollosupplychain.com/cms/wp-content/uploads/2023/03/hm_sld2.jpg",
+  //   "https://apollosupplychain.com/cms/wp-content/uploads/2023/03/hm_sld1.jpg",
+  //   "https://apollosupplychain.com/cms/wp-content/uploads/2023/03/hm_sld3.jpg",
+  //   "https://apollosupplychain.com/cms/wp-content/uploads/2023/03/hm_sld3.jpg",
+  //   "https://apollosupplychain.com/cms/wp-content/uploads/2023/03/hm_sld1.jpg",
+  //   "https://apollosupplychain.com/cms/wp-content/uploads/2023/03/hm_sld3.jpg",
+  // ];
+  const [currentImage, setCurrentImage] = useState(keySectors[0]?.image);
 
   const handleCurrentImage = (index) => {
-    setCurrentImage(images[index]);
+    setCurrentImage(keySectors[index]?.image);
   };
 
   return (
     <section className="relative px-3 md:px-5 bg-[#f6f6f6]">
-      <div className="max-w-7xl mx-auto flex flex-col gap-5 lg:flex-row lg:justify-between py-16 md:pt-32 md:pb-20">
+      <div className="max-w-7xl mx-auto flex flex-col gap-5 lg:flex-row lg:justify-between pt-16 md:pt-32">
         <div className="flex flex-col gap-7" style={{ width: "50%" }}>
           <motion.h2
             initial={{

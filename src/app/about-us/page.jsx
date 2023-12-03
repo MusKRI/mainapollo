@@ -30,9 +30,9 @@ const AboutUs = () => {
     // banner data
     bannerImage: AboutusBanner,
     bannerTag: "About Apolloindia",
-    bannerTitle: "",
-    bannerDescription:
-      "Witness our journey of building a cleaner and greener India harnessing the power of sun and the strength of the wind",
+    // bannerTitle: "",
+    // bannerDescription:
+    //   "Witness our journey of building a cleaner and greener India harnessing the power of sun and the strength of the wind",
 
     // who we are data
 
@@ -151,8 +151,6 @@ const AboutUs = () => {
         data={{
           image: aboutusData.bannerImage,
           tag: aboutusData.bannerTag,
-          title: aboutusData.bannerTitle,
-          description: aboutusData.bannerDescription,
         }}
       />
 

@@ -284,7 +284,7 @@ const Career = () => {
             <div className="container">
               <div className="row">
                 <div
-                  className="col-12 mt-3 flex items-center gap-2"
+                  className="col-12 mt-3 flex items-center gap-2 lg:ml-20"
                   style={{ fontWeight: "bold", fontSize: "25px" }}
                 >
                   <motion.p
@@ -300,7 +300,8 @@ const Career = () => {
                       },
                     }}
                   >
-                    Discover what makes Apollo
+                    Discover what makes Apollo Green Energy a Sought-after
+                    Employer:
                   </motion.p>
                   <motion.p
                     initial={{
@@ -315,11 +316,11 @@ const Career = () => {
                       },
                     }}
                   >
-                    Green Energy a Sought-after Employer:{" "}
+                    {" "}
                   </motion.p>
                 </div>
                 <div className="col-12 mb-5  mt-5">
-                  <div className="row items-start">
+                  <div className="row items-start justify-between">
                     <motion.div
                       initial={{
                         opacity: 0,
@@ -332,13 +333,12 @@ const Career = () => {
                           duration: 0.8,
                         },
                       }}
-                      className="col-lg-4 d-flex justify-content-center"
+                      className="col-lg-3 d-flex justify-content-center"
                     >
                       <img
                         src={d1}
                         alt=""
-                        style={{ maxWidth: "60%" }}
-                        className="rounded-md"
+                        className="rounded-md w-full"
                       />
                     </motion.div>
                     <motion.div
