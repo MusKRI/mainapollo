@@ -284,7 +284,7 @@ const Career = () => {
             <div className="container">
               <div className="row">
                 <div
-                  className="col-12 mt-3 flex items-center gap-2 lg:ml-20"
+                  className="col-12 mt-3 flex items-center gap-2"
                   style={{ fontWeight: "bold", fontSize: "25px" }}
                 >
                   <motion.p

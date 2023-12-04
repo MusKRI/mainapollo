@@ -155,18 +155,21 @@ const PurposeValues = ({ data }) => {
                     initial="hidden"
                     whileHover="onHover"
                     key={purposeValue.id}
-                    className="flex flex-row items-center justify-between p-4 relative first:border-t-2 border-b-2"
+                    className="flex flex-row items-center p-4 relative first:border-t-2 border-b-2 group"
                   >
                     <motion.div
                       variants={pvVariants}
                       className="absolute bg-white"
                     ></motion.div>
-                    <p className="text-xl basis-4/5 relative z-[2]">
+                    <p className="text-lg shrink-0 relative z-[2]">
+                      {purposeValue.pvTitle}
+                    </p>
+                    <p className="text-base basis-3/5 relative z-[2] ml-auto">
                       {purposeValue.pv}
                     </p>
 
                     <div className="border w-12 h-12 flex items-center justify-center rounded-full relative z-[2]">
-                      <ArrowRight className="w-6 h-6 text-body-text" />
+                      <ArrowRight className="w-6 h-6 text-body-text group-hover:scale-105 transition group-hover:text-[#2e3192]" />
                     </div>
                   </motion.div>
                 );

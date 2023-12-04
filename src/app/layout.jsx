@@ -30,12 +30,12 @@ const RootLayout = ({ children }) => {
 
   return (
     <>
-      <CustomCursor>
-        <Header />
-        {/* <div className="h-[72px]"/> */}
-        <div className="overflow-x-hidden">{children}</div>
-        <Footer />
-      </CustomCursor>
+      {/* <CustomCursor> */}
+      <Header />
+      {/* <div className="h-[72px]"/> */}
+      <div className="overflow-x-hidden">{children}</div>
+      <Footer />
+      {/* </CustomCursor> */}
     </>
   );
 };

@@ -19,7 +19,7 @@ export const MarketPlace = () => {
     bgImage: sImg,
 
     // Apollo Green Energy Limited
-    agTitle: "Apollo Green Energy Limited",
+    agTitle: "Apollo Marketplace",
     agDescription:
       "is a trading and distribution company with a widespread presence across over 45 countries. As a part of the esteemed business conglomerate, the Apollo Green Energy Limited, we are deeply committed to upholding the highest standards of ethics in all our business endeavors. With a dedicated team of over 1000+ employees, our core focus revolves around providing exceptional customer-centric solutions. With over three decades of experience, we have established ourselves as trusted partners in the global marketplace. Explore our offerings and discover how our rich legacy and global network can benefit your business.",
     agImage: "",
