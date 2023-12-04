@@ -41,7 +41,7 @@ const textVariants = {
 
 const HomeAboutUs = ({ data }) => {
   return (
-    <section className="relative px-3 md:px-5">
+    <section className="relative px-3 md:px-5 bg-gray-100">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row py-16 md:py-32">
         <div className="flex-1 flex flex-row gap-6">
           <div className="relative overflow-hidden rounded-lg min-h-full mt-[25px]">
@@ -139,21 +139,21 @@ const HomeAboutUs = ({ data }) => {
                 aria-label="Purpose and Values"
               >
                 <Tabs.Trigger
-                  className="bg-white pr-5 h-[45px] flex items-center justify-center text-[22px] font-medium leading-none select-none outline-none cursor-pointer data-[state=active]:text-green data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
+                  className="pr-5 h-[45px] flex items-center justify-center text-[22px] font-medium leading-none select-none outline-none cursor-pointer data-[state=active]:text-green data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
                   value="tab1"
                 >
                   {data.aboutSubHeading1}
                 </Tabs.Trigger>
 
                 <Tabs.Trigger
-                  className="bg-white px-5 h-[45px] flex items-center justify-center text-[22px] font-medium leading-none select-none outline-none cursor-pointer data-[state=active]:text-green data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
+                  className="px-5 h-[45px] flex items-center justify-center text-[22px] font-medium leading-none select-none outline-none cursor-pointer data-[state=active]:text-green data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
                   value="tab2"
                 >
                   {data.aboutSubHeading2}
                 </Tabs.Trigger>
               </Tabs.List>
 
-              <Tabs.Content className="grow bg-white outline-none" value="tab1">
+              <Tabs.Content className="grow outline-none" value="tab1">
                 <motion.p
                   initial={{
                     opacity: 0,
@@ -169,7 +169,7 @@ const HomeAboutUs = ({ data }) => {
                 </motion.p>
               </Tabs.Content>
 
-              <Tabs.Content className="grow bg-white outline-none" value="tab2">
+              <Tabs.Content className="grow outline-none" value="tab2">
                 <motion.p
                   initial={{
                     opacity: 0,
