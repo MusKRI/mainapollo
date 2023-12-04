@@ -136,7 +136,7 @@ const Snapshot = () => {
 					</div>
 				</div> */}
 
-        <div className="col-12 mb-5 mt-3">
+        <div className="col-12 mt-3">
           <div className="container">
             <div className="row justify-center">
               <div className="col-12 mt-5">
@@ -157,7 +157,7 @@ const Snapshot = () => {
                 >
                   Interact with us
                 </motion.div>
-                <motion.div
+                {/* <motion.div
                   initial={{
                     x: 100,
                     opacity: 0,
@@ -181,7 +181,7 @@ const Snapshot = () => {
                     libero odio odit exercitationem eligendi quod atque suscipit
                     amet, tempore, inventore harum.
                   </div>
-                </motion.div>
+                </motion.div> */}
                 <div className="row mt-4">
                   <div className="col-12">
                     <motion.div
