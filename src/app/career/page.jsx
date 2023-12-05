@@ -5,7 +5,7 @@ import CareerBanner from "./components/career-banner/career-banner";
 import BannerImg from "./images/banner.jpeg";
 
 import sq2 from "./images/life.jpeg";
-import ForceofFive from "./images/forceoffive2.jpeg";
+import ForceofFive from "./images/forceoffive3.jpeg";
 import d1 from "./images/d1.png";
 import d2 from "./images/d2.png";
 import d3 from "./images/d3.png";
@@ -335,11 +335,7 @@ const Career = () => {
                       }}
                       className="col-lg-3 d-flex justify-content-center"
                     >
-                      <img
-                        src={d1}
-                        alt=""
-                        className="rounded-md w-full"
-                      />
+                      <img src={d1} alt="" className="rounded-md w-full" />
                     </motion.div>
                     <motion.div
                       initial={{

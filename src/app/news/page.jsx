@@ -251,8 +251,6 @@ const NewsPage = () => {
       />
 
       <NewsHeroCards data={newspageData.newsHeroCardsData} />
-
-      <NewsNewsletter />
     </div>
   );
 };

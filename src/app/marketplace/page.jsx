@@ -241,7 +241,7 @@ export const MarketPlace = () => {
         </div>
       </div>
 
-      <div className="border-t border-b flex flex-row flex-wrap [&>div]:flex-1 [&>div]:h-[500px]">
+      <div className="border-t border-b flex flex-row flex-wrap [&>div]:flex-1 [&>div]:h-[440px]">
         <div className="p-4 flex flex-col justify-start h-full border-r">
           <motion.div
             initial={{

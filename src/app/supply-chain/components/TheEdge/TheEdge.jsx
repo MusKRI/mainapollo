@@ -75,6 +75,7 @@ const TheEdge = () => {
         <div className="flex flex-col md:flex-row">
           <div className="flex-1 flex flex-row justify-center gap-6">
             <motion.div
+              key={`${currentImage}`}
               initial={{
                 x: -100,
                 opacity: 0,

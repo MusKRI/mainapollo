@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { useState } from "react";
 
-import TransportImage from "../../images/sectors/transport.png";
-import sector1img from "../../images/sectors/sector1.jpeg";
-import sector2img from "../../images/sectors/sector2.jpeg";
-import sector3img from "../../images/sectors/sector3.jpeg";
-import sector4img from "../../images/sectors/sector4.jpeg";
-import sector5img from "../../images/sectors/sector5.jpeg";
+// import TransportImage from "../../images/sectors/transport.png";
+import sector1img from "../../images/sectors/sector1.jpg";
+import sector2img from "../../images/sectors/sector2.jpg";
+import sector3img from "../../images/sectors/sector3.png";
+import sector4img from "../../images/sectors/sector4.jpg";
+import sector5img from "../../images/sectors/sector5.jpg";
 
 const keySectors = [
   {
@@ -109,6 +109,7 @@ const Sectors = () => {
           </motion.h1>
 
           <motion.div
+            key={`${currentImage}`}
             initial={{
               x: -100,
               opacity: 0,
@@ -125,7 +126,7 @@ const Sectors = () => {
             <img
               alt="Transport"
               src={currentImage}
-              className="mix-blend-multiply"
+              className="mix-blend-multiply rounded-lg"
               style={{ maxWidth: "90%" }}
             />
           </motion.div>
@@ -159,7 +160,7 @@ const Sectors = () => {
                     whileHover="onHover"
                     key={keySector.id}
                     className="flex flex-row items-center justify-between p-4 relative first:border-t-2 border-b-2 group"
-                    onClick={() => handleCurrentImage(index)}
+                    onMouseEnter={() => handleCurrentImage(index)}
                   >
                     {/* <motion.div
                       variants={pvVariants}

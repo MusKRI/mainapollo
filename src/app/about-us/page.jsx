@@ -29,7 +29,7 @@ const AboutUs = () => {
   const aboutusData = {
     // banner data
     bannerImage: AboutusBanner,
-    bannerTag: "About Apolloindia",
+    bannerTag: "Apollo",
     // bannerTitle: "",
     // bannerDescription:
     //   "Witness our journey of building a cleaner and greener India harnessing the power of sun and the strength of the wind",

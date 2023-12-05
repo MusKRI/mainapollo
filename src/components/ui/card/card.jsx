@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Card = ({ data }) => {
   return (
-    <Link to={data.cardSlug}>
+    <Link to={data.cardSlug} target="_blank">
       <div className="w-[370px] rounded-xl bg-white group shadow-md h-full">
         <div className="relative max-w-full">
           <img src={data.cardImage} alt="Blog" className="" />
@@ -24,6 +24,7 @@ const Card = ({ data }) => {
 
           <div className="px-4 relative flex items-center">
             <Link
+              target="_blank"
               to={data.cardSlug}
               className="p-1 rounded-full group-hover:bg-[#2e3192] transition delay-75"
             >

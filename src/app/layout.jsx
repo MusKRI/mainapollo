@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 // **** Local Imports ****
-import CustomCursor from "../components/CustomCursor/CustomCursor";
+// import CustomCursor from "../components/CustomCursor/CustomCursor";
 
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";

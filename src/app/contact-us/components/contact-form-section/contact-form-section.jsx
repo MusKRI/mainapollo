@@ -32,7 +32,7 @@ const ContactFormSection = () => {
   const MotionArrowRight = motion(BsArrowRight);
 
   return (
-    <section className="relative py-16 md:py-32">
+    <section className="relative py-16">
       <div className="flex flex-col lg:flex-row items-stretch lg:items-center">
         <div className="flex-1 flex flex-col items-center gap-8">
           <div className="flex flex-row items-center gap-8">

@@ -1,6 +1,7 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+import { motion } from "framer-motion";
 
 // Import Swiper styles
 import "swiper/css";
@@ -219,9 +220,22 @@ export const Fashion = () => {
             </div> */}
 
                 <div className="flex flex-col gap-5">
-                  <h1 className="text-white text-5xl lg:text-7xl font-semibold">
+                  <motion.h1
+                    initial={{
+                      y: -20,
+                      opacity: 0,
+                    }}
+                    whileInView={{
+                      y: 0,
+                      opacity: 1,
+                      transition: {
+                        duration: 0.8,
+                      },
+                    }}
+                    className="text-white text-5xl lg:text-7xl font-semibold"
+                  >
                     Fashion Made Responsibly
-                  </h1>
+                  </motion.h1>
 
                   {/* <p className="text-white max-w-md text-lg ml-4 lg:ml-20">
                 {data.bannerDescription}
@@ -236,7 +250,20 @@ export const Fashion = () => {
           <div className="container">
             <div className="row max-w-[1024px] mx-auto">
               <div className="col-md-4 d-flex justify-content-center align-items-center">
-                <div className="row">
+                <motion.div
+                  initial={{
+                    x: -100,
+                    opacity: 0,
+                  }}
+                  whileInView={{
+                    x: 0,
+                    opacity: 1,
+                    transition: {
+                      duration: 0.8,
+                    },
+                  }}
+                  className="row"
+                >
                   <div
                     className="col-12"
                     style={{ fontSize: "40px", fontWeight: "bold" }}
@@ -255,11 +282,24 @@ export const Fashion = () => {
                   <div className="col-md-6">
                     {fashionData?.secondSectionSubtitle2}
                   </div>
-                </div>
+                </motion.div>
               </div>
-              <div className="col-md-6 mt-3">
+              <motion.div
+                initial={{
+                  x: 100,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.8,
+                  },
+                }}
+                className="col-md-6 mt-3"
+              >
                 {fashionData?.secondSectionDescription}
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
@@ -283,7 +323,18 @@ export const Fashion = () => {
                   <div className="col-10">
                     <div className="row">
                       <div className="col-lg-12 mt-5">
-                        <p
+                        <motion.p
+                          initial={{
+                            x: -100,
+                            opacity: 0,
+                          }}
+                          whileInView={{
+                            x: 0,
+                            opacity: 1,
+                            transition: {
+                              duration: 0.8,
+                            },
+                          }}
                           style={{
                             fontWeight: "bold",
                             fontSize: "60px",
@@ -291,16 +342,42 @@ export const Fashion = () => {
                           className="capitalize"
                         >
                           {fashionData?.aoeTitle}
-                        </p>
+                        </motion.p>
                       </div>
                     </div>
                     <div className="row">
                       <div className="col-md-6">
                         <div className="row">
-                          <div className="col-lg-12 text-xl">
+                          <motion.div
+                            initial={{
+                              x: -100,
+                              opacity: 0,
+                            }}
+                            whileInView={{
+                              x: 0,
+                              opacity: 1,
+                              transition: {
+                                duration: 0.8,
+                              },
+                            }}
+                            className="col-lg-12 text-xl"
+                          >
                             {fashionData?.aoeDescription}
-                          </div>
-                          <div className="col-lg-9">
+                          </motion.div>
+                          <motion.div
+                            initial={{
+                              y: 20,
+                              opacity: 0,
+                            }}
+                            whileInView={{
+                              y: 0,
+                              opacity: 1,
+                              transition: {
+                                duration: 0.8,
+                              },
+                            }}
+                            className="col-lg-9"
+                          >
                             <div className="row mt-2">
                               <div
                                 className="col-4 flex items-center"
@@ -333,8 +410,21 @@ export const Fashion = () => {
                                 />
                               </div>
                             </div>
-                          </div>
-                          <div className="col-lg-9 mb-5">
+                          </motion.div>
+                          <motion.div
+                            initial={{
+                              y: 20,
+                              opacity: 0,
+                            }}
+                            whileInView={{
+                              y: 0,
+                              opacity: 1,
+                              transition: {
+                                duration: 0.8,
+                              },
+                            }}
+                            className="col-lg-9 mb-5"
+                          >
                             <div className="row">
                               <div className="col-4">
                                 {fashionData?.aoeTag1Title}
@@ -346,7 +436,7 @@ export const Fashion = () => {
                                 {fashionData?.aoeTag3Title}
                               </div>
                             </div>
-                          </div>
+                          </motion.div>
                         </div>
                       </div>
                     </div>
@@ -360,12 +450,23 @@ export const Fashion = () => {
         <div className="col-12 mt-4 !py-20">
           <div className="container">
             <div className="row">
-              <div
+              <motion.div
+                initial={{
+                  x: -100,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.8,
+                  },
+                }}
                 className="col-12 mb-4"
                 style={{ fontWeight: "bold", fontSize: "40px" }}
               >
                 A Deep-Dive Into Our Priorities
-              </div>
+              </motion.div>
               <Swiper
                 spaceBetween={10}
                 slidesPerView={1}
@@ -430,12 +531,23 @@ export const Fashion = () => {
         >
           <div className="row ml-lg-4">
             <div className="col-lg-9 ">
-              <p
+              <motion.p
+                initial={{
+                  x: -100,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  x: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.8,
+                  },
+                }}
                 style={{ fontWeight: "bold", fontSize: "40px" }}
                 className="pl-5 ml-5"
               >
                 Forge Connection With Excellence
-              </p>
+              </motion.p>
             </div>
           </div>
           <div className="row">
@@ -469,13 +581,40 @@ export const Fashion = () => {
                 className="col-lg-6"
                 style={{ fontWeight: "bold", fontSize: "50px" }}
               >
-                <p className="d-flex justify-content-center text-[1ch] lg:text-[2.3ch]">
+                <motion.p
+                  initial={{
+                    y: -20,
+                    opacity: 0,
+                  }}
+                  whileInView={{
+                    y: 0,
+                    opacity: 1,
+                    transition: {
+                      duration: 0.8,
+                    },
+                  }}
+                  className="d-flex justify-content-center text-[1ch] lg:text-[2.3ch]"
+                >
                   {fashionData?.preferChoiceDataHeading}
-                </p>
+                </motion.p>
               </div>
-              <div className="col-lg-7 mb-6" style={{ textAlign: "center" }}>
+              <motion.div
+                initial={{
+                  y: -20,
+                  opacity: 0,
+                }}
+                whileInView={{
+                  y: 0,
+                  opacity: 1,
+                  transition: {
+                    duration: 0.8,
+                  },
+                }}
+                className="col-lg-7 mb-6"
+                style={{ textAlign: "center" }}
+              >
                 {fashionData?.preferChoiceDataDescription}
-              </div>
+              </motion.div>
               <div className="flex flex-row justify-center gap-6 flex-wrap items-center">
                 <div className="relative w-[150px] border shadow-sm rounded-md">
                   <img alt="img" src={Rec1} className="w-full" />
@@ -531,13 +670,56 @@ export const Fashion = () => {
               <div className="col-8">
                 <div className="row">
                   <div className="col-6">
-                    <img src={fashionData?.snapshotImg1} alt="" />
+                    <motion.img
+                      initial={{
+                        y: -20,
+                        x: -20,
+                        opacity: 0,
+                      }}
+                      whileInView={{
+                        y: 0,
+                        x: 0,
+                        opacity: 1,
+                        transition: {
+                          duration: 0.8,
+                        },
+                      }}
+                      src={fashionData?.snapshotImg1}
+                      alt=""
+                    />
                   </div>
                   <div className="col-6">
-                    <img src={fashionData?.snapshotImg2} alt="" />
+                    <motion.img
+                      initial={{
+                        y: -20,
+                        opacity: 0,
+                      }}
+                      whileInView={{
+                        y: 0,
+                        opacity: 1,
+                        transition: {
+                          duration: 0.8,
+                        },
+                      }}
+                      src={fashionData?.snapshotImg2}
+                      alt=""
+                    />
                   </div>
                   <div className="col-12  mt-3">
-                    <img
+                    <motion.img
+                      initial={{
+                        y: -20,
+                        x: 20,
+                        opacity: 0,
+                      }}
+                      whileInView={{
+                        y: 0,
+                        x: 0,
+                        opacity: 1,
+                        transition: {
+                          duration: 0.8,
+                        },
+                      }}
                       src={fashionData?.snapshotImg4}
                       alt=""
                       style={{ minWidth: "100%" }}
@@ -547,10 +729,38 @@ export const Fashion = () => {
               </div>
               <div className="col-4">
                 <div className="col-12">
-                  <img src={fashionData?.snapshotImg3} alt="" />
+                  <motion.img
+                    initial={{
+                      x: -100,
+                      opacity: 0,
+                    }}
+                    whileInView={{
+                      x: 0,
+                      opacity: 1,
+                      transition: {
+                        duration: 0.8,
+                      },
+                    }}
+                    src={fashionData?.snapshotImg3}
+                    alt=""
+                  />
                 </div>
                 <div className="col-12 mt-3">
-                  <img src={fashionData?.snapshotImg5} alt="" />
+                  <motion.img
+                    initial={{
+                      x: 100,
+                      opacity: 0,
+                    }}
+                    whileInView={{
+                      x: 0,
+                      opacity: 1,
+                      transition: {
+                        duration: 0.8,
+                      },
+                    }}
+                    src={fashionData?.snapshotImg5}
+                    alt=""
+                  />
                 </div>
               </div>
             </div>
@@ -568,7 +778,7 @@ export const Fashion = () => {
                   Interact with us
                 </div>
                 <div className="row">
-                  <div className="col-lg-6 mx-auto">
+                  <div className="col-lg-6 mx-auto text-justify">
                     When you choose Apollo Fashion, you opt for a legacy-rich,
                     globally connected partner that prioritizes your success.
                     Discover the difference of international trade and
@@ -576,11 +786,11 @@ export const Fashion = () => {
                     choice – it’s the standard.
                   </div>
                 </div>
-                <div className="row mt-4">
-                  <p style={{ fontWeight: "bold" }}>Address</p>
+                <div className="row mt-4 max-w-4xl text-center mx-auto">
                   <div className="col-12">
                     <div className="row justify-center">
                       <div className="col-4">
+                        <p style={{ fontWeight: "bold" }}>Address</p>
                         <p style={{ fontWeight: "bold" }}>Footwear Division</p>
                         <p>C-30, Sector-58, NOIDA-201301, India</p>
                       </div>
@@ -594,7 +804,7 @@ export const Fashion = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-12">
+                  <div className="col-12 mt-4">
                     <div className="row">
                       <div className="col-8">
                         <div className="row">

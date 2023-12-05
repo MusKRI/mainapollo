@@ -178,7 +178,7 @@ const ScIdentity = () => {
 
         <div className="flex flex-col lg:flex-row md:justify-between md:items-center gap-4">
           <div className="flex-1 flex flex-row gap-6">
-            <div className="w-20 md:w-28 h-20 md:h-28 flex items-center justify-center rounded-2xl bg-[#ffe8e8]">
+            <div className="w-20 md:w-28 h-20 md:h-28 flex items-center justify-center rounded-2xl bg-[#010101]">
               <img src={BadgeSvg} alt="Badge" />
             </div>
             <div className="flex flex-col justify-center">
@@ -191,7 +191,7 @@ const ScIdentity = () => {
             </div>
           </div>
           <div className="flex-1 flex flex-row gap-6">
-            <div className="w-20 md:w-28 h-20 md:h-28 flex items-center justify-center rounded-2xl bg-[#e2dfff]">
+            <div className="w-20 md:w-28 h-20 md:h-28 flex items-center justify-center rounded-2xl bg-[#010101]">
               <img src={FileDocSvg} alt="Badge" />
             </div>
             <div className="flex flex-col justify-center">
@@ -202,7 +202,7 @@ const ScIdentity = () => {
             </div>
           </div>
           <div className="flex-1 flex flex-row gap-6">
-            <div className="w-20 md:w-28 h-20 md:h-28 flex items-center justify-center rounded-2xl bg-[#d3ffcb]">
+            <div className="w-20 md:w-28 h-20 md:h-28 flex items-center justify-center rounded-2xl bg-[#010101]">
               <img src={TrophySvg} alt="Badge" />
             </div>
             <div className="flex flex-col justify-center">

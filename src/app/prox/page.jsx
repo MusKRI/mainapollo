@@ -187,7 +187,7 @@ const ProXPage = () => {
 
       {/* Prox Key section */}
       <section className=" bg-white relative px-3 md:px-5">
-        <div className="max-w-7xl mx-auto py-16 md:py-32 space-y-4">
+        <div className="max-w-7xl mx-auto py-16 space-y-4">
           <motion.h1
             initial={{
               opacity: 0,
@@ -252,7 +252,7 @@ const ProXPage = () => {
 
       {/* Broad section */}
       <section className=" bg-[#f9f9f9] relative px-3 md:px-5">
-        <div className="max-w-7xl mx-auto py-16 md:py-32 space-y-4">
+        <div className="max-w-7xl mx-auto py-16 space-y-4">
           <h1 className="text-3xl lg:text-5xl font-semibold">
             {proxData?.pbroadTitle}
           </h1>
@@ -281,120 +281,121 @@ const ProXPage = () => {
 
       {/* Unique Edge Section */}
       <section className=" bg-[#333694] text-white relative px-3 md:px-5">
-        <div className="max-w-7xl mx-auto flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-center py-16 md:py-32">
-          <motion.div
+        <div className="max-w-7xl mx-auto flex flex-col gap-4 py-16 pb-32">
+          <motion.h1
             initial={{
-              x: -100,
               opacity: 0,
+              y: 10,
             }}
             whileInView={{
-              x: 0,
               opacity: 1,
+              y: 0,
               transition: {
                 duration: 0.8,
               },
             }}
-            className="relative flex justify-center w-96 shrink-0"
+            className="text-3xl lg:text-5xl font-bold"
           >
-            <img
-              src={proxData?.pUEImage}
-              alt=""
-              className="rounded-md -mb-20"
-            />
-          </motion.div>
-          <div className="flex flex-col gap-4 -mt-32">
-            <motion.h1
-              initial={{
-                opacity: 0,
-                y: 10,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className="text-3xl lg:text-5xl font-bold"
-            >
-              {proxData?.pUETitle}
-            </motion.h1>
-
-            <motion.p
-              initial={{
-                opacity: 0,
-                x: 50,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className=""
-            >
-              {proxData?.pUEDesc1}
-            </motion.p>
-            <motion.p
-              initial={{
-                opacity: 0,
-                x: 50,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className=""
-            >
-              {proxData?.pUEDesc2}
-            </motion.p>
-
+            {proxData?.pUETitle}
+          </motion.h1>
+          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4">
             <motion.div
-              initial={{}}
+              initial={{
+                x: -100,
+                opacity: 0,
+              }}
               whileInView={{
-                opacity: 1,
                 x: 0,
+                opacity: 1,
                 transition: {
-                  when: "beforeChildren",
-                  staggerChildren: 0.4,
+                  duration: 0.8,
                 },
               }}
-              className="flex flex-col gap-2"
+              className="relative flex justify-center w-96 shrink-0"
             >
-              {proxData?.pUEPoints?.map((point, idx) => {
-                return (
-                  <motion.div
-                    initial={{
-                      opacity: 0,
-                      x: 50,
-                    }}
-                    whileInView={{
-                      opacity: 1,
-                      x: 0,
-                      transition: {
-                        duration: 0.8,
-                      },
-                    }}
-                    key={idx}
-                    className="flex flex-row items-center gap-2"
-                  >
-                    <span className="border-2 w-3 h-3 rounded-full" />
-                    <p>{point}</p>
-                  </motion.div>
-                );
-              })}
+              <img
+                src={proxData?.pUEImage}
+                alt=""
+                className="rounded-md -mb-20"
+              />
             </motion.div>
+            <div className="flex flex-col gap-4">
+              <motion.p
+                initial={{
+                  opacity: 0,
+                  x: 50,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  transition: {
+                    duration: 0.8,
+                  },
+                }}
+                className=""
+              >
+                {proxData?.pUEDesc1}
+              </motion.p>
+              <motion.p
+                initial={{
+                  opacity: 0,
+                  x: 50,
+                }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  transition: {
+                    duration: 0.8,
+                  },
+                }}
+                className=""
+              >
+                {proxData?.pUEDesc2}
+              </motion.p>
+
+              <motion.div
+                initial={{}}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  transition: {
+                    when: "beforeChildren",
+                    staggerChildren: 0.4,
+                  },
+                }}
+                className="flex flex-col gap-2"
+              >
+                {proxData?.pUEPoints?.map((point, idx) => {
+                  return (
+                    <motion.div
+                      initial={{
+                        opacity: 0,
+                        x: 50,
+                      }}
+                      whileInView={{
+                        opacity: 1,
+                        x: 0,
+                        transition: {
+                          duration: 0.8,
+                        },
+                      }}
+                      key={idx}
+                      className="flex flex-row items-center gap-2"
+                    >
+                      <span className="border-2 w-3 h-3 rounded-full" />
+                      <p>{point}</p>
+                    </motion.div>
+                  );
+                })}
+              </motion.div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* snapshot */}
       <section className="relative px-3 md:px-5 bg-[#f6f7fb]">
-        <div className="max-w-7xl mx-auto flex flex-col gap-5 py-16 md:py-32">
+        <div className="max-w-7xl mx-auto flex flex-col gap-5 py-16">
           <div className="flex flex-col gap-7">
             <h2 className="relative leading-snug text-3xl text-main-text after:absolute after:border-2 after:left-0 after:-bottom-4 after:w-10 after:border-main-text">
               Snapshot
