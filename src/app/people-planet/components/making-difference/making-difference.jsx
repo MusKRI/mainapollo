@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const MakingDifference = ({ data }) => {
   return (
-    <div className="relative py-4 md:py-20">
+    <div className="relative !py-4 md:!py-20">
       <div className="px-8 flex flex-col md:flex-row gap-10">
         <div className="flex-1 flex justify-end relative">
           <motion.h1

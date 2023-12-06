@@ -104,7 +104,7 @@ const Career = () => {
       <div className="container-fluid">
         <div className="row">
           <div
-            className="col-12 py-20"
+            className="col-12 pb-20"
             style={{ backgroundColor: "#333694", color: "white" }}
           >
             <div className="row flex flex-row items-center justify-center gap-4">
@@ -220,7 +220,7 @@ const Career = () => {
                     Force of Five
                   </motion.h1>
                 </div>
-                <div className="col-lg-4 mt-3">
+                <div className="col-lg-5 mt-3">
                   <motion.div
                     initial={{
                       opacity: 0,
@@ -238,7 +238,7 @@ const Career = () => {
                     <img src={ForceofFive} alt="" className="rounded-md" />
                   </motion.div>
                 </div>
-                <div className="col-lg-8">
+                <div className="col-lg-7">
                   <div className="row">
                     {ForceFive.map((self, index) => {
                       return (
@@ -249,7 +249,7 @@ const Career = () => {
                               borderLeft: "1px solid white",
                               borderRight: "1px solid white",
                               borderRadius: "0px",
-                              padding: "20px 2px",
+                              padding: "10px 2px",
                             }}
                           >
                             <div className="row">
@@ -284,7 +284,7 @@ const Career = () => {
             <div className="container">
               <div className="row">
                 <div
-                  className="col-12 mt-3 flex items-center gap-2"
+                  className="col-12 mt-3 flex items-center gap-2 text-center"
                   style={{ fontWeight: "bold", fontSize: "25px" }}
                 >
                   <motion.p
@@ -299,6 +299,7 @@ const Career = () => {
                         duration: 0.8,
                       },
                     }}
+                    className="text-center w-full"
                   >
                     Discover what makes Apollo Green Energy a Sought-after
                     Employer:
@@ -320,7 +321,7 @@ const Career = () => {
                   </motion.p>
                 </div>
                 <div className="col-12 mb-5  mt-5">
-                  <div className="row items-start justify-between">
+                  <div className="row items-start justify-around">
                     <motion.div
                       initial={{
                         opacity: 0,
@@ -370,9 +371,9 @@ const Career = () => {
                           duration: 0.8,
                         },
                       }}
-                      className="col-lg-4 d-flex justify-content-space-around align=items-start"
+                      className="col-lg-3 d-flex justify-content-space-around items-center"
                     >
-                      <img src={d2} alt="" className="rounded-md" />
+                      <img src={d2} alt="" className="rounded-md h-full w-full" />
                     </motion.div>
                   </div>
                 </div>
@@ -567,7 +568,7 @@ const Career = () => {
           <div className="col-12 mt-5 py-5">
             <div className="row">
               <div
-                className="col-12 d-flex justify-content-center"
+                className="col-12 d-flex justify-content-center gap-3"
                 style={{ fontSize: "55px" }}
               >
                 <span style={{ fontWeight: "bold", color: "black" }}>

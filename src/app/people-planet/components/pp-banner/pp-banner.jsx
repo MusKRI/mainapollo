@@ -14,7 +14,7 @@ const PeoplePlanetBanner = ({ data }) => {
             <div className="h-1 w-10 bg-white" />
           </div>
 
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col justify-end gap-5 h-full">
             <h1 className="text-white text-5xl lg:text-7xl font-semibold">
               {data.heading}
             </h1>

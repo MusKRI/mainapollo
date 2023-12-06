@@ -6,13 +6,13 @@ import TabSection from "./components/tab-section/tab-section";
 
 // pp hero images
 import Banner from "./images/banner.png";
-import sh1 from "./images/sh-1.png";
-import sh2 from "./images/sh-2.png";
+import sh1 from "./images/sh1.jpeg";
+import sh2 from "./images/sh2.jpg";
 import sh3 from "./images/sh-3.png";
-import sh4 from "./images/sh-4.png";
+import sh4 from "./images/sh4.jpg";
 
 // tab section images
-import TabImage from "./images/4.png";
+// import TabImage from "./images/4.png";
 import educationImg from "./images/education.jpg";
 import envImg from "./images/environment.jpg";
 import healthcareImg from "./images/Healthcare.jpeg";
@@ -104,9 +104,13 @@ const PeoplePlanet = () => {
                   duration: 0.8,
                 },
               }}
-              className="relative"
+              className="relative w-[236px]"
             >
-              <img src={sh1} alt="" />
+              <img
+                src={sh1}
+                alt=""
+                className="rounded-md object-cover h-full"
+              />
             </motion.div>
             <motion.div
               initial={{
@@ -122,9 +126,13 @@ const PeoplePlanet = () => {
                   duration: 0.8,
                 },
               }}
-              className="relative"
+              className="relative w-[236px]"
             >
-              <img src={sh2} alt="" />
+              <img
+                src={sh2}
+                alt=""
+                className="rounded-md object-cover h-full"
+              />
             </motion.div>
             <motion.div
               initial={{
@@ -140,9 +148,13 @@ const PeoplePlanet = () => {
                   duration: 0.8,
                 },
               }}
-              className="relative"
+              className="relative w-[236px]"
             >
-              <img src={sh3} alt="" />
+              <img
+                src={sh3}
+                alt=""
+                className="rounded-md object-cover h-full"
+              />
             </motion.div>
             <motion.div
               initial={{
@@ -158,9 +170,13 @@ const PeoplePlanet = () => {
                   duration: 0.8,
                 },
               }}
-              className="relative"
+              className="relative w-[236px]"
             >
-              <img src={sh4} alt="" />
+              <img
+                src={sh4}
+                alt=""
+                className="rounded-md object-cover h-full"
+              />
             </motion.div>
           </div>
           <div className="flex-1 flex flex-col gap-4 self-center">

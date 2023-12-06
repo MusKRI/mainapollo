@@ -1,14 +1,14 @@
 // **** Library Imports ****
 import { BsSearch } from "react-icons/bs";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 // **** Local Imports ****
 import LinkWithoutChildren from "./components/LinkWithoutChildren";
 import LinkWithChildren from "./components/LinkWithChildren";
 
 import Logo from "./images/logo.png";
-import { useEffect, useRef, useState } from "react";
 
 const navLinks = [
   // {
@@ -116,6 +116,8 @@ const navLinks = [
 ];
 
 const Header = () => {
+  const navigate = useNavigate();
+
   const { scrollY } = useScroll();
 
   const opacity = useTransform(scrollY, [0, 100], [0, 1]);
@@ -329,6 +331,7 @@ const Header = () => {
             whileTap={{
               scale: 0.96,
             }}
+            onClick={() => navigate("/contact")}
             className="px-4 py-1 bg-[#2e3192] rounded-sm text-white"
           >
             Enquire now

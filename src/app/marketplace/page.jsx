@@ -10,6 +10,13 @@ import icon3 from "./images/icons/food-and-beverages.svg";
 import icon4 from "./images/icons/consumer-goods.svg";
 import icon5 from "./images/icons/agriculture-tools-and-machinery.svg";
 import icon6 from "./images/icons/electrical-products.svg";
+
+import globalNetworkSvg from "./images/icons/global-network.svg";
+import holisticSolutionSvg from "./images/icons/holistic-solutions.svg";
+import qualityCommitmentSvg from "./images/icons/quality-commitment.svg";
+import customizedCollaborationSvg from "./images/icons/customized-collaborations.svg";
+import innovationCentricSvg from "./images/icons/innovation-centric.svg";
+
 import sImg from "./images/fb.jpg";
 
 export const MarketPlace = () => {
@@ -257,7 +264,7 @@ export const MarketPlace = () => {
             }}
             className="relative pt-16"
           >
-            <img src={icon4} alt="" className="h-20" />
+            <img src={globalNetworkSvg} alt="" className="h-20" />
           </motion.div>
           <motion.h2
             initial={{
@@ -309,7 +316,7 @@ export const MarketPlace = () => {
             }}
             className="relative pt-16"
           >
-            <img src={icon4} alt="" className="h-20" />
+            <img src={holisticSolutionSvg} alt="" className="h-20" />
           </motion.div>
           <motion.h2
             initial={{
@@ -360,7 +367,7 @@ export const MarketPlace = () => {
             }}
             className="relative pt-16"
           >
-            <img src={icon4} alt="" className="h-20" />
+            <img src={qualityCommitmentSvg} alt="" className="h-20" />
           </motion.div>
           <motion.h2
             initial={{
@@ -411,7 +418,7 @@ export const MarketPlace = () => {
             }}
             className="relative pt-16"
           >
-            <img src={icon4} alt="" className="h-20" />
+            <img src={customizedCollaborationSvg} alt="" className="h-20" />
           </motion.div>
           <motion.h2
             initial={{
@@ -463,7 +470,7 @@ export const MarketPlace = () => {
             }}
             className="relative pt-16"
           >
-            <img src={icon4} alt="" className="h-20" />
+            <img src={innovationCentricSvg} alt="" className="h-20" />
           </motion.div>
           <motion.h2
             initial={{
