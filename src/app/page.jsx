@@ -166,8 +166,8 @@ const Home = () => {
           },
         ]}
         mainData={{
-          mainHeading: initialData.BusinessMainHeading,
-          subHeading: initialData.BusinessSubHeading,
+          mainHeading: initialData.SubHeading,
+          subHeading: initialData.SubHeading,
         }}
       />
       {/* Founder Section */}
@@ -190,7 +190,7 @@ const Home = () => {
       <NewSection
         data={{
           image: initialData["FInal_image"],
-          description: initialData["FinalSection"],
+          description: initialData["PeopleContent"],
         }}
       />
     </>

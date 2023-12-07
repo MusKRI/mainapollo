@@ -117,7 +117,7 @@ const Business = ({ mainData, slides }) => {
             {mainData.mainHeading ?? "Make your business visible online"}
           </SectionHeading>
 
-          <p className="text-body-text text-center">{mainData.subHeading}</p>
+          {/* <p className="text-body-text text-center">{mainData.subHeading}</p> */}
         </div>
 
         <div className="px-6 relative business-hash">
@@ -176,7 +176,7 @@ const Business = ({ mainData, slides }) => {
 
                         <MotionLink to="#" className="flex items-center gap-2">
                           <span className="text-lg">Know more</span>
-                          <span className="p-2 rounded-full bg-yellow-500">
+                          <span className="p-2 rounded-full bg-[#2e3192]">
                             <ArrowRight className="w-4 h-4" />
                           </span>
                         </MotionLink>

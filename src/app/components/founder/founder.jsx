@@ -9,20 +9,7 @@ const Founder = ({ data }) => {
       <div className="absolute inset-0 z-[-2] clipGradient"></div>
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between py-8 relative">
         <div className="flex-1 flex flex-row justify-center">
-          <motion.div
-            initial={{
-              x: -100,
-              opacity: 0,
-            }}
-            whileInView={{
-              x: 0,
-              opacity: 1,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="relative overflow-hidden rounded-lg"
-          >
+          <motion.div className="relative overflow-hidden rounded-lg">
             <img
               src={data.humbleLogo}
               alt="about-img1"
@@ -37,37 +24,11 @@ const Founder = ({ data }) => {
 
           {/* <p className="text-body-text">{data.humbleSubSection}</p> */}
 
-          <motion.h4
-            initial={{
-              x: 100,
-              opacity: 0,
-            }}
-            whileInView={{
-              x: 0,
-              opacity: 1,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="text-xl whitespace-pre-line  "
-          >
+          <motion.h4 className="text-xl whitespace-pre-line  ">
             &quot;{data.humbleSection}&quot;
           </motion.h4>
 
-          <motion.h4
-            initial={{
-              x: 100,
-              opacity: 0,
-            }}
-            whileInView={{
-              x: 0,
-              opacity: 1,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="text-xl whitespace-pre-line font-bold"
-          >
+          <motion.h4 className="text-xl whitespace-pre-line font-bold">
             <div
               dangerouslySetInnerHTML={{
                 __html: data.humbleFinalSection,

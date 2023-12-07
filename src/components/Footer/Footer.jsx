@@ -45,7 +45,6 @@ const Footer = () => {
                   variants={Variants}
                   className="flex flex-row items-center gap-2"
                 >
-                  <span className="w-2 h-2 bg-white" />
                   <Link to="/aboutus" className="text-white">
                     Apollo Green Energy
                   </Link>
@@ -55,7 +54,6 @@ const Footer = () => {
                   variants={Variants}
                   className="flex flex-row items-center gap-2"
                 >
-                  <span className="w-2 h-2 bg-white" />
                   <Link to="/supply-chain" className="text-white">
                     Apollo Supply Chain
                   </Link>
@@ -65,7 +63,6 @@ const Footer = () => {
                   variants={Variants}
                   className="flex flex-row items-center gap-2"
                 >
-                  <span className="w-2 h-2 bg-white" />
                   <Link to="/fashion" className="text-white">
                     Apollo Fashion
                   </Link>
@@ -75,7 +72,6 @@ const Footer = () => {
                   variants={Variants}
                   className="flex flex-row items-center gap-2"
                 >
-                  <span className="w-2 h-2 bg-white" />
                   <Link to="/prox" className="text-white">
                     Apollo ProX
                   </Link>
@@ -85,7 +81,6 @@ const Footer = () => {
                   variants={Variants}
                   className="flex flex-row items-center gap-2"
                 >
-                  <span className="w-2 h-2 bg-white" />
                   <Link to="/marketplace" className="text-white">
                     Apollo Marketplace
                   </Link>
@@ -107,7 +102,6 @@ const Footer = () => {
                   variants={Variants}
                   className="flex flex-row items-center gap-2"
                 >
-                  <span className="w-2 h-2 bg-white" />
                   <Link to="/aboutus" className="text-white">
                     Who We Are
                   </Link>
@@ -117,7 +111,6 @@ const Footer = () => {
                   variants={Variants}
                   className="flex flex-row items-center gap-2"
                 >
-                  <span className="w-2 h-2 bg-white" />
                   <Link to="/aboutus" className="text-white">
                     Purpose & Values
                   </Link>
@@ -127,7 +120,6 @@ const Footer = () => {
                   variants={Variants}
                   className="flex flex-row items-center gap-2"
                 >
-                  <span className="w-2 h-2 bg-white" />
                   <Link to="/aboutus" className="text-white">
                     Leadership
                   </Link>
@@ -206,7 +198,7 @@ const Footer = () => {
               variants={Variants}
               className="text-xl border-b text-white"
             >
-              Subscribe our Newsletter
+              Subscribe to Newsletter
             </motion.h2>
             <motion.div
               variants={Variants}

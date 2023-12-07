@@ -67,15 +67,15 @@ const HomeMap = () => {
       <h1 className="text-center text-3xl lg:text-5xl py-8 font-bold">
         Making Impact Across Globe
       </h1>
-      <div style={{ background: "rgb(46,49,146)" }}>
+      <div style={{ background: "white" }}>
         <div className="relative h-auto lg:min-h-screen">
           <div
-            className="relative w-full h-full flex items-center justify-center bg-[#2e3192]"
+            className="relative w-full h-full flex items-center justify-center bg-white"
             style={{ margin: "auto", maxWidth: "80rem" }}
           >
             <img src={MapImg} alt="" className="max-w-full object-cover" />
 
-            <div className="absolute flex items-center bg-white rounded-3xl px-[16px] py-[0px] top-[31%] left-[23%]">
+            <div className="absolute flex items-center bg-gray-300 rounded-3xl px-[16px] py-[0px] top-[31%] left-[23%]">
               <span className="text-sm px-1">North America</span>
               <span
                 style={{
@@ -88,7 +88,7 @@ const HomeMap = () => {
               >
                 +
                 <ul
-                  className="absolute inset-0 bg-white top-full h-max hidden w-[200px]"
+                  className="absolute inset-0 bg-gray-300 top-full h-max hidden w-[200px]"
                   style={{ borderRadius: "15px" }}
                 >
                   {northAmerica.map((item, index) => (
@@ -104,7 +104,7 @@ const HomeMap = () => {
               </span>
             </div>
 
-            <div className="absolute flex items-center bg-white rounded-3xl px-[16px] py-[1px] top-[53%] left-[23%]">
+            <div className="absolute flex items-center bg-gray-300 rounded-3xl px-[16px] py-[1px] top-[53%] left-[23%]">
               <span className="text-sm px-1">East Asia</span>
               <span
                 style={{
@@ -117,7 +117,7 @@ const HomeMap = () => {
               >
                 +
                 <ul
-                  className="absolute inset-0 bg-white top-full h-max hidden w-[200px]"
+                  className="absolute inset-0 bg-gray-300 top-full h-max hidden w-[200px]"
                   style={{ borderRadius: "15px" }}
                 >
                   {eastAsia.map((item, index) => (
@@ -139,7 +139,7 @@ const HomeMap = () => {
 								</ul>
 							</div>
 						</div> */}
-            <div className="absolute flex items-center bg-white rounded-3xl px-[16px] py-[1px] top-[23%] left-[83%]">
+            <div className="absolute flex items-center bg-gray-300 rounded-3xl px-[16px] py-[1px] top-[23%] left-[83%]">
               <span className="text-sm px-1">South Asia </span>
               <span
                 style={{
@@ -152,7 +152,7 @@ const HomeMap = () => {
               >
                 +
                 <ul
-                  className="absolute inset-0 bg-white top-full h-max hidden w-[200px]"
+                  className="absolute inset-0 bg-gray-300 top-full h-max hidden w-[200px]"
                   style={{ borderRadius: "15px" }}
                 >
                   {southAsia.map((item, index) => (
@@ -167,7 +167,7 @@ const HomeMap = () => {
                 </ul>
               </span>
             </div>
-            <div className="absolute flex items-center bg-white rounded-3xl px-[16px] py-[2px] top-[63%] left-[55%]">
+            <div className="absolute flex items-center bg-gray-300 rounded-3xl px-[16px] py-[2px] top-[63%] left-[55%]">
               <span className="text-sm px-1">Australia</span>
               <span
                 style={{
@@ -180,7 +180,7 @@ const HomeMap = () => {
               >
                 +
                 <ul
-                  className="absolute inset-0 bg-white top-full h-max hidden w-[200px]"
+                  className="absolute inset-0 bg-gray-300 top-full h-max hidden w-[200px]"
                   style={{ borderRadius: "15px" }}
                 >
                   {australia.map((item, index) => (
@@ -195,7 +195,7 @@ const HomeMap = () => {
                 </ul>
               </span>
             </div>
-            <div className="absolute flex items-center bg-white rounded-3xl px-[16px] py-[2px] top-[43%] left-[55%]">
+            <div className="absolute flex items-center bg-gray-300 rounded-3xl px-[16px] py-[2px] top-[43%] left-[55%]">
               <span className="text-sm px-1">Middle East</span>
               <span
                 style={{
@@ -208,7 +208,7 @@ const HomeMap = () => {
               >
                 +
                 <ul
-                  className="absolute inset-0 bg-white top-full h-max hidden w-[200px]"
+                  className="absolute inset-0 bg-gray-300 top-full h-max hidden w-[200px]"
                   style={{ borderRadius: "15px" }}
                 >
                   {middleEast.map((item, index) => (
@@ -224,7 +224,7 @@ const HomeMap = () => {
               </span>
             </div>
 
-            <div className="absolute flex items-center bg-white rounded-3xl px-[16px] py-[2px] top-[13%] left-[55%]">
+            <div className="absolute flex items-center bg-gray-300 rounded-3xl px-[16px] py-[2px] top-[13%] left-[55%]">
               <span className="text-sm px-1">Europe</span>
               <span
                 style={{
@@ -237,7 +237,7 @@ const HomeMap = () => {
               >
                 +
                 <ul
-                  className="absolute inset-0 bg-white top-full h-max hidden w-[200px]"
+                  className="absolute inset-0 bg-gray-300 top-full h-max hidden w-[200px]"
                   style={{ borderRadius: "15px" }}
                 >
                   {Europe.map((item, index) => (
@@ -253,7 +253,7 @@ const HomeMap = () => {
               </span>
             </div>
 
-            <div className="absolute flex items-center bg-white rounded-3xl px-[16px] py-[2px] top-[13%] left-[25%]">
+            <div className="absolute flex items-center bg-gray-300 rounded-3xl px-[16px] py-[2px] top-[13%] left-[25%]">
               <span className="text-sm px-1">South America</span>
               <span
                 style={{
@@ -266,7 +266,7 @@ const HomeMap = () => {
               >
                 +
                 <ul
-                  className="absolute inset-0 bg-white top-full h-max hidden w-[200px]"
+                  className="absolute inset-0 bg-gray-300 top-full h-max hidden w-[200px]"
                   style={{ borderRadius: "15px" }}
                 >
                   {southAmerica.map((item, index) => (
