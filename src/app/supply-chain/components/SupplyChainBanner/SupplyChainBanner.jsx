@@ -32,36 +32,10 @@ const SupplyChainBanner = ({ data }) => {
       <div className="px-3 md:px-5 h-full">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between py-16 h-full">
           <div className="flex flex-col gap-3">
-            <motion.h4
-              initial={{
-                y: -20,
-                opacity: 0,
-              }}
-              whileInView={{
-                y: 0,
-                opacity: 1,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className="relative leading-snug text-2xl text-white after:absolute after:border-2 after:left-0 after:-bottom-4 after:w-10 after:border-white mb-4"
-            >
+            <h4 className="relative leading-snug text-2xl text-white after:absolute after:border-2 after:left-0 after:-bottom-4 after:w-10 after:border-white mb-4">
               {data?.subtitle}
-            </motion.h4>
-            <motion.div
-              initial={{
-                y: -20,
-                opacity: 0,
-              }}
-              whileInView={{
-                y: 0,
-                opacity: 1,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className="flex flex-col gap-2 py-10"
-            >
+            </h4>
+            <div className="flex flex-col gap-2 py-10">
               <h1 className="text-white text-3xl md:text-6xl font-semibold">
                 {data?.title}
               </h1>
@@ -89,7 +63,7 @@ const SupplyChainBanner = ({ data }) => {
                   </motion.div>
                 </MotionLink>
               </div>
-            </motion.div>
+            </div>
           </div>
 
           {/* <div className="flex items-center justify-center flex-1 lg:flex-[0.5] supplychainBanner-carousel mb-10 order-0 lg:order-1">

@@ -82,122 +82,21 @@ const Snapshot = () => {
               </div>
             </div>
           </div>
-          {/* <motion.div
-            initial="hidden"
-            whileHover="onHover"
-            className="ga-1 relative"
-          >
-            <img src={GImg1} alt="Image 1" />
-          </motion.div>
-          <motion.div
-            initial="hidden"
-            whileHover="onHover"
-            className="ga-2 relative"
-          >
-            <img src={GImg2} alt="Image 1" />
-          </motion.div>
-          <motion.div
-            initial="hidden"
-            whileHover="onHover"
-            className="ga-3 relative"
-          >
-            <img src={GImg3} alt="Image 1" />
-          </motion.div>
-          <motion.div
-            initial="hidden"
-            whileHover="onHover"
-            className="ga-4 relative"
-          >
-            <img src={GImg4} alt="Image 1" />
-          </motion.div>
-          <motion.div
-            initial="hidden"
-            whileHover="onHover"
-            className="ga-5 relative"
-          >
-            <img src={GImg5} alt="Image 1" />
-          </motion.div> */}
         </div>
-
-        {/* <div className="mt-10 px-4">
-					<div className="border p-6 rounded-md bg-[#f7931e] flex flex-col lg:flex-row justify-center gap-x-10 lg:gap-x-20">
-						<div className="flex flex-col gap-1 self-center">
-							<span className="text-white text-base text-center">Interact with us</span>
-							<span className="text-white text-lg text-center">0124-674-0200</span>
-						</div>
-						<div className="border-r relative my-4 self-center">
-							<span className="absolute top-1/2 -translate-y-1/2 left-[-13px] p-1 rounded-full bg-[#f7931e] text-white">
-								OR
-							</span>
-						</div>
-						<div className="self-center">
-							<span className="text-white text-base">connect@apollosupplychain.com</span>
-						</div>
-					</div>
-				</div> */}
 
         <div className="col-12 mt-3">
           <div className="container">
             <div className="row justify-center">
               <div className="col-12 mt-5">
-                <motion.div
-                  initial={{
-                    x: 100,
-                    opacity: 0,
-                  }}
-                  whileInView={{
-                    x: 0,
-                    opacity: 1,
-                    transition: {
-                      duration: 0.8,
-                    },
-                  }}
+                <div
                   style={{ fontWeight: "bold", fontSize: "55px" }}
                   className="text-center"
                 >
                   Interact with us
-                </motion.div>
-                {/* <motion.div
-                  initial={{
-                    x: 100,
-                    opacity: 0,
-                  }}
-                  whileInView={{
-                    x: 0,
-                    opacity: 1,
-                    transition: {
-                      duration: 0.8,
-                    },
-                  }}
-                  className="row justify-center"
-                >
-                  <div className="col-lg-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolor est maiores odio sit suscipit dolore fugit saepe unde
-                    officiis sequi doloribus atque itaque voluptate ducimus
-                    ratione molestias ipsam, cumque beatae! Dolor voluptatem
-                    nisi quas dolorum deserunt earum ea tempora, accusamus odit
-                    suscipit dolorem dolores ut. Ex praesentium reiciendis
-                    libero odio odit exercitationem eligendi quod atque suscipit
-                    amet, tempore, inventore harum.
-                  </div>
-                </motion.div> */}
+                </div>
                 <div className="row mt-4">
                   <div className="col-12">
-                    <motion.div
-                      initial={{
-                        x: 100,
-                        opacity: 0,
-                      }}
-                      whileInView={{
-                        x: 0,
-                        opacity: 1,
-                        transition: {
-                          duration: 0.8,
-                        },
-                      }}
-                      className="row justify-center"
-                    >
+                    <div className="row justify-center">
                       <div className="col-4 text-center">
                         <p style={{ fontWeight: "bold" }}>Contact Number</p>
                         <p>0124-674-0200</p>
@@ -206,7 +105,7 @@ const Snapshot = () => {
                         <p style={{ fontWeight: "bold" }}>Email Id</p>
                         <p>connect@apollosupplychain.com</p>
                       </div>
-                    </motion.div>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -56,125 +56,39 @@ const PurposeValues = ({ data }) => {
   });
 
   return (
-    <section className="relative px-3 md:px-5 bg-[#f6f6f6]">
-      <div className="max-w-7xl mx-auto flex flex-col gap-5 lg:flex-row lg:justify-between py-16 md:py-32">
-        <div className="flex flex-col gap-7">
-          {/* <h2 className="text-2xl text-body-text">{data?.subtitle}</h2> */}
-          <motion.h1
-            initial={{
-              x: -100,
-              opacity: 0,
-            }}
-            whileInView={{
-              x: 0,
-              opacity: 1,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="text-4xl lg:text-6xl text-main-text"
-          >
-            {data?.title}
-          </motion.h1>
+    <section className="relative bg-[#fbfbfb]">
+      <div className="max-w-7xl mx-auto flex flex-col py-16 px-6">
+        {/* Purpose */}
+        <div className="flex flex-col lg:flex-row gap-4">
+          <div className="flex flex-col gap-2 lg:self-center">
+            <h1 className="text-[#2e3192] text-6xl font-semibold">Purpose</h1>
+            <p className="text-3xl font-semibold">Reason of our Existence</p>
+          </div>
 
-          <h2 className="text-xl font-semibold -mb-6">{porv?.title}</h2>
-          <motion.p
-            initial={{
-              x: -100,
-              opacity: 0,
-            }}
-            whileInView={{
-              x: 0,
-              opacity: 1,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="text-body-text w-96 text-lg"
-          >
-            {porv?.desc}
-          </motion.p>
-
-          <motion.div
-            initial={{
-              y: 30,
-              opacity: 0,
-            }}
-            whileInView={{
-              y: 0,
-              opacity: 1,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="flex flex-row gap-4"
-          >
-            <div
-              className={cn(
-                "p-2 flex flex-row items-center gap-3 rounded-md shadow-lg text-xl font-semibold cursor-pointer",
-                porv.btn === "purpose"
-                  ? "border-l-4 border-orange-500"
-                  : "bg-white"
-              )}
-              onClick={() =>
-                setPorv({
-                  btn: "purpose",
-                  title: "Our Purpose: Reason of our Existence",
-                  desc: "To deliver superior value to our customers, shareholders, employees, and community through a diversified global portfolio of emergent businesses that are driven by limitless innovation, collective wisdom, and ingenious models.",
-                })
-              }
-            >
-              Purpose
-            </div>
-            <div
-              className={cn(
-                "p-2 flex flex-row items-center gap-3 rounded-md shadow-lg text-xl font-semibold cursor-pointer",
-                porv.btn === "values"
-                  ? "border-l-4 border-orange-500"
-                  : "bg-white"
-              )}
-              onClick={() => {
-                setPorv({
-                  btn: "values",
-                  title: "Our Values: Heartbeat Of Our Existence",
-                  desc: "Our values continue to direct the growth of businesses under Apollo Green Energy Limited.",
-                });
-              }}
-            >
-              Values
-            </div>
-          </motion.div>
+          <div className="ml-auto max-w-3xl">
+            <p className="text-2xl leading-[1.8]">
+              To deliver superior value to our customers, shareholders,
+              employees, and community through a diversified global portfolio of
+              emergent businesses that are driven by limitless innovation,
+              collective wisdom, and ingenious models.
+            </p>
+          </div>
         </div>
 
-        <div className="flex-1">
-          <div className="ml-auto flex flex-col">
-            <div className="relative">
-              {data?.nodes?.map((purposeValue) => {
-                return (
-                  <motion.div
-                    initial="hidden"
-                    whileHover="onHover"
-                    key={purposeValue.id}
-                    className="flex flex-row items-center p-4 relative first:border-t-2 border-b-2 group"
-                  >
-                    <motion.div
-                      variants={pvVariants}
-                      className="absolute bg-white"
-                    ></motion.div>
-                    <p className="text-lg shrink-0 relative z-[2]">
-                      {purposeValue.pvTitle}
-                    </p>
-                    <p className="text-base basis-3/5 relative z-[2] ml-auto">
-                      {purposeValue.pv}
-                    </p>
+        <div className="h-[1px] bg-[#2e3192] max-w-xl mx-auto w-full my-8" />
 
-                    <div className="border w-12 h-12 flex items-center justify-center rounded-full relative z-[2]">
-                      <ArrowRight className="w-6 h-6 text-body-text group-hover:scale-105 transition group-hover:text-[#2e3192]" />
-                    </div>
-                  </motion.div>
-                );
-              })}
-            </div>
+        {/* Values */}
+        <div className="flex flex-col lg:flex-row gap-4">
+          <div className="flex flex-col gap-2 lg:self-center">
+            <h1 className="text-[#2e3192] text-6xl font-semibold">Values</h1>
+            <p className="text-3xl font-semibold">Heartbeat Of Our Existence</p>
+          </div>
+
+          <div className="ml-auto max-w-3xl">
+            <p className="text-2xl leading-[1.8]">
+              Our values continue to direct the growth of businesses under
+              Apollo Green Energy Limited.
+            </p>
           </div>
         </div>
       </div>

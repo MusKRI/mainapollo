@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { CornerDownRight } from "lucide-react";
 
 import ProxBanner from "./components/prox-banner/prox-banner";
 
@@ -25,14 +25,14 @@ const ProXPage = () => {
   const proxData = {
     // contact banner data
     proxBannerImage: ProxBannerImg,
-    proxBannerTitle: "Constructing A Safer",
+    proxBannerTitle: "Constructing A Safer, Pro-Planet Tomorrow",
 
     // prox about
-    pAboutTitle: "About Us",
+    pAboutTitle: "Your Trusted EPC Partner for Seamless Project Excellence",
     pAboutDesc1:
-      "Apollo Pro X is your comprehensive EPC (Engineering, Procurement, and Construction) partner, seamlessly delivering large-scale industrial and infrastructure projects from conception to completion. With a track record spanning two decades, we offer turnkey solutions with single-source responsibility.",
+      "Apollo Pro X is your comprehensive EPC (Engineering, Procurement, and Construction) partner, seamlessly delivering large-scale industrial and infrastructure projects from conception to completion. With a track record spanning two decades, we provide turnkey solutions with single-source responsibility.",
     pAboutDesc2:
-      "Recognised for undertaking large, complex projects, fostering innovation, embracing emerging technologies, and making a difference to our clients, employees, and community.",
+      "We are recognized for undertaking large, complex projects, fostering innovation, embracing emerging technologies, and making a positive impact on our clients, employees, and the community.",
     pAboutImage: ProxAboutImage,
 
     // prox key services
@@ -115,135 +115,42 @@ const ProXPage = () => {
       <section className=" bg-[#333694] text-white relative px-3 md:px-5">
         <div className="max-w-7xl mx-auto flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-center py-16 md:py-32">
           <div className="flex flex-col gap-4 flex-[0.6]">
-            <motion.h1
-              initial={{
-                opacity: 0,
-                y: 10,
-              }}
-              whileInView={{
-                opacity: 1,
-                y: 0,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className="text-3xl lg:text-5xl font-bold"
-            >
-              {proxData?.pAboutTitle}
-            </motion.h1>
+            <h1 className="text-4xl font-bold">{proxData?.pAboutTitle}</h1>
 
-            <motion.p
-              initial={{
-                opacity: 0,
-                x: -50,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className=""
-            >
-              {proxData?.pAboutDesc1}
-            </motion.p>
-            <motion.p
-              initial={{
-                opacity: 0,
-                x: -50,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className=""
-            >
-              {proxData?.pAboutDesc2}
-            </motion.p>
+            <p className="text-[18px]">{proxData?.pAboutDesc1}</p>
+            <p className="text-[18px]">{proxData?.pAboutDesc2}</p>
           </div>
 
-          <motion.div
-            initial={{
-              x: 100,
-              opacity: 0,
-            }}
-            whileInView={{
-              x: 0,
-              opacity: 1,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="relative flex-1 flex justify-center h-[400px]"
-          >
+          <div className="relative flex-1 flex justify-center h-[400px]">
             <img src={proxData?.pAboutImage} alt="" className="rounded-md" />
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Prox Key section */}
       <section className=" bg-white relative px-3 md:px-5">
         <div className="max-w-7xl mx-auto py-16 space-y-4">
-          <motion.h1
-            initial={{
-              opacity: 0,
-              y: 10,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="text-3xl lg:text-5xl font-semibold"
-          >
+          <h1 className="text-3xl lg:text-5xl font-semibold">
             {proxData?.pKsTitle}
-          </motion.h1>
-          <motion.p
-            initial={{
-              opacity: 0,
-              x: -20,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="font-medium max-w-lg"
-          >
-            {proxData?.pKsDescription}
-          </motion.p>
+          </h1>
+          <p className="font-medium max-w-lg">{proxData?.pKsDescription}</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {proxData?.pKeyServices?.map((ks, index) => {
               return (
-                <motion.div
-                  initial={{
-                    opacity: 0,
-                    y: 10,
-                  }}
-                  whileInView={{
-                    opacity: 1,
-                    y: 0,
-                    transition: {
-                      duration: 0.8,
-                    },
-                  }}
+                <div
                   key={index}
-                  className="bg-white border rounded-md p-3 flex flex-col gap-3 transition hover:shadow-xl"
+                  className="bg-white hover:!bg-[#2e3192] border rounded-md p-3 flex flex-col gap-3 transition hover:shadow-xl group"
                 >
                   <div className="relative w-16">
                     <img src={ks?.icon} alt="" />
                   </div>
-                  <h2 className="text-2xl font-semibold">{ks?.title}</h2>
-                  <p>{ks?.desc}</p>
-                </motion.div>
+                  <h2 className="text-2xl font-semibold group-hover:!text-white transition">
+                    {ks?.title}
+                  </h2>
+                  <p className="group-hover:text-white transition">
+                    {ks?.desc}
+                  </p>
+                </div>
               );
             })}
           </div>
@@ -265,7 +172,7 @@ const ProXPage = () => {
                     "bg-white border rounded-md p-3 flex flex-row gap-3 items-center transition hover:shadow-lg"
                   )}
                 >
-                  <div className="rounded-full bg-[#f7931e] p-2 w-10 h-10 flex items-center justify-center text-white shrink-0 self-center">
+                  <div className="rounded-full bg-[#2e3192] p-2 w-10 h-10 flex items-center justify-center text-white shrink-0 self-center">
                     {index + 1}
                   </div>
 
@@ -282,112 +189,31 @@ const ProXPage = () => {
       {/* Unique Edge Section */}
       <section className=" bg-[#333694] text-white relative px-3 md:px-5">
         <div className="max-w-7xl mx-auto flex flex-col gap-4 py-16 pb-32">
-          <motion.h1
-            initial={{
-              opacity: 0,
-              y: 10,
-            }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="text-3xl lg:text-5xl font-bold"
-          >
+          <h1 className="text-3xl lg:text-5xl font-bold">
             {proxData?.pUETitle}
-          </motion.h1>
+          </h1>
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4">
-            <motion.div
-              initial={{
-                x: -100,
-                opacity: 0,
-              }}
-              whileInView={{
-                x: 0,
-                opacity: 1,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className="relative flex justify-center w-96 shrink-0"
-            >
+            <div className="relative flex justify-center w-96 shrink-0">
               <img
                 src={proxData?.pUEImage}
                 alt=""
                 className="rounded-md -mb-20"
               />
-            </motion.div>
+            </div>
             <div className="flex flex-col gap-4">
-              <motion.p
-                initial={{
-                  opacity: 0,
-                  x: 50,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  x: 0,
-                  transition: {
-                    duration: 0.8,
-                  },
-                }}
-                className=""
-              >
-                {proxData?.pUEDesc1}
-              </motion.p>
-              <motion.p
-                initial={{
-                  opacity: 0,
-                  x: 50,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  x: 0,
-                  transition: {
-                    duration: 0.8,
-                  },
-                }}
-                className=""
-              >
-                {proxData?.pUEDesc2}
-              </motion.p>
+              <p className="text-[18px]">{proxData?.pUEDesc1}</p>
+              <p className="text-[18px]">{proxData?.pUEDesc2}</p>
 
-              <motion.div
-                initial={{}}
-                whileInView={{
-                  opacity: 1,
-                  x: 0,
-                  transition: {
-                    when: "beforeChildren",
-                    staggerChildren: 0.4,
-                  },
-                }}
-                className="flex flex-col gap-2"
-              >
+              <div className="flex flex-col gap-2">
                 {proxData?.pUEPoints?.map((point, idx) => {
                   return (
-                    <motion.div
-                      initial={{
-                        opacity: 0,
-                        x: 50,
-                      }}
-                      whileInView={{
-                        opacity: 1,
-                        x: 0,
-                        transition: {
-                          duration: 0.8,
-                        },
-                      }}
-                      key={idx}
-                      className="flex flex-row items-center gap-2"
-                    >
-                      <span className="border-2 w-3 h-3 rounded-full" />
-                      <p>{point}</p>
-                    </motion.div>
+                    <div key={idx} className="flex flex-row items-start gap-2">
+                      <CornerDownRight className="w-5 h-5" />
+                      <p className="text-[18px]">{point}</p>
+                    </div>
                   );
                 })}
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>
@@ -426,60 +252,23 @@ const ProXPage = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 mt-5">
-              <motion.div
-                initial={{
-                  opacity: 0,
-                  y: 20,
-                }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                  transition: {
-                    duration: 0.8,
-                  },
-                }}
+              <div
                 style={{ fontWeight: "bold", fontSize: "55px" }}
                 className="text-center"
               >
                 Experience Apollo ProX
-              </motion.div>
+              </div>
               <div className="row">
-                <motion.div
-                  initial={{
-                    x: -100,
-                    opacity: 0,
-                  }}
-                  whileInView={{
-                    x: 0,
-                    opacity: 1,
-                    transition: {
-                      duration: 0.8,
-                    },
-                  }}
-                  className="col-lg-6 text-center mx-auto"
-                >
+                <div className="col-lg-6 text-center mx-auto">
                   When you choose Apollo Pro X, you opt to for a safer and
                   sustainable future. Discover the difference of a reliable and
                   eco-friendly infrastructure with Apollo, where excellence is
                   not just a choice – it's the standard.
-                </motion.div>
+                </div>
               </div>
               <div className="row mt-4">
                 <div className="col-12">
-                  <motion.div
-                    className="row"
-                    initial={{
-                      opacity: 0,
-                      y: 10,
-                    }}
-                    whileInView={{
-                      opacity: 1,
-                      y: 0,
-                      transition: {
-                        duration: 0.8,
-                      },
-                    }}
-                  >
+                  <div className="row">
                     <div className="col-4 text-center flex flex-col items-center">
                       <p style={{ fontWeight: "bold" }}>Address</p>
                       <p className="text-gray-500">
@@ -498,7 +287,7 @@ const ProXPage = () => {
                       </p>
                       <p className="text-gray-500">contact@apolloindia.com</p>
                     </div>
-                  </motion.div>
+                  </div>
                 </div>
               </div>
             </div>

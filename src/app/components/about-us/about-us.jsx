@@ -45,22 +45,7 @@ const HomeAboutUs = ({ data }) => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row py-16 md:py-32">
         <div className="flex-1 flex flex-row gap-6">
           <div className="relative overflow-hidden rounded-lg min-h-full mt-[25px]">
-            <motion.img
-              initial={{
-                x: -100,
-                y: 20,
-                opacity: 0,
-                minHeight: "95%",
-              }}
-              whileInView={{
-                x: 0,
-                y: 0,
-                opacity: 1,
-                minHeight: "95%",
-                transition: {
-                  duration: 0.8,
-                },
-              }}
+            <img
               src={data.about1Img}
               style={{ minHeight: "95%" }}
               alt="about-img1"
@@ -72,19 +57,8 @@ const HomeAboutUs = ({ data }) => {
               className="relative overflow-hidden rounded-lg w-full"
               style={{ height: "50%" }}
             >
-              <motion.img
+              <img
                 style={{ height: "100%" }}
-                initial={{
-                  y: -20,
-                  opacity: 0,
-                }}
-                whileInView={{
-                  y: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.8,
-                  },
-                }}
                 src={data.about2Img}
                 alt="about-img2"
                 className="w-64 object-cover rounded-lg"
@@ -95,18 +69,7 @@ const HomeAboutUs = ({ data }) => {
               className="relative overflow-hidden rounded-lg w-full"
               style={{ height: "50%" }}
             >
-              <motion.img
-                initial={{
-                  y: 20,
-                  opacity: 0,
-                }}
-                whileInView={{
-                  y: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.8,
-                  },
-                }}
+              <img
                 style={{ height: "100%" }}
                 src={data.about3Img}
                 alt="about-img3"
@@ -115,24 +78,15 @@ const HomeAboutUs = ({ data }) => {
             </div>
           </div>
         </div>
-        <motion.div
-          initial="hidden"
-          whileInView="whileInView"
-          className="flex-1 px-6 flex flex-col gap-3 mt-[20px]"
-        >
-          <motion.h1
-            variants={textVariants}
-            className="text-[28px] md:text-5xl font-medium text-main-text"
-          >
+        <div className="flex-1 px-6 flex flex-col gap-3 mt-[20px]">
+          <h1 className="text-[28px] md:text-5xl font-medium text-main-text">
             {data.aboutMainHeading ?? "Discover Our Legacy"}
-          </motion.h1>
+          </h1>
 
-          <motion.p variants={textVariants} className="text-body-text">
-            {data.aboutMainDescription}
-          </motion.p>
+          <p className="text-body-text">{data.aboutMainDescription}</p>
 
           {/* Tabs Content */}
-          <motion.div variants={textVariants} className="mb-5">
+          <div className="mb-5">
             <Tabs.Root className="flex flex-col" defaultValue="tab1">
               <Tabs.List
                 className="shrink-0 flex border-b mb-5"
@@ -185,15 +139,12 @@ const HomeAboutUs = ({ data }) => {
                 </motion.p>
               </Tabs.Content>
             </Tabs.Root>
-          </motion.div>
+          </div>
 
-          <motion.div
-            variants={textVariants}
-            className="flex items-center justify-start"
-          >
-            <SectionButton slug="/purpose-values">Read more</SectionButton>
-          </motion.div>
-        </motion.div>
+          <div className="flex items-center justify-start">
+            <SectionButton slug="/aboutus">Read more</SectionButton>
+          </div>
+        </div>
       </div>
     </section>
   );

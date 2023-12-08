@@ -74,113 +74,33 @@ const TheEdge = () => {
       <div className="max-w-7xl mx-auto py-16 md:py-32">
         <div className="flex flex-col md:flex-row">
           <div className="flex-1 flex flex-row justify-center gap-6">
-            <motion.div
-              key={`${currentImage}`}
-              initial={{
-                x: -100,
-                opacity: 0,
-              }}
-              whileInView={{
-                x: 0,
-                opacity: 1,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className="relative overflow-hidden self-center mr-6"
-            >
+            <div className="relative overflow-hidden self-center mr-6">
               <img src={currentImage} alt="The Edge" />
-            </motion.div>
+            </div>
           </div>
 
           <div className="flex-1 flex flex-col gap-5">
-            <motion.p
-              initial={{
-                x: 100,
-                opacity: 0,
-              }}
-              whileInView={{
-                x: 0,
-                opacity: 1,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className="text-lg font-medium text-[#f08f1e]"
-            >
-              The Edge
-            </motion.p>
-            <motion.h1
-              initial={{
-                x: 100,
-                opacity: 0,
-              }}
-              whileInView={{
-                x: 0,
-                opacity: 1,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className="relative leading-snug text-[28px] md:text-5xl text-white after:absolute after:border-2 after:left-0 after:-bottom-4 after:w-10 after:border-white"
-            >
+            <p className="text-lg font-medium text-[#f08f1e]">The Edge</p>
+            <h1 className="relative leading-snug text-[28px] md:text-5xl text-white after:absolute after:border-2 after:left-0 after:-bottom-4 after:w-10 after:border-white">
               We do more than solve the immediate logistics need.
-            </motion.h1>
+            </h1>
 
-            <motion.p
-              initial={{
-                x: 100,
-                opacity: 0,
-              }}
-              whileInView={{
-                x: 0,
-                opacity: 1,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className="text-white mt-4 text-lg"
-            >
+            <p className="text-white mt-4 text-lg">
               Integrated Logistics Services: Apollo Supply Chain covers the
               end-to-end supply chain from raw-material sourcing to after-sales
               services offering a complete portfolio of services including
               freight forwarding, contract logistics, warehousing, and
               transportation services.
-            </motion.p>
+            </p>
 
-            <motion.div
-              initial={{
-                x: 100,
-                opacity: 0,
-              }}
-              whileInView={{
-                x: 0,
-                opacity: 1,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-            >
+            <div>
               <ApolloAccordion
                 items={accordionItems}
                 setCurrentImage={handleCurrentImage}
               />
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{
-                x: 100,
-                opacity: 0,
-              }}
-              whileInView={{
-                x: 0,
-                opacity: 1,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className="flex items-center justify-start"
-            >
+            <div className="flex items-center justify-start">
               <MotionLink
                 className="relative flex items-center text-white"
                 to={"#"}
@@ -201,7 +121,7 @@ const TheEdge = () => {
                   />
                 </motion.div>
               </MotionLink>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

@@ -49,26 +49,31 @@ const navLinks = [
     isDrapdown: true,
     children: [
       {
+        id: "green-energy",
+        label: "Apollo Green Energy",
+        slug: "#",
+      },
+      {
+        id: "prox",
+        label: "Apollo ProX",
+        slug: "/prox",
+      },
+      {
         id: "supply-chain",
-        label: "Supply Chain",
+        label: "Apollo Supply Chain",
         slug: "/supply-chain",
       },
 
       {
         id: "fashion",
-        label: "Fashion",
+        label: "Apollo Fashion",
         slug: "/fashion",
       },
 
       {
         id: "marketplace",
-        label: "Marketplace",
+        label: "Apollo Marketplace",
         slug: "/marketplace",
-      },
-      {
-        id: "prox",
-        label: "ProX",
-        slug: "/prox",
       },
     ],
   },
@@ -126,9 +131,7 @@ const Header = () => {
   });
 
   return (
-    <motion.header
-      className={`bg-white h-[72px] px-3 md:px-5 fixed top-0 w-full z-50`}
-    >
+    <motion.header className={`bg-white h-[72px] px-3 md:px-5 w-full z-50`}>
       <div className="max-w-7xl mx-auto flex justify-between items-center h-full">
         {/* Logo */}
         <Link to="/" className="">

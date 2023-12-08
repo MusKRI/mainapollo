@@ -32,67 +32,6 @@ import s4 from "./images/snap44.jpeg";
 import s5 from "./images/snap5.jpeg";
 
 export const Fashion = () => {
-  // const Approach = [
-  //   {
-  //     img: "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1698883200&semt=sph",
-  //     data: "lorem dta",
-  //   },
-  //   {
-  //     img: "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1698883200&semt=sph",
-  //     data: "data lorem",
-  //   },
-  //   {
-  //     img: "https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1698883200&semt=sph",
-  //     data: "lorem data",
-  //   },
-  // ];
-
-  // const Forges = [
-  //   {
-  //     Heading: "Lorem ipsum",
-  //     Content:
-  //       "	Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore enim eius adipisci, minima quae, saepe molestiae similique reiciendis aperiam suscipit. Maiores facilis odit perspiciatis esse eligendi eveniet. Molestiae, vitae?Aspernatur voluptatum odit fugiat quia, in atque tenetur, illum facilis corrupti veritatis exercitationem sint consequatur suscipit reiciendis qui doloribus! Quas voluptatibus sunt neque nam numquam debitis veniam rerum quo mollitia.",
-  //   },
-  //   {
-  //     Heading: "Lorem ipsum",
-  //     Content:
-  //       "	Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore enim eius adipisci, minima quae, saepe molestiae similique reiciendis aperiam suscipit. Maiores facilis odit perspiciatis esse eligendi eveniet. Molestiae, vitae?Aspernatur voluptatum odit fugiat quia, in atque tenetur, illum facilis corrupti veritatis exercitationem sint consequatur suscipit reiciendis qui doloribus! Quas voluptatibus sunt neque nam numquam debitis veniam rerum quo mollitia.",
-  //   },
-  //   {
-  //     Heading: "Lorem ipsum",
-  //     Content:
-  //       "	Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore enim eius adipisci, minima quae, saepe molestiae similique reiciendis aperiam suscipit. Maiores facilis odit perspiciatis esse eligendi eveniet. Molestiae, vitae?Aspernatur voluptatum odit fugiat quia, in atque tenetur, illum facilis corrupti veritatis exercitationem sint consequatur suscipit reiciendis qui doloribus! Quas voluptatibus sunt neque nam numquam debitis veniam rerum quo mollitia.",
-  //   },
-  //   {
-  //     Heading: "Lorem ipsum",
-  //     Content:
-  //       "	Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore enim eius adipisci, minima quae, saepe molestiae similique reiciendis aperiam suscipit. Maiores facilis odit perspiciatis esse eligendi eveniet. Molestiae, vitae?Aspernatur voluptatum odit fugiat quia, in atque tenetur, illum facilis corrupti veritatis exercitationem sint consequatur suscipit reiciendis qui doloribus! Quas voluptatibus sunt neque nam numquam debitis veniam rerum quo mollitia.",
-  //   },
-  //   {
-  //     Heading: "Lorem ipsum",
-  //     Content:
-  //       "	Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore enim eius adipisci, minima quae, saepe molestiae similique reiciendis aperiam suscipit. Maiores facilis odit perspiciatis esse eligendi eveniet. Molestiae, vitae?Aspernatur voluptatum odit fugiat quia, in atque tenetur, illum facilis corrupti veritatis exercitationem sint consequatur suscipit reiciendis qui doloribus! Quas voluptatibus sunt neque nam numquam debitis veniam rerum quo mollitia.",
-  //   },
-  //   {
-  //     Heading: "Lorem ipsum",
-  //     Content:
-  //       "	Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore enim eius adipisci, minima quae, saepe molestiae similique reiciendis aperiam suscipit. Maiores facilis odit perspiciatis esse eligendi eveniet. Molestiae, vitae?Aspernatur voluptatum odit fugiat quia, in atque tenetur, illum facilis corrupti veritatis exercitationem sint consequatur suscipit reiciendis qui doloribus! Quas voluptatibus sunt neque nam numquam debitis veniam rerum quo mollitia.",
-  //   },
-  //   {
-  //     Heading: "Lorem ipsum",
-  //     Content:
-  //       "	Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore enim eius adipisci, minima quae, saepe molestiae similique reiciendis aperiam suscipit. Maiores facilis odit perspiciatis esse eligendi eveniet. Molestiae, vitae?Aspernatur voluptatum odit fugiat quia, in atque tenetur, illum facilis corrupti veritatis exercitationem sint consequatur suscipit reiciendis qui doloribus! Quas voluptatibus sunt neque nam numquam debitis veniam rerum quo mollitia.",
-  //   },
-  //   {
-  //     Heading: "Lorem ipsum",
-  //     Content:
-  //       "	Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit tempore enim eius adipisci, minima quae, saepe molestiae similique reiciendis aperiam suscipit. Maiores facilis odit perspiciatis esse eligendi eveniet. Molestiae, vitae?Aspernatur voluptatum odit fugiat quia, in atque tenetur, illum facilis corrupti veritatis exercitationem sint consequatur suscipit reiciendis qui doloribus! Quas voluptatibus sunt neque nam numquam debitis veniam rerum quo mollitia.",
-  //   },
-  // ];
-  // const colorCard = (index) => {
-  //   return index % 2 == 0 ? { background: "white" } : { background: "#f8f8f8" };
-  // };
-
   const fashionData = {
     secondSectionTitle1: "Unmatched",
     secondSectionSubtitle1: "20+ Years of Fuelling Fashion",
@@ -250,20 +189,7 @@ export const Fashion = () => {
           <div className="container">
             <div className="row max-w-[1024px] mx-auto">
               <div className="col-md-4 d-flex justify-content-center align-items-center">
-                <motion.div
-                  initial={{
-                    x: -100,
-                    opacity: 0,
-                  }}
-                  whileInView={{
-                    x: 0,
-                    opacity: 1,
-                    transition: {
-                      duration: 0.8,
-                    },
-                  }}
-                  className="row"
-                >
+                <div className="row">
                   <div
                     className="col-12"
                     style={{ fontSize: "40px", fontWeight: "bold" }}
@@ -282,24 +208,11 @@ export const Fashion = () => {
                   <div className="col-md-6">
                     {fashionData?.secondSectionSubtitle2}
                   </div>
-                </motion.div>
+                </div>
               </div>
-              <motion.div
-                initial={{
-                  x: 100,
-                  opacity: 0,
-                }}
-                whileInView={{
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.8,
-                  },
-                }}
-                className="col-md-6 mt-3"
-              >
+              <div className="col-md-6 mt-3">
                 {fashionData?.secondSectionDescription}
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>
@@ -323,18 +236,7 @@ export const Fashion = () => {
                   <div className="col-10">
                     <div className="row">
                       <div className="col-lg-12 mt-5">
-                        <motion.p
-                          initial={{
-                            x: -100,
-                            opacity: 0,
-                          }}
-                          whileInView={{
-                            x: 0,
-                            opacity: 1,
-                            transition: {
-                              duration: 0.8,
-                            },
-                          }}
+                        <p
                           style={{
                             fontWeight: "bold",
                             fontSize: "60px",
@@ -342,42 +244,16 @@ export const Fashion = () => {
                           className="capitalize"
                         >
                           {fashionData?.aoeTitle}
-                        </motion.p>
+                        </p>
                       </div>
                     </div>
                     <div className="row">
                       <div className="col-md-6">
                         <div className="row">
-                          <motion.div
-                            initial={{
-                              x: -100,
-                              opacity: 0,
-                            }}
-                            whileInView={{
-                              x: 0,
-                              opacity: 1,
-                              transition: {
-                                duration: 0.8,
-                              },
-                            }}
-                            className="col-lg-12 text-xl"
-                          >
+                          <div className="col-lg-12 text-xl">
                             {fashionData?.aoeDescription}
-                          </motion.div>
-                          <motion.div
-                            initial={{
-                              y: 20,
-                              opacity: 0,
-                            }}
-                            whileInView={{
-                              y: 0,
-                              opacity: 1,
-                              transition: {
-                                duration: 0.8,
-                              },
-                            }}
-                            className="col-lg-9"
-                          >
+                          </div>
+                          <div className="col-lg-9">
                             <div className="row mt-2">
                               <div
                                 className="col-4 flex items-center"
@@ -410,21 +286,8 @@ export const Fashion = () => {
                                 />
                               </div>
                             </div>
-                          </motion.div>
-                          <motion.div
-                            initial={{
-                              y: 20,
-                              opacity: 0,
-                            }}
-                            whileInView={{
-                              y: 0,
-                              opacity: 1,
-                              transition: {
-                                duration: 0.8,
-                              },
-                            }}
-                            className="col-lg-9 mb-5"
-                          >
+                          </div>
+                          <div className="col-lg-9 mb-5">
                             <div className="row">
                               <div className="col-4">
                                 {fashionData?.aoeTag1Title}
@@ -436,7 +299,7 @@ export const Fashion = () => {
                                 {fashionData?.aoeTag3Title}
                               </div>
                             </div>
-                          </motion.div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -450,23 +313,12 @@ export const Fashion = () => {
         <div className="col-12 mt-4 !py-20">
           <div className="container">
             <div className="row">
-              <motion.div
-                initial={{
-                  x: -100,
-                  opacity: 0,
-                }}
-                whileInView={{
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.8,
-                  },
-                }}
+              <div
                 className="col-12 mb-4"
                 style={{ fontWeight: "bold", fontSize: "40px" }}
               >
                 A Deep-Dive Into Our Priorities
-              </motion.div>
+              </div>
               <Swiper
                 spaceBetween={10}
                 slidesPerView={1}
@@ -531,23 +383,12 @@ export const Fashion = () => {
         >
           <div className="row ml-lg-4">
             <div className="col-lg-9 ">
-              <motion.p
-                initial={{
-                  x: -100,
-                  opacity: 0,
-                }}
-                whileInView={{
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.8,
-                  },
-                }}
+              <p
                 style={{ fontWeight: "bold", fontSize: "40px" }}
                 className="pl-5 ml-5"
               >
                 Forge Connection With Excellence
-              </motion.p>
+              </p>
             </div>
           </div>
           <div className="row">
@@ -581,40 +422,13 @@ export const Fashion = () => {
                 className="col-lg-6"
                 style={{ fontWeight: "bold", fontSize: "50px" }}
               >
-                <motion.p
-                  initial={{
-                    y: -20,
-                    opacity: 0,
-                  }}
-                  whileInView={{
-                    y: 0,
-                    opacity: 1,
-                    transition: {
-                      duration: 0.8,
-                    },
-                  }}
-                  className="d-flex justify-content-center text-[1ch] lg:text-[2.3ch]"
-                >
+                <p className="d-flex justify-content-center text-[1ch] lg:text-[2.3ch]">
                   {fashionData?.preferChoiceDataHeading}
-                </motion.p>
+                </p>
               </div>
-              <motion.div
-                initial={{
-                  y: -20,
-                  opacity: 0,
-                }}
-                whileInView={{
-                  y: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.8,
-                  },
-                }}
-                className="col-lg-7 mb-6"
-                style={{ textAlign: "center" }}
-              >
+              <div className="col-lg-7 mb-6" style={{ textAlign: "center" }}>
                 {fashionData?.preferChoiceDataDescription}
-              </motion.div>
+              </div>
               <div className="flex flex-row justify-center gap-6 flex-wrap items-center">
                 <div className="relative w-[150px] border shadow-sm rounded-md">
                   <img alt="img" src={Rec1} className="w-full" />
@@ -670,56 +484,13 @@ export const Fashion = () => {
               <div className="col-8">
                 <div className="row">
                   <div className="col-6">
-                    <motion.img
-                      initial={{
-                        y: -20,
-                        x: -20,
-                        opacity: 0,
-                      }}
-                      whileInView={{
-                        y: 0,
-                        x: 0,
-                        opacity: 1,
-                        transition: {
-                          duration: 0.8,
-                        },
-                      }}
-                      src={fashionData?.snapshotImg1}
-                      alt=""
-                    />
+                    <img src={fashionData?.snapshotImg1} alt="" />
                   </div>
                   <div className="col-6">
-                    <motion.img
-                      initial={{
-                        y: -20,
-                        opacity: 0,
-                      }}
-                      whileInView={{
-                        y: 0,
-                        opacity: 1,
-                        transition: {
-                          duration: 0.8,
-                        },
-                      }}
-                      src={fashionData?.snapshotImg2}
-                      alt=""
-                    />
+                    <img src={fashionData?.snapshotImg2} alt="" />
                   </div>
                   <div className="col-12  mt-3">
-                    <motion.img
-                      initial={{
-                        y: -20,
-                        x: 20,
-                        opacity: 0,
-                      }}
-                      whileInView={{
-                        y: 0,
-                        x: 0,
-                        opacity: 1,
-                        transition: {
-                          duration: 0.8,
-                        },
-                      }}
+                    <img
                       src={fashionData?.snapshotImg4}
                       alt=""
                       style={{ minWidth: "100%" }}
@@ -729,38 +500,10 @@ export const Fashion = () => {
               </div>
               <div className="col-4">
                 <div className="col-12">
-                  <motion.img
-                    initial={{
-                      x: -100,
-                      opacity: 0,
-                    }}
-                    whileInView={{
-                      x: 0,
-                      opacity: 1,
-                      transition: {
-                        duration: 0.8,
-                      },
-                    }}
-                    src={fashionData?.snapshotImg3}
-                    alt=""
-                  />
+                  <img src={fashionData?.snapshotImg3} alt="" />
                 </div>
                 <div className="col-12 mt-3">
-                  <motion.img
-                    initial={{
-                      x: 100,
-                      opacity: 0,
-                    }}
-                    whileInView={{
-                      x: 0,
-                      opacity: 1,
-                      transition: {
-                        duration: 0.8,
-                      },
-                    }}
-                    src={fashionData?.snapshotImg5}
-                    alt=""
-                  />
+                  <img src={fashionData?.snapshotImg5} alt="" />
                 </div>
               </div>
             </div>
