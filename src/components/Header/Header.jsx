@@ -1,7 +1,7 @@
 // **** Library Imports ****
 import { BsSearch } from "react-icons/bs";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 // **** Local Imports ****
@@ -118,10 +118,6 @@ const navLinks = [
 const Header = () => {
   const navigate = useNavigate();
 
-  const { scrollY } = useScroll();
-
-  const opacity = useTransform(scrollY, [0, 100], [0, 1]);
-
   const [state, setState] = useState(false);
 
   const [drapdownState, setDrapdownState] = useState({
@@ -129,24 +125,9 @@ const Header = () => {
     idx: null,
   });
 
-  const [isReached, setIsReached] = useState(0);
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 110) {
-        setIsReached(true);
-      } else {
-        setIsReached(false);
-      }
-    });
-  }, []);
-
   return (
     <motion.header
-      className={`bg-white h-[72px] px-3 md:px-5 fixed top-0 w-full z-50 ${
-        isReached ? "" : "pointer-events-none"
-      }`}
-      style={{ opacity }}
+      className={`bg-white h-[72px] px-3 md:px-5 fixed top-0 w-full z-50`}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center h-full">
         {/* Logo */}
