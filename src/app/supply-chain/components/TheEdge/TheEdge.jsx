@@ -45,25 +45,25 @@ const TheEdge = () => {
   const accordionItems = [
     {
       id: 1,
-      triggerItem: "Global Reach. Local Play:",
+      triggerItem: "Global Reach. Local Play",
       content:
         "Large network of reliable partners and associates supporting assets for transportation and warehousing across India",
     },
     {
       id: 2,
-      triggerItem: "Tech-Driven Solutions:",
+      triggerItem: "Tech-Driven Solutions",
       content:
         "Large network of reliable partners and associates supporting assets for transportation and warehousing across India",
     },
     {
       id: 3,
-      triggerItem: "Consultative Solutions:",
+      triggerItem: "Consultative Solutions",
       content:
         "Large network of reliable partners and associates supporting assets for transportation and warehousing across India",
     },
     {
       id: 4,
-      triggerItem: "Strong Leadership &amp; Robust Operating Processes:",
+      triggerItem: "Strong Leadership &amp; Robust Operating Processes",
       content:
         "Large network of reliable partners and associates supporting assets for transportation and warehousing across India",
     },
@@ -80,7 +80,7 @@ const TheEdge = () => {
           </div>
 
           <div className="flex-1 flex flex-col gap-5">
-            <p className="text-lg font-medium text-[#f08f1e]">The Edge</p>
+            <p className="text-lg font-medium text-[#ff7900]">The Edge</p>
             <h1 className="relative leading-snug text-[28px] md:text-5xl text-white after:absolute after:border-2 after:left-0 after:-bottom-4 after:w-10 after:border-white">
               We do more than solve the immediate logistics need.
             </h1>

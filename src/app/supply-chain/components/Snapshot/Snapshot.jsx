@@ -30,7 +30,7 @@ const Snapshot = () => {
     <section className="relative px-3 md:px-5">
       <div className="max-w-7xl mx-auto flex flex-col gap-5 py-16 md:py-32">
         <div className="flex flex-col gap-7">
-          <h2 className="relative leading-snug text-3xl text-main-text after:absolute after:border-2 after:left-0 after:-bottom-4 after:w-10 after:border-main-text">
+          <h2 className="relative leading-snug text-3xl lg:text-6xl text-main-text after:absolute after:border-2 after:left-0 after:-bottom-4 after:w-10 after:border-main-text">
             Snapshot
           </h2>
         </div>
@@ -89,10 +89,10 @@ const Snapshot = () => {
             <div className="row justify-center">
               <div className="col-12 mt-5">
                 <div
-                  style={{ fontWeight: "bold", fontSize: "55px" }}
-                  className="text-center"
+                  style={{ fontWeight: "bold" }}
+                  className="text-center text-3xl lg:text-6xl"
                 >
-                  Interact with us
+                  Experience Apollo Supply Chain
                 </div>
                 <div className="row mt-4">
                   <div className="col-12">

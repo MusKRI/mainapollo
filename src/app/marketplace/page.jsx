@@ -19,6 +19,8 @@ import innovationCentricSvg from "./images/icons/innovation-centric.svg";
 
 import sImg from "./images/fb.jpg";
 
+import Video from "./video/marketplace.mp4";
+
 export const MarketPlace = () => {
   let data = {
     bannerDescription: "Redefining Global Trade & Commerce",
@@ -34,25 +36,34 @@ export const MarketPlace = () => {
 
   return (
     <>
-      <div
-        className="relative h-[calc(100vh-72px)]"
-        style={{ maxHeight: "30%", background: `url(${data?.bannerImage})` }}
-      >
-        <div className="absolute inset-0 top-0 z-[1] backdrop-brightness-[0.5] px-3 md:px-5">
-          <div className="max-w-7xl mx-auto flex flex-col gap-16 py-16 h-full justify-center">
-            {/* <div className="flex flex-col gap-3">
+      <div className="relative">
+        <div className="col-12 p-0 h-screen">
+          <div className="img h-full relative">
+            <video
+              muted
+              loop="true"
+              autoPlay={true}
+              src={Video}
+              className="object-fill h-screen w-full"
+            />
+
+            <div className="absolute inset-0 top-0 left-0 w-full h-full z-[1] backdrop-brightness-[0.5] px-3 md:px-5">
+              <div className="max-w-7xl mx-auto flex flex-col gap-16 py-16 h-full justify-center">
+                {/* <div className="flex flex-col gap-3">
               <h4 className="text-white text-2xl">{data.tag}</h4>
               <div className="h-1 w-10 bg-white" />
             </div> */}
 
-            <div className="flex flex-col gap-5">
-              <h1 className="text-white text-5xl lg:text-7xl font-semibold">
-                {data.bannerDescription}
-              </h1>
+                <div className="flex flex-col gap-5">
+                  <h1 className="text-white text-5xl lg:text-7xl font-semibold">
+                    Redefining Global Trade & Commerce
+                  </h1>
 
-              {/* <p className="text-white max-w-md text-lg ml-4 lg:ml-20">
+                  {/* <p className="text-white max-w-md text-lg ml-4 lg:ml-20">
                 {data.bannerDescription}
               </p> */}
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -61,40 +72,16 @@ export const MarketPlace = () => {
       {/* Section-2 */}
       <div className="container mt-4 mb-4">
         <div className="row">
-          <motion.div
-            className="col-6"
-            initial={{
-              opacity: 0,
-              x: -100,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-          >
+          <div className="col-6">
             <img
               src={data.bgImage}
               alt=""
               style={{ maxHeight: "370px", minWidth: "70%" }}
             />
-          </motion.div>
-          <motion.div
+          </div>
+          <div
             className="col-6 d-flex align-items-end"
             style={{ marginBottom: "-20px" }}
-            initial={{
-              opacity: 0,
-              x: 100,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 0.8,
-              },
-            }}
           >
             <div
               className="row"
@@ -113,7 +100,7 @@ export const MarketPlace = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
       {/* section-3 */}
@@ -123,39 +110,11 @@ export const MarketPlace = () => {
       >
         <div className="row container mx-auto space-y-4">
           <div className="col-6 self-center">
-            <motion.h1
-              initial={{
-                opacity: 0,
-                x: -100,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className="text-3xl"
-            >
-              At Apollo Marketplace
-            </motion.h1>
-            <motion.p
-              initial={{
-                opacity: 0,
-                x: -100,
-              }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className="max-w-md"
-            >
+            <h1 className="text-3xl lg:text-6xl">At Apollo Marketplace</h1>
+            <p className="max-w-md">
               we specialize in trading and disturbing a diverse range of
               products across several key business verticals:
-            </motion.p>
+            </p>
           </div>
           <div className="col-6 flex flex-row flex-wrap gap-4">
             <div className="group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden hover:shadow-md transition">
@@ -241,271 +200,80 @@ export const MarketPlace = () => {
       <div className="container my-5">
         <div className="row">
           <div className="col-10">
-            <h1 style={{ fontSize: "60px", fontWeight: "bold" }}>
-              Benifits from our unmatched expertise
+            <h1 className="text-3xl lg:text-6xl font-bold">
+              Benefit from our unmatched expertise
             </h1>
           </div>
         </div>
       </div>
 
-      <div className="border-t border-b flex flex-row flex-wrap [&>div]:flex-1 [&>div]:h-[440px]">
-        <div className="p-4 flex flex-col justify-start h-full border-r">
-          <motion.div
-            initial={{
-              opacity: 0,
-              x: -100,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="relative pt-16"
-          >
+      <div className="border-t border-b flex flex-row flex-wrap [&>div]:flex-1 [&>div]:h-[440px] marketplace-benefit">
+        <div className="p-4 flex flex-col justify-start h-full border-r transition hover:bg-[#303588] group">
+          <div className="relative pt-16">
             <img src={globalNetworkSvg} alt="" className="h-20" />
-          </motion.div>
-          <motion.h2
-            initial={{
-              opacity: 0,
-              x: -100,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="text-2xl font-semibold"
-          >
+          </div>
+          <h2 className="text-2xl font-semibold group-hover:text-white">
             Global Network and Partnerships:
-          </motion.h2>
-          <motion.p
-            initial={{
-              opacity: 0,
-              x: -100,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="text-lg"
-          >
+          </h2>
+          <p className="text-lg group-hover:text-white">
             Our extensive global network and strategic partnerships enable us to
             connect buyers and sellers from around the world, facilitating
             seamless trade operations.
-          </motion.p>
+          </p>
         </div>
-        <div className="p-4 flex flex-col justify-start h-full border-r">
-          <motion.div
-            initial={{
-              opacity: 0,
-              x: -100,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="relative pt-16"
-          >
+
+        <div className="p-4 flex flex-col justify-start h-full border-r transition hover:bg-[#303588] group">
+          <div className="relative pt-16">
             <img src={holisticSolutionSvg} alt="" className="h-20" />
-          </motion.div>
-          <motion.h2
-            initial={{
-              opacity: 0,
-              x: -100,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="text-2xl font-semibold"
-          >
+          </div>
+          <h2 className="text-2xl font-semibold group-hover:text-white">
             Holistic Solutions:
-          </motion.h2>
-          <motion.p
-            initial={{
-              opacity: 0,
-              x: -100,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="text-lg"
-          >
+          </h2>
+          <p className="text-lg group-hover:text-white">
             Apollo Marketplace functions as a holistic trading partner,
             presenting a diverse product portfolio spanning multiple industries.
-          </motion.p>
+          </p>
         </div>
-        <div className="p-4 flex flex-col justify-start h-full border-r">
-          <motion.div
-            initial={{
-              opacity: 0,
-              x: -100,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="relative pt-16"
-          >
+
+        <div className="p-4 flex flex-col justify-start h-full border-r transition hover:bg-[#303588] group">
+          <div className="relative pt-16">
             <img src={qualityCommitmentSvg} alt="" className="h-20" />
-          </motion.div>
-          <motion.h2
-            initial={{
-              opacity: 0,
-              x: -100,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="text-2xl font-semibold"
-          >
+          </div>
+          <h2 className="text-2xl font-semibold group-hover:text-white">
             Quality Commitment:
-          </motion.h2>
-          <motion.p
-            initial={{
-              opacity: 0,
-              x: -100,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="text-lg"
-          >
+          </h2>
+          <p className="text-lg group-hover:text-white">
             We uphold the highest standards of quality assurance, ensuring that
             every product or service we provide exceeds your expectations.
-          </motion.p>
+          </p>
         </div>
-        <div className="p-4 flex flex-col justify-start h-full border-r">
-          <motion.div
-            initial={{
-              opacity: 0,
-              x: -100,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="relative pt-16"
-          >
+
+        <div className="p-4 flex flex-col justify-start h-full border-r transition hover:bg-[#303588] group">
+          <div className="relative pt-16">
             <img src={customizedCollaborationSvg} alt="" className="h-20" />
-          </motion.div>
-          <motion.h2
-            initial={{
-              opacity: 0,
-              x: -100,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="text-2xl font-semibold"
-          >
+          </div>
+          <h2 className="text-2xl font-semibold group-hover:text-white">
             Customized Collaborations:
-          </motion.h2>
-          <motion.p
-            initial={{
-              opacity: 0,
-              x: -100,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="text-lg"
-          >
+          </h2>
+          <p className="text-lg group-hover:text-white">
             Acknowledging the distinctiveness of every business, we prioritize
             personalized partnerships that align with your specific needs and
             objectives.
-          </motion.p>
+          </p>
         </div>
-        <div className="p-4 flex flex-col justify-start h-full">
-          <motion.div
-            initial={{
-              opacity: 0,
-              x: -100,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="relative pt-16"
-          >
+
+        <div className="p-4 flex flex-col justify-start h-full transition hover:bg-[#303588] group">
+          <div className="relative pt-16">
             <img src={innovationCentricSvg} alt="" className="h-20" />
-          </motion.div>
-          <motion.h2
-            initial={{
-              opacity: 0,
-              x: -100,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="text-2xl font-semibold"
-          >
+          </div>
+          <h2 className="text-2xl font-semibold group-hover:text-white">
             Innovation-Centric:
-          </motion.h2>
-          <motion.p
-            initial={{
-              opacity: 0,
-              x: -100,
-            }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                duration: 0.8,
-              },
-            }}
-            className="text-lg"
-          >
+          </h2>
+          <p className="text-lg group-hover:text-white">
             In an ever-evolving business landscape, we embrace innovation to
             remain at the forefront, delivering cutting-edge solutions to our
             clients.
-          </motion.p>
+          </p>
         </div>
       </div>
       {/* LastSection */}
@@ -513,61 +281,24 @@ export const MarketPlace = () => {
         <div className="container">
           <div className="row !justify-center">
             <div className="col-12 mt-5">
-              <motion.div
-                initial={{
-                  x: -100,
-                  opacity: 0,
-                }}
-                whileInView={{
-                  x: 0,
-                  opacity: 1,
-                  transition: {
-                    duration: 0.8,
-                  },
-                }}
+              <div
                 style={{ fontWeight: "bold", fontSize: "55px" }}
                 className="text-center"
               >
                 Experience Apollo Marketplace
-              </motion.div>
+              </div>
               <div className="row">
-                <motion.div
-                  initial={{
-                    x: -100,
-                    opacity: 0,
-                  }}
-                  whileInView={{
-                    x: 0,
-                    opacity: 1,
-                    transition: {
-                      duration: 0.8,
-                    },
-                  }}
-                  className="col-lg-6 mx-auto text-center"
-                >
+                <div className="col-lg-6 mx-auto text-center">
                   When you choose Apollo Marketplace, you opt for a legacy-rich,
                   globally connected partner that prioritizes your success.
                   Discover the difference of international trade and
                   distribution with Apollo, where excellence is not just a
                   choice – it's the standard.
-                </motion.div>
+                </div>
               </div>
               <div className="row mt-4">
                 <div className="col-12">
-                  <motion.div
-                    initial={{
-                      y: 100,
-                      opacity: 0,
-                    }}
-                    whileInView={{
-                      y: 0,
-                      opacity: 1,
-                      transition: {
-                        duration: 0.8,
-                      },
-                    }}
-                    className="row justify-center"
-                  >
+                  <div className="row justify-center">
                     <div className="col-4 flex flex-col items-center">
                       <p style={{ fontWeight: "bold" }} className="text-center">
                         Address
@@ -587,7 +318,7 @@ export const MarketPlace = () => {
                       <p>info@apolloindia.com</p>
                       <p>contact@apolloindia.com</p>
                     </div>
-                  </motion.div>
+                  </div>
                 </div>
               </div>
             </div>

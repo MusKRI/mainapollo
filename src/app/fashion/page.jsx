@@ -378,8 +378,7 @@ export const Fashion = () => {
         </div>
         {/* Forge Connection */}
         <div
-          className="col-12 !my-10 py-20 space-y-4"
-          style={{ background: "#d1d1d1" }}
+          className="col-12 !my-10 py-20 space-y-4" 
         >
           <div className="row ml-lg-4">
             <div className="col-lg-9 ">
@@ -394,10 +393,10 @@ export const Fashion = () => {
           <div className="row">
             {fashionData?.forgesData?.map((items, index) => (
               <div
-                className={`col-md-3 card border-0 transition hover:shadow-lg ${
+                className={`col-md-3 card border-0 transition hover:shadow-2xl ${
                   index === 0 || index === 2 || index === 5 || index === 7
-                    ? "bg-white"
-                    : "bg-[#f8f8f8]"
+                    ? "bg-white hover:!bg-[#8a6139] hover:!text-white"
+                    : "bg-[#f8f8f8] hover:!bg-[#8a6139] hover:!text-white"
                 }`}
                 key={items.id}
               >
@@ -419,10 +418,10 @@ export const Fashion = () => {
           <div className="container">
             <div className="row justify-content-center">
               <div
-                className="col-lg-6"
+                className="col-lg-12 my-2"
                 style={{ fontWeight: "bold", fontSize: "50px" }}
               >
-                <p className="d-flex justify-content-center text-[1ch] lg:text-[2.3ch]">
+                <p className="d-flex justify-content-center text-6xl">
                   {fashionData?.preferChoiceDataHeading}
                 </p>
               </div>
@@ -479,7 +478,7 @@ export const Fashion = () => {
         {/* SnapShotSection */}
         <div className="col-12">
           <div className="container">
-            <p style={{ fontWeight: "bold", fontSize: "50px" }}>SnapShot</p>
+            <p style={{ fontWeight: "bold", fontSize: "50px" }}>Snapshot</p>
             <div className="row">
               <div className="col-8">
                 <div className="row">
@@ -518,7 +517,7 @@ export const Fashion = () => {
                   style={{ fontWeight: "bold", fontSize: "55px" }}
                   className="text-center"
                 >
-                  Interact with us
+                  Experience Apollo Fashion
                 </div>
                 <div className="row">
                   <div className="col-lg-6 mx-auto text-justify">
@@ -556,10 +555,6 @@ export const Fashion = () => {
                               Leather Garments & Accessories
                             </p>
                             <p>B-21, Sector-65, NOIDA-201301, India</p>
-                          </div>
-                          <div className="col-6">
-                            <p style={{ fontWeight: "bold" }}>Phone</p>
-                            <p>+91 120 4608300</p>
                           </div>
                         </div>
                       </div>

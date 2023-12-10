@@ -22,7 +22,7 @@ const ApolloAccordion = ({ items, setCurrentImage }) => {
               key={item.id}
               onClick={() => setCurrentImage(index)}
             >
-              <AccordionTrigger className="text-[#fa951d] text-[12px] md:text-xl font-semibold">
+              <AccordionTrigger className="text-[#ff7900] text-[12px] md:text-xl font-semibold">
                 {item.triggerItem}
               </AccordionTrigger>
               <AccordionContent className="text-white">

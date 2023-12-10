@@ -28,7 +28,7 @@ const SupplyChainBanner = ({ data }) => {
   const MotionArrowRight = motion(BsArrowRight);
 
   return (
-    <div className="relative min-h-[calc(100vh-72px)] bg-[#f7931e]">
+    <div className="relative min-h-[calc(100vh-72px)] bg-[#ff7900]">
       <div className="px-3 md:px-5 h-full">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between py-16 h-full">
           <div className="flex flex-col gap-3">

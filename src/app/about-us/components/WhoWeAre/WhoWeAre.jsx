@@ -45,24 +45,26 @@ const WhoWeAre = ({ data }) => {
 
         <div className="flex-1 px-6 flex flex-col gap-3 self-center">
           <h4 className="text-xl whitespace-pre-line  ">{data?.subtitle1}</h4>
+          <h4 className="text-xl whitespace-pre-line  ">{data?.subtitle2}</h4>
+          <h4 className="text-xl whitespace-pre-line  ">{data?.subtitle3}</h4>
 
           <div className="border bg-[#2e3192] w-full p-4 rounded-lg text-white">
             <div className="flex flex-row flex-wrap justify-between items-end lg:justify-center lg:gap-20">
-              <div className="flex flex-col text-center">
+              <div className="flex flex-col text-center w-[200px] items-center">
                 <h3 className="text-3xl lg:text-5xl font-semibold flex flex-row items-center">
                   <Counter from={0} to={45} />
                 </h3>
                 <p className="text-xl lg:text-xl">Country</p>
               </div>
 
-              <div className="flex flex-col text-center">
+              <div className="flex flex-col text-center w-[200px] items-center">
                 <h3 className="text-3xl lg:text-5xl font-semibold flex flex-row items-center">
                   <Counter from={0} to={6000} />+
                 </h3>
                 <p className="text-xl lg:text-xl">Employees</p>
               </div>
 
-              <div className="flex flex-col text-center">
+              <div className="flex flex-col text-center w-[200px] items-center">
                 <h3 className="text-3xl lg:text-5xl font-semibold flex flex-row items-center">
                   <Counter from={0} to={1000} />+
                 </h3>
@@ -70,8 +72,6 @@ const WhoWeAre = ({ data }) => {
               </div>
             </div>
           </div>
-          <h4 className="text-xl whitespace-pre-line  ">{data?.subtitle2}</h4>
-          <h4 className="text-xl whitespace-pre-line  ">{data?.subtitle3}</h4>
         </div>
       </div>
     </section>

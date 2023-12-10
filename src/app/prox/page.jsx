@@ -25,7 +25,7 @@ const ProXPage = () => {
   const proxData = {
     // contact banner data
     proxBannerImage: ProxBannerImg,
-    proxBannerTitle: "Constructing A Safer, Pro-Planet Tomorrow",
+    proxBannerTitle: "Constructing A Safer, Planet Tomorrow",
 
     // prox about
     pAboutTitle: "Your Trusted EPC Partner for Seamless Project Excellence",
@@ -112,7 +112,7 @@ const ProXPage = () => {
       />
 
       {/* Prox About Section */}
-      <section className=" bg-[#333694] text-white relative px-3 md:px-5">
+      <section className=" bg-white relative px-3 md:px-5">
         <div className="max-w-7xl mx-auto flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-center py-16 md:py-32">
           <div className="flex flex-col gap-4 flex-[0.6]">
             <h1 className="text-4xl font-bold">{proxData?.pAboutTitle}</h1>
@@ -130,7 +130,7 @@ const ProXPage = () => {
       {/* Prox Key section */}
       <section className=" bg-white relative px-3 md:px-5">
         <div className="max-w-7xl mx-auto py-16 space-y-4">
-          <h1 className="text-3xl lg:text-5xl font-semibold">
+          <h1 className="text-3xl lg:text-6xl font-semibold">
             {proxData?.pKsTitle}
           </h1>
           <p className="font-medium max-w-lg">{proxData?.pKsDescription}</p>
@@ -139,7 +139,7 @@ const ProXPage = () => {
               return (
                 <div
                   key={index}
-                  className="bg-white hover:!bg-[#2e3192] border rounded-md p-3 flex flex-col gap-3 transition hover:shadow-xl group"
+                  className="bg-white hover:!bg-[#2e3192] border rounded-md p-3 flex flex-col gap-3 transition hover:shadow-2xl group"
                 >
                   <div className="relative w-16">
                     <img src={ks?.icon} alt="" />
@@ -160,7 +160,7 @@ const ProXPage = () => {
       {/* Broad section */}
       <section className=" bg-[#f9f9f9] relative px-3 md:px-5">
         <div className="max-w-7xl mx-auto py-16 space-y-4">
-          <h1 className="text-3xl lg:text-5xl font-semibold">
+          <h1 className="text-3xl lg:text-6xl font-semibold">
             {proxData?.pbroadTitle}
           </h1>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 justify-center">
@@ -189,7 +189,7 @@ const ProXPage = () => {
       {/* Unique Edge Section */}
       <section className=" bg-[#333694] text-white relative px-3 md:px-5">
         <div className="max-w-7xl mx-auto flex flex-col gap-4 py-16 pb-32">
-          <h1 className="text-3xl lg:text-5xl font-bold">
+          <h1 className="text-3xl lg:text-6xl font-bold">
             {proxData?.pUETitle}
           </h1>
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4">
@@ -223,9 +223,9 @@ const ProXPage = () => {
       <section className="relative px-3 md:px-5 bg-[#f6f7fb]">
         <div className="max-w-7xl mx-auto flex flex-col gap-5 py-16">
           <div className="flex flex-col gap-7">
-            <h2 className="relative leading-snug text-3xl text-main-text after:absolute after:border-2 after:left-0 after:-bottom-4 after:w-10 after:border-main-text">
+            <h1 className="relative leading-snug text-6xl text-main-text after:absolute after:border-2 after:left-0 after:-bottom-4 after:w-10 after:border-main-text">
               Snapshot
-            </h2>
+            </h1>
           </div>
 
           <div className="mt-10 business_snapshot_imgages">
@@ -260,7 +260,7 @@ const ProXPage = () => {
               </div>
               <div className="row">
                 <div className="col-lg-6 text-center mx-auto">
-                  When you choose Apollo Pro X, you opt to for a safer and
+                  When you choose Apollo Pro X, you opt for a safer and
                   sustainable future. Discover the difference of a reliable and
                   eco-friendly infrastructure with Apollo, where excellence is
                   not just a choice – it's the standard.

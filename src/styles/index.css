@@ -249,3 +249,11 @@ html {
 .ga-5 {
   grid-area: img5;
 }
+
+.happ {
+  fill: #303588 !important;
+}
+
+.happ:hover {
+  fill: white !important;
+}

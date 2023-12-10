@@ -48,7 +48,7 @@ const ScIdentity = () => {
           </div>
 
           <div className="flex-1 flex flex-col gap-5">
-            <p className="text-lg font-medium text-[#f7931e]">Our Identity</p>
+            <p className="text-lg font-medium text-[#ff7900]">Our Identity</p>
             <h1 className="relative leading-snug text-[28px] md:text-5xl text-main-text after:absolute after:border-2 after:left-0 after:-bottom-4 after:w-10 after:border-main-text">
               Our logistics Services Empower Businesses For Growth And
               Sustainability.
@@ -71,18 +71,18 @@ const ScIdentity = () => {
 
             <div className="flex items-center justify-start">
               <MotionLink
-                className="relative flex items-center text-[#f7931e]"
+                className="relative flex items-center text-[#ff7900]"
                 to={"#"}
                 initial="rest"
                 whileHover="whileHover"
               >
-                <span className="font-medium text-lg text-[#f7931e]">
+                <span className="font-medium text-lg text-[#ff7900]">
                   Read more
                 </span>
                 <motion.div
                   variants={buttonVariants}
                   layout
-                  className="border border-[#f7931e] absolute p-3 rounded-full flex justify-end "
+                  className="border border-[#ff7900] absolute p-3 rounded-full flex justify-end "
                 >
                   <MotionArrowRight
                     className="w-4 h-4 self-end"
@@ -98,38 +98,52 @@ const ScIdentity = () => {
 
         <div className="flex flex-col lg:flex-row md:justify-between md:items-center gap-4">
           <div className="flex-1 flex flex-row gap-6">
-            <div className="w-20 md:w-28 h-20 md:h-28 flex items-center justify-center rounded-2xl bg-[#010101]">
-              <img src={BadgeSvg} alt="Badge" />
-            </div>
             <div className="flex flex-col justify-center">
-              <h1 className="text-4xl md:text-6xl font-bold text-main-text tracking-wide flex flex-row items-center">
+              <h1 className="text-4xl md:text-5xl font-bold text-main-text tracking-wide flex flex-row items-center">
                 <Counter from={0} to={150} />+
               </h1>
-              <p className="text-main-text">
-                Large Customers Across Industries
-              </p>
+              <p className="text-main-text">Customers</p>
             </div>
           </div>
           <div className="flex-1 flex flex-row gap-6">
-            <div className="w-20 md:w-28 h-20 md:h-28 flex items-center justify-center rounded-2xl bg-[#010101]">
-              <img src={FileDocSvg} alt="Badge" />
-            </div>
             <div className="flex flex-col justify-center">
-              <h1 className="text-4xl md:text-6xl font-bold text-main-text tracking-wide flex flex-row items-center">
+              <h1 className="text-4xl md:text-5xl font-bold text-main-text tracking-wide flex flex-row items-center">
                 <Counter from={0} to={18000} />+
               </h1>
-              <p className="text-main-text">Pin Codes Coverage Across India</p>
+              <p className="text-main-text">Pin Codes Served</p>
             </div>
           </div>
           <div className="flex-1 flex flex-row gap-6">
-            <div className="w-20 md:w-28 h-20 md:h-28 flex items-center justify-center rounded-2xl bg-[#010101]">
-              <img src={TrophySvg} alt="Badge" />
-            </div>
             <div className="flex flex-col justify-center">
-              <h1 className="text-4xl md:text-6xl font-bold text-main-text tracking-wide flex flex-row items-center">
+              <h1 className="text-4xl md:text-5xl font-bold text-main-text tracking-wide flex flex-row items-center">
                 <Counter from={0} to={2500} />+
               </h1>
               <p className="text-main-text">Experienced Employees</p>
+            </div>
+          </div>
+          <div className="flex-1 flex flex-row gap-6">
+            <div className="flex flex-col justify-center">
+              <h1 className="text-4xl md:text-5xl font-bold text-main-text tracking-wide flex flex-row items-center">
+                <Counter from={0} to={2.1} isFixed point={1} /> M+
+              </h1>
+              <p className="text-main-text">Square Feet of Warehouse Space</p>
+            </div>
+          </div>
+          <div className="flex-1 flex flex-row gap-6">
+            <div className="flex flex-col justify-center">
+              <h1 className="text-4xl md:text-5xl font-bold text-main-text tracking-wide flex flex-row items-center">
+                <Counter from={0} to={15} />
+                K+
+              </h1>
+              <p className="text-main-text">Monthly FTL trips</p>
+            </div>
+          </div>
+          <div className="flex-1 flex flex-row gap-6">
+            <div className="flex flex-col justify-center">
+              <h1 className="text-4xl md:text-5xl font-bold text-main-text tracking-wide flex flex-row items-center">
+                <Counter from={0} to={45} />+
+              </h1>
+              <p className="text-main-text">Facilities</p>
             </div>
           </div>
         </div>

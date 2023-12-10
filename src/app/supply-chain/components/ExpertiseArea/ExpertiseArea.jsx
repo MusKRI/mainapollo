@@ -70,7 +70,7 @@ const ExpertiseArea = () => {
     <section className="relative px-3 md:px-5 ExpertiseArea">
       <div className="max-w-7xl mx-auto flex flex-col py-16 md:py-32 gap-10">
         <div className="flex flex-col gap-4 items-center">
-          <SectionHeading classes="text-center mt-2 text-[#f7931e]">
+          <SectionHeading classes="text-center mt-2 text-[#ff7900]">
             Areas of Expertise
           </SectionHeading>
 
@@ -115,7 +115,7 @@ const ExpertiseArea = () => {
               return (
                 <SwiperSlide key={slide.id} className="h-full self-stretch">
                   <div className="flex flex-col gap-3 h-full items-center justify-stretch group">
-                    <div className="relative border-2 border-[#f7931e] rounded-lg p-4 flex flex-col gap-4 group-hover:bg-[#f7931e] transition">
+                    <div className="relative border-2 border-[#ff7900] rounded-lg p-4 flex flex-col gap-4 group-hover:bg-[#ff7900] transition">
                       <img
                         src={slide.slideImage}
                         alt="IMG1"

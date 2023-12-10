@@ -11,7 +11,7 @@ const SectionHeading = ({
   return (
     <motion.h1
       className={cn(
-        "text-[28px] md:text-5xl font-medium text-main-text",
+        "text-[28px] md:text-6xl font-medium text-main-text",
         classes
       )}
       initial={initial}
