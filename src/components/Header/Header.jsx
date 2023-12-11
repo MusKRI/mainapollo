@@ -8,7 +8,7 @@ import { Link, useNavigate } from "react-router-dom";
 import LinkWithoutChildren from "./components/LinkWithoutChildren";
 import LinkWithChildren from "./components/LinkWithChildren";
 
-import Logo from "./images/logo.png";
+import Logo from "./images/Apollo.svg";
 
 const navLinks = [
   // {
@@ -135,7 +135,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center h-full">
         {/* Logo */}
         <Link to="/" className="">
-          <div className="relative">
+          <div className="relative w-[180px]">
             <img src={Logo} alt="Logo" />
           </div>
         </Link>
