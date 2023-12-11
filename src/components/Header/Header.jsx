@@ -308,7 +308,7 @@ const Header = () => {
         </nav>
 
         {/* Search */}
-        <div className="h-full items-center gap-4 hidden lg:flex">
+        {/* <div className="h-full items-center gap-4 hidden lg:flex">
           <BsSearch className="w-5 h-5" />
 
           <button
@@ -317,7 +317,7 @@ const Header = () => {
           >
             Enquire now
           </button>
-        </div>
+        </div> */}
       </div>
     </motion.header>
   );
