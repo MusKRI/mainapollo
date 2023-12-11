@@ -90,7 +90,7 @@ const TabSection = ({ data }) => {
 													opacity: 0
 												}}
 											>
-												<h1 className="text-3xl lg:text-5xl capitalize">{tab.name}</h1>
+												<h1 className="text-3xl lg:text-5xl capitalize">{tab.heading}</h1>
 												<p className="text-[#969696] text-sm lg:text-lg">{tab.subheading1}</p>
 												<p className="text-[#969696] text-sm lg:text-lg">{tab.subheading2}</p>
 												<p className="text-[#969696] text-sm lg:text-lg">{tab.subheading3}</p>

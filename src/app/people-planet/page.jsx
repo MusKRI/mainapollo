@@ -35,6 +35,7 @@ const peopleplanetData = {
       id: "education",
       image: educationImg,
       name: "Education",
+      heading: "Making Equal Access to Healthcare A Reality",
       subheading1:
         "Women, young girls, and children are mostly left behind when it comes to getting a chance to realize their full potential via the education that they deserve.",
       subheading2:
@@ -45,6 +46,7 @@ const peopleplanetData = {
     {
       id: "healthcare",
       image: healthcareImg,
+      heading: "Protecting Our Environment",
       name: "Healthcare",
       subheading1:
         "Research has shown that access to healthcare has not been identified as a rural priority for many years now. Apollo Green Energy has partnered with Dasra, a Mumbai-based strategic philanthropy foundation. As a part of that, Apollo Green Energy supports the AHAAR program under SNEHA (Society for Nutrition, Education and Health Action) Through this partnership, we are helping the organisation in making efforts towards eliminating child malnutrition within the Dharavi region.",
@@ -54,6 +56,7 @@ const peopleplanetData = {
     {
       id: "environment",
       image: envImg,
+      heading: "Promoting Quality Education for All",
       name: "Environment",
       subheading1:
         "Apollo Green Energy’s goal is to make not only a societal but also an environmental impact. We have ensured that all our business verticals take steps towards being environmentally conscious.",
@@ -145,6 +148,34 @@ const PeoplePlanet = () => {
       />
 
       <TabSection data={peopleplanetData.tabs} />
+
+      <div className="px-3 md:px-20 bg-[#eeeeee]">
+        <div className="py-20 max-w-7xl mx-auto">
+          <div className="flex flex-col gap-4">
+            <div className="relative max-w-2xl w-[42rem] mx-auto mb-[-2rem]">
+              <img
+                src="https://apolloindia.com/wp-content/uploads/2022/12/comm.png"
+                alt=""
+              />
+            </div>
+            <h5 className="text-xl max-w-3xl text-center mx-auto lg:text-4xl">
+              To be able to be in a position where we can help make a difference
+              is an honour I cherish every day. Every step we take as a company
+              towards the betterment of others leaves a sense of fulfilment that
+              is unmatched.
+            </h5>
+
+            <div className="flex flex-col gap-2">
+              <h5 className="text-center text-3xl font-bold">
+                Mr. Raaja Kanwar
+              </h5>
+              <h6 className="text-xl text-center">
+                Chairman & Managing Director
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <MakingDifference
         data={{

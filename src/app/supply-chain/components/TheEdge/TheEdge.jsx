@@ -102,8 +102,9 @@ const TheEdge = () => {
             <div className="flex items-center justify-start">
               <MotionLink
                 className="relative flex items-center text-white"
-                to={"#"}
+                to={"https://apollosupplychain.com"}
                 initial="rest"
+                target="_blank"
                 whileHover="whileHover"
               >
                 <span className="font-medium text-lg text-white">

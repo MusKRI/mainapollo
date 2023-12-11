@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 // **** Local Imports ****
-import FeatImage from "../../images/identity/i1.jpeg";
+import FeatImage from "../../images/identity/sc-featimage.png";
 import { Counter } from "../../../../components/CounterMotion";
 
 const ScIdentity = () => {
@@ -35,7 +35,7 @@ const ScIdentity = () => {
         <div className="flex flex-col md:flex-row gap-4">
           <div className="flex-1 flex flex-row justify-center gap-6">
             <div className="relative overflow-hidden w-full h-full">
-              <img src={FeatImage} alt="SC Identity" className="h-full" />
+              <img src={FeatImage} alt="SC Identity" className="" />
             </div>
           </div>
 
@@ -118,7 +118,7 @@ const ScIdentity = () => {
               <h1 className="text-4xl md:text-5xl font-bold text-main-text tracking-wide flex flex-row items-center">
                 <Counter from={0} to={2.1} isFixed point={1} /> M+
               </h1>
-              <p className="text-main-text">Square Feet of Warehouse Space</p>
+              <p className="text-main-text text-center">Square Feet of Warehouse Space</p>
             </div>
           </div>
           <div className="flex-1 flex flex-row gap-6 justify-center">
