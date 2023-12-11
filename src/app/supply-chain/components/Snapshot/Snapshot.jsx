@@ -98,11 +98,11 @@ const Snapshot = () => {
                   <div className="col-12">
                     <div className="row justify-center">
                       <div className="col-4 text-center">
-                        <p style={{ fontWeight: "bold" }}>Contact Number</p>
+                        <p style={{ fontWeight: "bold" }}>Phone</p>
                         <p>0124-674-0200</p>
                       </div>
                       <div className="col-4 text-center">
-                        <p style={{ fontWeight: "bold" }}>Email Id</p>
+                        <p style={{ fontWeight: "bold" }}>Email</p>
                         <p>connect@apollosupplychain.com</p>
                       </div>
                     </div>

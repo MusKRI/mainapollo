@@ -8,7 +8,9 @@ import TheEdge from "./components/TheEdge/TheEdge";
 import Sectors from "./components/Sectors/Sectors";
 import Snapshot from "./components/Snapshot/Snapshot";
 
-import Slide2 from "./images/hero-slider/slider-img2.png";
+import hs1 from "./images/hero-slider/hs1.jpeg";
+import hs2 from "./images/hero-slider/hs2.jpeg";
+import hs3 from "./images/hero-slider/hs3.jpeg";
 
 const SupplyChain = () => {
   const supplyChainData = {
@@ -17,28 +19,14 @@ const SupplyChain = () => {
     supplyBannerTitle: "Complex Supply Chain. Simplified",
     supplyBannerDescription:
       "We offer customized solutions for supply chain competitiveness and resilience.",
-    supplyBannerNodes: [
-      {
-        id: "1",
-        slideImage: Slide2,
-      },
-      {
-        id: "2",
-        slideImage: Slide2,
-      },
-      {
-        id: "3",
-        slideImage: Slide2,
-      },
-    ],
+    supplyBannerNodes: [hs1, hs2, hs3],
 
     // supplyIdentity data
-    supplyIdentityFeatureImage: '',
+    supplyIdentityFeatureImage: "",
     supplyIdentitySubtitle: "",
     supplyIdentityTitle: "",
     supplyIdentityDescription1: "",
     supplyIdentityDescription2: "",
-
   };
 
   return (

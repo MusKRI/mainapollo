@@ -1,114 +1,53 @@
-.form__group {
+.contact .input-container {
   position: relative;
-  padding: 20px 0 0;
-  width: 100%;
-  max-width: 80%;
-  margin: auto;
 }
 
-.form__field {
-  font-family: inherit;
+.contact .input-container input[type="text"] {
+  font-size: 20px;
   width: 100%;
   border: none;
-  border-bottom: 2px solid #9b9b9b;
-  outline: 0;
-  font-size: 17px;
-  padding: 7px 0;
-  background: transparent;
-  transition: border-color 0.2s;
+  border-bottom: 1px solid #000;
+  padding: 5px 0;
+  background-color: transparent;
+  outline: none;
 }
 
-.form__field::placeholder {
-  color: transparent;
-}
-
-.form__field:placeholder-shown ~ .form__label {
-  font-size: 17px;
-  cursor: text;
-  top: 30px;
-}
-
-.form__label {
-  position: absolute;
-  top: 0;
-  display: block;
-  transition: 0.2s;
-  font-size: 17px;
-  color: #9b9b9b;
-  pointer-events: none;
-}
-
-.form__field:focus {
-  padding-bottom: 6px;
-  font-weight: 500;
-  border-width: 3px;
-  border-color: #002840;
-  border-image-slice: 1;
-}
-
-.form__field:focus ~ .form__label {
-  position: absolute;
-  top: 0;
-  display: block;
-  transition: 0.2s;
-  font-size: 17px;
-  color: #002840;
-  font-weight: 700;
-}
-
-/* reset input */
-.form__field:required,
-.form__field:invalid {
-  box-shadow: none;
-}
-
-.dropdown {
+.contact .input-container select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: transparent;
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 5px 0;
+  background-color: transparent;
+  outline: none;
   cursor: pointer;
 }
 
-/* Style for the dropdown arrow */
-.dropdown::after {
-  content: "\25BC"; /* Unicode character for down arrow */
+/* Style the custom dropdown arrow */
+.contact .input-container select::-ms-expand {
+  display: none;
+}
+
+/* Style the underline */
+.contact .input-container .underline {
   position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  font-size: 14px;
-  color: #9b9b9b;
-  pointer-events: none;
-  padding-right: 5px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
 }
 
-/* Style for the dropdown when focused */
-.dropdown:focus {
-  outline: none;
-  border-bottom: 3px solid #002840;
+/* Style the container to give a nice visual effect */
+.contact .input-container {
+  position: relative;
+  margin-bottom: 20px; /* Adjust as needed */
 }
 
-/* Style for the dropdown when focused and placeholder is shown */
-.dropdown:placeholder-shown ~ .form__label {
-  font-size: 17px;
-  cursor: text;
-  top: 30px;
-}
-
-/* Style for the dropdown label when focused */
-.dropdown:focus ~ .form__label {
-  position: absolute;
-  top: 0;
-  display: block;
-  transition: 0.2s;
-  font-size: 17px;
-  color: #002840;
-  font-weight: 700;
-}
-
-/* Reset dropdown styles */
-.dropdown:required,
-.dropdown:invalid {
-  box-shadow: none;
+/* Style the container to give a nice visual effect when the dropdown is focused */
+.contact .input-container:focus-within .underline {
+  background-color: #3498db; /* Adjust the color as needed */
 }

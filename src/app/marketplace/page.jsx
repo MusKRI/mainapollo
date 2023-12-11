@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 import HomeMap from "./components/map/map";
 
 import Banner from "./images/banner.jpg";
@@ -48,14 +46,14 @@ export const MarketPlace = () => {
             />
 
             <div className="absolute inset-0 top-0 left-0 w-full h-full z-[1] backdrop-brightness-[0.5] px-3 md:px-5">
-              <div className="max-w-7xl mx-auto flex flex-col gap-16 py-16 h-full justify-center">
-                {/* <div className="flex flex-col gap-3">
-              <h4 className="text-white text-2xl">{data.tag}</h4>
-              <div className="h-1 w-10 bg-white" />
-            </div> */}
+              <div className="max-w-7xl mx-auto flex flex-col gap-16 py-16 h-full justify-between">
+                <div className="flex flex-col gap-3">
+                  <h4 className="text-white text-2xl">Apollo Marketplace</h4>
+                  <div className="h-1 w-10 bg-white" />
+                </div>
 
                 <div className="flex flex-col gap-5">
-                  <h1 className="text-white text-5xl lg:text-7xl font-semibold">
+                  <h1 className="text-white text-5xl lg:text-7xl font-semibold max-w-[50%]">
                     Redefining Global Trade & Commerce
                   </h1>
 
@@ -213,7 +211,7 @@ export const MarketPlace = () => {
             <img src={globalNetworkSvg} alt="" className="h-20" />
           </div>
           <h2 className="text-2xl font-semibold group-hover:text-white">
-            Global Network and Partnerships:
+            Global Network and Partnerships
           </h2>
           <p className="text-lg group-hover:text-white">
             Our extensive global network and strategic partnerships enable us to
@@ -227,7 +225,7 @@ export const MarketPlace = () => {
             <img src={holisticSolutionSvg} alt="" className="h-20" />
           </div>
           <h2 className="text-2xl font-semibold group-hover:text-white">
-            Holistic Solutions:
+            Holistic Solutions
           </h2>
           <p className="text-lg group-hover:text-white">
             Apollo Marketplace functions as a holistic trading partner,
@@ -240,7 +238,7 @@ export const MarketPlace = () => {
             <img src={qualityCommitmentSvg} alt="" className="h-20" />
           </div>
           <h2 className="text-2xl font-semibold group-hover:text-white">
-            Quality Commitment:
+            Quality Commitment
           </h2>
           <p className="text-lg group-hover:text-white">
             We uphold the highest standards of quality assurance, ensuring that
@@ -253,7 +251,7 @@ export const MarketPlace = () => {
             <img src={customizedCollaborationSvg} alt="" className="h-20" />
           </div>
           <h2 className="text-2xl font-semibold group-hover:text-white">
-            Customized Collaborations:
+            Customized Collaborations
           </h2>
           <p className="text-lg group-hover:text-white">
             Acknowledging the distinctiveness of every business, we prioritize
@@ -267,7 +265,7 @@ export const MarketPlace = () => {
             <img src={innovationCentricSvg} alt="" className="h-20" />
           </div>
           <h2 className="text-2xl font-semibold group-hover:text-white">
-            Innovation-Centric:
+            Innovation-Centric
           </h2>
           <p className="text-lg group-hover:text-white">
             In an ever-evolving business landscape, we embrace innovation to

@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 import OurFocus from "./components/our-focus/page";
 import PeoplePlanetBanner from "./components/pp-banner/pp-banner";
 import TabSection from "./components/tab-section/tab-section";
@@ -23,8 +21,6 @@ const peopleplanetData = {
   // People Planet Hero Data
   ppHeroTag: "People & Planet",
   ppHeroHeading: "Beyond Business",
-  ppHeroDescription:
-    "From traditional PR and thought leadership campaigns to storytelling and creative social media management we’ve got you covered. Something is not.",
   ppHeroBackgroundImage: Banner,
 
   // our focus data
@@ -82,7 +78,6 @@ const PeoplePlanet = () => {
         data={{
           tag: peopleplanetData.ppHeroTag,
           heading: peopleplanetData.ppHeroHeading,
-          description: peopleplanetData.ppHeroDescription,
           bgImage: peopleplanetData.ppHeroBackgroundImage,
         }}
       />
@@ -90,142 +85,44 @@ const PeoplePlanet = () => {
       <div className="relative py-4 md:py-32 my-20">
         <div className="px-16 md:px-32 flex flex-col md:flex-row ">
           <div className="flex-1 flex flex-wrap gap-3">
-            <motion.div
-              initial={{
-                x: -50,
-                y: -50,
-                opacity: 0,
-              }}
-              whileInView={{
-                x: 0,
-                y: 0,
-                opacity: 1,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className="relative w-[236px]"
-            >
+            <div className="relative w-[236px]">
               <img
                 src={sh1}
                 alt=""
                 className="rounded-md object-cover h-full"
               />
-            </motion.div>
-            <motion.div
-              initial={{
-                x: 50,
-                y: -50,
-                opacity: 0,
-              }}
-              whileInView={{
-                x: 0,
-                y: 0,
-                opacity: 1,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className="relative w-[236px]"
-            >
+            </div>
+            <div className="relative w-[236px]">
               <img
                 src={sh2}
                 alt=""
                 className="rounded-md object-cover h-full"
               />
-            </motion.div>
-            <motion.div
-              initial={{
-                x: -50,
-                y: 50,
-                opacity: 0,
-              }}
-              whileInView={{
-                x: 0,
-                y: 0,
-                opacity: 1,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className="relative w-[236px]"
-            >
+            </div>
+            <div className="relative w-[236px]">
               <img
                 src={sh3}
                 alt=""
                 className="rounded-md object-cover h-full"
               />
-            </motion.div>
-            <motion.div
-              initial={{
-                x: 50,
-                y: 50,
-                opacity: 0,
-              }}
-              whileInView={{
-                x: 0,
-                y: 0,
-                opacity: 1,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className="relative w-[236px]"
-            >
+            </div>
+            <div className="relative w-[236px]">
               <img
                 src={sh4}
                 alt=""
                 className="rounded-md object-cover h-full"
               />
-            </motion.div>
+            </div>
           </div>
           <div className="flex-1 flex flex-col gap-4 self-center">
-            <motion.h1
-              initial={{
-                x: 50,
-                opacity: 0,
-              }}
-              whileInView={{
-                x: 0,
-                opacity: 1,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className="text-3xl lg:text-5xl font-semibold"
-            >
+            <h1 className="text-3xl lg:text-5xl font-semibold">
               What’s good for people and the planet, is good for us.
-            </motion.h1>
-            <motion.p
-              initial={{
-                x: 50,
-                opacity: 0,
-              }}
-              whileInView={{
-                x: 0,
-                opacity: 1,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-              className="text-lg"
-            >
+            </h1>
+            <p className="text-lg">
               We are focused on achieving excellence in our business vertices
               and creating a positive impact on the lives of those who need it.
-            </motion.p>
-            <motion.p
-              initial={{
-                x: 50,
-                opacity: 0,
-              }}
-              whileInView={{
-                x: 0,
-                opacity: 1,
-                transition: {
-                  duration: 0.8,
-                },
-              }}
-            >
+            </p>
+            <p>
               We have undertaken various initiatives and campaigns in areas of
               healthcare, education, nutrition, and environment along with the
               well-being of women, adolescent girls, and younger children. We
@@ -234,7 +131,7 @@ const PeoplePlanet = () => {
               their lives. At Apollo Green Energy, we believe that uplifting the
               weaker sections of society, will fast-track the growth towards a
               developed and sustainable nation.
-            </motion.p>
+            </p>
           </div>
         </div>
       </div>

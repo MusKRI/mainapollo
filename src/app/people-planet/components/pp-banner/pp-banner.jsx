@@ -18,10 +18,6 @@ const PeoplePlanetBanner = ({ data }) => {
             <h1 className="text-white text-5xl lg:text-7xl font-semibold">
               {data.heading}
             </h1>
-
-            <p className="text-white max-w-md text-lg ml-4 lg:ml-20">
-              {data.description}
-            </p>
           </div>
         </div>
       </div>

@@ -4,11 +4,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 // **** Local Imports ****
-import FeatImage from "../../images/identity/sc-featimage.png";
-
-import BadgeSvg from "../../images/identity/badge.svg";
-import FileDocSvg from "../../images/identity/filedoc.svg";
-import TrophySvg from "../../images/identity/trophy.svg";
+import FeatImage from "../../images/identity/i1.jpeg";
 import { Counter } from "../../../../components/CounterMotion";
 
 const ScIdentity = () => {
@@ -36,14 +32,10 @@ const ScIdentity = () => {
   return (
     <section className="relative px-3 md:px-5 bg-[#f5f5f5]">
       <div className="max-w-7xl mx-auto py-16 md:py-32">
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row gap-4">
           <div className="flex-1 flex flex-row justify-center gap-6">
-            <div className="relative overflow-hidden">
-              <img
-                src={FeatImage}
-                alt="SC Identity"
-                className="mix-blend-multiply"
-              />
+            <div className="relative overflow-hidden w-full h-full">
+              <img src={FeatImage} alt="SC Identity" className="h-full" />
             </div>
           </div>
 
@@ -96,41 +88,41 @@ const ScIdentity = () => {
 
         <div className="h-[1px] w-full border mt-6 md:mt-20 mb-6 md:mb-16" />
 
-        <div className="flex flex-col lg:flex-row md:justify-between md:items-center gap-4">
-          <div className="flex-1 flex flex-row gap-6">
-            <div className="flex flex-col justify-center">
+        <div className="flex flex-col lg:flex-row md:justify-center md:items-start gap-4">
+          <div className="flex-1 flex flex-row gap-6 justify-center">
+            <div className="flex flex-col justify-center items-center w-[190px]">
               <h1 className="text-4xl md:text-5xl font-bold text-main-text tracking-wide flex flex-row items-center">
                 <Counter from={0} to={150} />+
               </h1>
               <p className="text-main-text">Customers</p>
             </div>
           </div>
-          <div className="flex-1 flex flex-row gap-6">
-            <div className="flex flex-col justify-center">
+          <div className="flex-1 flex flex-row gap-6 justify-center">
+            <div className="flex flex-col justify-center items-center w-[190px]">
               <h1 className="text-4xl md:text-5xl font-bold text-main-text tracking-wide flex flex-row items-center">
                 <Counter from={0} to={18000} />+
               </h1>
               <p className="text-main-text">Pin Codes Served</p>
             </div>
           </div>
-          <div className="flex-1 flex flex-row gap-6">
-            <div className="flex flex-col justify-center">
+          <div className="flex-1 flex flex-row gap-6 justify-center">
+            <div className="flex flex-col justify-center items-center w-[190px]">
               <h1 className="text-4xl md:text-5xl font-bold text-main-text tracking-wide flex flex-row items-center">
                 <Counter from={0} to={2500} />+
               </h1>
               <p className="text-main-text">Experienced Employees</p>
             </div>
           </div>
-          <div className="flex-1 flex flex-row gap-6">
-            <div className="flex flex-col justify-center">
+          <div className="flex-1 flex flex-row gap-6 justify-center">
+            <div className="flex flex-col justify-center items-center w-[190px]">
               <h1 className="text-4xl md:text-5xl font-bold text-main-text tracking-wide flex flex-row items-center">
                 <Counter from={0} to={2.1} isFixed point={1} /> M+
               </h1>
               <p className="text-main-text">Square Feet of Warehouse Space</p>
             </div>
           </div>
-          <div className="flex-1 flex flex-row gap-6">
-            <div className="flex flex-col justify-center">
+          <div className="flex-1 flex flex-row gap-6 justify-center">
+            <div className="flex flex-col justify-center items-center w-[190px]">
               <h1 className="text-4xl md:text-5xl font-bold text-main-text tracking-wide flex flex-row items-center">
                 <Counter from={0} to={15} />
                 K+
@@ -138,8 +130,8 @@ const ScIdentity = () => {
               <p className="text-main-text">Monthly FTL trips</p>
             </div>
           </div>
-          <div className="flex-1 flex flex-row gap-6">
-            <div className="flex flex-col justify-center">
+          <div className="flex-1 flex flex-row gap-6 justify-center">
+            <div className="flex flex-col justify-center items-center w-[190px]">
               <h1 className="text-4xl md:text-5xl font-bold text-main-text tracking-wide flex flex-row items-center">
                 <Counter from={0} to={45} />+
               </h1>

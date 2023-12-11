@@ -20,9 +20,9 @@ import ShirtsImg from "./images/slide5.jpg";
 
 import AoeBanner from "./images/shirts.jpeg";
 
-import Rec1 from "./images/rec1.png";
-import Rec2 from "./images/rec2.png";
-import Rec3 from "./images/rec3.png";
+import Collage1 from "./images/collage1.jpg";
+import Collage2 from "./images/collage2.jpg";
+import Collage3 from "./images/collage3.jpg";
 
 import s1 from "./images/snap1.jpeg";
 import s2 from "./images/snap2.jpeg";
@@ -151,11 +151,11 @@ export const Fashion = () => {
             />
 
             <div className="absolute inset-0 top-0 left-0 w-full h-full z-[1] backdrop-brightness-[0.5] px-3 md:px-5">
-              <div className="max-w-7xl mx-auto flex flex-col gap-16 py-16 h-full justify-center">
-                {/* <div className="flex flex-col gap-3">
-              <h4 className="text-white text-2xl">{data.tag}</h4>
-              <div className="h-1 w-10 bg-white" />
-            </div> */}
+              <div className="max-w-7xl mx-auto flex flex-col gap-16 py-16 h-full justify-between">
+                <div className="flex flex-col gap-3">
+                  <h4 className="text-white text-2xl">Apollo Fashion</h4>
+                  <div className="h-1 w-10 bg-white" />
+                </div>
 
                 <div className="flex flex-col gap-5">
                   <h1 className="text-white text-5xl lg:text-7xl font-semibold">
@@ -180,7 +180,9 @@ export const Fashion = () => {
                     className="col-12"
                     style={{ fontSize: "40px", fontWeight: "bold" }}
                   >
-                    {fashionData?.secondSectionTitle1}
+                    <span className="after:absolute after:right-[-25px] after:w-4 after:h-4 after:bottom-2 after:border-main-text after:rounded-full after:bg-[#a6ca00] relative">
+                      {fashionData?.secondSectionTitle1}
+                    </span>
                   </div>
                   <div className="col-md-6">
                     {fashionData?.secondSectionSubtitle1}
@@ -189,7 +191,9 @@ export const Fashion = () => {
                     className="col-md-12"
                     style={{ fontSize: "40px", fontWeight: "bold" }}
                   >
-                    {fashionData?.secondSectionTitle2}
+                    <span className="after:absolute after:right-[-25px] after:w-4 after:h-4 after:bottom-2 after:border-main-text after:rounded-full after:bg-[#a6ca00] relative">
+                      {fashionData?.secondSectionTitle2}
+                    </span>
                   </div>
                   <div className="col-md-6">
                     {fashionData?.secondSectionSubtitle2}
@@ -299,10 +303,7 @@ export const Fashion = () => {
         <div className="col-12 mt-4 !py-20">
           <div className="container">
             <div className="row">
-              <div
-                className="col-12 mb-4"
-                style={{ fontWeight: "bold", fontSize: "40px" }}
-              >
+              <div className="col-12 mb-4 text-3xl lg:text-6xl font-bold">
                 A Deep-Dive Into Our Priorities
               </div>
               <Swiper
@@ -366,10 +367,7 @@ export const Fashion = () => {
         <div className="col-12 !my-10 py-20 space-y-4">
           <div className="row ml-lg-4">
             <div className="col-lg-9 ">
-              <p
-                style={{ fontWeight: "bold", fontSize: "40px" }}
-                className="pl-5 ml-5"
-              >
+              <p className="pl-5 ml-5 text-3xl lg:text-6xl font-bold">
                 Forge Connection With Excellence
               </p>
             </div>
@@ -412,48 +410,15 @@ export const Fashion = () => {
               <div className="col-lg-7 mb-6" style={{ textAlign: "center" }}>
                 {fashionData?.preferChoiceDataDescription}
               </div>
-              <div className="flex flex-row justify-center gap-6 flex-wrap items-center">
-                <div className="relative w-[150px] border shadow-sm rounded-md">
-                  <img alt="img" src={Rec1} className="w-full" />
+              <div className="">
+                <div className="relative w-full">
+                  <img src={Collage1} alt="" className="object-cover "/>
                 </div>
-                <div className="relative w-[150px] border shadow-sm rounded-md">
-                  <img alt="img" src={Rec2} className="w-full" />
+                <div className="relative w-full">
+                  <img src={Collage2} alt="" className="object-cover "/>
                 </div>
-                <div className="relative w-[150px] border shadow-sm rounded-md">
-                  <img alt="img" src={Rec3} className="w-full" />
-                </div>
-                <div className="relative w-[150px] border shadow-sm rounded-md">
-                  <img alt="img" src={Rec1} className="w-full" />
-                </div>
-                <div className="relative w-[150px] border shadow-sm rounded-md">
-                  <img alt="img" src={Rec2} className="w-full" />
-                </div>
-                <div className="relative w-[150px] border shadow-sm rounded-md">
-                  <img alt="img" src={Rec3} className="w-full" />
-                </div>
-                <div className="relative w-[150px] border shadow-sm rounded-md">
-                  <img alt="img" src={Rec1} className="w-full" />
-                </div>
-                <div className="relative w-[150px] border shadow-sm rounded-md">
-                  <img alt="img" src={Rec2} className="w-full" />
-                </div>
-                <div className="relative w-[150px] border shadow-sm rounded-md">
-                  <img alt="img" src={Rec3} className="w-full" />
-                </div>
-                <div className="relative w-[150px] border shadow-sm rounded-md">
-                  <img alt="img" src={Rec1} className="w-full" />
-                </div>
-                <div className="relative w-[150px] border shadow-sm rounded-md">
-                  <img alt="img" src={Rec2} className="w-full" />
-                </div>
-                <div className="relative w-[150px] border shadow-sm rounded-md">
-                  <img alt="img" src={Rec3} className="w-full" />
-                </div>
-                <div className="relative w-[150px] border shadow-sm rounded-md">
-                  <img alt="img" src={Rec1} className="w-full" />
-                </div>
-                <div className="relative w-[150px] border shadow-sm rounded-md">
-                  <img alt="img" src={Rec2} className="w-full" />
+                <div className="relative w-full">
+                  <img src={Collage3} alt="" className="object-cover "/>
                 </div>
               </div>
             </div>
@@ -462,8 +427,10 @@ export const Fashion = () => {
         {/* SnapShotSection */}
         <div className="col-12">
           <div className="container">
-            <p style={{ fontWeight: "bold", fontSize: "50px" }}>Snapshot</p>
-            <div className="row">
+            <h2 className="relative leading-snug text-3xl lg:text-6xl text-main-text after:absolute after:border-2 after:left-0 after:-bottom-4 after:w-10 after:border-main-text">
+              Snapshot
+            </h2>
+            <div className="row my-5">
               <div className="col-8">
                 <div className="row">
                   <div className="col-6">
@@ -507,9 +474,9 @@ export const Fashion = () => {
                   <div className="col-lg-6 mx-auto text-justify">
                     When you choose Apollo Fashion, you opt for a legacy-rich,
                     globally connected partner that prioritizes your success.
-                    Discover the difference of international trade and
-                    distribution with Apollo, where excellence is not just a
-                    choice – it’s the standard.
+                    Discover the difference of responsible fashion manufacturing
+                    with Apollo, where excellence is not just a choice – it's
+                    the standard.
                   </div>
                 </div>
                 <div className="row mt-4 max-w-4xl text-center mx-auto">
@@ -539,6 +506,11 @@ export const Fashion = () => {
                               Leather Garments & Accessories
                             </p>
                             <p>B-21, Sector-65, NOIDA-201301, India</p>
+                          </div>
+
+                          <div className="col-6">
+                            <p style={{ fontWeight: "bold" }}>Phone</p>
+                            <p>+91 120 4635800</p>
                           </div>
                         </div>
                       </div>

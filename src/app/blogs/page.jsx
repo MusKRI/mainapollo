@@ -11,7 +11,7 @@ import Blog1Img from "./images/blog1.png";
 import Blog2Img from "./images/blog-2.png";
 import Blog3Img from "./images/blog-3.png";
 import BlogsFeaturedCards from "./components/blogs-featured-cards/blogs-featured-cards";
-import BlogsNewsletter from "./components/blogs-newsletter/blogs-newsletter";
+// import BlogsNewsletter from "./components/blogs-newsletter/blogs-newsletter";
 
 const blogspageData = {
   // HERO DATA
@@ -99,7 +99,7 @@ const BlogsPage = () => {
 
       <BlogsFeaturedCards data={blogspageData.blogsHeroCardsData} />
 
-      <BlogsNewsletter />
+      {/* <BlogsNewsletter /> */}
     </div>
   );
 };

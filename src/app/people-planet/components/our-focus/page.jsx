@@ -1,27 +1,19 @@
 import { motion } from "framer-motion";
 
-import FocusVideo from "../../images/focus-video.png";
+// import FocusVideo from "../../images/focus-video.png";
 
 const OurFocus = ({ data }) => {
   return (
-    <div className="bg-white py-16 h-screen">
-      <div className="relative">
-        <div className="absolute max-w-4xl w-full h-[460px] left-0 top-0 p-5 bg-[#eee5e2] rounded-tr-lg rounded-br-lg flex flex-col items-center">
-          <div className="flex flex-row gap-8">
-            <motion.h1 className="text-7xl font-bold">{data.title}</motion.h1>
-            <motion.p className="max-w-xl text-[#525252] text-lg">
+    <div className="bg-[#eee5e2]">
+      <div className="relative py-20">
+        <div className="max-w-7xl mx-auto w-full rounded-tr-lg rounded-br-lg flex flex-col items-center">
+          <div className="flex flex-col text-center gap-8">
+            <motion.h1 className="text-6xl font-bold border">
+              {data.title}
+            </motion.h1>
+            <motion.p className="max-w-3xl text-[#525252] text-lg border">
               {data.description}
             </motion.p>
-          </div>
-        </div>
-
-        <div className="absolute max-w-4xl w-full h-[460px] right-0 top-[400px] lg:top-52">
-          <div className="relative">
-            <img
-              src={FocusVideo}
-              alt="Focus Video"
-              className="rounded-tl-lg rounded-bl-lg"
-            />
           </div>
         </div>
       </div>

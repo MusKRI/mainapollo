@@ -70,13 +70,7 @@ const SupplyChainBanner = ({ data }) => {
             <SupplyChainCarousel slideNodes={data?.nodes} />
           </div> */}
 
-          <ImageCarousel
-            images={[
-              "https://apollosupplychain.com/cms/wp-content/uploads/2023/03/hm_sld2.jpg",
-              "https://apollosupplychain.com/cms/wp-content/uploads/2023/03/hm_sld1.jpg",
-              "https://apollosupplychain.com/cms/wp-content/uploads/2023/03/hm_sld3.jpg",
-            ]}
-          />
+          <ImageCarousel images={data?.nodes} />
         </div>
       </div>
     </div>

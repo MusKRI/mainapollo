@@ -63,7 +63,7 @@ const TheEdge = () => {
     },
     {
       id: 4,
-      triggerItem: "Strong Leadership &amp; Robust Operating Processes",
+      triggerItem: "Strong Leadership Robust Operating Processes",
       content:
         "Large network of reliable partners and associates supporting assets for transportation and warehousing across India",
     },
@@ -86,11 +86,10 @@ const TheEdge = () => {
             </h1>
 
             <p className="text-white mt-4 text-lg">
-              Integrated Logistics Services: Apollo Supply Chain covers the
-              end-to-end supply chain from raw-material sourcing to after-sales
-              services offering a complete portfolio of services including
-              freight forwarding, contract logistics, warehousing, and
-              transportation services.
+              Apollo Supply Chain covers the end-to-end supply chain from
+              raw-material sourcing to after-sales services offering a complete
+              portfolio of services including freight forwarding, contract
+              logistics, warehousing, and transportation services.
             </p>
 
             <div>
