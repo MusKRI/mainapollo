@@ -16,7 +16,12 @@ const ProxBanner = ({ data }) => {
       </div>
 
       <div className="absolute top-0 left-0 z-10 w-full h-full flex items-center p-10 md:p-20">
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10 justify-between w-full h-full">
+          <div className="flex flex-col gap-3">
+            <h4 className="text-white text-2xl">Hello</h4>
+            <div className="h-1 w-10 bg-white" />
+          </div>
+
           <h1 className="text-5xl md:text-6xl font-bold text-white capitalize max-w-xl">
             {data?.bannerTitle}
           </h1>

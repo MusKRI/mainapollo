@@ -94,51 +94,39 @@ const WonderfulTeam = ({ data }) => {
     <section className="relative px-3 md:px-5">
       <div className="max-w-7xl mx-auto flex flex-col py-16 md:py-32">
         <div className="flex flex-col gap-7 items-center">
-          <h2 className="text-center text-2xl">{data?.subtitle}</h2>
+          {/* <h2 className="text-center text-2xl">{data?.subtitle}</h2> */}
           <h1 className="text-4xl lg:text-6xl">{data?.title}</h1>
         </div>
 
         <div className="mt-10 py-3">
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
             {data?.members.map((member) => {
               return (
-                <motion.div
-                  className="lg:basis-1/5 relative bg-white shadow-lg rounded-lg flex flex-col lg:even:translate-y-10"
+                <div
+                  className="relative bg-white border group overflow-y-hidden"
                   key={member.id}
-                  initial="hidden"
-                  whileHover="onHover"
                 >
-                  <motion.div
-                    variants={SocialContainerVariants}
-                    className="flex flex-row items-center gap-2 absolute top-3 right-3 z-10"
-                  >
-                    <motion.div
-                      variants={socialVariants}
-                      className="p-1 bg-white rounded-md cursor-pointer"
-                    >
-                      <ImLinkedin2 className="text-[#0077b8]" />
-                    </motion.div>
-
-                    <motion.div
-                      variants={socialVariants}
-                      className="p-1 bg-white rounded-md cursor-pointer"
-                    >
-                      <RiTwitterXFill />
-                    </motion.div>
-                  </motion.div>
-                  <img
-                    src={member.image}
-                    alt="Member"
-                    className="h-80 w-full rounded-lg"
-                  />
-
-                  <div className="px-8 py-10 text-center">
-                    <h3 className="text-main-text text-xl font-bold">
-                      {member.name}
-                    </h3>
-                    <p className="text-body-text">{member.position}</p>
+                  <div className="relative">
+                    <img src={member?.image} alt="" />
                   </div>
-                </motion.div>
+
+                  <div className="px-4 py-8 flex flex-col gap-1">
+                    <h2 className="text-2xl font-semibold">{member?.name}</h2>
+                    <p className="text-gray-500">{member?.position}</p>
+                  </div>
+
+                  <div className="absolute top-0 left-0 w-full h-full bg-[#2e3192a1] backdrop-blur-lg transition translate-y-full group-hover:translate-y-0 duration-300 p-8 flex flex-col gap-2">
+                    <h1 className="text-3xl text-white font-bold">
+                      {member?.name}
+                    </h1>
+
+                    <p className="text-gray-100 text-xl">{member?.position}</p>
+
+                    <div className="max-h-[300px] overflow-y-auto text-white">
+                      <p>{member?.about}</p>
+                    </div>
+                  </div>
+                </div>
               );
             })}
           </div>

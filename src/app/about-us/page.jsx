@@ -84,63 +84,97 @@ const AboutUs = () => {
 
     // team data
     teamSubtitle: "Meet",
-    teamTitle: "Our Wonderful Team",
+    teamTitle: "Meet Our Leadership",
     teamMembers: [
       {
         id: "1",
         image:
-          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80",
-        name: "Paddy O'Furniture",
-        position: "Name of Position",
+          "https://apollosupplychain.com/cms/wp-content/uploads/2023/05/raaja_kanwar_new.jpg",
+        name: "Raaja Kanwar",
+        position:
+          "Chairman and Managing Director, Apollo International Limited & Apollo Supply Chain",
+        about:
+          "A scion of the Kanwar family, the promoters of Apollo Tyres, Raaja Kanwar chose to carve a path following his passion for start-ups using disruptive technology. Raaja Kanwar founded Apollo International Limited (AIL) in 1994 to fulfil the stated aim of ‘Delivering Sustainable Value Creation’. Present in over 45 countries, AIL is a global business conglomerate that operates AIL operates in diverse sectors including tyres, garments and accessories, EPC & Project Management, digital cinema, and the healthcare industry. Today, leading companies across the globe trust AIL for its unmatched business expertise and high standards of business ethics.",
       },
       {
         id: "2",
         image:
-          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80",
-        name: "Paddy O'Furniture",
-        position: "Name of Position",
+          "https://apollosupplychain.com/cms/wp-content/uploads/2023/05/raaja_kanwar_new.jpg",
+        name: "Raaja Kanwar",
+        position:
+          "Chairman and Managing Director, Apollo International Limited & Apollo Supply Chain",
+        about:
+          "A scion of the Kanwar family, the promoters of Apollo Tyres, Raaja Kanwar chose to carve a path following his passion for start-ups using disruptive technology. Raaja Kanwar founded Apollo International Limited (AIL) in 1994 to fulfil the stated aim of ‘Delivering Sustainable Value Creation’. Present in over 45 countries, AIL is a global business conglomerate that operates AIL operates in diverse sectors including tyres, garments and accessories, EPC & Project Management, digital cinema, and the healthcare industry. Today, leading companies across the globe trust AIL for its unmatched business expertise and high standards of business ethics.",
       },
       {
         id: "3",
         image:
-          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80",
-        name: "Paddy O'Furniture",
-        position: "Name of Position",
+          "https://apollosupplychain.com/cms/wp-content/uploads/2023/05/raaja_kanwar_new.jpg",
+        name: "Raaja Kanwar",
+        position:
+          "Chairman and Managing Director, Apollo International Limited & Apollo Supply Chain",
+        about:
+          "A scion of the Kanwar family, the promoters of Apollo Tyres, Raaja Kanwar chose to carve a path following his passion for start-ups using disruptive technology. Raaja Kanwar founded Apollo International Limited (AIL) in 1994 to fulfil the stated aim of ‘Delivering Sustainable Value Creation’. Present in over 45 countries, AIL is a global business conglomerate that operates AIL operates in diverse sectors including tyres, garments and accessories, EPC & Project Management, digital cinema, and the healthcare industry. Today, leading companies across the globe trust AIL for its unmatched business expertise and high standards of business ethics.",
       },
       {
         id: "4",
         image:
-          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80",
-        name: "Paddy O'Furniture",
-        position: "Name of Position",
+          "https://apollosupplychain.com/cms/wp-content/uploads/2023/05/raaja_kanwar_new.jpg",
+        name: "Raaja Kanwar",
+        position:
+          "Chairman and Managing Director, Apollo International Limited & Apollo Supply Chain",
+        about:
+          "A scion of the Kanwar family, the promoters of Apollo Tyres, Raaja Kanwar chose to carve a path following his passion for start-ups using disruptive technology. Raaja Kanwar founded Apollo International Limited (AIL) in 1994 to fulfil the stated aim of ‘Delivering Sustainable Value Creation’. Present in over 45 countries, AIL is a global business conglomerate that operates AIL operates in diverse sectors including tyres, garments and accessories, EPC & Project Management, digital cinema, and the healthcare industry. Today, leading companies across the globe trust AIL for its unmatched business expertise and high standards of business ethics.",
       },
       {
         id: "5",
         image:
-          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80",
-        name: "Paddy O'Furniture",
-        position: "Name of Position",
+          "https://apollosupplychain.com/cms/wp-content/uploads/2023/05/raaja_kanwar_new.jpg",
+        name: "Raaja Kanwar",
+        position:
+          "Chairman and Managing Director, Apollo International Limited & Apollo Supply Chain",
+        about:
+          "A scion of the Kanwar family, the promoters of Apollo Tyres, Raaja Kanwar chose to carve a path following his passion for start-ups using disruptive technology. Raaja Kanwar founded Apollo International Limited (AIL) in 1994 to fulfil the stated aim of ‘Delivering Sustainable Value Creation’. Present in over 45 countries, AIL is a global business conglomerate that operates AIL operates in diverse sectors including tyres, garments and accessories, EPC & Project Management, digital cinema, and the healthcare industry. Today, leading companies across the globe trust AIL for its unmatched business expertise and high standards of business ethics.",
       },
       {
         id: "6",
         image:
-          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80",
-        name: "Paddy O'Furniture",
-        position: "Name of Position",
+          "https://apollosupplychain.com/cms/wp-content/uploads/2023/05/raaja_kanwar_new.jpg",
+        name: "Raaja Kanwar",
+        position:
+          "Chairman and Managing Director, Apollo International Limited & Apollo Supply Chain",
+        about:
+          "A scion of the Kanwar family, the promoters of Apollo Tyres, Raaja Kanwar chose to carve a path following his passion for start-ups using disruptive technology. Raaja Kanwar founded Apollo International Limited (AIL) in 1994 to fulfil the stated aim of ‘Delivering Sustainable Value Creation’. Present in over 45 countries, AIL is a global business conglomerate that operates AIL operates in diverse sectors including tyres, garments and accessories, EPC & Project Management, digital cinema, and the healthcare industry. Today, leading companies across the globe trust AIL for its unmatched business expertise and high standards of business ethics.",
       },
       {
         id: "7",
         image:
-          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80",
-        name: "Paddy O'Furniture",
-        position: "Name of Position",
+          "https://apollosupplychain.com/cms/wp-content/uploads/2023/05/raaja_kanwar_new.jpg",
+        name: "Raaja Kanwar",
+        position:
+          "Chairman and Managing Director, Apollo International Limited & Apollo Supply Chain",
+        about:
+          "A scion of the Kanwar family, the promoters of Apollo Tyres, Raaja Kanwar chose to carve a path following his passion for start-ups using disruptive technology. Raaja Kanwar founded Apollo International Limited (AIL) in 1994 to fulfil the stated aim of ‘Delivering Sustainable Value Creation’. Present in over 45 countries, AIL is a global business conglomerate that operates AIL operates in diverse sectors including tyres, garments and accessories, EPC & Project Management, digital cinema, and the healthcare industry. Today, leading companies across the globe trust AIL for its unmatched business expertise and high standards of business ethics.",
       },
       {
         id: "8",
         image:
-          "https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80",
-        name: "Paddy O'Furniture",
-        position: "Name of Position",
+          "https://apollosupplychain.com/cms/wp-content/uploads/2023/05/raaja_kanwar_new.jpg",
+        name: "Raaja Kanwar",
+        position:
+          "Chairman and Managing Director, Apollo International Limited & Apollo Supply Chain",
+        about:
+          "A scion of the Kanwar family, the promoters of Apollo Tyres, Raaja Kanwar chose to carve a path following his passion for start-ups using disruptive technology. Raaja Kanwar founded Apollo International Limited (AIL) in 1994 to fulfil the stated aim of ‘Delivering Sustainable Value Creation’. Present in over 45 countries, AIL is a global business conglomerate that operates AIL operates in diverse sectors including tyres, garments and accessories, EPC & Project Management, digital cinema, and the healthcare industry. Today, leading companies across the globe trust AIL for its unmatched business expertise and high standards of business ethics.",
+      },
+      {
+        id: "9",
+        image:
+          "https://apollosupplychain.com/cms/wp-content/uploads/2023/05/raaja_kanwar_new.jpg",
+        name: "Raaja Kanwar",
+        position:
+          "Chairman and Managing Director, Apollo International Limited & Apollo Supply Chain",
+        about:
+          "A scion of the Kanwar family, the promoters of Apollo Tyres, Raaja Kanwar chose to carve a path following his passion for start-ups using disruptive technology. Raaja Kanwar founded Apollo International Limited (AIL) in 1994 to fulfil the stated aim of ‘Delivering Sustainable Value Creation’. Present in over 45 countries, AIL is a global business conglomerate that operates AIL operates in diverse sectors including tyres, garments and accessories, EPC & Project Management, digital cinema, and the healthcare industry. Today, leading companies across the globe trust AIL for its unmatched business expertise and high standards of business ethics.",
       },
     ],
   };

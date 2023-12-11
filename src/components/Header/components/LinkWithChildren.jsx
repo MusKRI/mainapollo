@@ -1,10 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 // **** Library Imports ****
 import { BiChevronDown } from "react-icons/bi";
-import { BsArrowRight } from "react-icons/bs";
 import { useState, useRef, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 // **** Local Imports ****
 
@@ -46,7 +45,7 @@ const LinkWithChildren = ({ label, childLinks }) => {
       </div>
 
       {isOpen && childLinks.length > 0 && (
-        <motion.div className="absolute border top-full mt-2 left-0 w-max bg-white shadow-md py-4 px-6 rounded-md z-10 flex flex-col gap-1 overflow-hidden">
+        <div className="absolute border top-full mt-2 left-0 w-max bg-white shadow-md py-4 px-6 rounded-md z-20 flex flex-col gap-1 overflow-hidden">
           {childLinks.map((link) => {
             const { id, label, slug } = link;
             return (
@@ -62,7 +61,7 @@ const LinkWithChildren = ({ label, childLinks }) => {
               </Link>
             );
           })}
-        </motion.div>
+        </div>
       )}
     </div>
   );

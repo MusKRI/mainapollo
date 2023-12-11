@@ -141,7 +141,7 @@ const Header = () => {
         </Link>
 
         <div
-          className={`nav-menu flex-1 absolute top-[72px] left-0 w-full bg-white lg:hidden px-8 py-4 ${
+          className={`nav-menu flex-1 absolute top-[72px] left-0 w-full bg-white lg:hidden px-8 py-4 z-10 ${
             state ? "block" : "hidden"
           }`}
         >
@@ -311,15 +311,12 @@ const Header = () => {
         <div className="h-full items-center gap-4 hidden lg:flex">
           <BsSearch className="w-5 h-5" />
 
-          <motion.button
-            whileTap={{
-              scale: 0.96,
-            }}
+          <button
             onClick={() => navigate("/contact")}
             className="px-4 py-1 bg-[#2e3192] rounded-sm text-white"
           >
             Enquire now
-          </motion.button>
+          </button>
         </div>
       </div>
     </motion.header>

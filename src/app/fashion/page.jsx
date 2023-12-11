@@ -1,7 +1,6 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
-import { motion } from "framer-motion";
 
 // Import Swiper styles
 import "swiper/css";
@@ -159,22 +158,9 @@ export const Fashion = () => {
             </div> */}
 
                 <div className="flex flex-col gap-5">
-                  <motion.h1
-                    initial={{
-                      y: -20,
-                      opacity: 0,
-                    }}
-                    whileInView={{
-                      y: 0,
-                      opacity: 1,
-                      transition: {
-                        duration: 0.8,
-                      },
-                    }}
-                    className="text-white text-5xl lg:text-7xl font-semibold"
-                  >
+                  <h1 className="text-white text-5xl lg:text-7xl font-semibold">
                     Fashion Made Responsibly
-                  </motion.h1>
+                  </h1>
 
                   {/* <p className="text-white max-w-md text-lg ml-4 lg:ml-20">
                 {data.bannerDescription}
@@ -377,9 +363,7 @@ export const Fashion = () => {
           </div>
         </div>
         {/* Forge Connection */}
-        <div
-          className="col-12 !my-10 py-20 space-y-4" 
-        >
+        <div className="col-12 !my-10 py-20 space-y-4">
           <div className="row ml-lg-4">
             <div className="col-lg-9 ">
               <p
