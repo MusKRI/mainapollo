@@ -25,7 +25,7 @@ const ProXPage = () => {
   const proxData = {
     // contact banner data
     proxBannerImage: ProxBannerImg,
-    proxBannerTitle: "Constructing A Safer, Planet Tomorrow",
+    proxBannerTitle: "Constructing A Safer, Sustain Tomorrow",
 
     // prox about
     pAboutTitle: "Your Trusted EPC Partner for Seamless Project Excellence",

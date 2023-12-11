@@ -57,7 +57,7 @@ const ContactFormSection = () => {
                 }}
                 className="border bg-white p-12 rounded-md"
               >
-                <div className="relative">
+                {/* <div className="relative">
                   <h1 className="text-3xl uppercase text-[#2e3192] font-semibold">
                     Thanks for your support in Apollo
                   </h1>
@@ -65,7 +65,7 @@ const ContactFormSection = () => {
                     Please provide your most valuable information, so we can
                     help you better!
                   </p>
-                </div>
+                </div> */}
 
                 <div className="flex flex-col lg:flex-row gap-3">
                   <div className="flex flex-col gap-2 flex-1 space-y-3 my-3">
@@ -171,7 +171,7 @@ const ContactFormSection = () => {
                 }}
                 className="border bg-white p-12 rounded-md"
               >
-                <div className="relative">
+                {/* <div className="relative">
                   <h1 className="text-3xl uppercase text-[#2e3192] font-semibold">
                     Thanks for your support in Apollo
                   </h1>
@@ -179,7 +179,7 @@ const ContactFormSection = () => {
                     Please provide your most valuable information, so we can
                     help you better!
                   </p>
-                </div>
+                </div> */}
 
                 <div className="flex flex-col lg:flex-row gap-3">
                   <div className="flex flex-col gap-2 flex-1 space-y-3 my-3">
@@ -285,7 +285,7 @@ const ContactFormSection = () => {
                 }}
                 className="border bg-white p-12 rounded-md"
               >
-                <div className="relative">
+                {/* <div className="relative">
                   <h1 className="text-3xl uppercase text-[#2e3192] font-semibold">
                     Thanks for your support in Apollo
                   </h1>
@@ -293,7 +293,7 @@ const ContactFormSection = () => {
                     Please provide your most valuable information, so we can
                     help you better!
                   </p>
-                </div>
+                </div> */}
 
                 <div className="flex flex-col lg:flex-row gap-3">
                   <div className="flex flex-col gap-2 flex-1 space-y-3 my-3">
@@ -399,7 +399,7 @@ const ContactFormSection = () => {
                 }}
                 className="border bg-white p-12 rounded-md"
               >
-                <div className="relative">
+                {/* <div className="relative">
                   <h1 className="text-3xl uppercase text-[#2e3192] font-semibold">
                     Thanks for your support in Apollo
                   </h1>
@@ -407,7 +407,7 @@ const ContactFormSection = () => {
                     Please provide your most valuable information, so we can
                     help you better!
                   </p>
-                </div>
+                </div> */}
 
                 <div className="flex flex-col lg:flex-row gap-3">
                   <div className="flex flex-col gap-2 flex-1 space-y-3 my-3">
