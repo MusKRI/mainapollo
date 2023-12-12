@@ -29,6 +29,7 @@ import s2 from "./images/snap2.jpeg";
 import s3 from "./images/snap3.jpeg";
 import s4 from "./images/snap44.jpeg";
 import s5 from "./images/snap5.jpeg";
+import ForgeCard from "./components/forge-card/forge-card";
 
 export const Fashion = () => {
   const fashionData = {
@@ -366,32 +367,15 @@ export const Fashion = () => {
         {/* Forge Connection */}
         <div className="col-12 !my-10 py-20 space-y-4">
           <div className="row ml-lg-4">
-            <div className="col-lg-9 ">
+            <div className="col-lg-9">
               <p className="pl-5 ml-5 text-3xl lg:text-6xl font-bold">
                 Forge Connection With Excellence
               </p>
             </div>
           </div>
-          <div className="row">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {fashionData?.forgesData?.map((items, index) => (
-              <div
-                className={`col-md-3 card border-0 transition hover:shadow-2xl ${
-                  index === 0 || index === 2 || index === 5 || index === 7
-                    ? "bg-white hover:!bg-[#8a6139] hover:!text-white"
-                    : "bg-[#f8f8f8] hover:!bg-[#8a6139] hover:!text-white"
-                }`}
-                key={items.id}
-              >
-                <div className={cn("border-0")}>
-                  <p
-                    style={{ fontSize: "20px", fontWeight: "bold" }}
-                    className="ml-3 mt-3 border-b"
-                  >
-                    {items.Heading}
-                  </p>
-                  <p className="mt-3 pl-3 pr-3">{items.Content}</p>
-                </div>
-              </div>
+              <ForgeCard key={index} data={items} />
             ))}
           </div>
         </div>
@@ -407,18 +391,21 @@ export const Fashion = () => {
                   {fashionData?.preferChoiceDataHeading}
                 </p>
               </div>
-              <div className="col-lg-7 mb-6" style={{ textAlign: "center" }}>
+              <div
+                className="col-lg-7 mb-6 text-lg"
+                style={{ textAlign: "center" }}
+              >
                 {fashionData?.preferChoiceDataDescription}
               </div>
               <div className="">
                 <div className="relative w-full">
-                  <img src={Collage1} alt="" className="object-cover "/>
+                  <img src={Collage1} alt="" className="object-cover " />
                 </div>
                 <div className="relative w-full">
-                  <img src={Collage2} alt="" className="object-cover "/>
+                  <img src={Collage2} alt="" className="object-cover " />
                 </div>
                 <div className="relative w-full">
-                  <img src={Collage3} alt="" className="object-cover "/>
+                  <img src={Collage3} alt="" className="object-cover " />
                 </div>
               </div>
             </div>
@@ -490,6 +477,7 @@ export const Fashion = () => {
                       <div className="col-4">
                         <p style={{ fontWeight: "bold" }}>Phone</p>
                         <p>+91 120 4635800</p>
+                        <p>+91 120 4635800</p>
                       </div>
                       <div className="col-4">
                         <p style={{ fontWeight: "bold" }}>Email</p>
@@ -506,11 +494,6 @@ export const Fashion = () => {
                               Leather Garments & Accessories
                             </p>
                             <p>B-21, Sector-65, NOIDA-201301, India</p>
-                          </div>
-
-                          <div className="col-6">
-                            <p style={{ fontWeight: "bold" }}>Phone</p>
-                            <p>+91 120 4635800</p>
                           </div>
                         </div>
                       </div>

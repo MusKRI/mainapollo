@@ -8,7 +8,7 @@ const ContactFormSection = () => {
     <section className="relative px-3 md:px-5 bg-[#f7f5ef]">
       <div className="max-w-7xl mx-auto py-20 relative">
         <h1 className="text-6xl uppercase text-center font-semibold">
-          I am interested in
+          I am here for
         </h1>
 
         <div className="my-8">
@@ -21,7 +21,7 @@ const ContactFormSection = () => {
                 className="border-r px-6 text-lg data-[state=active]:text-[#2e3192] data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
                 value="tab1"
               >
-                Businesses
+                Business
               </Tabs.Trigger>
               <Tabs.Trigger
                 className="border-r px-6 text-lg data-[state=active]:text-[#2e3192] data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
@@ -76,12 +76,12 @@ const ContactFormSection = () => {
                         className="custom-select"
                       >
                         <option value="" disabled selected>
-                          Select your option
+                          Select our business vertical
                         </option>
+                        <option value="prox">ProX</option>
                         <option value="supply chain">Supply Chain</option>
                         <option value="fashion">Fashion</option>
                         <option value="marketplace">Marketplace</option>
-                        <option value="prox">ProX</option>
                       </select>
                       <div className="underline"></div>
                     </div>
@@ -141,7 +141,7 @@ const ContactFormSection = () => {
                         <textarea
                           name="contact"
                           required=""
-                          placeholder="Query"
+                          placeholder="Write your message here"
                           className="w-full h-full border border-black p-3 focus:outline-none"
                         />
                         <div className="underline"></div>

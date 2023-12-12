@@ -97,6 +97,14 @@ const Snapshot = () => {
                 <div className="row mt-4">
                   <div className="col-12">
                     <div className="row justify-center">
+                      <div className="col-4 text-center flex flex-col items-center">
+                        <p style={{ fontWeight: "bold" }}>Address</p>
+                        <p className="">
+                          Apollo Towers, Plot No 20, Sector 44, Gurgaon-122002,
+                          Haryana, India
+                        </p>
+                      </div>
+
                       <div className="col-4 text-center">
                         <p style={{ fontWeight: "bold" }}>Phone</p>
                         <p>0124-674-0200</p>

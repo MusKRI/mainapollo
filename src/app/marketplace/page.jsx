@@ -18,6 +18,7 @@ import innovationCentricSvg from "./images/icons/innovation-centric.svg";
 import sImg from "./images/fb.jpg";
 
 import Video from "./video/marketplace.mp4";
+import BenefitCard from "./components/benefit-card/benefit-card";
 
 export const MarketPlace = () => {
   let data = {
@@ -30,6 +31,35 @@ export const MarketPlace = () => {
     agDescription:
       "is a trading and distribution company with a widespread presence across over 45 countries. As a part of the esteemed business conglomerate, the Apollo Green Energy Limited, we are deeply committed to upholding the highest standards of ethics in all our business endeavors. With a dedicated team of over 1000+ employees, our core focus revolves around providing exceptional customer-centric solutions. With over three decades of experience, we have established ourselves as trusted partners in the global marketplace. Explore our offerings and discover how our rich legacy and global network can benefit your business.",
     agImage: "",
+
+    // Benefits from our unmatched expertise section
+    benefitsData: [
+      {
+        id: "1",
+        heading: "Global Network and Partnerships",
+        desc: "Our extensive global network and strategic partnerships enable us to connect buyers and sellers from around the world, facilitating seamless trade operations.",
+      },
+      {
+        id: "2",
+        heading: "Holistic Solutions",
+        desc: "Apollo Marketplace functions as a holistic trading partner, presenting a diverse product portfolio spanning multiple industries.",
+      },
+      {
+        id: "3",
+        heading: "Quality Commitment",
+        desc: "We uphold the highest standards of quality assurance, ensuring that every product or service we provide exceeds your expectations.",
+      },
+      {
+        id: "4",
+        heading: "Customized Collaborations",
+        desc: "Acknowledging the distinctiveness of every business, we prioritize personalized partnerships that align with your specific needs and objectives.",
+      },
+      {
+        id: "5",
+        heading: "Innovation-Centric",
+        desc: "In an ever-evolving business landscape, we embrace innovation to remain at the forefront, delivering cutting-edge solutions to our clients.",
+      },
+    ],
   };
 
   return (
@@ -197,83 +227,20 @@ export const MarketPlace = () => {
       {/* BenefitSections */}
       <div className="container my-5">
         <div className="row">
-          <div className="col-10">
+          <div className="col-12">
             <h1 className="text-3xl lg:text-6xl font-bold">
               Benefit from our unmatched expertise
             </h1>
+
+            <div className="flex flex-col lg:flex-row lg:flex-wrap lg:[&>div]:w-[200px] content-center gap-3 mt-6 justify-center">
+              {data?.benefitsData?.map((ben, index) => {
+                return <BenefitCard key={index} data={ben} />;
+              })}
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="border-t border-b flex flex-row flex-wrap [&>div]:flex-1 [&>div]:h-[440px] marketplace-benefit">
-        <div className="p-4 flex flex-col justify-start h-full border-r transition hover:bg-[#303588] group">
-          <div className="relative pt-16">
-            <img src={globalNetworkSvg} alt="" className="h-20" />
-          </div>
-          <h2 className="text-2xl font-semibold group-hover:text-white">
-            Global Network and Partnerships
-          </h2>
-          <p className="text-lg group-hover:text-white">
-            Our extensive global network and strategic partnerships enable us to
-            connect buyers and sellers from around the world, facilitating
-            seamless trade operations.
-          </p>
-        </div>
-
-        <div className="p-4 flex flex-col justify-start h-full border-r transition hover:bg-[#303588] group">
-          <div className="relative pt-16">
-            <img src={holisticSolutionSvg} alt="" className="h-20" />
-          </div>
-          <h2 className="text-2xl font-semibold group-hover:text-white">
-            Holistic Solutions
-          </h2>
-          <p className="text-lg group-hover:text-white">
-            Apollo Marketplace functions as a holistic trading partner,
-            presenting a diverse product portfolio spanning multiple industries.
-          </p>
-        </div>
-
-        <div className="p-4 flex flex-col justify-start h-full border-r transition hover:bg-[#303588] group">
-          <div className="relative pt-16">
-            <img src={qualityCommitmentSvg} alt="" className="h-20" />
-          </div>
-          <h2 className="text-2xl font-semibold group-hover:text-white">
-            Quality Commitment
-          </h2>
-          <p className="text-lg group-hover:text-white">
-            We uphold the highest standards of quality assurance, ensuring that
-            every product or service we provide exceeds your expectations.
-          </p>
-        </div>
-
-        <div className="p-4 flex flex-col justify-start h-full border-r transition hover:bg-[#303588] group">
-          <div className="relative pt-16">
-            <img src={customizedCollaborationSvg} alt="" className="h-20" />
-          </div>
-          <h2 className="text-2xl font-semibold group-hover:text-white">
-            Customized Collaborations
-          </h2>
-          <p className="text-lg group-hover:text-white">
-            Acknowledging the distinctiveness of every business, we prioritize
-            personalized partnerships that align with your specific needs and
-            objectives.
-          </p>
-        </div>
-
-        <div className="p-4 flex flex-col justify-start h-full transition hover:bg-[#303588] group">
-          <div className="relative pt-16">
-            <img src={innovationCentricSvg} alt="" className="h-20" />
-          </div>
-          <h2 className="text-2xl font-semibold group-hover:text-white">
-            Innovation-Centric
-          </h2>
-          <p className="text-lg group-hover:text-white">
-            In an ever-evolving business landscape, we embrace innovation to
-            remain at the forefront, delivering cutting-edge solutions to our
-            clients.
-          </p>
-        </div>
-      </div>
       {/* LastSection */}
       <div className="col-12 mb-5 mt-3">
         <div className="container">

@@ -42,7 +42,7 @@ const ScIdentity = () => {
           <div className="flex-1 flex flex-col gap-5">
             <p className="text-lg font-medium text-[#ff7900]">Our Identity</p>
             <h1 className="relative leading-snug text-[28px] md:text-5xl text-main-text after:absolute after:border-2 after:left-0 after:-bottom-4 after:w-10 after:border-main-text">
-              Our logistics Services Empower Businesses For Growth And
+              Our Logistics Services Empower Businesses For Growth And
               Sustainability.
             </h1>
 
@@ -88,7 +88,7 @@ const ScIdentity = () => {
 
         <div className="h-[1px] w-full border mt-6 md:mt-20 mb-6 md:mb-16" />
 
-        <div className="flex flex-col lg:flex-row md:justify-center md:items-start gap-4">
+        <div className="flex flex-col lg:flex-row md:justify-center md:items-start gap-4 mb-5">
           <div className="flex-1 flex flex-row gap-6 justify-center">
             <div className="flex flex-col justify-center items-center w-[190px]">
               <h1 className="text-4xl md:text-5xl font-bold text-main-text tracking-wide flex flex-row items-center">
@@ -97,6 +97,7 @@ const ScIdentity = () => {
               <p className="text-main-text">Customers</p>
             </div>
           </div>
+
           <div className="flex-1 flex flex-row gap-6 justify-center">
             <div className="flex flex-col justify-center items-center w-[190px]">
               <h1 className="text-4xl md:text-5xl font-bold text-main-text tracking-wide flex flex-row items-center">
@@ -105,6 +106,7 @@ const ScIdentity = () => {
               <p className="text-main-text">Pin Codes Served</p>
             </div>
           </div>
+
           <div className="flex-1 flex flex-row gap-6 justify-center">
             <div className="flex flex-col justify-center items-center w-[190px]">
               <h1 className="text-4xl md:text-5xl font-bold text-main-text tracking-wide flex flex-row items-center">
@@ -113,14 +115,20 @@ const ScIdentity = () => {
               <p className="text-main-text">Experienced Employees</p>
             </div>
           </div>
+        </div>
+
+        <div className="flex flex-col lg:flex-row md:justify-center md:items-start gap-4">
           <div className="flex-1 flex flex-row gap-6 justify-center">
             <div className="flex flex-col justify-center items-center w-[190px]">
               <h1 className="text-4xl md:text-5xl font-bold text-main-text tracking-wide flex flex-row items-center">
-                <Counter from={0} to={2.1} isFixed point={1} /> M+
+                <Counter from={0} to={2.5} isFixed point={1} /> Mn+
               </h1>
-              <p className="text-main-text text-center">Square Feet of Warehouse Space</p>
+              <p className="text-main-text text-center">
+                Square Feet of Warehouse Space
+              </p>
             </div>
           </div>
+
           <div className="flex-1 flex flex-row gap-6 justify-center">
             <div className="flex flex-col justify-center items-center w-[190px]">
               <h1 className="text-4xl md:text-5xl font-bold text-main-text tracking-wide flex flex-row items-center">
@@ -130,6 +138,7 @@ const ScIdentity = () => {
               <p className="text-main-text">Monthly FTL trips</p>
             </div>
           </div>
+
           <div className="flex-1 flex flex-row gap-6 justify-center">
             <div className="flex flex-col justify-center items-center w-[190px]">
               <h1 className="text-4xl md:text-5xl font-bold text-main-text tracking-wide flex flex-row items-center">

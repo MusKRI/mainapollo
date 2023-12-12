@@ -3,7 +3,8 @@ import { CornerDownRight } from "lucide-react";
 import ProxBanner from "./components/prox-banner/prox-banner";
 
 import ProxBannerImg from "./image/banner2.jpeg";
-import { cn } from "../../lib/utils";
+
+import BroadSectionImg from "./image/real/broad-section.png";
 
 // import ProxAboutImage from "./image/about.png";
 import ProxAboutImage from "./image/real/procurement-aboutus.jpg";
@@ -20,12 +21,13 @@ import GImg2 from "../business/images/grid-img2.png";
 import GImg3 from "../business/images/grid-img3.png";
 import GImg4 from "../business/images/grid-img4.png";
 import GImg5 from "../business/images/grid-img5.png";
+import ProxCard from "./components/prox-card/prox-card";
 
 const ProXPage = () => {
   const proxData = {
     // contact banner data
     proxBannerImage: ProxBannerImg,
-    proxBannerTitle: "Constructing A Safer, Sustain Tomorrow",
+    proxBannerTitle: "Constructing A Safer, Sustainable Tomorrow",
 
     // prox about
     pAboutTitle: "Your Trusted EPC Partner for Seamless Project Excellence",
@@ -134,24 +136,9 @@ const ProXPage = () => {
             {proxData?.pKsTitle}
           </h1>
           <p className="font-medium max-w-lg">{proxData?.pKsDescription}</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             {proxData?.pKeyServices?.map((ks, index) => {
-              return (
-                <div
-                  key={index}
-                  className="bg-white hover:!bg-[#2e3192] border rounded-md p-3 flex flex-col gap-3 transition hover:shadow-2xl group"
-                >
-                  <div className="relative w-16">
-                    <img src={ks?.icon} alt="" />
-                  </div>
-                  <h2 className="text-2xl font-semibold group-hover:!text-white transition">
-                    {ks?.title}
-                  </h2>
-                  <p className="group-hover:text-white transition">
-                    {ks?.desc}
-                  </p>
-                </div>
-              );
+              return <ProxCard key={index} data={ks} />;
             })}
           </div>
         </div>
@@ -163,25 +150,9 @@ const ProXPage = () => {
           <h1 className="text-3xl lg:text-6xl font-semibold">
             {proxData?.pbroadTitle}
           </h1>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 justify-center">
-            {proxData?.pbroadList?.map((pb, index) => {
-              return (
-                <div
-                  key={index}
-                  className={cn(
-                    "bg-white border rounded-md p-3 flex flex-row gap-3 items-center transition hover:shadow-lg"
-                  )}
-                >
-                  <div className="rounded-full bg-[#2e3192] p-2 w-10 h-10 flex items-center justify-center text-white shrink-0 self-center">
-                    {index + 1}
-                  </div>
 
-                  <div className="h-10 border-l" />
-
-                  <div className="self-center">{pb}</div>
-                </div>
-              );
-            })}
+          <div className="relative">
+            <img src={BroadSectionImg} alt="" />
           </div>
         </div>
       </section>

@@ -18,21 +18,12 @@ const Founder = ({ data }) => {
         </div>
 
         <div className="flex-1 px-6 flex flex-col gap-3 self-center">
-          {/* <SectionHeading>{data.humbleSection}</SectionHeading> */}
-          {/* <SectionHeading classes="font-bold self-end md:self-start"></SectionHeading> */}
-
-          {/* <p className="text-body-text">{data.humbleSubSection}</p> */}
-
           <h4 className="text-xl whitespace-pre-line  ">
             &quot;{data.humbleSection}&quot;
           </h4>
 
           <h4 className="text-xl whitespace-pre-line font-bold">
-            <div
-              dangerouslySetInnerHTML={{
-                __html: data.humbleFinalSection,
-              }}
-            />
+            <div>{data.humbleFinalSection}</div>
           </h4>
         </div>
       </div>

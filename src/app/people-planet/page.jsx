@@ -24,9 +24,9 @@ const peopleplanetData = {
   ppHeroBackgroundImage: Banner,
 
   // our focus data
-  ppFocusTitle: "Our Focus",
+  ppFocusTitle: "What is good for us",
   ppFocusDescription:
-    "At Apollo Green Energy, we deeply care about making a real difference. We work hard to boost the economy while making life better for everyone in our communities. It&apos;s not just business to us; it&apos;s about touching lives, bringing hope, and leaving a positive mark on the world. Because, What’s good for people and the planet, is good for us.",
+    "At Apollo Green Energy, we deeply care about making a real difference. We work hard to boost the economy while making life better for everyone in our communities. It's not just business to us; it's about touching lives, bringing hope, and leaving a positive mark on the world. Because, What’s good for people and the planet, is good for us.",
   ppFocusVideo: "",
 
   // Tabs Section Data
@@ -35,7 +35,7 @@ const peopleplanetData = {
       id: "education",
       image: educationImg,
       name: "Education",
-      heading: "Making Equal Access to Healthcare A Reality",
+      heading: "Promoting Quality Education for All",
       subheading1:
         "Women, young girls, and children are mostly left behind when it comes to getting a chance to realize their full potential via the education that they deserve.",
       subheading2:
@@ -46,7 +46,7 @@ const peopleplanetData = {
     {
       id: "healthcare",
       image: healthcareImg,
-      heading: "Protecting Our Environment",
+      heading: "Making Equal Access to Healthcare A Reality",
       name: "Healthcare",
       subheading1:
         "Research has shown that access to healthcare has not been identified as a rural priority for many years now. Apollo Green Energy has partnered with Dasra, a Mumbai-based strategic philanthropy foundation. As a part of that, Apollo Green Energy supports the AHAAR program under SNEHA (Society for Nutrition, Education and Health Action) Through this partnership, we are helping the organisation in making efforts towards eliminating child malnutrition within the Dharavi region.",
@@ -56,7 +56,7 @@ const peopleplanetData = {
     {
       id: "environment",
       image: envImg,
-      heading: "Promoting Quality Education for All",
+      heading: "Protecting Our Environment",
       name: "Environment",
       subheading1:
         "Apollo Green Energy’s goal is to make not only a societal but also an environmental impact. We have ensured that all our business verticals take steps towards being environmentally conscious.",
@@ -69,9 +69,9 @@ const peopleplanetData = {
   // making difference data
   mdTitle: "Making a difference, one project at a time",
   mdDescription1:
-    "For each of us in the Apollo Green Energy/ Apollo Group, every project&apos;s successful execution fills our hearts with deep satisfaction. It&apos;s a tangible reflection of our dedication to embodying our values and playing a leadership role, all while being a caring and responsible corporate citizen.",
+    "For each of us in the Apollo Green Energy/ Apollo Group, every project's successful execution fills our hearts with deep satisfaction. It's a tangible reflection of our dedication to embodying our values and playing a leadership role, all while being a caring and responsible corporate citizen.",
   mdDescription2:
-    "As we contribute in our humble way, we&apos;re inspired by the realization that there&apos;s much more to do, especially considering the size and unique challenges of our country.",
+    "As we contribute in our humble way, we're inspired by the realization that there's much more to do, especially considering the size and unique challenges of our country.",
 };
 
 const PeoplePlanet = () => {
@@ -170,7 +170,7 @@ const PeoplePlanet = () => {
                 Mr. Raaja Kanwar
               </h5>
               <h6 className="text-xl text-center">
-                Chairman & Managing Director
+                Chairman & Managing Director, Apollo International
               </h6>
             </div>
           </div>
