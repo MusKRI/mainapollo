@@ -2,7 +2,7 @@ import { CornerDownRight } from "lucide-react";
 
 import ProxBanner from "./components/prox-banner/prox-banner";
 
-import ProxBannerImg from "./image/banner2.jpeg";
+import ProxBannerImg from "./image/hap2.jpg";
 
 import BroadSectionImg from "./image/real/broad-section.png";
 
@@ -146,36 +146,32 @@ const ProXPage = () => {
 
       {/* Broad section */}
       <section className=" bg-[#f9f9f9] relative px-3 md:px-5">
-        <div className="max-w-7xl mx-auto py-16 space-y-4">
-          <h1 className="text-3xl lg:text-6xl font-semibold">
-            {proxData?.pbroadTitle}
-          </h1>
-
-          <div className="relative">
+        <div className="max-w-7xl mx-auto py-10 space-y-4 flex flex-row">
+          <div className="relative flex-[0.6]">
             <img src={BroadSectionImg} alt="" />
           </div>
+
+          <h1 className="text-3xl lg:text-6xl font-semibold flex-[0.4] self-center">
+            {proxData?.pbroadTitle}
+          </h1>
         </div>
       </section>
 
       {/* Unique Edge Section */}
-      <section className=" bg-[#333694] text-white relative px-3 md:px-5">
+      <section className=" edge-gradient text-white relative px-3 md:px-5">
         <div className="max-w-7xl mx-auto flex flex-col gap-4 py-16 pb-32">
           <h1 className="text-3xl lg:text-6xl font-bold">
             {proxData?.pUETitle}
           </h1>
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4">
-            <div className="relative flex justify-center w-96 shrink-0">
-              <img
-                src={proxData?.pUEImage}
-                alt=""
-                className="rounded-md -mb-20"
-              />
+            <div className="relative flex justify-center w-80 shrink-0 [box-shadow:-10px_10px_white]">
+              <img src={proxData?.pUEImage} alt="" className="" />
             </div>
             <div className="flex flex-col gap-4">
-              <p className="text-[18px]">{proxData?.pUEDesc1}</p>
-              <p className="text-[18px]">{proxData?.pUEDesc2}</p>
+              <p className="text-[20px] font-semibold">{proxData?.pUEDesc1}</p>
+              <p className="text-[20px] font-semibold">{proxData?.pUEDesc2}</p>
 
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-2 pl-10">
                 {proxData?.pUEPoints?.map((point, idx) => {
                   return (
                     <div key={idx} className="flex flex-row items-start gap-2">

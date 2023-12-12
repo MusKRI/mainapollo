@@ -11,6 +11,7 @@ import { Counter } from "../../components/CounterMotion";
 // import AOEBanner from "./images/aoebanner.png";
 import { cn } from "../../lib/utils";
 import Video from "./video/video.mp4";
+import animImg from "./images/anim.jpeg";
 
 import ApproachCard1Img from "./images/slide1.jpg";
 import ApproachCard2Img from "./images/slide2.jpg";
@@ -141,32 +142,26 @@ export const Fashion = () => {
     <div className="container-fluid">
       <div className="row">
         {/* HeroSection */}
-        <div className="col-12 p-0 h-screen">
+        <div className="col-12 p-0 h-screen relative">
           <div className="img h-full relative">
-            <video
-              muted
-              loop="true"
-              autoPlay={true}
-              src={Video}
-              className="object-fill h-screen w-full"
-            />
+            <img src={animImg} alt="" className="max-h-full w-full" />
+          </div>
 
-            <div className="absolute inset-0 top-0 left-0 w-full h-full z-[1] backdrop-brightness-[0.5] px-3 md:px-5">
-              <div className="max-w-7xl mx-auto flex flex-col gap-16 py-16 h-full justify-between">
-                <div className="flex flex-col gap-3">
-                  <h4 className="text-white text-2xl">Apollo Fashion</h4>
-                  <div className="h-1 w-10 bg-white" />
-                </div>
+          <div className="absolute inset-0 top-0 left-0 w-full h-full z-[1] backdrop-brightness-[0.5] px-3 md:px-5">
+            <div className="max-w-7xl mx-auto flex flex-col gap-16 py-16 h-full justify-between">
+              <div className="flex flex-col gap-3">
+                <h4 className="text-white text-2xl">Apollo Fashion</h4>
+                <div className="h-1 w-10 bg-white" />
+              </div>
 
-                <div className="flex flex-col gap-5">
-                  <h1 className="text-white text-5xl lg:text-7xl font-semibold">
-                    Fashion Made Responsibly
-                  </h1>
+              <div className="flex flex-col gap-5">
+                <h1 className="text-white text-5xl lg:text-7xl font-semibold">
+                  Fashion Made Responsibly
+                </h1>
 
-                  {/* <p className="text-white max-w-md text-lg ml-4 lg:ml-20">
+                {/* <p className="text-white max-w-md text-lg ml-4 lg:ml-20">
                 {data.bannerDescription}
               </p> */}
-                </div>
               </div>
             </div>
           </div>
@@ -185,7 +180,7 @@ export const Fashion = () => {
                       {fashionData?.secondSectionTitle1}
                     </span>
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-md-8">
                     {fashionData?.secondSectionSubtitle1}
                   </div>
                   <div
@@ -196,7 +191,7 @@ export const Fashion = () => {
                       {fashionData?.secondSectionTitle2}
                     </span>
                   </div>
-                  <div className="col-md-6">
+                  <div className="col-md-9">
                     {fashionData?.secondSectionSubtitle2}
                   </div>
                 </div>

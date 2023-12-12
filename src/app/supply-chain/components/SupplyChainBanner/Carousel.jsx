@@ -60,7 +60,7 @@ export function ImageCarousel({ images }) {
 
   return (
     <div className="mx-auto">
-      <div className="max-w-2xl w-[300px] h-[300px] lg:w-[600px] lg:h-[500px] relative overflow-hidden mx-auto">
+      <div className="max-w-2xl w-[300px] h-[300px] lg:w-[600px] lg:h-[500px] relative overflow-hidden mx-auto [box-shadow:15px_15px_white]">
         <img
           className="image firstImage"
           src={images[animation.imageIndex]}
