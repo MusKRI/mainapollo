@@ -364,11 +364,11 @@ export const Fashion = () => {
           <div className="row ml-lg-4">
             <div className="col-lg-9">
               <p className="pl-5 ml-5 text-3xl lg:text-6xl font-bold">
-                Forge Connection With Excellence
+                Capabilities
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-content-center place-items-center gap-4">
             {fashionData?.forgesData?.map((items, index) => (
               <ForgeCard key={index} data={items} />
             ))}
