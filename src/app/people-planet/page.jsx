@@ -170,7 +170,7 @@ const PeoplePlanet = () => {
                 Mr. Raaja Kanwar
               </h5>
               <h6 className="text-xl text-center">
-                Chairman & Managing Director, Apollo International
+                Chairman & Managing Director, Apollo International Group
               </h6>
             </div>
           </div>

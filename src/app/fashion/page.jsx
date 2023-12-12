@@ -251,7 +251,7 @@ export const Fashion = () => {
                                   isFixed
                                   point={1}
                                 />
-                                M
+                                Mn
                               </div>
                               <div
                                 className="col-4"
