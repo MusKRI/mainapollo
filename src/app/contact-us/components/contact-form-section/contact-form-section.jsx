@@ -78,10 +78,12 @@ const ContactFormSection = () => {
                         <option value="" disabled selected>
                           Select our business vertical
                         </option>
-                        <option value="prox">ProX</option>
-                        <option value="supply chain">Supply Chain</option>
-                        <option value="fashion">Fashion</option>
-                        <option value="marketplace">Marketplace</option>
+                        <option value="prox">Apollo ProX</option>
+                        <option value="supply chain">
+                          Apollo Supply Chain
+                        </option>
+                        <option value="fashion">Apollo Fashion</option>
+                        <option value="marketplace">Apollo Marketplace</option>
                       </select>
                       <div className="underline"></div>
                     </div>
@@ -192,10 +194,12 @@ const ContactFormSection = () => {
                         <option value="" disabled selected>
                           Select your option
                         </option>
-                        <option value="supply chain">Supply Chain</option>
-                        <option value="fashion">Fashion</option>
-                        <option value="marketplace">Marketplace</option>
-                        <option value="prox">ProX</option>
+                        <option value="prox">Apollo ProX</option>
+                        <option value="supply chain">
+                          Apollo Supply Chain
+                        </option>
+                        <option value="fashion">Apollo Fashion</option>
+                        <option value="marketplace">Apollo Marketplace</option>
                       </select>
                       <div className="underline"></div>
                     </div>
@@ -306,10 +310,12 @@ const ContactFormSection = () => {
                         <option value="" disabled selected>
                           Select your option
                         </option>
-                        <option value="supply chain">Supply Chain</option>
-                        <option value="fashion">Fashion</option>
-                        <option value="marketplace">Marketplace</option>
-                        <option value="prox">ProX</option>
+                        <option value="prox">Apollo ProX</option>
+                        <option value="supply chain">
+                          Apollo Supply Chain
+                        </option>
+                        <option value="fashion">Apollo Fashion</option>
+                        <option value="marketplace">Apollo Marketplace</option>
                       </select>
                       <div className="underline"></div>
                     </div>
@@ -420,10 +426,12 @@ const ContactFormSection = () => {
                         <option value="" disabled selected>
                           Select your option
                         </option>
-                        <option value="supply chain">Supply Chain</option>
-                        <option value="fashion">Fashion</option>
-                        <option value="marketplace">Marketplace</option>
-                        <option value="prox">ProX</option>
+                        <option value="prox">Apollo ProX</option>
+                        <option value="supply chain">
+                          Apollo Supply Chain
+                        </option>
+                        <option value="fashion">Apollo Fashion</option>
+                        <option value="marketplace">Apollo Marketplace</option>
                       </select>
                       <div className="underline"></div>
                     </div>

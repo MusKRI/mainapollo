@@ -470,6 +470,7 @@ export const Fashion = () => {
                         <p>C-30, Sector-58, NOIDA-201301, India</p>
                       </div>
                       <div className="col-4">
+                        <p style={{ fontWeight: "bold" }}>Phone</p>
                         <p>+91 120 4635800</p>
                       </div>
                       <div className="col-4">
@@ -489,8 +490,7 @@ export const Fashion = () => {
                             <p>B-21, Sector-65, NOIDA-201301, India</p>
                           </div>
 
-                          <div className="col-4">
-                            <p style={{ fontWeight: "bold" }}>Phone</p>
+                          <div className="col-6">
                             <p>+91 120 4635800</p>
                           </div>
                         </div>

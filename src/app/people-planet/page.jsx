@@ -152,18 +152,21 @@ const PeoplePlanet = () => {
       <div className="px-3 md:px-20 bg-[#eeeeee]">
         <div className="py-20 max-w-7xl mx-auto">
           <div className="flex flex-col gap-4">
-            <div className="relative max-w-2xl w-[42rem] mx-auto mb-[-2rem]">
-              <img
-                src="https://apolloindia.com/wp-content/uploads/2022/12/comm.png"
-                alt=""
-              />
+            <div className="relative max-w-3xl mx-auto">
+              <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 bg-[#eeeeee]">
+                <img
+                  src="https://apolloindia.com/wp-content/uploads/2022/12/comm.png"
+                  alt=""
+                />
+              </div>
+
+              <h5 className="text-xl max-w-3xl text-center mx-auto lg:text-4xl border border-black p-8">
+                To be able to be in a position where we can help make a
+                difference is an honour I cherish every day. Every step we take
+                as a company towards the betterment of others leaves a sense of
+                fulfilment that is unmatched.
+              </h5>
             </div>
-            <h5 className="text-xl max-w-3xl text-center mx-auto lg:text-4xl">
-              To be able to be in a position where we can help make a difference
-              is an honour I cherish every day. Every step we take as a company
-              towards the betterment of others leaves a sense of fulfilment that
-              is unmatched.
-            </h5>
 
             <div className="flex flex-col gap-2">
               <h5 className="text-center text-3xl font-bold">
