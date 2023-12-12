@@ -28,7 +28,7 @@
 .forge-card:hover::before {
   transition-delay: 0.2s;
 
-  transform: scale(40);
+  transform: scale(60);
 }
 
 .forge-card:hover {

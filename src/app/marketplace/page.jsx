@@ -9,12 +9,6 @@ import icon4 from "./images/icons/consumer-goods.svg";
 import icon5 from "./images/icons/agriculture-tools-and-machinery.svg";
 import icon6 from "./images/icons/electrical-products.svg";
 
-import globalNetworkSvg from "./images/icons/global-network.svg";
-import holisticSolutionSvg from "./images/icons/holistic-solutions.svg";
-import qualityCommitmentSvg from "./images/icons/quality-commitment.svg";
-import customizedCollaborationSvg from "./images/icons/customized-collaborations.svg";
-import innovationCentricSvg from "./images/icons/innovation-centric.svg";
-
 import sImg from "./images/fb.jpg";
 
 import Video from "./video/marketplace.mp4";
@@ -269,8 +263,8 @@ export const MarketPlace = () => {
                         Address
                       </p>
                       <p className="text-center">
-                        Apollo Marketplace, Apollo Towers, Plot No 20, Sector
-                        44, Gurgaon-122002, Haryana, India
+                        Apollo Towers, Plot No 20, Sector 44, Gurgaon-122002,
+                        Haryana, India
                       </p>
                     </div>
                     <div className="col-4 flex flex-col items-center">
