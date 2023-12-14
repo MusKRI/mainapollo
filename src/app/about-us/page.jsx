@@ -29,7 +29,7 @@ const AboutUs = () => {
   const aboutusData = {
     // banner data
     bannerImage: AboutusBanner,
-    bannerTag: "Apollo",
+    bannerTag: "Apollo About us",
     // bannerTitle: "",
     // bannerDescription:
     //   "Witness our journey of building a cleaner and greener India harnessing the power of sun and the strength of the wind",
@@ -39,7 +39,7 @@ const AboutUs = () => {
     whoweareSubtitle1:
       "We are a trusted global conglomerate with a legacy spanning over three decades. Established in 1994, we have become a premier business entity, creating a positive impact in over 45 countries anchored by an extraordinary force of 6000+ employees worldwide, we unlock potential for 1000+ clients.",
     whoweareSubtitle2:
-      "Our diversified business interests reflect our commitment to excellence. Apollo Green Energy pioneers’ sustainability and innovation, while Apollo Supply Chain provides integrated, tech-driven logistics solutions. Apollo Fashion manufactures textile garment, accessories, and footwear for leading international brands. Apollo Pro X executes large industrial and infrastructure projects whereas Apollo Marketplace connects businesses globally.",
+      "Our diversified business interests reflect our commitment to excellence. Apollo Green Energy pioneers’ sustainability and innovation, while Apollo Supply Chain provides integrated, tech-driven logistics solutions. Apollo Fashion manufactures textile garment, accessories, and footwear for leading international brands. Apollo ProX executes large industrial and infrastructure projects whereas Apollo Marketplace connects businesses globally.",
     whoweareSubtitle3:
       "At Apollo, we blend legacy with innovation, empowering businesses to thrive. Join us on this transformative journey toward progress, sustainability, and positive impact. Together, we shape a future where meaningful connections drive success and global progress.",
     whoweareNodes: {
@@ -206,13 +206,13 @@ const AboutUs = () => {
         }}
       />
 
-      <WonderfulTeam
+      {/* <WonderfulTeam
         data={{
           subtitle: aboutusData.teamSubtitle,
           title: aboutusData.teamTitle,
           members: aboutusData.teamMembers,
         }}
-      />
+      /> */}
     </div>
   );
 };

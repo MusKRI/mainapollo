@@ -153,12 +153,9 @@ const PeoplePlanet = () => {
         <div className="py-20 max-w-7xl mx-auto">
           <div className="flex flex-col gap-4">
             <div className="relative max-w-3xl mx-auto">
-              <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 bg-[#eeeeee]">
-                <img
-                  src="https://apolloindia.com/wp-content/uploads/2022/12/comm.png"
-                  alt=""
-                />
-              </div>
+              <span className="absolute top-[-20px] left-[-20px] text-9xl text-green bg-[#eeeeee]">
+                ❝
+              </span>
 
               <h5 className="text-xl max-w-3xl text-center mx-auto lg:text-4xl border border-black p-8">
                 To be able to be in a position where we can help make a

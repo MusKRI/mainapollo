@@ -121,7 +121,7 @@ const ScIdentity = () => {
           <div className="flex-1 flex flex-row gap-6 justify-center">
             <div className="flex flex-col justify-center items-center w-[190px]">
               <h1 className="text-4xl md:text-5xl font-bold text-main-text tracking-wide flex flex-row items-center">
-                <Counter from={0} to={2.5} isFixed point={1} /> Mn+
+                <Counter from={0} to={2.5} isFixed point={1} /> &nbsp;Mn+
               </h1>
               <p className="text-main-text text-center">
                 Square Feet of Warehouse Space

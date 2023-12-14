@@ -42,7 +42,7 @@
 }
 
 .prox-card.card .box:hover {
-  transform: translateY(0px);
+  transform: translateY(-50px);
 }
 
 .prox-card.card .box .content {

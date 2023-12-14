@@ -56,7 +56,7 @@ const PurposeValues = ({ data }) => {
   });
 
   return (
-    <section className="relative bg-[#fbfbfb]">
+    <section className="relative bg-[#fbfbfb] mb-10">
       <div className="max-w-7xl mx-auto flex flex-col py-16 px-6">
         {/* Purpose */}
         <div className="flex flex-col gap-4 items-center">

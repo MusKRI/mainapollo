@@ -1,0 +1,40 @@
+.key-section {
+  & .hex1 {
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(
+      30% 0%,
+      70% 0%,
+      100% 30%,
+      100% 70%,
+      70% 100%,
+      30% 100%,
+      0% 70%,
+      0% 30%
+    );
+    display: block;
+    background-color: #2d3091;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      clip-path: polygon(
+        30% 0%,
+        70% 0%,
+        100% 30%,
+        100% 70%,
+        70% 100%,
+        30% 100%,
+        0% 70%,
+        0% 30%
+      );
+      display: block;
+      background-color: #8695b7;
+      z-index: -1;
+    }
+  }
+}

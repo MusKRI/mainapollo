@@ -174,7 +174,11 @@ const Business = ({ mainData, slides }) => {
                           </h1> */}
                         <p className="transition">{slide.cardContent}</p>
 
-                        <MotionLink to="#" className="flex items-center gap-2">
+                        <MotionLink
+                          to="https://apollosupplychain.com"
+                          target="_blank"
+                          className="flex items-center gap-2"
+                        >
                           <span className="text-lg">Know more</span>
                           <span className="p-2 rounded-full bg-[#2e3192]">
                             <ArrowRight className="w-4 h-4" />

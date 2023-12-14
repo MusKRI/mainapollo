@@ -1,5 +1,7 @@
 import { CornerDownRight } from "lucide-react";
 
+import "./page.css";
+
 import ProxBanner from "./components/prox-banner/prox-banner";
 
 import ProxBannerImg from "./image/hap2.jpg";
@@ -132,9 +134,11 @@ const ProXPage = () => {
       {/* Prox Key section */}
       <section className=" bg-white relative px-3 md:px-5">
         <div className="max-w-7xl mx-auto py-16 space-y-4">
-          <h1 className="text-3xl lg:text-6xl font-semibold">
-            {proxData?.pKsTitle}
-          </h1>
+          <div className="flex flex-col gap-6">
+            <h1 className="text-3xl lg:text-6xl font-semibold">
+              {proxData?.pKsTitle}
+            </h1>
+          </div>
           <p className="font-medium max-w-lg">{proxData?.pKsDescription}</p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             {proxData?.pKeyServices?.map((ks, index) => {
@@ -151,9 +155,15 @@ const ProXPage = () => {
             <img src={BroadSectionImg} alt="" />
           </div>
 
-          <h1 className="text-3xl lg:text-6xl font-semibold flex-[0.4] self-center">
-            {proxData?.pbroadTitle}
-          </h1>
+          <div className="relative flex flex-col gap-4 flex-[0.4] self-center">
+            <h1 className="text-3xl lg:text-6xl font-semibold">
+              {proxData?.pbroadTitle}
+            </h1>
+
+            <div className="key-section">
+              <span className="hex1" />
+            </div>
+          </div>
         </div>
       </section>
 

@@ -49,26 +49,49 @@ const WhoWeAre = ({ data }) => {
           <h4 className="text-xl whitespace-pre-line  ">{data?.subtitle3}</h4>
 
           <div className="border bg-[#2e3192] w-full p-4 rounded-lg text-white">
-            <div className="flex flex-row flex-wrap justify-between items-end lg:justify-center lg:gap-20">
+            <div className="flex flex-row flex-wrap justify-between items-start lg:justify-center lg:gap-20">
               <div className="flex flex-col text-center w-[200px] items-center">
                 <h3 className="text-3xl lg:text-5xl font-semibold flex flex-row items-center">
-                  <Counter from={0} to={45} />
+                  <Counter from={0} to={45} />+
                 </h3>
-                <p className="text-xl lg:text-xl">Country</p>
+                <p className="text-xl lg:text-xl">
+                  Countries, Extensive
+                  <br />
+                  Global Operations
+                </p>
               </div>
 
               <div className="flex flex-col text-center w-[200px] items-center">
                 <h3 className="text-3xl lg:text-5xl font-semibold flex flex-row items-center">
                   <Counter from={0} to={6000} />+
                 </h3>
-                <p className="text-xl lg:text-xl">Employees</p>
+                <p className="text-xl lg:text-xl">
+                  Dedicated
+                  <br />
+                  workforce
+                </p>
               </div>
 
               <div className="flex flex-col text-center w-[200px] items-center">
                 <h3 className="text-3xl lg:text-5xl font-semibold flex flex-row items-center">
                   <Counter from={0} to={1000} />+
                 </h3>
-                <p className="text-xl lg:text-xl">Clients</p>
+                <p className="text-xl lg:text-xl">
+                  Clients
+                  <br />
+                  Worldwide
+                </p>
+              </div>
+
+              <div className="flex flex-col text-center w-[200px] items-center">
+                <h3 className="text-3xl lg:text-5xl font-semibold flex flex-row items-center">
+                  <Counter from={0} to={20} />+
+                </h3>
+                <p className="text-xl lg:text-xl">
+                  Years of
+                  <br />
+                  Market Legacy
+                </p>
               </div>
             </div>
           </div>

@@ -29,7 +29,7 @@ const Footer = () => {
         whileInView="whileInView"
         className="flex flex-col lg:flex-row"
       >
-        <div className="flex-[0.65] px-4 lg:pl-20 py-10 flex-col gap-8">
+        <div className="flex-[0.65] mx-auto px-4 lg:pl-20 py-10 flex-col gap-8 items-center">
           <div className="flex flex-col lg:flex-row gap-5 lg:gap-10">
             {/* Column 1 -> Businesses */}
             <div className="flex flex-col gap-4 lg:basis-1/3">
@@ -192,7 +192,7 @@ const Footer = () => {
             </motion.div>
           </div>
         </div>
-        <div className="flex-[0.35] pr-20 px-4 lg:pr-20 py-10">
+        {/* <div className="flex-[0.35] pr-20 px-4 lg:pr-20 py-10">
           <div className="flex flex-col gap-6">
             <motion.h2
               variants={Variants}
@@ -214,7 +214,7 @@ const Footer = () => {
               </button>
             </motion.div>
           </div>
-        </div>
+        </div> */}
       </motion.div>
     </footer>
   );

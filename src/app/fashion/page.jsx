@@ -24,6 +24,7 @@ import AoeBanner from "./images/shirts.jpeg";
 import Collage1 from "./images/collage1.jpg";
 import Collage2 from "./images/collage2.jpg";
 import Collage3 from "./images/collage3.jpg";
+import Collage4 from "./images/collage4.jpg";
 
 import s1 from "./images/snap1.jpeg";
 import s2 from "./images/snap2.jpeg";
@@ -50,7 +51,7 @@ export const Fashion = () => {
     aoeTag2Count: 5,
     aoeTag2Title: "Product Categories",
     aoeTag3Count: 40,
-    aoeTag3Title: "Happy Clients",
+    aoeTag3Title: "Clients Worldwide",
     aoeBannerImage: AoeBanner,
 
     // approach data
@@ -82,17 +83,17 @@ export const Fashion = () => {
       {
         Heading: "Customers First",
         Content:
-          "At Apollo Fashion, we are passionate about pushing the boundaries of fashion design and innovation. Our team is dedicated to delivering the highest quality products that reflect our commitment to creativity, sustainability, and customer satisfaction.",
+          "Passionate about advancing fashion design and innovation, our dedicated team strives for the highest quality in products, embodying our commitment to creativity, sustainability, and customer satisfaction.",
       },
       {
         Heading: "Design Expertise",
         Content:
-          "Apollo Fashion is home to a team of over 1500 talented employees, whose exceptional creativity and deep understanding of the customers&#39; needs drive their design expertise. Through rigorous research, our team consistently delivers designs that meet and exceed customer expectations.",
+          "Home to a team of 1500+ talented individuals, Apollo Fashion thrives on exceptional creativity and a profound understanding of customer needs. Through rigorous research, we consistently deliver designs that not only meet but exceed expectations.",
       },
       {
         Heading: "Smarter Production",
         Content:
-          "Apollo Fashion has a strong foundation in manufacturing and we take pride in our ability to produce superior goods at competitive prices. We maintain high standards because we are committed to ethical practices and excellence in every aspect of our production process. Our unwavering dedication allows us to consistently deliver exceptional products to our customers.",
+          "With a robust manufacturing foundation, Apollo Fashion takes pride in producing superior goods at competitive prices. Committed to ethical practices and excellence, our unwavering dedication ensures consistent delivery of exceptional products.",
       },
       {
         Heading: "Flexible Order Size",
@@ -102,22 +103,22 @@ export const Fashion = () => {
       {
         Heading: "Quality Compliance",
         Content:
-          "We maintain quality compliance through rigorous testing of raw materials, inspections during production, and final product checks before shipment. Our procedures have been certified by prestigious national and international organizations, verifying their exceptional quality compliance and have been rewarded for establishing the industry standard benchmark.",
+          "Certified by prestigious national and international organizations, our procedures uphold industry-standard benchmarks. Rigorous testing, inspections, and final product checks guarantee exceptional quality compliance, earning us recognition for excellence.",
       },
       {
         Heading: "Tech-enabled Operations",
         Content:
-          "We employ the latest digital solutions to serve our customers. By leveraging our technological expertise, we optimize every aspect of our operations, from manufacturing to customer service, to ensure the highest quality and efficiency. Our investment in digital innovation allows us to stay ahead of the competition and deliver unparalleled value to our customers. ",
+          "Leveraging the latest digital solutions, we optimize every aspect of our operations, ensuring high-quality and efficient processes. Our investment in digital innovation keeps us ahead of the competition, delivering unparalleled value to customers. ",
       },
       {
         Heading: "Timely Delivery",
         Content:
-          "We ensure timely delivery by using efficient supply chain management practices, closely monitoring production timelines, and maintaining clear communication with customers throughout the delivery process.",
+          "Efficient supply chain management, close monitoring of production timelines, and clear communication ensure timely delivery to our customers.",
       },
       {
         Heading: "Global Sourcing",
         Content:
-          "Apollo Fashion ensures global sourcing through strategic partnerships with suppliers worldwide, meticulous quality control measures, and adherence to ethical and sustainable sourcing practices.",
+          "Through strategic partnerships worldwide, meticulous quality control, and adherence to ethical and sustainable sourcing practices, Apollo Fashion ensures global sourcing.",
       },
     ],
 
@@ -172,22 +173,16 @@ export const Fashion = () => {
             <div className="row max-w-[1024px] mx-auto">
               <div className="col-md-4 d-flex justify-content-center align-items-center">
                 <div className="row">
-                  <div
-                    className="col-12"
-                    style={{ fontSize: "40px", fontWeight: "bold" }}
-                  >
-                    <span className="after:absolute after:right-[-25px] after:w-4 after:h-4 after:bottom-2 after:border-main-text after:rounded-full after:bg-[#a6ca00] relative">
+                  <div className="col-12" style={{ fontWeight: "bold" }}>
+                    <span className="after:absolute after:right-[-25px] after:w-4 after:h-4 after:bottom-2 after:border-main-text after:rounded-full after:bg-[#a6ca00] relative text-4xl lg:text-6xl">
                       {fashionData?.secondSectionTitle1}
                     </span>
                   </div>
                   <div className="col-md-8">
                     {fashionData?.secondSectionSubtitle1}
                   </div>
-                  <div
-                    className="col-md-12"
-                    style={{ fontSize: "40px", fontWeight: "bold" }}
-                  >
-                    <span className="after:absolute after:right-[-25px] after:w-4 after:h-4 after:bottom-2 after:border-main-text after:rounded-full after:bg-[#a6ca00] relative">
+                  <div className="col-md-12" style={{ fontWeight: "bold" }}>
+                    <span className="after:absolute after:right-[-25px] after:w-4 after:h-4 after:bottom-2 after:border-main-text after:rounded-full after:bg-[#a6ca00] relative text-4xl lg:text-6xl">
                       {fashionData?.secondSectionTitle2}
                     </span>
                   </div>
@@ -196,7 +191,7 @@ export const Fashion = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 mt-3">
+              <div className="col-md-6 mt-3 ml-auto">
                 {fashionData?.secondSectionDescription}
               </div>
             </div>
@@ -251,16 +246,17 @@ export const Fashion = () => {
                                   isFixed
                                   point={1}
                                 />
-                                Mn
+                                &nbsp;Mn
                               </div>
                               <div
-                                className="col-4"
+                                className="col-4 flex flex-row items-center gap-1"
                                 style={{ fontWeight: "bold", fontSize: "30px" }}
                               >
                                 <Counter
                                   from={0}
                                   to={fashionData?.aoeTag2Count}
                                 />
+                                +
                               </div>
                               <div
                                 className="col-4"
@@ -345,7 +341,7 @@ export const Fashion = () => {
                             ></div>
                           </div>
                           <p
-                            className="d-flex justify-content-center mt-2"
+                            className="d-flex justify-content-center mt-2 text-2xl"
                             style={{ fontWeight: "bold" }}
                           >
                             {item.data}
@@ -394,20 +390,20 @@ export const Fashion = () => {
               </div>
               <div className="">
                 <div className="relative w-full">
-                  <img src={Collage1} alt="" className="object-cover " />
+                  <img src={Collage4} alt="" className="object-cover " />
                 </div>
-                <div className="relative w-full">
+                {/* <div className="relative w-full">
                   <img src={Collage2} alt="" className="object-cover " />
                 </div>
                 <div className="relative w-full">
                   <img src={Collage3} alt="" className="object-cover " />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
         {/* SnapShotSection */}
-        <div className="col-12">
+        <div className="col-12 mt-10">
           <div className="container">
             <h2 className="relative leading-snug text-3xl lg:text-6xl text-main-text after:absolute after:border-2 after:left-0 after:-bottom-4 after:w-10 after:border-main-text">
               Snapshot
@@ -461,37 +457,54 @@ export const Fashion = () => {
                     the standard.
                   </div>
                 </div>
-                <div className="row mt-4 max-w-4xl text-center mx-auto">
-                  <div className="col-12">
-                    <div className="row justify-center">
-                      <div className="col-4">
-                        <p style={{ fontWeight: "bold" }}>Address</p>
-                        <p style={{ fontWeight: "bold" }}>Footwear Division</p>
-                        <p>C-30, Sector-58, NOIDA-201301, India</p>
+
+                <div className="row justify-center">
+                  <div className="col-8">
+                    <div className="row mt-4 max-w-4xl text-center mx-auto">
+                      <div className="col-12">
+                        <div className="row justify-center">
+                          <div className="col-6">
+                            <p style={{ fontWeight: "bold" }}>Address</p>
+                            <p style={{ fontWeight: "bold" }}>
+                              Footwear Division
+                            </p>
+                            <p>C-30, Sector-58, NOIDA-201301, India</p>
+                          </div>
+                          <div className="col-6">
+                            <p style={{ fontWeight: "bold" }}>Phone</p>
+                            <p>+91 120 4635800</p>
+                          </div>
+                        </div>
                       </div>
-                      <div className="col-4">
-                        <p style={{ fontWeight: "bold" }}>Phone</p>
-                        <p>+91 120 4635800</p>
-                      </div>
-                      <div className="col-4">
-                        <p style={{ fontWeight: "bold" }}>Email</p>
-                        <p>info@apollofashioncompany.com</p>
+
+                      <div className="col-12 mt-4">
+                        <div className="row">
+                          <div className="col-12">
+                            <div className="row">
+                              <div className="col-6">
+                                <p style={{ fontWeight: "bold" }}>
+                                  Leather Garments & Accessories
+                                </p>
+                                <p>B-21, Sector-65, NOIDA-201301, India</p>
+                              </div>
+
+                              <div className="col-6">
+                                <p>+91 120 4635800</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div className="col-12 mt-4">
-                    <div className="row">
-                      <div className="col-8">
-                        <div className="row">
-                          <div className="col-6">
-                            <p style={{ fontWeight: "bold" }}>
-                              Leather Garments & Accessories
-                            </p>
-                            <p>B-21, Sector-65, NOIDA-201301, India</p>
-                          </div>
 
-                          <div className="col-6">
-                            <p>+91 120 4635800</p>
+                  <div className="flex col-2">
+                    <div className="row items-center">
+                      <div className="col-2">
+                        <div className="row items-center">
+                          <div className="col-4">
+                            <p style={{ fontWeight: "bold" }}>Email</p>
+                            <p>info@apollofashioncompany.com</p>
                           </div>
                         </div>
                       </div>
