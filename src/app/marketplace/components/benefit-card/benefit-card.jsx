@@ -2,7 +2,7 @@ import "./benefit-card.css";
 
 const BenefitCard = ({ data }) => {
   return (
-    <div className="ag-courses_item">
+    <div className="ag-courses_item shadow-md">
       <div href="#" className="ag-courses-item_link h-full">
         <div className="ag-courses-item_bg"></div>
 

@@ -1,4 +1,5 @@
-import { CornerDownRight } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
+import { FaCircleCheck } from "react-icons/fa6";
 
 import "./page.css";
 
@@ -168,14 +169,14 @@ const ProXPage = () => {
       </section>
 
       {/* Unique Edge Section */}
-      <section className=" edge-gradient text-white relative px-3 md:px-5">
-        <div className="max-w-7xl mx-auto flex flex-col gap-4 py-16 pb-32">
-          <h1 className="text-3xl lg:text-6xl font-bold">
-            {proxData?.pUETitle}
-          </h1>
-          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4">
-            <div className="relative flex justify-center w-80 shrink-0 [box-shadow:-10px_10px_white]">
-              <img src={proxData?.pUEImage} alt="" className="" />
+      <section className="bg-[#3e8bff] text-white relative px-3 md:px-5 overflow-hidden">
+        <div className="absolute w-[800px] h-[800px] rounded-full z-0 left-0 top-0 -translate-x-1/2 -translate-y-1/2 grad-circle"></div>
+        <div className="max-w-[1380px] mx-auto flex flex-col gap-4 py-16 pb-32 relative z-10">
+          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-16">
+            <div className="relative flex justify-center">
+              <h1 className="text-3xl lg:text-6xl font-bold text-right uppercase max-w-xs relative after:absolute after:bottom-0 after:h-2 after:w-[100px] after:right-0 after:bg-white">
+                {proxData?.pUETitle}
+              </h1>
             </div>
             <div className="flex flex-col gap-4">
               <p className="text-[20px] font-semibold">{proxData?.pUEDesc1}</p>
@@ -184,8 +185,8 @@ const ProXPage = () => {
               <div className="flex flex-col gap-2 pl-10">
                 {proxData?.pUEPoints?.map((point, idx) => {
                   return (
-                    <div key={idx} className="flex flex-row items-start gap-2">
-                      <CornerDownRight className="w-5 h-5" />
+                    <div key={idx} className="flex flex-row items-center gap-3">
+                      <FaCircleCheck />
                       <p className="text-[18px]">{point}</p>
                     </div>
                   );

@@ -19,7 +19,7 @@ const Variants = {
     },
   },
 };
-let background = { background: "linear-gradient(to right, #238e34, #23278c)" };
+let background = { background: "#1c1c1c" };
 
 const Footer = () => {
   return (

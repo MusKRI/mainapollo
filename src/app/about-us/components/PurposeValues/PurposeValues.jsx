@@ -61,8 +61,12 @@ const PurposeValues = ({ data }) => {
         {/* Purpose */}
         <div className="flex flex-col gap-4 items-center">
           <div className="flex flex-col gap-2">
-            <h1 className="text-[#2e3192] text-6xl font-semibold text-center">Purpose</h1>
-            <p className="text-3xl font-semibold text-center">Reason of our Existence</p>
+            <h1 className="text-[#2e3192] text-6xl font-semibold text-center">
+              Purpose
+            </h1>
+            <p className="text-3xl font-semibold text-center">
+              Reason of our Existence
+            </p>
           </div>
 
           <div className="max-w-3xl">
@@ -80,8 +84,12 @@ const PurposeValues = ({ data }) => {
         {/* Values */}
         <div className="flex flex-col gap-4 items-center">
           <div className="flex flex-col gap-2">
-            <h1 className="text-[#2e3192] text-6xl font-semibold text-center">Values</h1>
-            <p className="text-3xl font-semibold text-center">Heartbeat Of Our Existence</p>
+            <h1 className="text-[#2e3192] text-6xl font-semibold text-center">
+              Values
+            </h1>
+            <p className="text-3xl font-semibold text-center">
+              Heartbeat Of Our Existence
+            </p>
           </div>
 
           <div className="max-w-3xl">
@@ -94,27 +102,36 @@ const PurposeValues = ({ data }) => {
       </div>
 
       {/* The Force of Five */}
-      <div className="bg-[#2e3192] text-white p-4">
+      <div className="bg-white text-black p-4">
         <h1 className="text-3xl lg:text-6xl font-bold text-center my-6">
           The Force of Five
         </h1>
 
-        <div className="grid grid-cols-1 max-w-[500px] md:max-w-full md:grid-cols-2 lg:grid-cols-5">
+        <p className="text-center text-xl font-medium">
+          Building Strength: The Force of Five - Unveiling the Pillars Shaping
+          Our Company's Foundation
+        </p>
+
+        <div className="flex items-start justify-center [row-gap:50px] [column-gap:55px] flex-wrap mt-10">
           {data?.nodes?.map((item, index) => {
             return (
               <div
-                key={item.id}
-                className="flex flex-col gap-5 border-r px-4 rounded-xl"
+                className="flex gap-4 justify-center items-center w-auto"
+                key={item?.id}
               >
-                <div className="border self-start text-3xl lg:text-4xl font-semibold rounded-full w-20 h-20 flex items-center justify-center bg-white text-[#2e3192]">
-                  {index + 1}
+                <div
+                  key={item.id}
+                  className="inline-flex flex-col gap-3 px-4 rounded-xl items-center"
+                >
+                  <div className="border w-20 h-20 rounded-full flex items-center justify-center text-3xl bg-[#b09af0] text-white">
+                    0{index + 1}
+                  </div>
+
+                  <h3 className="text-xl text-center font-semibold text-[#b09af0]">
+                    {item?.pvTitle}
+                  </h3>
+                  <p className="text-center max-w-sm text-lg">{item?.pv}</p>
                 </div>
-
-                <h1 className="text-3xl lg:text-4xl font-semibold">
-                  {item?.pvTitle}
-                </h1>
-
-                <p className="text-lg">{item?.pv}</p>
               </div>
             );
           })}

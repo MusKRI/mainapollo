@@ -38,3 +38,8 @@
     }
   }
 }
+
+.grad-circle {
+  background: rgb(186, 213, 255);
+  background: linear-gradient(250deg, rgba(186, 213, 255, 1) 0%, transparent);
+}

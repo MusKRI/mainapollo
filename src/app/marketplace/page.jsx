@@ -125,21 +125,22 @@ export const MarketPlace = () => {
           </div>
         </div>
       </div>
+
       {/* section-3 */}
-      <div
-        className="container-fluid mt-5 mb-5 py-20"
-        style={{ background: "#222429", color: "white" }}
-      >
-        <div className="row container mx-auto space-y-4">
-          <div className="col-6 self-center">
-            <h1 className="text-3xl lg:text-6xl">At Apollo Marketplace</h1>
-            <p className="max-w-md">
+      <div className="container my-4 py-4">
+        <div className="space-y-4">
+          <div className="flex flex-col gap-2">
+            <h1 className="text-3xl lg:text-6xl font-semibold text-center">
+              At Apollo Marketplace
+            </h1>
+            <p className="max-w-md mx-auto text-lg text-center">
               we specialize in trading and disturbing a diverse range of
               products across several key business verticals:
             </p>
           </div>
-          <div className="col-6 flex flex-row flex-wrap gap-4">
-            <div className="group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden hover:shadow-md transition">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden hover:shadow-md transition text-white">
               <div className="relative z-[2]">
                 <img src={icon1} alt="" className="h-20" />
               </div>
@@ -151,7 +152,8 @@ export const MarketPlace = () => {
                 <img src={icon1} alt="" className="" />
               </div>
             </div>
-            <div className="hover:shadow-md transition group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden">
+
+            <div className="hover:shadow-md transition group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden text-white">
               <div className="relative z-[2]">
                 <img src={icon2} alt="" className="h-20" />
               </div>
@@ -163,9 +165,8 @@ export const MarketPlace = () => {
                 <img src={icon2} alt="" className="" />
               </div>
             </div>
-          </div>
-          <div className="col-3">
-            <div className="hover:shadow-md transition group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden">
+
+            <div className="hover:shadow-md transition group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden text-white">
               <div className="relative z-[2]">
                 <img src={icon3} alt="" className="h-20" />
               </div>
@@ -175,9 +176,8 @@ export const MarketPlace = () => {
                 <img src={icon3} alt="" className="" />
               </div>
             </div>
-          </div>
-          <div className="col-3">
-            <div className="hover:shadow-md transition group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden">
+
+            <div className="hover:shadow-md transition group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden text-white">
               <div className="relative z-[2]">
                 <img src={icon4} alt="" className="h-20" />
               </div>
@@ -187,9 +187,8 @@ export const MarketPlace = () => {
                 <img src={icon4} alt="" className="" />
               </div>
             </div>
-          </div>
-          <div className="col-3">
-            <div className="hover:shadow-md transition group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden">
+
+            <div className="hover:shadow-md transition group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden text-white">
               <div className="relative z-[2]">
                 <img src={icon5} alt="" className="h-20" />
               </div>
@@ -201,9 +200,8 @@ export const MarketPlace = () => {
                 <img src={icon5} alt="" className="" />
               </div>
             </div>
-          </div>
-          <div className="col-3">
-            <div className="hover:shadow-md transition group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden">
+
+            <div className="hover:shadow-md transition group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden text-white">
               <div className="relative z-[2]">
                 <img src={icon6} alt="" className="h-20" />
               </div>
@@ -216,6 +214,9 @@ export const MarketPlace = () => {
           </div>
         </div>
       </div>
+
+      {/* <div className="border-t max-w-lg mx-auto"></div> */}
+
       {/* Map */}
       <HomeMap />
       {/* BenefitSections */}
