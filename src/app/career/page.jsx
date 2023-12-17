@@ -199,27 +199,21 @@ const Career = () => {
             </div>
           </div> */}
           {/* Discovery Section */}
-          <div
-            className="col-12 py-5"
-            style={{ backgroundColor: "#2e3192", color: "white" }}
-          >
+          <div className="col-12 py-5">
             <div className="container">
               <div className="row">
-                <div
-                  className="col-12 mt-3 flex items-center gap-2 text-center"
-                  style={{ fontWeight: "bold", fontSize: "25px" }}
-                >
-                  <p className="text-center w-full">
+                <div className="col-12 mt-3 flex items-center gap-2 text-center">
+                  <p className="text-center w-full font-semibold text-3xl lg:text-4xl">
                     Discover what makes Apollo Green Energy a Sought-after
-                    Employer:
+                    Employer
                   </p>
                 </div>
-                <div className="col-12 mb-5  mt-5">
+                <div className="col-12 mb-5">
                   <div className="row items-start justify-around">
-                    <div className="col-lg-3 d-flex justify-content-center">
+                    {/* <div className="col-lg-3 d-flex justify-content-center">
                       <img src={d1} alt="" className="rounded-md w-full" />
-                    </div>
-                    <div className="col-lg-4">
+                    </div> */}
+                    <div className="col-lg-8 text-center text-lg">
                       A strong, consistent, and meritocratic HR framework helps
                       Apollo Green Energy in maintaining a forward-thinking work
                       environment where talent with a purpose is drawn and
@@ -227,13 +221,13 @@ const Career = () => {
                       Energy attempts to inspire all employees to play an
                       integral role in the organisation’s growth.
                     </div>
-                    <div className="col-lg-3 d-flex justify-content-space-around items-center">
+                    {/* <div className="col-lg-3 d-flex justify-content-space-around items-center">
                       <img
                         src={d2}
                         alt=""
                         className="rounded-md h-full w-full"
                       />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 <div className="col-12">

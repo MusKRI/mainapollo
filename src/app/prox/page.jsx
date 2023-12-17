@@ -160,16 +160,12 @@ const ProXPage = () => {
             <h1 className="text-3xl lg:text-6xl font-semibold">
               {proxData?.pbroadTitle}
             </h1>
-
-            <div className="key-section">
-              <span className="hex1" />
-            </div>
           </div>
         </div>
       </section>
 
       {/* Unique Edge Section */}
-      <section className="bg-[#663e9f] text-white relative px-3 md:px-5 overflow-hidden">
+      <section className="ue-gradient text-white relative px-3 md:px-5 overflow-hidden">
         <div className="absolute w-[800px] h-[800px] rounded-full z-0 left-0 top-0 -translate-x-1/2 -translate-y-1/2 grad-circle"></div>
         <div className="max-w-[1380px] mx-auto flex flex-col gap-4 py-16 pb-32 relative z-10">
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-16">

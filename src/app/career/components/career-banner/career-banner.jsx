@@ -15,9 +15,9 @@ const CareerBanner = ({ data }) => {
         />
       </div>
 
-      <div className="absolute top-0 left-0 z-10 w-full h-full flex items-center p-10 md:p-20">
-        <div className="flex flex-col gap-10 w-full">
-          <h1 className="text-5xl md:text-8xl font-bold text-white capitalize text-center">
+      <div className="absolute top-0 left-0 z-10 w-full h-full flex items-end p-10 md:p-20">
+        <div className="flex flex-col gap-10 w-full mb-8">
+          <h1 className="text-5xl md:text-8xl font-bold text-white capitalize text-left">
             {data?.bannerTitle}
           </h1>
         </div>

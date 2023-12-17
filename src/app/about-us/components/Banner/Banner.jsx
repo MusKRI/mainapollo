@@ -1,6 +1,6 @@
 const AboutUsBanner = ({ data }) => {
   return (
-    <div className="relative h-[calc(100vh)]">
+    <div className="relative h-[calc(100vh)] about-banner">
       <img
         src={data?.image}
         alt="About Us Banner"

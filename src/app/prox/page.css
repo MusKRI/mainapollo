@@ -43,3 +43,11 @@
   background: rgb(186, 213, 255);
   background: linear-gradient(250deg, rgba(186, 213, 255, 1) 0%, transparent);
 }
+
+.ue-gradient {
+  background: linear-gradient(
+    90deg,
+    hsla(267, 44%, 43%, 1) 40%,
+    hsla(209, 85%, 41%, 1) 100%
+  );
+}

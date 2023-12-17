@@ -123,7 +123,7 @@ const PurposeValues = ({ data }) => {
                   key={item.id}
                   className="inline-flex flex-col gap-3 px-4 rounded-xl items-center"
                 >
-                  <div className="border w-20 h-20 rounded-full flex items-center justify-center text-3xl bg-white text-[#191919]">
+                  <div className="w-20 h-20 rounded-full flex items-center justify-center text-3xl bg-[#878787] text-white">
                     0{index + 1}
                   </div>
 

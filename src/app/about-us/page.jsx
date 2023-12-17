@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import AboutUsBanner from "./components/Banner/Banner";
 import PurposeValues from "./components/PurposeValues/PurposeValues";
 import WhoWeAre from "./components/WhoWeAre/WhoWeAre";
-import WonderfulTeam from "./components/WonderfulTeam/WonderfulTeam";
+// import WonderfulTeam from "./components/WonderfulTeam/WonderfulTeam";
 
 import AboutusBanner from "./images/banner.jpg";
 
