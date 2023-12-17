@@ -96,7 +96,7 @@ export const MarketPlace = () => {
         <div className="row">
           <div className="col-6">
             <img
-              src={data.bgImage}
+              src={"https://images.unsplash.com/photo-1644134913825-5ff0ff4e731c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Ds"}
               alt=""
               style={{ maxHeight: "370px", minWidth: "70%" }}
             />
@@ -140,76 +140,76 @@ export const MarketPlace = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div className="group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden hover:shadow-md transition text-white">
-              <div className="relative z-[2]">
-                <img src={icon1} alt="" className="h-20" />
-              </div>
-              <div className="text-xl relative z-[2]">
+            <div
+              className="group relative flex-1 rounded-lg bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden hover:[box-shadow:10px_10px_20px_#878787] transition duration-300 text-white hover:-translate-y-1"
+              style={{
+                background:
+                  "linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent), url(https://images.unsplash.com/photo-1474674556023-efef886fa147?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+                backgroundSize: "cover",
+              }}
+            >
+              <div className="text-xl relative z-[2] [text-shadow:2px_2px_2px_#000000]">
                 Heavy Machinery & Equipment Solutions
-              </div>
-
-              <div className="absolute z-[0] right-[-150px] bottom-[-100px] w-full opacity-30 group-hover:scale-125 transition-all">
-                <img src={icon1} alt="" className="" />
               </div>
             </div>
 
-            <div className="hover:shadow-md transition group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden text-white">
-              <div className="relative z-[2]">
-                <img src={icon2} alt="" className="h-20" />
-              </div>
+            <div
+              className="hover:[box-shadow:10px_10px_20px_#878787] transition group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden text-white hover:-translate-y-1"
+              style={{
+                background:
+                  "linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent), url(https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+                backgroundSize: "cover",
+              }}
+            >
               <div className="text-xl relative z-[2]">
                 Medical and Surgical Equipment
               </div>
-
-              <div className="absolute z-[0] right-[-150px] bottom-[-10px] w-full opacity-30 group-hover:scale-125 transition-all">
-                <img src={icon2} alt="" className="" />
-              </div>
             </div>
 
-            <div className="hover:shadow-md transition group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden text-white">
-              <div className="relative z-[2]">
-                <img src={icon3} alt="" className="h-20" />
-              </div>
+            <div
+              className="hover:[box-shadow:10px_10px_20px_#878787] transition group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden text-white hover:-translate-y-1"
+              style={{
+                background:
+                  "linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent), url(https://images.unsplash.com/photo-1651525670114-2b8117390b28?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+                backgroundSize: "cover",
+              }}
+            >
               <div className="text-xl relative z-[2]">Food Beverages</div>
-
-              <div className="absolute z-[0] right-[-150px] bottom-[-100px] w-full opacity-30 group-hover:scale-125 transition-all">
-                <img src={icon3} alt="" className="" />
-              </div>
             </div>
 
-            <div className="hover:shadow-md transition group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden text-white">
-              <div className="relative z-[2]">
-                <img src={icon4} alt="" className="h-20" />
-              </div>
+            <div
+              className="hover:[box-shadow:10px_10px_20px_#878787] transition group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden text-white hover:-translate-y-1"
+              style={{
+                background:
+                  "linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent), url(https://images.unsplash.com/photo-1607718330023-64d147bac374?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+                backgroundSize: "cover",
+              }}
+            >
               <div className="text-xl relative z-[2]">Consumer Goods</div>
-
-              <div className="absolute z-[0] right-[-150px] bottom-[-100px] w-full opacity-30 group-hover:scale-125 transition-all">
-                <img src={icon4} alt="" className="" />
-              </div>
             </div>
 
-            <div className="hover:shadow-md transition group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden text-white">
-              <div className="relative z-[2]">
-                <img src={icon5} alt="" className="h-20" />
-              </div>
+            <div
+              className="hover:[box-shadow:10px_10px_20px_#878787] transition group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden text-white hover:-translate-y-1"
+              style={{
+                background:
+                  "linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent), url(https://plus.unsplash.com/premium_photo-1661962775412-b0740d74b7fa?q=80&w=1869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+                backgroundSize: "cover",
+              }}
+            >
               <div className="text-xl relative z-[2]">
                 Agriculture Tools & Machinery
               </div>
-
-              <div className="absolute z-[0] right-[-150px] bottom-[-100px] w-full opacity-30 group-hover:scale-125 transition-all">
-                <img src={icon5} alt="" className="" />
-              </div>
             </div>
 
-            <div className="hover:shadow-md transition group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden text-white">
-              <div className="relative z-[2]">
-                <img src={icon6} alt="" className="h-20" />
-              </div>
+            <div
+              className="hover:[box-shadow:10px_10px_20px_#878787] transition group relative flex-1 rounded-md bg-[#1c1e22] flex flex-col justify-end gap-2 p-4 h-56 overflow-hidden text-white hover:-translate-y-1"
+              style={{
+                background:
+                  "linear-gradient(0deg, rgba(0, 0, 0, 0.8), transparent), url(https://plus.unsplash.com/premium_photo-1682146920372-bd950e25125d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
+                backgroundSize: "cover",
+              }}
+            >
               <div className="text-xl relative z-[2]">Electrical Products</div>
-
-              <div className="absolute z-[0] right-[-150px] bottom-[-100px] w-full opacity-30 group-hover:scale-125 transition-all">
-                <img src={icon6} alt="" className="" />
-              </div>
             </div>
           </div>
         </div>

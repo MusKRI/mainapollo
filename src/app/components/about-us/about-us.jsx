@@ -79,7 +79,7 @@ const HomeAboutUs = ({ data }) => {
           </div>
         </div>
         <div className="flex-1 px-6 flex flex-col gap-3 mt-[20px]">
-          <h1 className="text-[28px] md:text-5xl font-medium relative after:absolute after:left-0 after:bottom-0 after:w-[60px] after:h-[4px] after:bg-green">
+          <h1 className="text-[28px] md:text-5xl font-medium relative after:absolute after:left-0 after:bottom-0 after:w-[60px] after:h-[4px] after:bg-[#7D8787]">
             {data.aboutMainHeading ?? "Discover Our Legacy"}
           </h1>
 
