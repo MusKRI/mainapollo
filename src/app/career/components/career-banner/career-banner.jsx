@@ -6,7 +6,7 @@ import "./career-banner.css";
 
 const CareerBanner = ({ data }) => {
   return (
-    <div className="relative">
+    <div className="relative career-banner">
       <div className="img-gradient">
         <img
           src={data?.bannerImg}

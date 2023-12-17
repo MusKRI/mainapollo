@@ -18,7 +18,7 @@ import { Counter } from "../../../../components/CounterMotion";
 
 const WhoWeAre = ({ data }) => {
   return (
-    <section className="relative px-3 md:px-5">
+    <section className="relative px-3 md:px-5 bg-[#191919] text-white">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between py-20 relative">
         {/* <div className="flex-1 flex flex-row justify-center">
           <motion.div
@@ -48,7 +48,7 @@ const WhoWeAre = ({ data }) => {
           <h4 className="text-xl whitespace-pre-line  ">{data?.subtitle2}</h4>
           <h4 className="text-xl whitespace-pre-line  ">{data?.subtitle3}</h4>
 
-          <div className="border bg-[#2e3192] w-full p-4 rounded-lg text-white">
+          <div className="bg-white w-full p-4 rounded-lg text-[#191919] [box-shadow:0px_0px_10px_0px_#878787;]">
             <div className="flex flex-row flex-wrap justify-between items-start lg:justify-center lg:gap-20">
               <div className="flex flex-col text-center w-[200px] items-center">
                 <h3 className="text-3xl lg:text-5xl font-semibold flex flex-row items-center">

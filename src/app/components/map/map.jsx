@@ -68,7 +68,7 @@ const HomeMap = () => {
         Making Impact Across Globe
       </h1>
       <div style={{ background: "white" }}>
-        <div className="relative h-auto lg:min-h-screen">
+        <div className="relative h-auto py-10">
           <div
             className="relative w-full h-full flex items-center justify-center bg-white"
             style={{ margin: "auto", maxWidth: "80rem" }}

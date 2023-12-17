@@ -1,17 +1,17 @@
-img {
+.prox-banner img {
   /*  To contain the image to the confines of the div  */
   max-width: 100%;
 }
 
-.img-gradient {
+.prox-banner .img-gradient {
   max-width: 100%;
   margin: auto;
 }
 
-.img-gradient::after {
+.prox-banner .img-gradient::after {
   /* display: block; */
   position: absolute;
-  background-image: linear-gradient(to top, #333694 1%, transparent);
+  background-image: linear-gradient(to top, #191919 1%, transparent);
   /* height: 400px; */
   /* width: 100%; */
   content: "";

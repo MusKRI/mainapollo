@@ -6,7 +6,7 @@ import "./prox-banner.css";
 
 const ProxBanner = ({ data }) => {
   return (
-    <div className="relative h-[calc(100vh-72px)]">
+    <div className="relative h-[calc(100vh-72px)] prox-banner">
       <div className="img-gradient">
         <img
           src={data?.bannerImage}

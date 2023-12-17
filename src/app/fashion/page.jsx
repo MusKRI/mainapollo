@@ -174,7 +174,7 @@ export const Fashion = () => {
               <div className="col-md-4 d-flex justify-content-center align-items-center">
                 <div className="row">
                   <div className="col-12" style={{ fontWeight: "bold" }}>
-                    <span className="after:absolute after:right-[-25px] after:w-4 after:h-4 after:bottom-2 after:border-main-text after:rounded-full after:bg-[#a6ca00] relative text-4xl lg:text-6xl">
+                    <span className="after:absolute after:right-[-25px] after:w-3 after:h-3 after:bottom-2 after:border-main-text after:rounded-full after:bg-[#a6ca00] relative text-4xl lg:text-6xl">
                       {fashionData?.secondSectionTitle1}
                     </span>
                   </div>
@@ -182,7 +182,7 @@ export const Fashion = () => {
                     {fashionData?.secondSectionSubtitle1}
                   </div>
                   <div className="col-md-12" style={{ fontWeight: "bold" }}>
-                    <span className="after:absolute after:right-[-25px] after:w-4 after:h-4 after:bottom-2 after:border-main-text after:rounded-full after:bg-[#a6ca00] relative text-4xl lg:text-6xl">
+                    <span className="after:absolute after:right-[-25px] after:w-3 after:h-3 after:bottom-2 after:border-main-text after:rounded-full after:bg-[#a6ca00] relative text-4xl lg:text-6xl">
                       {fashionData?.secondSectionTitle2}
                     </span>
                   </div>

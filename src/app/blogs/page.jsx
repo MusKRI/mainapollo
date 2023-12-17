@@ -86,14 +86,14 @@ const blogspageData = {
 const BlogsPage = () => {
   return (
     <div className="relative">
-      <BlogsHero
+      {/* <BlogsHero
         heroData={{
           heroBlogCardImage: blogspageData.heroBlogCardImage,
           heroBlogCardRead: blogspageData.heroBlogCardRead,
           heroBlogCardTitle: blogspageData.heroBlogCardTitle,
           heroBlogCardDate: blogspageData.heroBlogCardDate,
         }}
-      />
+      /> */}
 
       <BlogsHeroCards data={blogspageData.blogsHeroCardsData} />
 

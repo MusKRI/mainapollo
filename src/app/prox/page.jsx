@@ -133,7 +133,7 @@ const ProXPage = () => {
       </section>
 
       {/* Prox Key section */}
-      <section className=" bg-white relative px-3 md:px-5">
+      <section className="bg-white relative px-3 md:px-5">
         <div className="max-w-7xl mx-auto py-16 space-y-4">
           <div className="flex flex-col gap-6">
             <h1 className="text-3xl lg:text-6xl font-semibold">
@@ -141,7 +141,7 @@ const ProXPage = () => {
             </h1>
           </div>
           <p className="font-medium max-w-lg">{proxData?.pKsDescription}</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
             {proxData?.pKeyServices?.map((ks, index) => {
               return <ProxCard key={index} data={ks} />;
             })}
@@ -169,7 +169,7 @@ const ProXPage = () => {
       </section>
 
       {/* Unique Edge Section */}
-      <section className="bg-[#3e8bff] text-white relative px-3 md:px-5 overflow-hidden">
+      <section className="bg-[#663e9f] text-white relative px-3 md:px-5 overflow-hidden">
         <div className="absolute w-[800px] h-[800px] rounded-full z-0 left-0 top-0 -translate-x-1/2 -translate-y-1/2 grad-circle"></div>
         <div className="max-w-[1380px] mx-auto flex flex-col gap-4 py-16 pb-32 relative z-10">
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-16">

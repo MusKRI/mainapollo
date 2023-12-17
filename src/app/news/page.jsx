@@ -29,7 +29,7 @@ const newspageData = {
         "World EV Day 2023: Electric mobility reshaping landscape of transportation",
       newsSlug:
         "https://www.zeebiz.com/automobile/news-world-ev-day-2023-electric-mobility-reshaping-landscape-of-transportation-252803",
-      newsImage: Blog1Img,
+      // newsImage: Blog1Img,
     },
     {
       id: "2",
@@ -40,7 +40,7 @@ const newspageData = {
         "Global leaders unite for progress: G20 Summit 2023 promises hope and co-operation",
       newsSlug:
         "https://www.indiantelevision.com/mam/digital/global-leaders-unite-for-progress%3A-g20-summit-2023-promises-hope-and-co-operation-230907",
-      newsImage: Blog2Img,
+      // newsImage: Blog2Img,
     },
     {
       id: "3",
@@ -50,7 +50,7 @@ const newspageData = {
       newsTitle: "India’s G20 Summit Offers Promising Future Globally",
       newsSlug:
         "https://www.businessworld.in/article/India-s-G20-Summit-Offers-Promising-Future-Globally/06-09-2023-490029/",
-      newsImage: Blog3Img,
+      // newsImage: Blog3Img,
     },
     {
       id: "4",
@@ -60,7 +60,7 @@ const newspageData = {
       newsTitle: "How India is driving new opportunities for global businesses",
       newsSlug:
         "https://www.firstpost.com/business/how-india-is-driving-new-opportunities-for-global-businesses-12922582.html",
-      newsImage: Blog1Img,
+      // newsImage: Blog1Img,
     },
     {
       id: "5",
@@ -70,7 +70,7 @@ const newspageData = {
       newsTitle: "Budget 2023: Logistics sector reactions",
       newsSlug:
         "https://www.manufacturingtodayindia.com/sectors/budget-2023-logistics-sector-reactions",
-      newsImage: Blog2Img,
+      // newsImage: Blog2Img,
     },
     {
       id: "6",
@@ -81,7 +81,7 @@ const newspageData = {
         "ISN Special Feature : Here’s how The Logistics Industry reacts on Union Budget 2023",
       newsSlug:
         "https://indiashippingnews.com/isn-special-feature-heres-how-the-logistics-industry-reacts-on-union-budget-2023/",
-      newsImage: Blog3Img,
+      // newsImage: Blog3Img,
     },
     {
       id: "7",
@@ -92,7 +92,7 @@ const newspageData = {
         "Budget 2023: Logistics sector hopes for more incentives towards NLP, focus on digitisation, ESG infrastructure",
       newsSlug:
         "https://www.financialexpress.com/budget/budget-2023-logistics-sector-hopes-for-more-incentives-towards-nlp-focus-on-digitisation-esg-infrastructure-2967033/",
-      newsImage: Blog3Img,
+      // newsImage: Blog3Img,
     },
     {
       id: "8",
@@ -103,7 +103,7 @@ const newspageData = {
         "How India can respond to the demand for greener & sustainable supply chain",
       newsSlug:
         "https://timesofindia.indiatimes.com/blogs/voices/how-india-can-respond-to-the-demand-for-greener-sustainable-supply-chain/",
-      newsImage: Blog3Img,
+      // newsImage: Blog3Img,
     },
     {
       id: "9",
@@ -114,7 +114,7 @@ const newspageData = {
         "Apollo International: Fostering Innovation & Sustainability in Logistics and Supply Chain Operations",
       newsSlug:
         "https://indiacsr.in/apollo-international-innovation-sustainability-logistics/",
-      newsImage: Blog3Img,
+      // newsImage: Blog3Img,
     },
     {
       id: "10",
@@ -125,7 +125,7 @@ const newspageData = {
         "Innovating Infrastructure Projects through Advanced Technology: Apollo International’s EPC Division Leads the Way",
       newsSlug:
         "https://cxotoday.com/interviews/innovating-infrastructure-projects-through-advanced-technology-apollo-internationals-epc-division-leads-the-way/",
-      newsImage: Blog3Img,
+      // newsImage: Blog3Img,
     },
     {
       id: "11",
@@ -136,7 +136,7 @@ const newspageData = {
         "Budget 2023: As logistics sector becomes ESG conscious, stakeholders eye policy policy initiatives to facilitate green transition",
       newsSlug:
         "https://infra.economictimes.indiatimes.com/news/logistics/budget-2023-as-logistics-sector-becomes-esg-conscious-stakeholders-eye-policy-initiatives-to-facilitate-green-transition/97362675",
-      newsImage: Blog3Img,
+      // newsImage: Blog3Img,
     },
     {
       id: "12",
@@ -147,7 +147,7 @@ const newspageData = {
         "Apollo LogiSolutions sells stake in Kashipur Terminal to Gateway Distriparks",
       newsSlug:
         "https://www.logisticsandscm.com/warehouse/apollo-logisolutions-sells-stake-in-kashipur-terminal-to-gateway-distriparks",
-      newsImage: Blog3Img,
+      // newsImage: Blog3Img,
     },
     {
       id: "13",
@@ -158,7 +158,7 @@ const newspageData = {
         "Apollo LogiSolutions divests Kashipur terminal to expand contract logistics business",
       newsSlug:
         "https://www.constructionweekonline.in/business/apollo-logisolutions-divests-kashipur-terminal-to-expand-contract-logistics-business",
-      newsImage: Blog3Img,
+      // newsImage: Blog3Img,
     },
     {
       id: "14",
@@ -169,7 +169,7 @@ const newspageData = {
         "Apollo LogiSolutions divests Kashipur terminal to streamline business growth",
       newsSlug:
         "https://theprint.in/economy/apollo-logisolutions-divests-kashipur-terminal-to-streamline-business-growth/1281204/",
-      newsImage: Blog3Img,
+      // newsImage: Blog3Img,
     },
     {
       id: "15",
@@ -179,7 +179,7 @@ const newspageData = {
       newsTitle: "Indian Supply Chain Sector Pivots for Profitability",
       newsSlug:
         "https://etinsights.et-edge.com/indian-supply-chain-sector-pivots-for-profitability/",
-      newsImage: Blog3Img,
+      // newsImage: Blog3Img,
     },
     {
       id: "16",
@@ -190,7 +190,7 @@ const newspageData = {
         "Apollo LogiSolutions announces partnerships for India’s first Vaccine Platform Solution",
       newsSlug:
         "https://www.motorindiaonline.in/apollo-logisolutions-announces-partnership-with-indigo-airlines-and-unicef-ventures-funded-statwig-for-indias-first-vaccine-platform-solution/",
-      newsImage: Blog3Img,
+      // newsImage: Blog3Img,
     },
     {
       id: "17",
@@ -201,7 +201,7 @@ const newspageData = {
         "Apollo LogiSolutions ties up with IndiGo, blockchain firm StaTwig for integrated vaccine platform",
       newsSlug:
         "https://www.techcircle.in/2021/04/05/apollo-logisolutions-ties-up-with-indigo-blockchain-firm-statwig-for-integrated-vaccine-platform",
-      newsImage: Blog3Img,
+      // newsImage: Blog3Img,
     },
     {
       id: "18",
@@ -212,7 +212,7 @@ const newspageData = {
         "Apollo LogiSolutions enters into strategic partnerships to provide vaccine logistics",
       newsSlug:
         "https://www.logisticsinsider.in/apollo-logisolutions-enters-into-strategic-partnerships-to-provide-vaccine-logistics/",
-      newsImage: Blog3Img,
+      // newsImage: Blog3Img,
     },
     {
       id: "19",
@@ -222,7 +222,7 @@ const newspageData = {
       newsTitle: "Apollo LogiSolutions eyes vaccine logistics space",
       newsSlug:
         "https://www.thehindubusinessline.com/companies/apollo-logisolutions-eyes-vaccine-logistics-space/article34217249.ece",
-      newsImage: Blog3Img,
+      // newsImage: Blog3Img,
     },
     {
       id: "20",
@@ -233,7 +233,7 @@ const newspageData = {
         "PLUSS and Apollo LogiSolutions set up cold storage facility in Hyderabad",
       newsSlug:
         "http://www.cargoconnect.co.in/infrastructure/pluss-and-apollo-logisolutions-set-up-cold-storage-facility-in-hyderabad/",
-      newsImage: Blog3Img,
+      // newsImage: Blog3Img,
     },
   ],
 };
@@ -241,14 +241,14 @@ const newspageData = {
 const NewsPage = () => {
   return (
     <div className="relative">
-      <NewsHero
+      {/* <NewsHero
         heroData={{
           heroCardImage: newspageData.newsBlogCardImage,
           heroCardRead: newspageData.newsBlogCardRead,
           heroCardTitle: newspageData.newsBlogCardTitle,
           heroCardDate: newspageData.newsBlogCardDate,
         }}
-      />
+      /> */}
 
       <NewsHeroCards data={newspageData.newsHeroCardsData} />
     </div>

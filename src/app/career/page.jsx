@@ -104,8 +104,8 @@ const Career = () => {
       <div className="container-fluid">
         <div className="row">
           <div
-            className="col-12 pb-20"
-            style={{ backgroundColor: "#333694", color: "white" }}
+            className="col-12 py-20"
+            style={{ backgroundColor: "#191919", color: "white" }}
           >
             <div className="row flex flex-row items-center justify-center gap-4">
               <div className="collage col-12 flex items-center justify-center w-[500px] self-start">
@@ -147,7 +147,7 @@ const Career = () => {
             </div>
           </div>
           {/* Force Five */}
-          <div className="col-12 mt-5">
+          {/* <div className="col-12 mt-5">
             <div className="container  mb-5">
               <div className="row">
                 <div className="col-12">
@@ -197,10 +197,10 @@ const Career = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* Discovery Section */}
           <div
-            className="col-12 mb-5 mt-5 py-5"
+            className="col-12 py-5"
             style={{ backgroundColor: "#2e3192", color: "white" }}
           >
             <div className="container">
@@ -313,7 +313,7 @@ const Career = () => {
             </div>
           </div>
           {/* CurrentOpening */}
-          <div className="col-12 mt-5 py-5">
+          {/* <div className="col-12 mt-5 py-5">
             <div className="row">
               <div
                 className="col-12 d-flex justify-content-center gap-3"
@@ -369,12 +369,6 @@ const Career = () => {
                                 </div>
                               </div>
                             </div>
-                            {/* <a href="#" className="card-link">
-                              Card link
-                            </a>
-                            <a href="#" className="card-link">
-                              Another link
-                            </a> */}
                           </div>
                         </div>
                       </div>
@@ -383,7 +377,7 @@ const Career = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

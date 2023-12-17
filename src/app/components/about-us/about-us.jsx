@@ -41,7 +41,7 @@ const textVariants = {
 
 const HomeAboutUs = ({ data }) => {
   return (
-    <section className="relative px-3 md:px-5 bg-gray-100">
+    <section className="relative px-3 md:px-5 bg-[#191919] text-white">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row py-16 md:py-32">
         <div className="flex-1 flex flex-row gap-6">
           <div className="relative overflow-hidden rounded-lg min-h-full mt-[25px]">
@@ -79,11 +79,11 @@ const HomeAboutUs = ({ data }) => {
           </div>
         </div>
         <div className="flex-1 px-6 flex flex-col gap-3 mt-[20px]">
-          <h1 className="text-[28px] md:text-5xl font-medium text-main-text">
+          <h1 className="text-[28px] md:text-5xl font-medium relative after:absolute after:left-0 after:bottom-0 after:w-[60px] after:h-[4px] after:bg-green">
             {data.aboutMainHeading ?? "Discover Our Legacy"}
           </h1>
 
-          <p className="text-body-text">{data.aboutMainDescription}</p>
+          <p className="">{data.aboutMainDescription}</p>
 
           {/* Tabs Content */}
           <div className="mb-5">
@@ -93,21 +93,24 @@ const HomeAboutUs = ({ data }) => {
                 aria-label="Purpose and Values"
               >
                 <Tabs.Trigger
-                  className="pr-5 h-[45px] flex items-center justify-center text-[22px] font-medium leading-none select-none outline-none cursor-pointer data-[state=active]:text-green data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
+                  className="pr-5 h-[45px] flex items-center justify-center text-[22px] font-medium leading-none select-none outline-none cursor-pointer data-[state=active]:text-white data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
                   value="tab1"
                 >
                   {data.aboutSubHeading1}
                 </Tabs.Trigger>
 
                 <Tabs.Trigger
-                  className="px-5 h-[45px] flex items-center justify-center text-[22px] font-medium leading-none select-none outline-none cursor-pointer data-[state=active]:text-green data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
+                  className="px-5 h-[45px] flex items-center justify-center text-[22px] font-medium leading-none select-none outline-none cursor-pointer data-[state=active]:text-white data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
                   value="tab2"
                 >
                   {data.aboutSubHeading2}
                 </Tabs.Trigger>
               </Tabs.List>
 
-              <Tabs.Content className="grow outline-none" value="tab1">
+              <Tabs.Content
+                className="grow outline-none h-[100px]"
+                value="tab1"
+              >
                 <motion.p
                   initial={{
                     opacity: 0,
@@ -117,13 +120,16 @@ const HomeAboutUs = ({ data }) => {
                     opacity: 1,
                     y: 0,
                   }}
-                  className="text-body-text"
+                  className="text-white"
                 >
                   {data.aboutSubHeading1Description}
                 </motion.p>
               </Tabs.Content>
 
-              <Tabs.Content className="grow outline-none" value="tab2">
+              <Tabs.Content
+                className="grow outline-none h-[100px]"
+                value="tab2"
+              >
                 <motion.p
                   initial={{
                     opacity: 0,
@@ -133,7 +139,7 @@ const HomeAboutUs = ({ data }) => {
                     opacity: 1,
                     y: 0,
                   }}
-                  className="text-body-text"
+                  className="text-white"
                 >
                   {data.aboutSubHeading2Description}
                 </motion.p>

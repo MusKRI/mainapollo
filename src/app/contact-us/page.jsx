@@ -56,7 +56,7 @@ const ContactUs = () => {
             allowFullscreen=""
             loading="lazy"
             style={{
-              width: "100%"
+              width: "100%",
             }}
           />
         </div>

@@ -90,11 +90,11 @@ const navLinks = [
     label: "Media Center",
     isDrapdown: true,
     children: [
-      {
-        id: "aboutus",
-        label: "Blogs",
-        slug: "/blogs",
-      },
+      // {
+      //   id: "aboutus",
+      //   label: "Blogs",
+      //   slug: "/blogs",
+      // },
       {
         id: "aboutus",
         label: "News",

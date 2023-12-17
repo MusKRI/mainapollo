@@ -56,15 +56,15 @@ const PurposeValues = ({ data }) => {
   });
 
   return (
-    <section className="relative bg-[#fbfbfb] mb-10">
+    <section className="relative bg-[#fbfbfb]">
       <div className="max-w-7xl mx-auto flex flex-col py-16 px-6">
         {/* Purpose */}
         <div className="flex flex-col gap-4 items-center">
           <div className="flex flex-col gap-2">
-            <h1 className="text-[#2e3192] text-6xl font-semibold text-center">
+            <h1 className="text-black text-6xl font-semibold text-center">
               Purpose
             </h1>
-            <p className="text-3xl font-semibold text-center">
+            <p className="text-3xl font-semibold text-center text-[#878787]">
               Reason of our Existence
             </p>
           </div>
@@ -84,10 +84,10 @@ const PurposeValues = ({ data }) => {
         {/* Values */}
         <div className="flex flex-col gap-4 items-center">
           <div className="flex flex-col gap-2">
-            <h1 className="text-[#2e3192] text-6xl font-semibold text-center">
+            <h1 className="text-black text-6xl font-semibold text-center">
               Values
             </h1>
-            <p className="text-3xl font-semibold text-center">
+            <p className="text-3xl font-semibold text-center text-[#878787]">
               Heartbeat Of Our Existence
             </p>
           </div>
@@ -102,7 +102,7 @@ const PurposeValues = ({ data }) => {
       </div>
 
       {/* The Force of Five */}
-      <div className="bg-white text-black p-4">
+      <div className="bg-[#191919] text-white p-6 pb-8">
         <h1 className="text-3xl lg:text-6xl font-bold text-center my-6">
           The Force of Five
         </h1>
@@ -123,11 +123,11 @@ const PurposeValues = ({ data }) => {
                   key={item.id}
                   className="inline-flex flex-col gap-3 px-4 rounded-xl items-center"
                 >
-                  <div className="border w-20 h-20 rounded-full flex items-center justify-center text-3xl bg-[#b09af0] text-white">
+                  <div className="border w-20 h-20 rounded-full flex items-center justify-center text-3xl bg-white text-[#191919]">
                     0{index + 1}
                   </div>
 
-                  <h3 className="text-xl text-center font-semibold text-[#b09af0]">
+                  <h3 className="text-xl text-center font-semibold text-white">
                     {item?.pvTitle}
                   </h3>
                   <p className="text-center max-w-sm text-lg">{item?.pv}</p>

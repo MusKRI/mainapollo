@@ -35,7 +35,7 @@ const SectionButton = ({ slug, children, classes = "" }) => {
       initial="rest"
       whileHover="whileHover"
     >
-      <span className="text-main-text font-medium text-lg">{children}</span>
+      <span className="text-white font-medium text-lg">{children}</span>
       <motion.div
         variants={buttonVariants}
         layout

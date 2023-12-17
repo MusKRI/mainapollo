@@ -18,25 +18,25 @@ const ContactFormSection = () => {
               aria-label="Manage your account"
             >
               <Tabs.Trigger
-                className="border-r px-6 text-lg data-[state=active]:text-[#2e3192] data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
+                className="border-r px-6 text-lg data-[state=active]:text-[#191919] data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
                 value="tab1"
               >
                 Business
               </Tabs.Trigger>
               <Tabs.Trigger
-                className="border-r px-6 text-lg data-[state=active]:text-[#2e3192] data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
+                className="border-r px-6 text-lg data-[state=active]:text-[#191919] data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
                 value="tab2"
               >
                 Career
               </Tabs.Trigger>
               <Tabs.Trigger
-                className="border-r px-6 text-lg data-[state=active]:text-[#2e3192] data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
+                className="border-r px-6 text-lg data-[state=active]:text-[#191919] data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
                 value="tab3"
               >
                 Media
               </Tabs.Trigger>
               <Tabs.Trigger
-                className="px-6 text-lg data-[state=active]:text-[#2e3192] data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
+                className="px-6 text-lg data-[state=active]:text-[#191919] data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
                 value="tab4"
               >
                 General Enquiry
@@ -55,7 +55,7 @@ const ContactFormSection = () => {
                     duration: 0.8,
                   },
                 }}
-                className="border bg-white p-12 rounded-md"
+                className="bg-white !border !border-[#191919] p-12 rounded-md"
               >
                 {/* <div className="relative">
                   <h1 className="text-3xl uppercase text-[#2e3192] font-semibold">
@@ -150,7 +150,7 @@ const ContactFormSection = () => {
                       </div>
                     </div>
 
-                    <button className="border self-start my-2 px-4 py-1 rounded-md bg-[#2e3192] text-white">
+                    <button className="border self-start my-2 px-4 py-1 rounded-md bg-[#191919] text-white">
                       Send
                     </button>
                   </div>
@@ -171,7 +171,7 @@ const ContactFormSection = () => {
                     duration: 0.8,
                   },
                 }}
-                className="border bg-white p-12 rounded-md"
+                className="bg-white !border !border-[#191919] p-12 rounded-md"
               >
                 {/* <div className="relative">
                   <h1 className="text-3xl uppercase text-[#2e3192] font-semibold">
@@ -266,7 +266,7 @@ const ContactFormSection = () => {
                       </div>
                     </div>
 
-                    <button className="border self-start my-2 px-4 py-1 rounded-md bg-[#2e3192] text-white">
+                    <button className="border self-start my-2 px-4 py-1 rounded-md bg-[#191919] text-white">
                       Send
                     </button>
                   </div>
@@ -287,7 +287,7 @@ const ContactFormSection = () => {
                     duration: 0.8,
                   },
                 }}
-                className="border bg-white p-12 rounded-md"
+                className="bg-white !border !border-[#191919] p-12 rounded-md"
               >
                 {/* <div className="relative">
                   <h1 className="text-3xl uppercase text-[#2e3192] font-semibold">
@@ -382,7 +382,7 @@ const ContactFormSection = () => {
                       </div>
                     </div>
 
-                    <button className="border self-start my-2 px-4 py-1 rounded-md bg-[#2e3192] text-white">
+                    <button className="border self-start my-2 px-4 py-1 rounded-md bg-[#191919] text-white">
                       Send
                     </button>
                   </div>
@@ -403,7 +403,7 @@ const ContactFormSection = () => {
                     duration: 0.8,
                   },
                 }}
-                className="border bg-white p-12 rounded-md"
+                className="bg-white !border !border-[#191919] p-12 rounded-md"
               >
                 {/* <div className="relative">
                   <h1 className="text-3xl uppercase text-[#2e3192] font-semibold">
@@ -498,7 +498,7 @@ const ContactFormSection = () => {
                       </div>
                     </div>
 
-                    <button className="border self-start my-2 px-4 py-1 rounded-md bg-[#2e3192] text-white">
+                    <button className="border self-start my-2 px-4 py-1 rounded-md bg-[#191919] text-white">
                       Send
                     </button>
                   </div>

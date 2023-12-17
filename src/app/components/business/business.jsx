@@ -180,7 +180,7 @@ const Business = ({ mainData, slides }) => {
                           className="flex items-center gap-2"
                         >
                           <span className="text-lg">Know more</span>
-                          <span className="p-2 rounded-full bg-[#2e3192]">
+                          <span className="p-2 rounded-full bg-[#191919]">
                             <ArrowRight className="w-4 h-4" />
                           </span>
                         </MotionLink>

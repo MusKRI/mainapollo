@@ -9,7 +9,9 @@ const MakingDifference = ({ data }) => {
           <motion.h1 className="text-5xl font-semibold">
             {/* {data?.title} */}Making a difference,
           </motion.h1>
-          <h1 className="text-5xl font-semibold">one project at a time</h1>
+          <h1 className="text-5xl font-semibold relative after:absolute after:bottom-[-10px] after:left-0 after:w-[60px] after:h-[4px] after:bg-[#191919]">
+            one project at a time
+          </h1>
 
           {/* <div className="absolute bottom-4 w-60 hidden md:block">
             <img alt="Arrow" src={Arrow} />

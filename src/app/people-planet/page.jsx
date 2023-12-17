@@ -149,15 +149,15 @@ const PeoplePlanet = () => {
 
       <TabSection data={peopleplanetData.tabs} />
 
-      <div className="px-3 md:px-20 bg-[#eeeeee]">
+      <div className="px-3 md:px-20 bg-[#191919] text-white">
         <div className="py-20 max-w-7xl mx-auto">
           <div className="flex flex-col gap-4">
             <div className="relative max-w-3xl mx-auto">
-              <span className="absolute top-[-20px] left-[-20px] text-9xl text-green bg-[#eeeeee]">
+              <span className="absolute top-[-20px] left-[-20px] text-9xl text-white bg-[#191919]">
                 ❝
               </span>
 
-              <h5 className="text-xl max-w-3xl text-center mx-auto lg:text-4xl border border-black p-8">
+              <h5 className="text-xl max-w-3xl text-center mx-auto lg:text-4xl border border-white p-8">
                 To be able to be in a position where we can help make a
                 difference is an honour I cherish every day. Every step we take
                 as a company towards the betterment of others leaves a sense of
