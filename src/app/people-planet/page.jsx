@@ -113,7 +113,9 @@ const PeoplePlanet = () => {
             </div>
             <div className="relative w-[236px]">
               <img
-                src={sh3}
+                src={
+                  "https://images.unsplash.com/photo-1696590358767-4615ebd16cb2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                }
                 alt=""
                 className="rounded-md object-cover h-full"
               />

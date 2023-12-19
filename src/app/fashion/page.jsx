@@ -14,7 +14,7 @@ import { cn } from "../../lib/utils";
 import animImg from "./images/anim.jpeg";
 
 import ApproachCard1Img from "./images/slide1.jpg";
-import ApproachCard2Img from "./images/slide2.jpg";
+// import ApproachCard2Img from "./images/slide2.jpg";
 import ApproachCard3Img from "./images/slide3.jpg";
 import OutwearImg from "./images/slide4.jpg";
 import ShirtsImg from "./images/slide5.jpg";
@@ -24,12 +24,12 @@ import AoeBanner from "./images/shirts.jpeg";
 // import Collage1 from "./images/collage1.jpg";
 // import Collage2 from "./images/collage2.jpg";
 // import Collage3 from "./images/collage3.jpg";
-import Collage4 from "./images/collage4.jpg";
+// import Collage4 from "./images/collage4.jpg";
 
 import s1 from "./images/snap1.jpeg";
-import s2 from "./images/snap2.jpeg";
+// import s2 from "./images/snap2.jpeg";
 import s3 from "./images/snap3.jpeg";
-import s4 from "./images/snap44.jpeg";
+// import s4 from "./images/snap44.jpeg";
 import s5 from "./images/snap5.jpeg";
 import ForgeCard from "./components/forge-card/forge-card";
 
@@ -59,22 +59,22 @@ export const Fashion = () => {
       {
         img: ApproachCard1Img,
         data: "Accessories",
-      },
-      {
-        img: ApproachCard2Img,
-        data: "Leather Garments",
+        capacity: "Capacity - 350K",
       },
       {
         img: ApproachCard3Img,
         data: "Footwear",
+        capacity: "Capacity - 800K",
       },
       {
         img: ShirtsImg,
         data: "Shirts",
+        capacity: "Capacity - 700K",
       },
       {
         img: OutwearImg,
         data: "Outwear",
+        capacity: "Capacity - 600K",
       },
     ],
 
@@ -150,9 +150,11 @@ export const Fashion = () => {
 
     // snapshot data
     snapshotImg1: s1,
-    snapshotImg2: s2,
+    snapshotImg2:
+      "https://images.unsplash.com/photo-1476683874822-744764a2438f?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     snapshotImg3: s3,
-    snapshotImg4: s4,
+    snapshotImg4:
+      "https://images.unsplash.com/photo-1606501126768-b78d4569d3f9?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     snapshotImg5: s5,
 
     // interact data
@@ -187,31 +189,34 @@ export const Fashion = () => {
           </div>
         </div>
         {/* 2nd Section */}
-        <div className="col-12 bg-[#e3e3e3] py-20">
-          <div className="container">
-            <div className="row max-w-[1024px] mx-auto">
-              <div className="col-md-4 d-flex justify-content-center align-items-center">
-                <div className="row">
-                  <div className="col-12" style={{ fontWeight: "bold" }}>
-                    <span className="after:absolute after:right-[-25px] after:w-3 after:h-3 after:bottom-2 after:border-main-text after:rounded-full after:bg-[#a6ca00] relative text-4xl lg:text-6xl">
-                      {fashionData?.secondSectionTitle1}
-                    </span>
-                  </div>
-                  <div className="col-md-8">
-                    {fashionData?.secondSectionSubtitle1}
-                  </div>
-                  <div className="col-md-12" style={{ fontWeight: "bold" }}>
-                    <span className="after:absolute after:right-[-25px] after:w-3 after:h-3 after:bottom-2 after:border-main-text after:rounded-full after:bg-[#a6ca00] relative text-4xl lg:text-6xl">
-                      {fashionData?.secondSectionTitle2}
-                    </span>
-                  </div>
-                  <div className="col-md-9">
-                    {fashionData?.secondSectionSubtitle2}
-                  </div>
-                </div>
+        <div className="bg-[#e3e3e3] py-20">
+          <div className="container flex flex-col gap-20 lg:flex-row justify-center">
+            <div className="flex flex-col gap-8">
+              <div className="border-2 border-black p-10 border-dashed rounded-br-[60px] transition duration-[580ms] hover:rounded-br-[30px] hover:[box-shadow:10px_10px_#191919]">
+                <h1 className="text-6xl font-bold">
+                  {fashionData?.secondSectionTitle1}
+                </h1>
+
+                <p className="text-2xl">
+                  {fashionData?.secondSectionSubtitle1}
+                </p>
               </div>
-              <div className="col-md-6 mt-3 ml-auto">
-                {fashionData?.secondSectionDescription}
+              <div className="border-2 border-black p-10 border-dashed rounded-br-[60px] transition duration-[580ms] hover:rounded-br-[30px] hover:[box-shadow:10px_10px_#191919]">
+                <h1 className="text-6xl font-bold">
+                  {fashionData?.secondSectionTitle2}
+                </h1>
+
+                <p className="text-2xl">
+                  {fashionData?.secondSectionSubtitle2}
+                </p>
+              </div>
+            </div>
+
+            <div className="flex">
+              <div className="border-2 border-black p-10 border-dashed rounded-bl-[60px] transition duration-[580ms] hover:rounded-br-[30px] hover:[box-shadow:10px_10px_#191919]">
+                <p className="text-2xl">
+                  {fashionData?.secondSectionDescription}
+                </p>
               </div>
             </div>
           </div>
@@ -271,6 +276,10 @@ export const Fashion = () => {
                             style={{ fontWeight: "bold" }}
                           >
                             {item.data}
+                          </p>
+
+                          <p className="text-center text-lg font-semibold">
+                            {item?.capacity}
                           </p>
                         </div>
                       )}
