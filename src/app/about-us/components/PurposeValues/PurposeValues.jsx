@@ -1,9 +1,4 @@
 // **** Library Imports *****
-import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
-import { useState } from "react";
-
-import { cn } from "../../../../lib/utils";
 
 // const purposeValues = [
 //   {
@@ -32,29 +27,7 @@ import { cn } from "../../../../lib/utils";
 //   },
 // ];
 
-const pvVariants = {
-  hidden: {
-    left: -100,
-    right: 0,
-    top: 0,
-    opacity: 0,
-  },
-  onHover: {
-    left: 0,
-    right: 0,
-    top: 0,
-    bottom: 0,
-    opacity: 1,
-  },
-};
-
 const PurposeValues = ({ data }) => {
-  const [porv, setPorv] = useState({
-    btn: "purpose",
-    title: "Our Purpose: Reason of our Existence",
-    desc: "To deliver superior value to our customers, shareholders, employees, and community through a diversified global portfolio of emergent businesses that are driven by limitless innovation, collective wisdom, and ingenious models.",
-  });
-
   return (
     <section className="relative bg-[#fbfbfb]">
       <div className="max-w-7xl mx-auto flex flex-col pt-16 px-6 ">
@@ -115,23 +88,18 @@ const PurposeValues = ({ data }) => {
           The Force of Five
         </h1>
 
-        <p className="text-center text-xl font-medium">
-          Building Strength: The Force of Five - Unveiling the Pillars Shaping
-          Our Company's Foundation
-        </p>
-
-        <div className="flex items-start justify-center [row-gap:50px] [column-gap:55px] flex-wrap mt-10">
+        <div className="flex items-stretch justify-center [row-gap:50px] [column-gap:55px] flex-wrap mt-10">
           {data?.nodes?.map((item, index) => {
             return (
               <div
-                className="flex gap-4 justify-center items-center w-auto"
+                className="flex gap-4 justify-center items-stretch w-auto border h-full py-3 first:!pb-11 rounded transition hover:shadow-lg"
                 key={item?.id}
               >
                 <div
                   key={item.id}
                   className="inline-flex flex-col gap-3 px-4 rounded-xl items-center"
                 >
-                  <div className="w-20 h-20 rounded-full flex items-center justify-center text-3xl bg-[#878787] text-white">
+                  <div className="w-20 h-20 rounded-full flex items-center justify-center text-3xl bg-[#878787] text-white -mt-8">
                     0{index + 1}
                   </div>
 

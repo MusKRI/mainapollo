@@ -127,6 +127,27 @@ export const Fashion = () => {
     preferChoiceDataDescription:
       "We have built long standing relationship with our customers. Our continued partnership with them, enables us to share their vision of evolution, growth and sustainability. During the course of our journey, we have had the opportunity of working with some great talents across internationally acclaimed brands.",
 
+    brands: [
+      "https://utfs.io/f/c35e3b94-8c74-4a6b-b860-21d3935e273b-5z4gmw.png",
+      "https://utfs.io/f/705bdf2b-072b-46e8-9fa3-61594487a1f8-ruhu8d.png",
+      "https://utfs.io/f/1b5225c3-e113-40da-b9f6-2f1864473955-ruhu8a.png",
+      "https://utfs.io/f/44998947-5c0d-44fa-b9c4-3ed8997161e1-ruhu89.png",
+      "https://utfs.io/f/d7985f61-ace8-44db-b1fd-cf7e40f109b6-ruhu8g.png",
+      "https://utfs.io/f/20cc0e72-3a1e-4bfd-8be1-53502d33a796-5z4gmq.png",
+      "https://utfs.io/f/f3b4de39-4ddc-4b04-b92d-f545572c08c6-5z4gmr.png",
+      "https://utfs.io/f/33d4d8e0-eb57-471f-86e7-9c7b4064cd72-5z4gmx.png",
+      "https://utfs.io/f/9202cd8c-235d-4aeb-87a3-058dfcbe5df0-ruhu8e.png",
+      "https://utfs.io/f/1f848cce-c39e-46b1-814b-88ab92679134-ruhu8c.png",
+      "https://utfs.io/f/2468308e-698f-42d2-b770-95a6bb85f8a7-5z4gmt.png",
+      "https://utfs.io/f/bb362d8e-f066-475d-8be6-d603a560de27-ruhu8f.png",
+      "https://utfs.io/f/1e9399dd-5f47-44eb-90ee-1426fd0ea96a-5z4gmp.png",
+      "https://utfs.io/f/7a8e8788-dbc4-413a-ab1f-262641df2c82-5z4gmu.png",
+      "https://utfs.io/f/c499d60a-83e2-4ff4-a6c4-566d15e23234-ruhu8b.png",
+      "https://utfs.io/f/ac6c89e9-3f32-4d96-8756-2109cbfbcddf-5z4gms.png",
+      "https://utfs.io/f/612ae35d-f16c-4119-9b02-0e1eb8ae3e02-ruhu8h.png",
+      "https://utfs.io/f/417e8ab3-264d-44ee-b762-686f85262b79-5z4gmv.png",
+    ],
+
     // snapshot data
     snapshotImg1: s1,
     snapshotImg2: s2,
@@ -388,10 +409,24 @@ export const Fashion = () => {
               >
                 {fashionData?.preferChoiceDataDescription}
               </div>
-              <div className="">
-                <div className="relative w-full">
+              <div className="grid grid-cols-3 lg:grid-cols-5 !p-0">
+                {fashionData?.brands?.map((brand) => {
+                  return (
+                    <div
+                      key={brand}
+                      className="border w-full h-40 border-blue-500 shadow-md relative p-3 transition hover:shadow-2xl duration-300"
+                    >
+                      <img
+                        src={brand}
+                        alt=""
+                        className="object-cover max-w-full h-full mix-blend-multiply"
+                      />
+                    </div>
+                  );
+                })}
+                {/* <div className="relative w-full">
                   <img src={Collage4} alt="" className="object-cover " />
-                </div>
+                </div> */}
                 {/* <div className="relative w-full">
                   <img src={Collage2} alt="" className="object-cover " />
                 </div>

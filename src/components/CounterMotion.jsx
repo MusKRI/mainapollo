@@ -10,7 +10,7 @@ export function Counter({ from, to, isFixed = false, point = 2 }) {
       const node = nodeRef.current;
 
       const controls = animate(from, to, {
-        duration: 3,
+        duration: 0.8,
         onUpdate(value) {
           node.textContent = isFixed ? value.toFixed(point) : value.toFixed(0);
         },

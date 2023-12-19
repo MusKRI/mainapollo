@@ -1,13 +1,8 @@
+import { TypeAnimation } from "react-type-animation";
+
 import HomeMap from "./components/map/map";
 
 import Banner from "./images/banner.jpg";
-
-import icon1 from "./images/icons/heavy-machinery-equipment-solutions.svg";
-import icon2 from "./images/icons/medical-and-surgical-equipment.svg";
-import icon3 from "./images/icons/food-and-beverages.svg";
-import icon4 from "./images/icons/consumer-goods.svg";
-import icon5 from "./images/icons/agriculture-tools-and-machinery.svg";
-import icon6 from "./images/icons/electrical-products.svg";
 
 import sImg from "./images/fb.jpg";
 
@@ -126,11 +121,28 @@ export const MarketPlace = () => {
       </div>
 
       {/* section-3 */}
-      <div className="container my-4 py-4">
+      <div className="container my-4 !mt-10 py-4">
         <div className="space-y-4">
           <div className="flex flex-col gap-2">
             <h1 className="text-3xl lg:text-6xl font-semibold text-center">
-              At Apollo Marketplace
+              Apollo Marketplace is{" "}
+              <TypeAnimation
+                sequence={[
+                  // Same substring at the start will only be typed out once, initially
+                  "dynamic",
+                  1000, // wait 1s before replacing "Mice" with "Hamsters"
+                  "competitive",
+                  1000,
+                  "globally connected",
+                  1000,
+                  "reputable",
+                  1000,
+                ]}
+                wrapper="span"
+                speed={300}
+                style={{ fontSize: "50px", display: "inline-block" }}
+                repeat={Infinity}
+              />
             </h1>
             <p className="max-w-md mx-auto text-lg text-center">
               we specialize in trading and disturbing a diverse range of

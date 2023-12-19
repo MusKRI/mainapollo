@@ -49,13 +49,13 @@ const WhoWeAre = ({ data }) => {
           <h4 className="text-xl whitespace-pre-line  ">{data?.subtitle2}</h4>
           <h4 className="text-xl whitespace-pre-line  ">{data?.subtitle3}</h4>
 
-          <div className="bg-white w-full p-4 !py-14 rounded-lg text-[#191919] my-4 !mt-16 [box-shadow:0px_0px_10px_0px_#878787] relative overflow-hidden"> 
+          <div className="bg-white w-full p-4 !py-14 rounded-lg text-[#191919] my-4 !mt-16 [box-shadow:0px_0px_10px_0px_#878787] relative overflow-hidden">
             <div className="flex flex-row flex-wrap justify-between items-start lg:justify-center lg:gap-20 relative z-10">
               <div className="flex flex-col text-center w-[200px] items-center">
                 <h3 className="text-3xl lg:text-5xl font-semibold flex flex-row items-center">
                   <Counter from={0} to={20} />+
                 </h3>
-                <p className="text-xl lg:text-xl">
+                <p className="text-base">
                   Years of
                   <br />
                   Market Legacy
@@ -66,10 +66,10 @@ const WhoWeAre = ({ data }) => {
                 <h3 className="text-3xl lg:text-5xl font-semibold flex flex-row items-center">
                   <Counter from={0} to={45} />+
                 </h3>
-                <p className="text-xl lg:text-xl">
-                  Countries, Extensive
+                <p className="text-base">
+                  Countries,
                   <br />
-                  Global Operations
+                  Extensive Global Operations
                 </p>
               </div>
 
@@ -77,7 +77,7 @@ const WhoWeAre = ({ data }) => {
                 <h3 className="text-3xl lg:text-5xl font-semibold flex flex-row items-center">
                   <Counter from={0} to={1000} />+
                 </h3>
-                <p className="text-xl lg:text-xl">
+                <p className="text-base">
                   Clients
                   <br />
                   Worldwide
@@ -88,7 +88,7 @@ const WhoWeAre = ({ data }) => {
                 <h3 className="text-3xl lg:text-5xl font-semibold flex flex-row items-center">
                   <Counter from={0} to={6000} />+
                 </h3>
-                <p className="text-xl lg:text-xl">
+                <p className="text-base">
                   Dedicated
                   <br />
                   workforce

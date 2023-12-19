@@ -41,7 +41,7 @@ const AboutUs = () => {
     whoweareSubtitle2:
       "Our diversified business interests reflect our commitment to excellence. Apollo Green Energy pioneers’ sustainability and innovation, while Apollo Supply Chain provides integrated, tech-driven logistics solutions. Apollo Fashion manufactures textile garment, accessories, and footwear for leading international brands. Apollo ProX executes large industrial and infrastructure projects whereas Apollo Marketplace connects businesses globally.",
     whoweareSubtitle3:
-      "At Apollo, we blend legacy with innovation, empowering businesses to thrive. Join us on this transformative journey toward progress, sustainability, and positive impact. Together, we shape a future where meaningful connections drive success and global progress.",
+      "At Apollo green energy, we blend legacy with innovation, empowering businesses to thrive. Join us on this transformative journey toward progress, sustainability, and positive impact. Together, we shape a future where meaningful connections drive success and global progress.",
     whoweareNodes: {
       img: "https://images.unsplash.com/photo-1534709153997-d6659469f951?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1769&q=80",
       title: "Excepteur sint occaecat",
