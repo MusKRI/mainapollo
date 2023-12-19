@@ -256,9 +256,7 @@ const ProXPage = () => {
                     </div>
                     <div className="col-4 text-center flex flex-col items-center">
                       <p style={{ fontWeight: "bold" }}>Email</p>
-                      <p className="text-gray-500">
-                        info@apollofashioncompany.com
-                      </p>
+                      <p className="text-gray-500">info@apolloindia.com</p>
                       <p className="text-gray-500">contact@apolloindia.com</p>
                     </div>
                   </div>

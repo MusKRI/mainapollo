@@ -94,6 +94,13 @@ const Snapshot = () => {
                 >
                   Experience Apollo Supply Chain
                 </div>
+                <p className="text-center max-w-xl mt-2 mx-auto text-lg">
+                  When you choose Apollo Supply Chain, you opt for a
+                  legacy-rich, globally connected partner that prioritizes your
+                  success. Discover the difference of an integrated,
+                  tech-enabled supply chain with Apollo, where excellence is not
+                  just a choice – it's the standard.
+                </p>
                 <div className="row mt-4">
                   <div className="col-12">
                     <div className="row justify-center">

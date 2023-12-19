@@ -2,8 +2,10 @@ import OurFocus from "./components/our-focus/page";
 import PeoplePlanetBanner from "./components/pp-banner/pp-banner";
 import TabSection from "./components/tab-section/tab-section";
 
+import QuoteSvg from "../../../public/quote.svg";
+
 // pp hero images
-import Banner from "./images/banner.png";
+import Banner from "./images/banner2.avif";
 import sh1 from "./images/sh1.jpeg";
 import sh2 from "./images/sh2.jpg";
 import sh3 from "./images/sh-3.png";
@@ -24,9 +26,9 @@ const peopleplanetData = {
   ppHeroBackgroundImage: Banner,
 
   // our focus data
-  ppFocusTitle: "What is good for us",
+  ppFocusTitle: "Our Focus",
   ppFocusDescription:
-    "At Apollo Green Energy, we deeply care about making a real difference. We work hard to boost the economy while making life better for everyone in our communities. It's not just business to us; it's about touching lives, bringing hope, and leaving a positive mark on the world. Because, What’s good for people and the planet, is good for us.",
+    "At Apollo Green Energy, we deeply care about making a real difference. We work hard to boost the economy while making life better for everyone in our communities. It's not just business to us; it's about touching lives, bringing hope, and leaving a positive mark on the world. Because,",
   ppFocusVideo: "",
 
   // Tabs Section Data
@@ -35,13 +37,12 @@ const peopleplanetData = {
       id: "education",
       image: educationImg,
       name: "Education",
-      heading: "Promoting Quality Education for All",
+      heading: "Empowering Futures, One Child at a Time",
       subheading1:
-        "Women, young girls, and children are mostly left behind when it comes to getting a chance to realize their full potential via the education that they deserve.",
+        "Too often, women, young girls, and children are denied the opportunity to unlock their full potential through the education they rightfully deserve.",
       subheading2:
-        "Apollo Energy act in the present to work towards a better future.",
-      subheading3:
-        "At Apollo, we provide educational assistance to the children living near its facility in Panvel, Maharashtra by providing them with study material so they can benefit from getting the education they need to build a better future.",
+        "At Apollo Green Energy, we're not just addressing this issue; we're acting now to shape a brighter future. Near our facility in Panvel, Maharashtra, we extend educational assistance to local children, equipping them with the necessary study materials. Our aim is simple: to ensure they receive the education that lays the foundation for a promising future.",
+      subheading3: "",
     },
     {
       id: "healthcare",
@@ -67,9 +68,9 @@ const peopleplanetData = {
   ],
 
   // making difference data
-  mdTitle: "Making a difference, one project at a time",
+  mdTitle: "Making a difference, one initiative at a time.",
   mdDescription1:
-    "For each of us in the Apollo Green Energy/ Apollo Group, every project's successful execution fills our hearts with deep satisfaction. It's a tangible reflection of our dedication to embodying our values and playing a leadership role, all while being a caring and responsible corporate citizen.",
+    "For each of us at Apollo Green Energy, the successful execution of every initiative fills our hearts with deep satisfaction. It's a tangible reflection of our commitment to living our values and playing a leadership role, all while being a compassionate and responsible corporate citizen.",
   mdDescription2:
     "As we contribute in our humble way, we're inspired by the realization that there's much more to do, especially considering the size and unique challenges of our country.",
 };
@@ -82,6 +83,14 @@ const PeoplePlanet = () => {
           tag: peopleplanetData.ppHeroTag,
           heading: peopleplanetData.ppHeroHeading,
           bgImage: peopleplanetData.ppHeroBackgroundImage,
+        }}
+      />
+
+      <OurFocus
+        data={{
+          title: peopleplanetData.ppFocusTitle,
+          description: peopleplanetData.ppFocusDescription,
+          video: peopleplanetData.ppFocusVideo,
         }}
       />
 
@@ -139,22 +148,14 @@ const PeoplePlanet = () => {
         </div>
       </div>
 
-      <OurFocus
-        data={{
-          title: peopleplanetData.ppFocusTitle,
-          description: peopleplanetData.ppFocusDescription,
-          video: peopleplanetData.ppFocusVideo,
-        }}
-      />
-
       <TabSection data={peopleplanetData.tabs} />
 
       <div className="px-3 md:px-20 bg-white text-[#191919]">
         <div className="py-20 max-w-7xl mx-auto">
           <div className="flex flex-col gap-4">
             <div className="relative max-w-3xl mx-auto">
-              <span className="absolute top-[-20px] left-[-20px] text-9xl text-[#191919] bg-white ">
-                ❝
+              <span className="absolute top-[-20px] left-[-20px] text-xl text-[#191919] bg-white w-[60px]">
+                <img src={QuoteSvg} alt="" />
               </span>
 
               <h5 className="text-xl max-w-3xl text-center mx-auto lg:text-4xl border !border-[#191919] p-8">

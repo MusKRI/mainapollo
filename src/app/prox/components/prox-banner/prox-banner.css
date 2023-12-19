@@ -1,16 +1,13 @@
-.prox-banner img,
 .about-banner img {
   /*  To contain the image to the confines of the div  */
   max-width: 100%;
 }
 
-.prox-banner .img-gradient,
 .about-banner .img-gradient {
   max-width: 100%;
   margin: auto;
 }
 
-.prox-banner .img-gradient::after,
 .about-banner .img-gradient::after {
   /* display: block; */
   position: absolute;
@@ -22,4 +19,13 @@
   top: 0;
   width: 100%;
   height: 100%;
+}
+
+.prox-banner {
+  /* border: 2px solid red; */
+  background: linear-gradient(to left, #191919, transparent);
+}
+
+.prox-banner img {
+  clip-path: circle(85.8% at 90% 50%);
 }

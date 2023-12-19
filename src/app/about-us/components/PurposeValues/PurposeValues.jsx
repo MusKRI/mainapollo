@@ -57,7 +57,7 @@ const PurposeValues = ({ data }) => {
 
   return (
     <section className="relative bg-[#fbfbfb]">
-      <div className="max-w-7xl mx-auto flex flex-col py-16 px-6">
+      <div className="max-w-7xl mx-auto flex flex-col pt-16 px-6 ">
         {/* Purpose */}
         <div className="flex flex-col gap-4 items-center">
           <div className="flex flex-col gap-2">
@@ -70,7 +70,7 @@ const PurposeValues = ({ data }) => {
           </div>
 
           <div className="max-w-3xl">
-            <p className="text-2xl leading-[1.8]">
+            <p className="text-2xl leading-[1.8] text-center">
               To deliver superior value to our customers, shareholders,
               employees, and community through a diversified global portfolio of
               emergent businesses that are driven by limitless innovation,
@@ -93,7 +93,7 @@ const PurposeValues = ({ data }) => {
           </div>
 
           <div className="max-w-3xl">
-            <p className="text-2xl leading-[1.8]">
+            <p className="text-2xl leading-[1.8] text-center">
               Our values continue to direct the growth of businesses under
               Apollo Green Energy Limited.
             </p>
@@ -101,8 +101,16 @@ const PurposeValues = ({ data }) => {
         </div>
       </div>
 
+      <div className="flex flex-row items-center justify-center my-10 mb-16">
+        <img
+          src="https://apolloindia.com/wp-content/uploads/2023/04/Vector-15.svg"
+          alt=""
+          className="-rotate-45 h-20"
+        />
+      </div>
+
       {/* The Force of Five */}
-      <div className="bg-[#191919] text-white p-6 pb-8">
+      <div className="bg-white text-[#191919] p-6 pb-8">
         <h1 className="text-3xl lg:text-6xl font-bold text-center my-6">
           The Force of Five
         </h1>

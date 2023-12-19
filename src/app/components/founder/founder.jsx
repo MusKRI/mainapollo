@@ -1,14 +1,15 @@
 // **** Library Imports ****
 
 // **** Local Imports ****
+import QuoteSvg from "../../../../public/quote2.svg";
 
 import path1 from "./images/path1.png";
 
 const Founder = ({ data }) => {
   return (
     <section className="relative px-3 md:px-5 bg-[#191919]">
-      <span className="absolute top-20 left-10 text-9xl text-white">
-        &#10077;
+      <span className="absolute top-20 left-10 text-9xl text-white w-[60px] [&_svg]:fill-white">
+        <img src={QuoteSvg} alt="" />
       </span>
       <div className="absolute inset-0 z-[-2] clipGradient"></div>
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between py-8 relative">

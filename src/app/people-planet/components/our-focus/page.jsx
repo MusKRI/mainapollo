@@ -13,6 +13,8 @@ const OurFocus = ({ data }) => {
             </motion.h1>
             <motion.p className="max-w-3xl text-[#525252] text-lg border">
               {data.description}
+              <br />
+              What’s good for people and the planet, is good for us.
             </motion.p>
           </div>
         </div>

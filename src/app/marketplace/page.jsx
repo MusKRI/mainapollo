@@ -21,9 +21,9 @@ export const MarketPlace = () => {
     bgImage: sImg,
 
     // Apollo Green Energy Limited
-    agTitle: "Apollo Marketplace",
+    agTitle: "Your Trusted Global Partner",
     agDescription:
-      "is a trading and distribution company with a widespread presence across over 45 countries. As a part of the esteemed business conglomerate, the Apollo Green Energy Limited, we are deeply committed to upholding the highest standards of ethics in all our business endeavors. With a dedicated team of over 1000+ employees, our core focus revolves around providing exceptional customer-centric solutions. With over three decades of experience, we have established ourselves as trusted partners in the global marketplace. Explore our offerings and discover how our rich legacy and global network can benefit your business.",
+      "Apollo Marketplace, a key player in trading and distribution, extends its reach across 45+ countries. As part of Apollo Green Energy Limited, we prioritize upholding the highest ethical standards in all business endeavors. With a dedicated team of over 1000+ professionals, our primary goal is providing outstanding customer-centric solutions. With two decades of experience, we've established ourselves as reliable partners in the global marketplace. Explore our offerings and unlock the benefits that our rich legacy and expansive global network bring to your business.",
     agImage: "",
 
     // Benefits from our unmatched expertise section
@@ -96,27 +96,26 @@ export const MarketPlace = () => {
         <div className="row">
           <div className="col-6">
             <img
-              src={"https://images.unsplash.com/photo-1644134913825-5ff0ff4e731c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Ds"}
+              src={
+                "https://images.unsplash.com/photo-1644134913825-5ff0ff4e731c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Ds"
+              }
               alt=""
               style={{ maxHeight: "370px", minWidth: "70%" }}
             />
           </div>
           <div
-            className="col-6 d-flex align-items-end"
+            className="col-6 d-flex align-items-center"
             style={{ marginBottom: "-20px" }}
           >
-            <div
-              className="row"
-              style={{ marginLeft: "-450px", background: "white" }}
-            >
-              <div className="col-12 mt-4 d-flex justify-content-start">
+            <div className="row" style={{ background: "white" }}>
+              <div className="col-12 d-flex justify-content-start">
                 <div className="container">
                   <h1 style={{ fontWeight: "750", fontSize: "25px" }}>
                     {data?.agTitle}
                   </h1>
                 </div>
               </div>
-              <div className="col-8 mb-4" style={{ marginBottom: "-50px" }}>
+              <div className="col-12 mb-4" style={{ marginBottom: "-50px" }}>
                 <div className="container">
                   <p>{data?.agDescription}</p>
                 </div>
