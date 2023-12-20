@@ -3,41 +3,7 @@ import * as Tabs from "@radix-ui/react-tabs";
 import { motion } from "framer-motion";
 
 // **** Local Imports ****
-// import SectionHeading from "../SectionHeading";
-
-// import Img1 from "./images/1.jpeg";
-// import Img2 from "./images/2.jpeg";
-// import Img3 from "./images/3.jpeg";
-
 import SectionButton from "../SectionButton";
-
-const imageVariants = {
-  hidden: {
-    opacity: 0,
-    y: 20,
-  },
-  whileInView: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 1.5,
-    },
-  },
-};
-
-const textVariants = {
-  hidden: {
-    opacity: 0,
-    x: 30,
-  },
-  whileInView: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 1,
-    },
-  },
-};
 
 const HomeAboutUs = ({ data }) => {
   return (
@@ -79,11 +45,13 @@ const HomeAboutUs = ({ data }) => {
           </div>
         </div>
         <div className="flex-1 px-6 flex flex-col gap-3 mt-[20px]">
-          <h1 className="text-[28px] md:text-5xl font-medium relative after:absolute after:left-0 after:bottom-0 after:w-[60px] after:h-[4px] after:bg-[#7D8787]">
+          <h1 className="text-3xl md:text-5xl font-medium relative after:absolute after:left-0 after:bottom-0 after:w-[60px] after:h-[4px] after:bg-[#7D8787]">
             {data.aboutMainHeading ?? "Discover Our Legacy"}
           </h1>
 
-          <p className="">{data.aboutMainDescription}</p>
+          <p className="text-base lg:text-[18px]">
+            {data.aboutMainDescription}
+          </p>
 
           {/* Tabs Content */}
           <div className="mb-5">
@@ -120,7 +88,7 @@ const HomeAboutUs = ({ data }) => {
                     opacity: 1,
                     y: 0,
                   }}
-                  className="text-white"
+                  className="text-white lg:text-[18px]"
                 >
                   {data.aboutSubHeading1Description}
                 </motion.p>
@@ -139,7 +107,7 @@ const HomeAboutUs = ({ data }) => {
                     opacity: 1,
                     y: 0,
                   }}
-                  className="text-white"
+                  className="text-white lg:text-[18px]"
                 >
                   {data.aboutSubHeading2Description}
                 </motion.p>

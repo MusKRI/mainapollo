@@ -16,90 +16,9 @@ import "./business.css";
 
 // **** Local Imports ****
 import SectionHeading from "../SectionHeading";
-// import { DotButton } from "./EmblaCarouselArrowsDotsButtons";
-
-// const cardVariants = {
-//   hidden: {
-//     background: "linear-gradient(to bottom, transparent, transparent)",
-//   },
-//   hover: {
-//     background: "linear-gradient(to bottom, #238e34, #23278c)",
-//     transition: {
-//       duration: 2,
-//     },
-//   },
-// };
-
-// const cardLinkVariants = {
-//   hidden: {
-//     y: 200,
-//   },
-//   hover: {
-//     y: 0,
-//     display: "flex",
-//   },
-// };
 
 const Business = ({ mainData, slides }) => {
-  // console.log("business data", slides);
-
   const MotionLink = motion(Link);
-
-  // const slidesIds = useMemo(() => {
-  //   const result = slides.map((_, index) => `slide_${index}`);
-
-  //   return result;
-  // }, [slides]);
-
-  // const [currentSlide, setCurrentSlide] = useState(slidesIds[0]);
-
-  // const [emblaRef, emblaApi] = useEmblaCarousel({
-  //   align: "center",
-  // });
-  // const [selectedIndex, setSelectedIndex] = useState(0);
-  // const [scrollSnaps, setScrollSnaps] = useState([]);
-
-  // const scrollTo = useCallback(
-  //   (index) => emblaApi && emblaApi.scrollTo(index),
-  //   [emblaApi]
-  // );
-
-  // const onInit = useCallback((emblaApi) => {
-  //   setScrollSnaps(emblaApi.scrollSnapList());
-  // }, []);
-
-  // const onSelect = useCallback((emblaApi) => {
-  //   setSelectedIndex(emblaApi.selectedScrollSnap());
-  // }, []);
-
-  // useEffect(() => {
-  //   if (!emblaApi) return;
-
-  //   onInit(emblaApi);
-  //   onSelect(emblaApi);
-  //   emblaApi.on("reInit", onInit);
-  //   emblaApi.on("reInit", onSelect);
-  //   emblaApi.on("select", onSelect);
-  // }, [emblaApi, onInit, onSelect]);
-
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     const currentSlideIndex = slidesIds.indexOf(currentSlide);
-  //     let nextSlideIndex;
-
-  //     if (currentSlideIndex === 0) {
-  //       nextSlideIndex = currentSlideIndex + 1;
-  //     } else if (currentSlideIndex === slidesIds.length - 1) {
-  //       nextSlideIndex = 0;
-  //     } else {
-  //       nextSlideIndex = currentSlideIndex + 1;
-  //     }
-
-  //     setCurrentSlide(`slide_${nextSlideIndex}`);
-  //   }, 5000);
-
-  //   return () => clearInterval(interval);
-  // }, [currentSlide]);
 
   const gradients = {
     "Apollo Green Energy": "apollo-gradient-greenenergy",
@@ -111,10 +30,11 @@ const Business = ({ mainData, slides }) => {
 
   return (
     <section className="relative px-3 md:px-5 bg-[#f9f9f9]">
-      <div className="max-w-7xl mx-auto flex flex-col py-16 md:py-32 gap-10">
+      <div className="max-w-7xl mx-auto flex flex-col py-16 md:py-32 gap-6">
         <div className="flex flex-col gap-4 items-center">
           <SectionHeading classes="font-bold text-center">
-            {mainData.mainHeading ?? "Make your business visible online"}
+            {mainData.mainHeading ??
+              "One Group. Diversified Business Interests"}
           </SectionHeading>
 
           {/* <p className="text-body-text text-center">{mainData.subHeading}</p> */}

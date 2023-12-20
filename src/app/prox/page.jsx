@@ -1,4 +1,3 @@
-import { CheckCircle2 } from "lucide-react";
 import { FaCircleCheck } from "react-icons/fa6";
 
 import "./page.css";
@@ -118,15 +117,17 @@ const ProXPage = () => {
 
       {/* Prox About Section */}
       <section className=" bg-white relative px-3 md:px-5">
-        <div className="max-w-7xl mx-auto flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-center py-16 md:py-32">
+        <div className="max-w-7xl mx-auto flex flex-col gap-4 lg:flex-row lg:justify-between lg:items-center py-10 md:py-32">
           <div className="flex flex-col gap-4 flex-[0.6]">
-            <h1 className="text-4xl font-bold">{proxData?.pAboutTitle}</h1>
+            <h1 className="text-3xl md:text-6xl font-bold">
+              {proxData?.pAboutTitle}
+            </h1>
 
-            <p className="text-[18px]">{proxData?.pAboutDesc1}</p>
-            <p className="text-[18px]">{proxData?.pAboutDesc2}</p>
+            <p className="text-base md:text-[18px]">{proxData?.pAboutDesc1}</p>
+            <p className="text-base md:text-[18px]">{proxData?.pAboutDesc2}</p>
           </div>
 
-          <div className="relative flex-1 flex justify-center h-[400px]">
+          <div className="relative flex-1 flex justify-center">
             <img src={proxData?.pAboutImage} alt="" className="rounded-md" />
           </div>
         </div>
@@ -134,14 +135,16 @@ const ProXPage = () => {
 
       {/* Prox Key section */}
       <section className="bg-white relative px-3 md:px-5">
-        <div className="max-w-7xl mx-auto py-16 space-y-4">
+        <div className="max-w-7xl mx-auto py-8 md:py-16 space-y-4">
           <div className="flex flex-col gap-6">
-            <h1 className="text-3xl lg:text-6xl font-semibold">
+            <h1 className="text-3xl lg:text-6xl font-bold">
               {proxData?.pKsTitle}
             </h1>
           </div>
-          <p className="font-medium max-w-lg">{proxData?.pKsDescription}</p>
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
+          <p className="font-medium max-w-lg text-[18px]">
+            {proxData?.pKsDescription}
+          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-4">
             {proxData?.pKeyServices?.map((ks, index) => {
               return <ProxCard key={index} data={ks} />;
             })}
@@ -151,8 +154,8 @@ const ProXPage = () => {
 
       {/* Broad section */}
       <section className=" bg-[#f9f9f9] relative px-3 md:px-5">
-        <div className="max-w-7xl mx-auto py-10 space-y-4 flex flex-row">
-          <div className="relative flex-[0.6]">
+        <div className="max-w-7xl mx-auto py-10 space-y-4 flex flex-col md:flex-row">
+          <div className="relative flex-[0.6] order-1 md:!order-0">
             <img src={BroadSectionImg} alt="" />
           </div>
 
@@ -170,19 +173,22 @@ const ProXPage = () => {
         <div className="max-w-[1380px] mx-auto flex flex-col gap-4 py-16 pb-32 relative z-10">
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-16">
             <div className="relative flex justify-center">
-              <h1 className="text-3xl lg:text-6xl font-bold text-right uppercase max-w-xs relative after:absolute after:bottom-0 after:h-2 after:w-[100px] after:right-0 after:bg-white">
+              <h1 className="text-3xl lg:text-6xl font-bold text-left md:text-right uppercase max-w-xs relative after:absolute after:bottom-0 after:h-2 after:w-[100px] after:right-0 after:bg-white">
                 {proxData?.pUETitle}
               </h1>
             </div>
             <div className="flex flex-col gap-4">
-              <p className="text-[20px] font-semibold">{proxData?.pUEDesc1}</p>
-              <p className="text-[20px] font-semibold">{proxData?.pUEDesc2}</p>
+              <p className="text-[18px] font-medium">{proxData?.pUEDesc1}</p>
+              <p className="text-[18px] font-medium">{proxData?.pUEDesc2}</p>
 
-              <div className="flex flex-col gap-2 pl-10">
+              <div className="flex flex-col gap-2 md:pl-10">
                 {proxData?.pUEPoints?.map((point, idx) => {
                   return (
-                    <div key={idx} className="flex flex-row items-center gap-3">
-                      <FaCircleCheck />
+                    <div
+                      key={idx}
+                      className="flex flex-row items-start md:items-center gap-3"
+                    >
+                      <FaCircleCheck className="shrink-0" />
                       <p className="text-[18px]">{point}</p>
                     </div>
                   );
@@ -197,7 +203,7 @@ const ProXPage = () => {
       <section className="relative px-3 md:px-5 bg-[#f6f7fb]">
         <div className="max-w-7xl mx-auto flex flex-col gap-5 py-16">
           <div className="flex flex-col gap-7">
-            <h1 className="relative leading-snug text-6xl text-main-text after:absolute after:border-2 after:left-0 after:-bottom-4 after:w-10 after:border-main-text">
+            <h1 className="relative leading-snug text-3xl md:text-6xl text-main-text after:absolute after:border-2 after:left-0 after:-bottom-4 after:w-10 after:border-main-text">
               Snapshot
             </h1>
           </div>
@@ -225,13 +231,8 @@ const ProXPage = () => {
       <div className="col-12 mb-5 mt-3">
         <div className="container">
           <div className="row">
-            <div className="col-12 mt-5">
-              <div
-                style={{ fontWeight: "bold", fontSize: "55px" }}
-                className="text-center"
-              >
-                Experience Apollo ProX
-              </div>
+            <div className="col-12 mt-5 space-y-3">
+              <div className="text-center text-3xl md:text-6xl font-bold">Experience Apollo ProX</div>
               <div className="row">
                 <div className="col-lg-6 text-center mx-auto">
                   When you choose Apollo Pro X, you opt for a safer and
@@ -242,19 +243,19 @@ const ProXPage = () => {
               </div>
               <div className="row mt-4">
                 <div className="col-12">
-                  <div className="row">
-                    <div className="col-4 text-center flex flex-col items-center">
+                  <div className="row flex-col md:flex-row">
+                    <div className="col md:col-4 text-center flex flex-col items-center">
                       <p style={{ fontWeight: "bold" }}>Address</p>
                       <p className="text-gray-500">
                         Apollo Towers, Plot No 20, Sector 44, Gurgaon-122002,
                         Haryana, India
                       </p>
                     </div>
-                    <div className="col-4 text-center flex flex-col items-center">
+                    <div className="col md:col-4 text-center flex flex-col items-center">
                       <p style={{ fontWeight: "bold" }}>Phone</p>
                       <p className="text-gray-500">+91 120 4635800</p>
                     </div>
-                    <div className="col-4 text-center flex flex-col items-center">
+                    <div className="col md:col-4 text-center flex flex-col items-center">
                       <p style={{ fontWeight: "bold" }}>Email</p>
                       <p className="text-gray-500">info@apolloindia.com</p>
                       <p className="text-gray-500">contact@apolloindia.com</p>

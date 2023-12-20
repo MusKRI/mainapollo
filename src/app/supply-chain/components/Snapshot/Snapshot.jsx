@@ -84,17 +84,17 @@ const Snapshot = () => {
           </div>
         </div>
 
-        <div className="col-12 mt-3">
+        <div className="col-12">
           <div className="container">
             <div className="row justify-center">
-              <div className="col-12 mt-5">
+              <div className="col-12">
                 <div
                   style={{ fontWeight: "bold" }}
                   className="text-center text-3xl lg:text-6xl"
                 >
                   Experience Apollo Supply Chain
                 </div>
-                <p className="text-center max-w-xl mt-2 mx-auto text-lg">
+                <p className="text-center max-w-xl mt-2 mx-auto text-base md:text-lg">
                   When you choose Apollo Supply Chain, you opt for a
                   legacy-rich, globally connected partner that prioritizes your
                   success. Discover the difference of an integrated,
@@ -103,8 +103,8 @@ const Snapshot = () => {
                 </p>
                 <div className="row mt-4">
                   <div className="col-12">
-                    <div className="row justify-center">
-                      <div className="col-4 text-center flex flex-col items-center">
+                    <div className="row justify-center flex-col md:flex-row gap-3">
+                      <div className="col md:col-4 text-center flex flex-col items-center">
                         <p style={{ fontWeight: "bold" }}>Address</p>
                         <p className="">
                           Apollo Towers, Plot No 20, Sector 44, Gurgaon-122002,
@@ -112,11 +112,11 @@ const Snapshot = () => {
                         </p>
                       </div>
 
-                      <div className="col-4 text-center">
+                      <div className="col md:col-4 text-center">
                         <p style={{ fontWeight: "bold" }}>Phone</p>
                         <p>0124-674-0200</p>
                       </div>
-                      <div className="col-4 text-center">
+                      <div className="col md:col-4 text-center">
                         <p style={{ fontWeight: "bold" }}>Email</p>
                         <p>connect@apollosupplychain.com</p>
                       </div>

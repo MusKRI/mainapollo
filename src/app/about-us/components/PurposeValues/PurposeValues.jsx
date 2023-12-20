@@ -30,20 +30,20 @@
 const PurposeValues = ({ data }) => {
   return (
     <section className="relative bg-[#fbfbfb]">
-      <div className="max-w-7xl mx-auto flex flex-col pt-16 px-6 ">
+      <div className="max-w-7xl mx-auto flex flex-col md:pt-16 px-6 ">
         {/* Purpose */}
         <div className="flex flex-col gap-4 items-center">
           <div className="flex flex-col gap-2">
-            <h1 className="text-black text-6xl font-semibold text-center">
+            <h1 className="text-black text-4xl md:text-6xl font-semibold text-center">
               Purpose
             </h1>
-            <p className="text-3xl font-semibold text-center text-[#878787]">
+            <p className="text-lg md:text-3xl font-semibold text-center text-[#878787]">
               Reason of our Existence
             </p>
           </div>
 
           <div className="max-w-3xl">
-            <p className="text-2xl leading-[1.8] text-center">
+            <p className="text-xl leading-[1.8] text-center">
               To deliver superior value to our customers, shareholders,
               employees, and community through a diversified global portfolio of
               emergent businesses that are driven by limitless innovation,
@@ -57,16 +57,16 @@ const PurposeValues = ({ data }) => {
         {/* Values */}
         <div className="flex flex-col gap-4 items-center">
           <div className="flex flex-col gap-2">
-            <h1 className="text-black text-6xl font-semibold text-center">
+            <h1 className="text-black text-4xl md:text-6xl font-semibold text-center">
               Values
             </h1>
-            <p className="text-3xl font-semibold text-center text-[#878787]">
+            <p className="text-lg md:text-3xl font-semibold text-center text-[#878787]">
               Heartbeat Of Our Existence
             </p>
           </div>
 
           <div className="max-w-3xl">
-            <p className="text-2xl leading-[1.8] text-center">
+            <p className="text-xl leading-[1.8] text-center">
               Our values continue to direct the growth of businesses under
               Apollo Green Energy Limited.
             </p>

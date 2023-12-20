@@ -172,16 +172,16 @@ export const Fashion = () => {
           </div>
 
           <div className="absolute inset-0 top-0 left-0 w-full h-full z-[1]">
-            <div className="w-1/2 ml-auto h-full backdrop-blur-xl text-white p-16 flex flex-col gap-16 justify-evenly">
+            <div className="w-1/2 ml-auto h-full backdrop-blur-xl text-white px-3 md:p-16 flex flex-col gap-16 justify-evenly">
               <div className="flex flex-col gap-3">
-                <h4 className="text-white text-xl lg:text-3xl">
+                <h4 className="text-white text-base lg:text-3xl">
                   Apollo Fashion
                 </h4>
                 <div className="h-1 w-10 bg-white" />
               </div>
 
               <div className="flex flex-col gap-5">
-                <h1 className="text-white text-3xl lg:text-7xl font-semibold">
+                <h1 className="text-white text-3xl lg:text-6xl font-semibold">
                   Fashion Made Responsibly
                 </h1>
               </div>
@@ -190,31 +190,31 @@ export const Fashion = () => {
         </div>
         {/* 2nd Section */}
         <div className="bg-[#e3e3e3] py-20">
-          <div className="container flex flex-col gap-20 lg:flex-row justify-center">
+          <div className="container flex flex-col gap-10 lg:gap-20 lg:flex-row justify-center">
             <div className="flex flex-col gap-8">
               <div className="border-2 border-black p-10 border-dashed rounded-br-[60px] transition duration-[580ms] hover:rounded-br-[30px] hover:[box-shadow:10px_10px_#191919]">
-                <h1 className="text-6xl font-bold">
+                <h1 className="text-3xl md:text-6xl font-bold">
                   {fashionData?.secondSectionTitle1}
                 </h1>
 
-                <p className="text-2xl">
+                <p className="text-lg md:text-2xl">
                   {fashionData?.secondSectionSubtitle1}
                 </p>
               </div>
               <div className="border-2 border-black p-10 border-dashed rounded-br-[60px] transition duration-[580ms] hover:rounded-br-[30px] hover:[box-shadow:10px_10px_#191919]">
-                <h1 className="text-6xl font-bold">
+                <h1 className="text-3xl md:text-6xl font-bold">
                   {fashionData?.secondSectionTitle2}
                 </h1>
 
-                <p className="text-2xl">
+                <p className="text-lg md:text-2xl">
                   {fashionData?.secondSectionSubtitle2}
                 </p>
               </div>
             </div>
 
             <div className="flex">
-              <div className="border-2 border-black p-10 border-dashed rounded-bl-[60px] transition duration-[580ms] hover:rounded-br-[30px] hover:[box-shadow:10px_10px_#191919]">
-                <p className="text-2xl">
+              <div className="border-2 border-black p-3 lg:p-10 border-dashed rounded-bl-[60px] transition duration-[580ms] hover:rounded-br-[30px] hover:[box-shadow:10px_10px_#191919]">
+                <p className="text-lg lg:text-2xl">
                   {fashionData?.secondSectionDescription}
                 </p>
               </div>
@@ -223,7 +223,7 @@ export const Fashion = () => {
         </div>
 
         {/* OurApproach */}
-        <div className="col-12 mt-4 !py-20">
+        <div className="col-12 mt-4 !py-10 md:!py-20">
           <div className="container">
             <div className="row">
               <div className="col-12 mb-4 text-3xl lg:text-6xl font-bold">
@@ -309,28 +309,22 @@ export const Fashion = () => {
                 <div className="row justify-center items-center h-full ">
                   <div className="col-10">
                     <div className="row">
-                      <div className="col-lg-12 mt-5">
-                        <p
-                          style={{
-                            fontWeight: "bold",
-                            fontSize: "60px",
-                          }}
-                          className="capitalize"
-                        >
+                      <div className="col-lg-12">
+                        <h1 className="capitalize text-3xl lg:text-6xl font-bold">
                           {fashionData?.aoeTitle}
-                        </p>
+                        </h1>
                       </div>
                     </div>
                     <div className="row">
                       <div className="col-md-6">
                         <div className="row">
-                          <div className="col-lg-12 text-xl">
+                          <div className="col-lg-12 text-lg lg:text-xl">
                             {fashionData?.aoeDescription}
                           </div>
                           <div className="col-lg-9">
                             <div className="row mt-2">
                               <div
-                                className="col-4 flex items-center"
+                                className="col md:col-4 flex items-center"
                                 style={{ fontWeight: "bold", fontSize: "30px" }}
                               >
                                 <Counter
@@ -342,7 +336,7 @@ export const Fashion = () => {
                                 &nbsp;Mn
                               </div>
                               <div
-                                className="col-4 flex flex-row items-center gap-1"
+                                className="col md:col-4 flex flex-row items-center gap-1"
                                 style={{ fontWeight: "bold", fontSize: "30px" }}
                               >
                                 <Counter
@@ -352,7 +346,7 @@ export const Fashion = () => {
                                 +
                               </div>
                               <div
-                                className="col-4"
+                                className="col md:col-4"
                                 style={{ fontWeight: "bold", fontSize: "30px" }}
                               >
                                 <Counter
@@ -386,12 +380,10 @@ export const Fashion = () => {
         </div>
 
         {/* Forge Connection */}
-        <div className="col-12 !my-10 py-20 space-y-4">
+        <div className="col-12 md:!my-10 py-20 space-y-4">
           <div className="row ml-lg-4">
             <div className="col-lg-9">
-              <p className="pl-5 ml-5 text-3xl lg:text-6xl font-bold">
-                Capabilities
-              </p>
+              <p className="text-3xl lg:text-6xl font-bold">Capabilities</p>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-content-center place-items-center gap-4">
@@ -401,24 +393,18 @@ export const Fashion = () => {
           </div>
         </div>
         {/* Preferred Choice */}
-        <div className="col-12 my-5">
+        <div className="col-12 md:my-5">
           <div className="container">
             <div className="row justify-content-center">
-              <div
-                className="col-lg-12 my-2"
-                style={{ fontWeight: "bold", fontSize: "50px" }}
-              >
-                <p className="d-flex justify-content-center text-6xl">
+              <div className="col-lg-12 my-2">
+                <h1 className="d-flex justify-content-center text-3xl md:text-6xl font-bold text-center">
                   {fashionData?.preferChoiceDataHeading}
-                </p>
+                </h1>
               </div>
-              <div
-                className="col-lg-7 mb-6 text-lg"
-                style={{ textAlign: "center" }}
-              >
+              <div className="col-lg-7 mb-6 text-base md:text-lg text-center">
                 {fashionData?.preferChoiceDataDescription}
               </div>
-              <div className="grid grid-cols-3 lg:grid-cols-5 !p-0">
+              <div className="grid grid-cols-2 lg:grid-cols-5 !p-0">
                 {fashionData?.brands?.map((brand) => {
                   return (
                     <div
@@ -495,14 +481,11 @@ export const Fashion = () => {
           <div className="container">
             <div className="row !justify-center">
               <div className="col-12 mt-5">
-                <div
-                  style={{ fontWeight: "bold", fontSize: "55px" }}
-                  className="text-center"
-                >
+                <div className="text-center text-3xl md:text-6xl font-bold">
                   Experience Apollo Fashion
                 </div>
                 <div className="row">
-                  <div className="col-lg-6 mx-auto text-center">
+                  <div className="col-lg-6 mx-auto text-center md:text-lg">
                     When you choose Apollo Fashion, you opt for a legacy-rich,
                     globally connected partner that prioritizes your success.
                     Discover the difference of responsible fashion manufacturing
@@ -512,28 +495,36 @@ export const Fashion = () => {
                 </div>
                 <div className="row mt-4">
                   <div className="col-12">
-                    <div className="row justify-center">
-                      <div className="col-4 flex flex-col items-center">
+                    <div className="row justify-center flex-col md:flex-row gap-3">
+                      <div className="col md:col-4 flex flex-col items-center">
                         <p
                           style={{ fontWeight: "bold" }}
-                          className="text-center"
+                          className="text-center text-xl"
                         >
                           Address
                         </p>
                         <p style={{ fontWeight: "bold" }}>Footwear Division</p>
                         <p>C-30, Sector-58, NOIDA-201301, India</p>
+
+                        <p className="md:hidden" style={{ fontWeight: "bold" }}>
+                          Leather Garments & Accessories
+                        </p>
+                        <p className="md:hidden">
+                          B-21, Sector-65, NOIDA-201301, India
+                        </p>
                       </div>
-                      <div className="col-4 flex flex-col items-center">
-                        <p style={{ fontWeight: "bold" }}>Phone</p>
+                      <div className="col md:col-4 flex flex-col items-center">
+                        <p style={{ fontWeight: "bold" }} className="text-xl">Phone</p>
                         <p>+91 120 4635800</p>
+                        <p className="md:hidden">+91 120 4635800</p>
                       </div>
-                      <div className="col-4 flex flex-col items-center">
-                        <p style={{ fontWeight: "bold" }}>Email</p>
+                      <div className="col md:col-4 flex flex-col items-center">
+                        <p style={{ fontWeight: "bold" }} className="text-xl">Email</p>
                         info@apollofashioncompany.com
                       </div>
                     </div>
 
-                    <div className="row justify-center">
+                    <div className="row justify-center hidden md:flex">
                       <div className="col-4 flex flex-col items-center">
                         <p style={{ fontWeight: "bold" }}>
                           Leather Garments & Accessories

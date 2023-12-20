@@ -122,7 +122,7 @@ const Career = () => {
                     <div className="col-12 mt-2 mb-5">
                       <div className="row">
                         <div className="col-12">
-                          <p className="text-lg">
+                          <p className="text-base md:text-lg">
                             Apollo Green Energy stands at the forefront of
                             diverse sectors, ranging from pioneering Green
                             Energy to EPC to Fashion Manufacturing, Logistics
@@ -206,7 +206,7 @@ const Career = () => {
             <div className="container">
               <div className="row">
                 <div className="col-12 mt-3 flex items-center gap-2 text-center">
-                  <p className="text-center w-full font-semibold text-3xl lg:text-4xl">
+                  <p className="text-center w-full font-semibold text-3xl lg:text-5xl">
                     Discover what makes Apollo Green Energy a Sought-after
                     Employer
                   </p>
@@ -216,7 +216,7 @@ const Career = () => {
                     {/* <div className="col-lg-3 d-flex justify-content-center">
                       <img src={d1} alt="" className="rounded-md w-full" />
                     </div> */}
-                    <div className="col-lg-8 text-center text-lg">
+                    <div className="col-lg-8 text-center text-base md:text-lg">
                       A strong, consistent, and meritocratic HR framework helps
                       Apollo Green Energy in maintaining a forward-thinking work
                       environment where talent with a purpose is drawn and

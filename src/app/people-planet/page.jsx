@@ -95,7 +95,7 @@ const PeoplePlanet = () => {
       />
 
       <div className="relative py-4 md:py-32 my-20">
-        <div className="px-16 md:px-32 flex flex-col md:flex-row ">
+        <div className="px-8 md:px-32 flex flex-col md:flex-row ">
           <div className="flex-1 flex flex-wrap gap-3">
             <div className="relative w-[236px]">
               <img
@@ -128,15 +128,15 @@ const PeoplePlanet = () => {
               />
             </div>
           </div>
-          <div className="flex-1 flex flex-col gap-4 self-center">
+          <div className="flex-1 flex flex-col gap-4 self-center mt-2 md:mt-0">
             <h1 className="text-3xl lg:text-5xl font-semibold">
               What’s good for people and the planet, is good for us.
             </h1>
-            <p className="text-lg">
+            <p className="text-base md:text-lg">
               We are focused on achieving excellence in our business vertices
               and creating a positive impact on the lives of those who need it.
             </p>
-            <p>
+            <p className="text-base md:text-lg">
               We have undertaken various initiatives and campaigns in areas of
               healthcare, education, nutrition, and environment along with the
               well-being of women, adolescent girls, and younger children. We
@@ -156,7 +156,7 @@ const PeoplePlanet = () => {
         <div className="py-20 max-w-7xl mx-auto">
           <div className="flex flex-col gap-4">
             <div className="relative max-w-3xl mx-auto">
-              <span className="absolute top-[-20px] left-[-20px] text-xl text-[#191919] bg-white w-[60px]">
+              <span className="absolute md:top-[-20px] md:left-[-20px] text-xl text-[#191919] bg-white w-[30px] md:w-[60px]">
                 <img src={QuoteSvg} alt="" />
               </span>
 

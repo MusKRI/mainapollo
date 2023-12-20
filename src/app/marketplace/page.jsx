@@ -6,7 +6,7 @@ import Banner from "./images/banner.jpg";
 
 import sImg from "./images/fb.jpg";
 
-import Video from "./video/marketplace.mp4";
+// import Video from "./video/marketplace.mp4";
 import BenefitCard from "./components/benefit-card/benefit-card";
 
 export const MarketPlace = () => {
@@ -65,20 +65,18 @@ export const MarketPlace = () => {
             </div>
 
             <div className="absolute inset-0 top-0 left-0 w-full h-full z-[1] backdrop-brightness-[0.5] px-3 md:px-5">
-              <div className="max-w-7xl mx-auto flex flex-col gap-16 py-16 h-full justify-between">
-                <div className="flex flex-col gap-3">
-                  <h4 className="text-white text-2xl">Apollo Marketplace</h4>
+              <div className="max-w-7xl mx-auto flex flex-col py-3 md:gap-16 md:py-16 h-full justify-between">
+                <div className="flex flex-col gap-1">
+                  <h4 className="text-white text-lg md:text-2xl">
+                    Apollo Marketplace
+                  </h4>
                   <div className="h-1 w-10 bg-white" />
                 </div>
 
                 <div className="flex flex-col gap-5">
-                  <h1 className="text-white text-5xl lg:text-7xl font-semibold max-w-[50%]">
+                  <h1 className="text-white text-3xl lg:text-6xl font-semibold max-w-[50%]">
                     Redefining Global Trade & Commerce
                   </h1>
-
-                  {/* <p className="text-white max-w-md text-lg ml-4 lg:ml-20">
-                {data.bannerDescription}
-              </p> */}
                 </div>
               </div>
             </div>
@@ -88,31 +86,32 @@ export const MarketPlace = () => {
 
       {/* Section-2 */}
       <div className="container mt-4 mb-4">
-        <div className="row">
-          <div className="col-6">
+        <div className="row flex flex-col md:flex-row gap-2">
+          <div className="col md:col-6">
             <img
               src={
                 "https://images.unsplash.com/photo-1644134913825-5ff0ff4e731c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Ds"
               }
               alt=""
               style={{ maxHeight: "370px", minWidth: "70%" }}
+              className="rounded-md"
             />
           </div>
           <div
-            className="col-6 d-flex align-items-center"
+            className="col md:col-6 d-flex align-items-center"
             style={{ marginBottom: "-20px" }}
           >
             <div className="row" style={{ background: "white" }}>
               <div className="col-12 d-flex justify-content-start">
                 <div className="container">
-                  <h1 style={{ fontWeight: "750", fontSize: "25px" }}>
+                  <h1 className="text-3xl md:text-6xl font-bold">
                     {data?.agTitle}
                   </h1>
                 </div>
               </div>
               <div className="col-12 mb-4" style={{ marginBottom: "-50px" }}>
                 <div className="container">
-                  <p>{data?.agDescription}</p>
+                  <p className="md:text-lg">{data?.agDescription}</p>
                 </div>
               </div>
             </div>
@@ -125,7 +124,7 @@ export const MarketPlace = () => {
         <div className="space-y-4">
           <div className="flex flex-col gap-2">
             <h1 className="text-3xl lg:text-6xl font-semibold text-center">
-              Apollo Marketplace is{" "}
+              Apollo Marketplace is <br className="md:hidden" />
               <TypeAnimation
                 sequence={[
                   // Same substring at the start will only be typed out once, initially
@@ -140,11 +139,11 @@ export const MarketPlace = () => {
                 ]}
                 wrapper="span"
                 speed={300}
-                style={{ fontSize: "50px", display: "inline-block" }}
+                className="text-3xl md:text-6xl"
                 repeat={Infinity}
               />
             </h1>
-            <p className="max-w-md mx-auto text-lg text-center">
+            <p className="max-w-md mx-auto text-base md:text-lg text-center">
               we specialize in trading and disturbing a diverse range of
               products across several key business verticals:
             </p>
@@ -252,14 +251,13 @@ export const MarketPlace = () => {
         <div className="container">
           <div className="row !justify-center">
             <div className="col-12 mt-5">
-              <div
-                style={{ fontWeight: "bold", fontSize: "55px" }}
-                className="text-center"
+              <h1
+                className="text-center text-3xl md:text-6xl font-bold"
               >
                 Experience Apollo Marketplace
-              </div>
+              </h1>
               <div className="row">
-                <div className="col-lg-6 mx-auto text-center">
+                <div className="col-lg-6 mx-auto text-center md:text-lg">
                   When you choose Apollo Marketplace, you opt for a legacy-rich,
                   globally connected partner that prioritizes your success.
                   Discover the difference of international trade and
@@ -269,8 +267,8 @@ export const MarketPlace = () => {
               </div>
               <div className="row mt-4">
                 <div className="col-12">
-                  <div className="row justify-center">
-                    <div className="col-4 flex flex-col items-center">
+                  <div className="row justify-center flex-col md:flex-row gap-2">
+                    <div className="col md:col-4 flex flex-col items-center">
                       <p style={{ fontWeight: "bold" }} className="text-center">
                         Address
                       </p>
@@ -279,12 +277,12 @@ export const MarketPlace = () => {
                         Haryana, India
                       </p>
                     </div>
-                    <div className="col-4 flex flex-col items-center">
+                    <div className="col md:col-4 flex flex-col items-center">
                       <p style={{ fontWeight: "bold" }}>Phone</p>
                       <p>(91-124) 6740100</p>
                       <p>(91-124) 6740200</p>
                     </div>
-                    <div className="col-4 flex flex-col items-center">
+                    <div className="col md:col-4 flex flex-col items-center">
                       <p style={{ fontWeight: "bold" }}>Email</p>
                       <p>info@apolloindia.com</p>
                       <p>contact@apolloindia.com</p>

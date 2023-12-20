@@ -73,14 +73,14 @@ const Sectors = () => {
 
   return (
     <section className="relative px-3 md:px-5 bg-[#f6f6f6]">
-      <div className="max-w-7xl mx-auto flex flex-col gap-5 lg:flex-row lg:justify-between pt-16 md:pt-32">
-        <div className="flex flex-col gap-7" style={{ width: "50%" }}>
-          <h2 className="text-2xl text-body-text">Sectors</h2>
-          <h1 className="text-4xl lg:text-6xl text-main-text">
+      <div className="max-w-7xl mx-auto flex flex-col gap-5 lg:flex-row lg:justify-between pt-16">
+        <div className="flex flex-col gap-7 md:w-1/2">
+          <h2 className="text-lg text-body-text">Sectors</h2>
+          <h1 className="text-3xl lg:text-6xl text-main-text font-semibold">
             Key Sectors We Serve
           </h1>
 
-          <div key={`${currentImage}`} className="aspect-square relative">
+          <div key={`${currentImage}`} className="relative">
             <img
               alt="Transport"
               src={currentImage}
@@ -111,10 +111,10 @@ const Sectors = () => {
                       variants={pvVariants}
                       className="absolute bg-white"
                     ></motion.div> */}
-                    <p className="text-xl relative z-[2] text-body-text group-hover:text-main-text">
+                    <p className="text-base md:text-lg relative z-[2] text-body-text group-hover:text-main-text">
                       {index + 1 >= 10 ? index + 1 : `0${index + 1}`}{" "}
                     </p>
-                    <p className="text-xl basis-3/5 relative z-[2] text-body-text group-hover:text-main-text">
+                    <p className="text-base md:text-lg basis-3/5 relative z-[2] text-body-text group-hover:text-main-text">
                       {keySector.pv}
                     </p>
 

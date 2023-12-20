@@ -1,8 +1,8 @@
 // **** Library Imports ****
-import { BsSearch } from "react-icons/bs";
+// import { BsSearch } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // **** Local Imports ****
 import LinkWithoutChildren from "./components/LinkWithoutChildren";
@@ -121,7 +121,7 @@ const navLinks = [
 ];
 
 const Header = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const [state, setState] = useState(false);
 
@@ -134,14 +134,14 @@ const Header = () => {
     <motion.header className={`bg-white h-[72px] px-3 md:px-5 w-full z-50`}>
       <div className="max-w-7xl mx-auto flex justify-between items-center h-full">
         {/* Logo */}
-        <Link to="/" className="">
+        <Link to="/" className="" onClick={() => setState(!state)}>
           <div className="relative w-[180px]">
             <img src={Logo} alt="Logo" />
           </div>
         </Link>
 
         <div
-          className={`nav-menu flex-1 absolute top-[72px] left-0 w-full bg-white lg:hidden px-8 py-4 z-10 ${
+          className={`nav-menu flex-1 absolute top-[72px] left-0 w-full bg-white lg:hidden px-8 py-4 z-50 ${
             state ? "block" : "hidden"
           }`}
         >
@@ -192,6 +192,9 @@ const Header = () => {
                     <Link
                       to={item?.slug}
                       className="block text-gray-700 hover:text-green"
+                      onClick={() => {
+                        setState(false);
+                      }}
                     >
                       {item.label}
                     </Link>

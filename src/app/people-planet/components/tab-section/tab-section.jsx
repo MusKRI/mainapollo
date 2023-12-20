@@ -21,16 +21,14 @@ const TabSection = ({ data }) => {
         modules={[Autoplay, Navigation]}
         spaceBetween={50}
         slidesPerView={1}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-        className="max-w-4xl"
+        className="w-full md:max-w-4xl"
       >
         {data?.map((slide) => {
           return (
             <SwiperSlide key={slide?.id}>
               <div className="flex flex-col lg:flex-row gap-7">
-                <div className="flex flex-col gap-3">
-                  <div className="relative w-96">
+                <div className="flex flex-col md:gap-3">
+                  <div className="relative w-full md:w-96">
                     <img
                       src={slide?.image}
                       alt=""
@@ -39,14 +37,14 @@ const TabSection = ({ data }) => {
                   </div>
                 </div>
 
-                <div className="w-full p-8 flex flex-col gap-5">
-                  <h3 className="text-3xl lg:text-4xl text-center">
+                <div className="w-full md:p-8 flex flex-col md:gap-5">
+                  <h3 className="text-3xl lg:text-5xl text-center">
                     {slide?.name}
                   </h3>
 
                   <div className="flex flex-col gap-3">
-                    <p className="text-lg">{slide?.subheading1}</p>
-                    <p className="text-lg">{slide?.subheading2}</p>
+                    <p className="text-base md:text-lg">{slide?.subheading1}</p>
+                    <p className="text-base md:text-lg">{slide?.subheading2}</p>
                     {/* <p className="text-lg">{slide?.subheading3}</p> */}
                   </div>
                 </div>

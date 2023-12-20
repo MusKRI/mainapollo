@@ -64,7 +64,7 @@ const HomeMap = () => {
 
   return (
     <>
-      <h1 className="text-center text-3xl lg:text-5xl py-8 font-bold">
+      <h1 className="text-center text-3xl lg:text-5xl py-8 font-bold px-2">
         Making Impact Across Globe
       </h1>
       <div style={{ background: "white" }}>

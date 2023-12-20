@@ -39,21 +39,21 @@ const ScIdentity = () => {
             </div>
           </div>
 
-          <div className="flex-1 flex flex-col gap-5">
+          <div className="flex-1 flex flex-col gap-2">
             <p className="text-lg font-medium text-[#ff7900]">Our Identity</p>
-            <h1 className="relative leading-snug text-[28px] md:text-5xl text-main-text after:absolute after:border-2 after:left-0 after:-bottom-4 after:w-10 after:border-main-text">
+            <h1 className="relative leading-snug text-3xl font-semibold md:text-6xl text-main-text after:absolute after:border-2 after:left-0 after:-bottom-4 after:w-10 after:border-main-text">
               Our Logistics Services Empower Businesses For Growth And
               Sustainability.
             </h1>
 
-            <p className="text-[#525252] mt-4 text-lg">
+            <p className="text-[#525252] mt-4 text-base md:text-lg">
               As a single-source integrated supply chain specialist, Apollo
               Supply Chain provide innovative, tech-driven solutions for your
               logistics requirements so that you can focus on your core business
               and profitability.
             </p>
 
-            <p className="text-[#525252] text-lg">
+            <p className="text-[#525252] text-base md:text-lg">
               Driven by a strong brand lineage, we deliver bespoke solutions
               that simplify, protect, and transform supply chains. Our
               customer-first approach and a sharp focus on IT-based logistics

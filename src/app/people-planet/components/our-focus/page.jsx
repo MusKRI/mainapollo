@@ -8,10 +8,10 @@ const OurFocus = ({ data }) => {
       <div className="relative py-20">
         <div className="max-w-7xl mx-auto w-full rounded-tr-lg rounded-br-lg flex flex-col items-center">
           <div className="flex flex-col text-center gap-8">
-            <motion.h1 className="text-6xl font-bold border">
+            <motion.h1 className="text-3xl md:text-6xl font-bold">
               {data.title}
             </motion.h1>
-            <motion.p className="max-w-3xl text-[#525252] text-lg border">
+            <motion.p className="max-w-3xl text-[#525252] text-base px-3 md:text-lg">
               {data.description}
               <br />
               What’s good for people and the planet, is good for us.

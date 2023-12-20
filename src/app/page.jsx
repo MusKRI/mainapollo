@@ -111,26 +111,7 @@ const Home = () => {
           aboutSubHeading2Description: initialData["Sub-Heading-2-Description"],
         }}
       />
-      {/* <div className="h-[250vh] relative z-[2]" ref={ref}>
-        <div className="sticky h-screen top-0">
-          <motion.div
-            style={{
-              WebkitMaskSize: wms,
-              maskSize: wms,
-            }}
-            className="h-full mask"
-          >
-            <div className="h-full w-full flex items-center justify-center bg-slate-200">
-              <motion.img
-                style={{ scale }}
-                src="/logo.png"
-                alt="Logo"
-                className="w-80"
-              />
-            </div>
-          </motion.div>
-        </div>
-      </div> */}
+      
       {/* Business Section */}
       <Business
         slides={[

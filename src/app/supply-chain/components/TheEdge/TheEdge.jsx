@@ -73,15 +73,15 @@ const TheEdge = () => {
     <section className="relative px-3 md:px-5 bg-[#101021]">
       <div className="max-w-7xl mx-auto py-16 md:py-32">
         <div className="flex flex-col md:flex-row">
-          <div className="flex-1 flex flex-row justify-center gap-6">
+          <div className="flex-1 flex-row justify-center gap-6 hidden md:flex">
             <div className="relative overflow-hidden self-center mr-6">
               <img src={currentImage} alt="The Edge" />
             </div>
           </div>
 
-          <div className="flex-1 flex flex-col gap-5">
+          <div className="flex-1 flex flex-col gap-2">
             <p className="text-lg font-medium text-[#ff7900]">The Edge</p>
-            <h1 className="relative leading-snug text-[28px] md:text-5xl text-white after:absolute after:border-2 after:left-0 after:-bottom-4 after:w-10 after:border-white">
+            <h1 className="relative leading-snug text-3xl md:text-5xl text-white after:absolute after:border-2 after:left-0 after:-bottom-4 after:w-10 after:border-white">
               We do more than solve the immediate logistics need.
             </h1>
 
@@ -93,13 +93,19 @@ const TheEdge = () => {
             </p>
 
             <div>
+              <div className="flex-1 flex-row justify-center gap-6 flex md:hidden">
+                <div className="relative overflow-hidden self-center mr-6">
+                  <img src={currentImage} alt="The Edge" />
+                </div>
+              </div>
+
               <ApolloAccordion
                 items={accordionItems}
                 setCurrentImage={handleCurrentImage}
               />
             </div>
 
-            <div className="flex items-center justify-start">
+            <div className="flex items-center justify-start mt-3">
               <MotionLink
                 className="relative flex items-center text-white"
                 to={"https://apollosupplychain.com"}
