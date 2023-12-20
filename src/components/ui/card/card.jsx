@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Card = ({ data }) => {
   return (
-    <Link to={data.cardSlug} target="_blank" className="w-[570px]">
+    <Link to={data.cardSlug} target="_blank" className="max-w-[570px]">
       <div className=" rounded-xl bg-white group shadow-md h-full">
         {/* <div className="relative max-w-full">
           <img src={data.cardImage} alt="Blog" className="" />
@@ -19,7 +19,7 @@ const Card = ({ data }) => {
           </div>
 
           <div className="px-4 relative">
-            <h1 className="text-3xl font-bold">{data.cardTitle}</h1>
+            <h1 className="text-xl font-bold">{data.cardTitle}</h1>
           </div>
 
           <div className="px-4 relative flex items-center">

@@ -3,11 +3,22 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
+import "swiper/css/navigation";
+
+// import required modules
+import { Navigation, Autoplay } from "swiper/modules";
 
 const TabSection = ({ data }) => {
   return (
     <div className="relative bg-[#191919] px-10 py-4 lg:py-0 text-white">
       <Swiper
+        loop={true}
+        navigation={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay, Navigation]}
         spaceBetween={50}
         slidesPerView={1}
         onSlideChange={() => console.log("slide change")}

@@ -54,15 +54,15 @@ export const MarketPlace = () => {
   return (
     <>
       <div className="relative">
-        <div className="col-12 p-0 h-screen">
+        <div className="col-12 p-0">
           <div className="img h-full relative">
-            <video
-              muted
-              loop="true"
-              autoPlay={true}
-              src={Video}
-              className="object-fill h-screen w-full"
-            />
+            <div className="relative">
+              <img
+                src="https://utfs.io/f/7596dfdf-b1bc-4d1c-b3de-c253d9f51162-pymbqh.svg"
+                alt=""
+                className="max-w-full h-full"
+              />
+            </div>
 
             <div className="absolute inset-0 top-0 left-0 w-full h-full z-[1] backdrop-brightness-[0.5] px-3 md:px-5">
               <div className="max-w-7xl mx-auto flex flex-col gap-16 py-16 h-full justify-between">

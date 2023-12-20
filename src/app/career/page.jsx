@@ -5,93 +5,93 @@ import CareerBanner from "./components/career-banner/career-banner";
 import BannerImg from "./images/banner.jpeg";
 
 import sq2 from "./images/life.jpeg";
-import ForceofFive from "./images/forceoffive3.jpeg";
-import d1 from "./images/d1.png";
-import d2 from "./images/d2.png";
+// import ForceofFive from "./images/forceoffive3.jpeg";
+// import d1 from "./images/d1.png";
+// import d2 from "./images/d2.png";
 import d3 from "./images/d3.png";
 import d4 from "./images/d4.png";
 import d5 from "./images/d5.png";
 
 const Career = () => {
-  let CardData = [
-    {
-      Title: "Product Designer",
-      Subtitle:
-        "We are looking for  a mid-level product designer to join our team.",
-      status: "Active",
-      icon: "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
-    },
-    {
-      Title: "Content Writer",
-      Subtitle:
-        "We are looking for  a mid-level Content Writer to join our team.",
-      status: "Active",
-      icon: "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
-    },
+  // let CardData = [
+  //   {
+  //     Title: "Product Designer",
+  //     Subtitle:
+  //       "We are looking for  a mid-level product designer to join our team.",
+  //     status: "Active",
+  //     icon: "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
+  //   },
+  //   {
+  //     Title: "Content Writer",
+  //     Subtitle:
+  //       "We are looking for  a mid-level Content Writer to join our team.",
+  //     status: "Active",
+  //     icon: "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
+  //   },
 
-    {
-      Title: "Product Designer",
-      Subtitle:
-        "We are looking for a mid-level product designer to join our team.",
-      status: "Active",
-      icon: "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
-    },
-    {
-      Title: "Product Designer",
-      Subtitle:
-        "We are looking for  a mid-level product designer to join our team.",
-      status: "Active",
-      icon: "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
-    },
-    {
-      Title: "Content Writer",
-      Subtitle:
-        "We are looking for  a mid-level Content Writer to join our team.",
-      status: "Active",
-      icon: "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
-    },
+  //   {
+  //     Title: "Product Designer",
+  //     Subtitle:
+  //       "We are looking for a mid-level product designer to join our team.",
+  //     status: "Active",
+  //     icon: "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
+  //   },
+  //   {
+  //     Title: "Product Designer",
+  //     Subtitle:
+  //       "We are looking for  a mid-level product designer to join our team.",
+  //     status: "Active",
+  //     icon: "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
+  //   },
+  //   {
+  //     Title: "Content Writer",
+  //     Subtitle:
+  //       "We are looking for  a mid-level Content Writer to join our team.",
+  //     status: "Active",
+  //     icon: "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
+  //   },
 
-    {
-      Title: "Product Designer",
-      Subtitle:
-        "We are looking for a mid-level product designer to join our team.",
-      status: "Active",
-      icon: "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
-    },
-  ];
+  //   {
+  //     Title: "Product Designer",
+  //     Subtitle:
+  //       "We are looking for a mid-level product designer to join our team.",
+  //     status: "Active",
+  //     icon: "https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg",
+  //   },
+  // ];
 
-  let ForceFive = [
-    {
-      name: "Own It",
-      description:
-        "The entrepreneurial spirit runs strong at Apollo Green Energy. We encourage our people to think big and own their work.",
-    },
-    {
-      name: "Do The Right",
-      description:
-        "Thing Integrity is the foundation for everything we do. We are admired and respected for our commitment to honesty, trust, and transparency. We do the right thing — even when no one is watching.",
-    },
-    {
-      name: "Be The Next",
-      description:
-        "We strive to set the highest standard of quality in everything we do. We always want to drive towards the next great thing by constantly challenging ourselves to improve and break new ground.",
-    },
-    {
-      name: "Action Is Our First Instinct",
-      description:
-        "We only succeed when our clients do — and that drives us. Our people will overcome obstacles, find solutions, and deliver exceptional results that help our clients be ahead",
-    },
+  // let ForceFive = [
+  //   {
+  //     name: "Own It",
+  //     description:
+  //       "The entrepreneurial spirit runs strong at Apollo Green Energy. We encourage our people to think big and own their work.",
+  //   },
+  //   {
+  //     name: "Do The Right",
+  //     description:
+  //       "Thing Integrity is the foundation for everything we do. We are admired and respected for our commitment to honesty, trust, and transparency. We do the right thing — even when no one is watching.",
+  //   },
+  //   {
+  //     name: "Be The Next",
+  //     description:
+  //       "We strive to set the highest standard of quality in everything we do. We always want to drive towards the next great thing by constantly challenging ourselves to improve and break new ground.",
+  //   },
+  //   {
+  //     name: "Action Is Our First Instinct",
+  //     description:
+  //       "We only succeed when our clients do — and that drives us. Our people will overcome obstacles, find solutions, and deliver exceptional results that help our clients be ahead",
+  //   },
 
-    {
-      name: "Stronger United",
-      description:
-        "We’ve created a positive and inclusive culture that fosters open, honest, and meaningful relationships. We celebrate and embrace our diversity, finding ways for everyone to belong.",
-    },
-  ];
+  //   {
+  //     name: "Stronger United",
+  //     description:
+  //       "We’ve created a positive and inclusive culture that fosters open, honest, and meaningful relationships. We celebrate and embrace our diversity, finding ways for everyone to belong.",
+  //   },
+  // ];
 
   const data = {
     bannerImg: BannerImg,
-    bannerTitle: "Unlock Your Potential",
+    bannerTitle: "This is Where Diverse Opportunities Meet Limitless Growth.",
   };
   return (
     <>
@@ -113,23 +113,26 @@ const Career = () => {
               </div>
               <div className="col-12 col-lg-6">
                 <div className="container-fluid">
-                  <div className="row justify-content-center">
+                  <div className="row justify-content-center items-end">
                     <div className="col-12">
                       <h1 className="text-3xl font-semibold">
-                        Life At Apollo Green Energy: Join Our Vision, Shape Your
-                        Future
+                        Nurturing a Distinctive Culture at Apollo Green Energy
                       </h1>
                     </div>
                     <div className="col-12 mt-2 mb-5">
                       <div className="row">
                         <div className="col-12">
                           <p className="text-lg">
-                            Apollo Green Energy offers an inspiring environment,
-                            fosters an inclusive work culture that thrives on
-                            diversity, offering an inspiring environment and
-                            work-life balance for all.
+                            Apollo Green Energy stands at the forefront of
+                            diverse sectors, ranging from pioneering Green
+                            Energy to EPC to Fashion Manufacturing, Logistics
+                            Supply Chain, and International Business Trading.
+                            Our commitment goes beyond the sectors we operate
+                            in; it's about building a culture that resonates
+                            with the heartbeat of innovation, sustainability,
+                            and global impact.
                           </p>
-                          <p className="text-lg">
+                          {/* <p className="text-lg">
                             At Apollo Green Energy, we're committed to offering
                             more than just employment. We create fresh career
                             opportunities that intersect with our business,
@@ -137,7 +140,7 @@ const Career = () => {
                             driving our growth forward. We firmly believe that
                             our employees, with their innovative skills, are the
                             driving force behind our operational efficiency
-                          </p>
+                          </p> */}
                         </div>
                       </div>
                     </div>
@@ -232,32 +235,41 @@ const Career = () => {
                 </div>
                 <div className="col-12">
                   <div className="row">
-                    <div className="col-4 relative">
+                    <div className="col-3 relative">
                       <img
                         src={d3}
                         alt=""
                         style={{ maxWidth: "70%" }}
                         className="rounded-t-full relative z-[2]"
                       />
-                      <div className="absolute border top-0 left- w-full h-full max-w-[65%] rounded-t-full z-0"></div>
+                      {/* <div className="absolute border top-0 left- w-full h-full max-w-[65%] rounded-t-full z-0"></div> */}
                     </div>
-                    <div className="col-4 relative">
+                    <div className="col-3 relative">
+                      <img
+                        src={d3}
+                        alt=""
+                        style={{ maxWidth: "70%" }}
+                        className="rounded-t-full relative z-[2]"
+                      />
+                      {/* <div className="absolute border top-0 left- w-full h-full max-w-[65%] rounded-t-full z-0"></div> */}
+                    </div>
+                    <div className="col-3 relative">
                       <img
                         src={d4}
                         alt=""
                         style={{ maxWidth: "70%" }}
                         className="rounded-t-full relative z-[2]"
                       />
-                      <div className="absolute border top-0 left-4 w-full h-full max-w-[65%] rounded-t-full z-0"></div>
+                      {/* <div className="absolute border top-0 left-4 w-full h-full max-w-[65%] rounded-t-full z-0"></div> */}
                     </div>
-                    <div className="col-4 relative">
+                    <div className="col-3 relative">
                       <img
                         src={d5}
                         alt=""
                         style={{ maxWidth: "70%" }}
                         className="rounded-t-full relative z-[2]"
                       />
-                      <div className="absolute border top-0 left-4 w-full h-full max-w-[65%] rounded-t-full z-0"></div>
+                      {/* <div className="absolute border top-0 left-4 w-full h-full max-w-[65%] rounded-t-full z-0"></div> */}
                     </div>
                   </div>
                 </div>
@@ -265,27 +277,34 @@ const Career = () => {
                   <div className="row">
                     <div className="col-12 headings mt-3">
                       <div className="row">
-                        <div className="col-4 text-2xl">
+                        <div className="col-3 text-2xl">
                           Learning and Development
                         </div>
-                        <div className="col-4 text-2xl">
+                        <div className="col-3 text-2xl">Internal Mobility</div>
+                        <div className="col-3 text-2xl">
                           Diversity and Inclusion
                         </div>
-                        <div className="col-4 text-2xl">
+                        <div className="col-3 text-2xl">
                           Growth Opportunities
                         </div>
                       </div>
                     </div>
                     <div className="col-12 content mt-3">
                       <div className="row">
-                        <div className="col-4">
+                        <div className="col-3">
                           Apollo Green Energy nurtures high-potential people
                           inside the organization and offers them opportunities
                           for accelerated learning and development. There are
                           various vertical and team-level initiatives that help
                           hone the skills while, on the job
                         </div>
-                        <div className="col-4">
+                        <div className="col-3">
+                          Apollo Green Energy offers both vertical and
+                          horizontal movement. Discover and leverage your
+                          potential across various businesses, industries, and
+                          levels.
+                        </div>
+                        <div className="col-3">
                           Apollo Green Energy is made up of people representing
                           diverse nationalities, cultures, genders, abilities,
                           age, and experiences. This creates a very enriching
@@ -293,7 +312,7 @@ const Career = () => {
                           engages, contributes, and eventually grows in the
                           workplace.
                         </div>
-                        <div className="col-4">
+                        <div className="col-3">
                           Our businesses are shaping key sectors of the modern
                           economy. This creates an abundance of opportunities
                           for people to shine, learn a ton and create a massive

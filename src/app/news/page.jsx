@@ -1,14 +1,14 @@
 import NewsHeroCards from "./components/news-hero-cards/news-hero-cards";
-import NewsHero from "./components/news-hero/NewsHero";
+// import NewsHero from "./components/news-hero/NewsHero";
 
 // images
 import NewsHeroCardImage from "./images/blogs-hero.png";
 
 // blogs images
-import Blog1Img from "./images/blog1.png";
-import Blog2Img from "./images/blog-2.png";
-import Blog3Img from "./images/blog-3.png";
-import NewsNewsletter from "./components/news-newsletter/news-newsletter";
+// import Blog1Img from "./images/blog1.png";
+// import Blog2Img from "./images/blog-2.png";
+// import Blog3Img from "./images/blog-3.png";
+// import NewsNewsletter from "./components/news-newsletter/news-newsletter";
 
 const newspageData = {
   // HERO DATA
@@ -249,6 +249,35 @@ const NewsPage = () => {
           heroCardDate: newspageData.newsBlogCardDate,
         }}
       /> */}
+
+      <div className="relative">
+        <div className="col-12 p-0">
+          <div className="img h-full relative">
+            <div className="relative h-screen w-full">
+              <img
+                src="https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                className="max-w-full h-full w-full"
+              />
+            </div>
+
+            <div className="absolute inset-0 top-0 left-0 w-full h-full z-[1] backdrop-brightness-[0.5] px-3 md:px-5">
+              {/* <div className="max-w-7xl mx-auto flex flex-col gap-16 py-16 h-full justify-between">
+                <div className="flex flex-col gap-3">
+                  <h4 className="text-white text-2xl">Apollo Marketplace</h4>
+                  <div className="h-1 w-10 bg-white" />
+                </div>
+
+                <div className="flex flex-col gap-5">
+                  <h1 className="text-white text-5xl lg:text-7xl font-semibold max-w-[50%]">
+                    Redefining Global Trade & Commerce
+                  </h1>
+                </div>
+              </div> */}
+            </div>
+          </div>
+        </div>
+      </div>
 
       <NewsHeroCards data={newspageData.newsHeroCardsData} />
     </div>
