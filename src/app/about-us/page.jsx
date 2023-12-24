@@ -57,7 +57,7 @@ const AboutUs = () => {
     purposeValuesNodes: [
       {
         id: "1",
-        pv: "The entrepreneurial spirit runs strong at Apollo International. We encourage our people to think big and own their work.",
+        pv: "The entrepreneurial spirit runs strong at Apollo Green Energy. We encourage our people to think big and own their work.",
         pvTitle: "Own It",
       },
       {

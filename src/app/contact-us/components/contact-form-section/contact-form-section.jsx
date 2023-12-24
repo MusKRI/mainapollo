@@ -7,7 +7,7 @@ const ContactFormSection = () => {
   return (
     <section className="relative px-3 md:px-5 bg-[#f7f5ef]">
       <div className="max-w-7xl mx-auto py-20 relative">
-        <h1 className="text-6xl uppercase text-center font-semibold">
+        <h1 className="text-4xl md:text-6xl uppercase text-center font-semibold">
           I am here for
         </h1>
 
@@ -18,25 +18,25 @@ const ContactFormSection = () => {
               aria-label="Manage your account"
             >
               <Tabs.Trigger
-                className="border-r px-6 text-lg data-[state=active]:text-[#191919] data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
+                className="border-r px-6 text-base lg:text-lg data-[state=active]:text-[#191919] data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
                 value="tab1"
               >
                 Business
               </Tabs.Trigger>
               <Tabs.Trigger
-                className="border-r px-6 text-lg data-[state=active]:text-[#191919] data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
+                className="border-r px-6 text-base lg:text-lg data-[state=active]:text-[#191919] data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
                 value="tab2"
               >
                 Career
               </Tabs.Trigger>
               <Tabs.Trigger
-                className="border-r px-6 text-lg data-[state=active]:text-[#191919] data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
+                className="border-r px-6 text-base lg:text-lg data-[state=active]:text-[#191919] data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
                 value="tab3"
               >
                 Media
               </Tabs.Trigger>
               <Tabs.Trigger
-                className="px-6 text-lg data-[state=active]:text-[#191919] data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
+                className="px-6 text-base lg:text-lg data-[state=active]:text-[#191919] data-[state=active]:shadow-[inset_0_-1px_0_0,0_1px_0_0]"
                 value="tab4"
               >
                 General Enquiry
@@ -75,15 +75,35 @@ const ContactFormSection = () => {
                         required=""
                         className="custom-select"
                       >
-                        <option value="" disabled selected>
+                        <option
+                          value=""
+                          disabled
+                          selected
+                          className="text-base md:text-lg"
+                        >
                           Select our business vertical
                         </option>
-                        <option value="prox">Apollo ProX</option>
-                        <option value="supply chain">
+                        <option value="prox" className="text-base md:text-lg">
+                          Apollo ProX
+                        </option>
+                        <option
+                          value="supply chain"
+                          className="text-base md:text-lg"
+                        >
                           Apollo Supply Chain
                         </option>
-                        <option value="fashion">Apollo Fashion</option>
-                        <option value="marketplace">Apollo Marketplace</option>
+                        <option
+                          value="fashion"
+                          className="text-base md:text-lg"
+                        >
+                          Apollo Fashion
+                        </option>
+                        <option
+                          value="marketplace"
+                          className="text-base md:text-lg"
+                        >
+                          Apollo Marketplace
+                        </option>
                       </select>
                       <div className="underline"></div>
                     </div>

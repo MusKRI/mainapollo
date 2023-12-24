@@ -123,7 +123,7 @@ export const MarketPlace = () => {
       <div className="container my-4 !mt-10 py-4">
         <div className="space-y-4">
           <div className="flex flex-col gap-2">
-            <h1 className="text-3xl lg:text-6xl font-semibold text-center">
+            <h1 className="text-4xl lg:text-6xl font-semibold text-center">
               Apollo Marketplace is <br className="md:hidden" />
               <TypeAnimation
                 sequence={[
@@ -144,8 +144,8 @@ export const MarketPlace = () => {
               />
             </h1>
             <p className="max-w-md mx-auto text-base md:text-lg text-center">
-              we specialize in trading and disturbing a diverse range of
-              products across several key business verticals:
+              We specialise in trading and distribution of diverse range of
+              products and services across key market sectors
             </p>
           </div>
 
@@ -172,7 +172,7 @@ export const MarketPlace = () => {
               }}
             >
               <div className="text-xl relative z-[2]">
-                Medical and Surgical Equipment
+                Medical and Surgical Equipments
               </div>
             </div>
 
@@ -251,9 +251,7 @@ export const MarketPlace = () => {
         <div className="container">
           <div className="row !justify-center">
             <div className="col-12 mt-5">
-              <h1
-                className="text-center text-3xl md:text-6xl font-bold"
-              >
+              <h1 className="text-center text-3xl md:text-6xl font-bold">
                 Experience Apollo Marketplace
               </h1>
               <div className="row">

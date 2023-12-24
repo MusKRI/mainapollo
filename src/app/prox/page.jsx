@@ -29,7 +29,7 @@ const ProXPage = () => {
   const proxData = {
     // contact banner data
     proxBannerImage: ProxBannerImg,
-    proxBannerTitle: "Constructing A Safer, Sustainable Tomorrow",
+    proxBannerTitle: "Constructing a safer, Sustainable Tomorrow",
 
     // prox about
     pAboutTitle: "Your Trusted EPC Partner for Seamless Project Excellence",
@@ -232,7 +232,9 @@ const ProXPage = () => {
         <div className="container">
           <div className="row">
             <div className="col-12 mt-5 space-y-3">
-              <div className="text-center text-3xl md:text-6xl font-bold">Experience Apollo ProX</div>
+              <div className="text-center text-3xl md:text-6xl font-bold">
+                Experience Apollo ProX
+              </div>
               <div className="row">
                 <div className="col-lg-6 text-center mx-auto">
                   When you choose Apollo Pro X, you opt for a safer and

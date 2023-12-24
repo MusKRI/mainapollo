@@ -70,7 +70,7 @@ const ExpertiseArea = () => {
     <section className="relative px-3 md:px-5 ExpertiseArea">
       <div className="max-w-7xl mx-auto flex flex-col py-10 gap-10">
         <div className="flex flex-col gap-4 items-center">
-          <SectionHeading classes="text-center mt-2 text-[#ff7900]">
+          <SectionHeading classes="text-center mt-2 text-clip">
             Areas of Expertise
           </SectionHeading>
 

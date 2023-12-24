@@ -17,7 +17,11 @@ import Career from "./app/career/page";
 import { MarketPlace } from "./app/marketplace/page";
 import ProXPage from "./app/prox/page";
 
+import useScrollToTop from "./lib/use-scrollto-top";
+
 function App() {
+  useScrollToTop();
+
   return (
     <RootLayout>
       <Routes>

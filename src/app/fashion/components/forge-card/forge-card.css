@@ -16,7 +16,7 @@
   z-index: -1;
   top: -15px;
   right: -15px;
-  background: gray;
+  background: lightgray;
   height: 220px;
   width: 25px;
   border-radius: 32px;
@@ -31,9 +31,9 @@
   transform: scale(60);
 }
 
-.forge-card:hover {
+/* .forge-card:hover {
   color: #ffffff;
-}
+} */
 
 .forge-card p {
   padding: 10px 0;
